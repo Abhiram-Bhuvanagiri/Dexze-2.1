@@ -1,0 +1,832 @@
+[
+  [
+    "replace_file_content",
+    {
+      "AllowMultiple": false,
+      "Description": "Remove the global fixed video background containing services-bg.mp4",
+      "EndLine": 192,
+      "Instruction": "Remove the entire Global Fixed Video Background div block.",
+      "ReplacementContent": "",
+      "StartLine": 181,
+      "TargetContent": "    <!-- Global Fixed Video Background for Tech Scroll Section -->\n    <!-- It stays fixed globally and only shows through transparent sections -->\n    <div\n        style=\"position: fixed; top: 0; left: 0; width: 100%; height: 100vh; overflow: hidden; z-index: -3; background: #0b0b0c;\">\n        <video autoplay muted loop playsinline style=\"width: 100%; height: 100%; object-fit: cover; opacity: 0.5;\">\n            <source src=\"assets/video/services-bg.mp4\" type=\"video/mp4\">\n        </video>\n        <!-- Gradient Overlay -->\n        <div\n            style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 100%);\">\n        </div>\n    </div>",
+      "TargetFile": "c:\\Users\\abhii\\OneDrive\\Desktop\\Dexze-2.1\\Dexze_9_Jun\\services-2.html",
+      "toolAction": "Removing services-bg.mp4 video",
+      "toolSummary": "Remove video background"
+    }
+  ],
+  [
+    "multi_replace_file_content",
+    {
+      "Description": "Add subheadings to the ideas section list items",
+      "Instruction": "Update the HTML for the ideas list items to include subheadings wrapped in a div with the main heading, and add CSS for the subheadings.",
+      "ReplacementChunks": [
+        {
+          "AllowMultiple": false,
+          "EndLine": 891,
+          "ReplacementContent": "                        .idea-list-item.active .idea-heading {\n                            font-weight: 700;\n                            color: #111;\n                            transform: translateX(6px);\n                        }\n                        \n                        .idea-subheading {\n                            font-family: var(--td-ff-body), sans-serif;\n                            font-size: 16px;\n                            color: #999;\n                            margin: 6px 0 0 0;\n                            font-weight: 400;\n                            transition: all 0.4s ease;\n                        }\n                        .idea-list-item.active .idea-subheading {\n                            color: #666;\n                            transform: translateX(6px);\n                        }\n\n                        /* Right Side Image */\n                        .ideas-images-wrapper {",
+          "StartLine": 884,
+          "TargetContent": "                        .idea-list-item.active .idea-heading {\n                            font-weight: 700;\n                            color: #111;\n                            transform: translateX(6px);\n                        }\n\n                        /* Right Side Image */\n                        .ideas-images-wrapper {"
+        },
+        {
+          "AllowMultiple": false,
+          "EndLine": 740,
+          "ReplacementContent": "                            <!-- Item 1 -->\n                            <div class=\"idea-list-item active\" data-index=\"0\">\n                                <div class=\"idea-list-active-line\"></div>\n                                <span class=\"idea-number\">01</span>\n                                <div>\n                                    <h3 class=\"idea-heading\">Discovery</h3>\n                                    <p class=\"idea-subheading\">Research & strategy</p>\n                                </div>\n                            </div>\n                            \n                            <!-- Item 2 -->\n                            <div class=\"idea-list-item\" data-index=\"1\">\n                                <div class=\"idea-list-active-line\"></div>\n                                <span class=\"idea-number\">02</span>\n                                <div>\n                                    <h3 class=\"idea-heading\">Wireframes</h3>\n                                    <p class=\"idea-subheading\">Structure & flow</p>\n                                </div>\n                            </div>\n\n                            <!-- Item 3 -->\n                            <div class=\"idea-list-item\" data-index=\"2\">\n                                <div class=\"idea-list-active-line\"></div>\n                                <span class=\"idea-number\">03</span>\n                                <div>\n                                    <h3 class=\"idea-heading\">UI Design</h3>\n                                    <p class=\"idea-subheading\">Visual aesthetics</p>\n                                </div>\n                            </div>\n\n                            <!-- Item 4 -->\n                            <div class=\"idea-list-item\" data-index=\"3\">\n                                <div class=\"idea-list-active-line\"></div>\n                                <span class=\"idea-number\">04</span>\n                                <div>\n                                    <h3 class=\"idea-heading\">Development</h3>\n                                    <p class=\"idea-subheading\">Code & implementation</p>\n                                </div>\n                            </div>\n\n                            <!-- Item 5 -->\n                            <div class=\"idea-list-item\" data-index=\"4\">\n                                <div class=\"idea-list-active-line\"></div>\n                                <span class=\"idea-number\">05</span>\n                                <div>\n                                    <h3 class=\"idea-heading\">Testing</h3>\n                                    <p class=\"idea-subheading\">Quality assurance</p>\n                                </div>\n                            </div>\n\n                            <!-- Item 6 -->\n                            <div class=\"idea-list-item\" data-index=\"5\">\n                                <div class=\"idea-list-active-line\"></div>\n                                <span class=\"idea-number\">06</span>\n                                <div>\n                                    <h3 class=\"idea-heading\">Launch</h3>\n                                    <p class=\"idea-subheading\">Deployment & support</p>\n                                </div>\n                            </div>",
+          "StartLine": 706,
+          "TargetContent": "                            <!-- Item 1 -->\n                            <div class=\"idea-list-item active\" data-index=\"0\">\n                                <div class=\"idea-list-active-line\"></div>\n                                <span class=\"idea-number\">01</span>\n                                <h3 class=\"idea-heading\">Discovery</h3>\n                            </div>\n                            \n                            <!-- Item 2 -->\n                            <div class=\"idea-list-item\" data-index=\"1\">\n                                <div class=\"idea-list-active-line\"></div>\n                                <span class=\"idea-number\">02</span>\n                                <h3 class=\"idea-heading\">Wireframes</h3>\n                            </div>\n\n                            <!-- Item 3 -->\n                            <div class=\"idea-list-item\" data-index=\"2\">\n                                <div class=\"idea-list-active-line\"></div>\n                                <span class=\"idea-number\">03</span>\n                                <h3 class=\"idea-heading\">UI Design</h3>\n                            </div>\n\n                            <!-- Item 4 -->\n                            <div class=\"idea-list-item\" data-index=\"3\">\n                                <div class=\"idea-list-active-line\"></div>\n                                <span class=\"idea-number\">04</span>\n                                <h3 class=\"idea-heading\">Development</h3>\n                            </div>\n\n                            <!-- Item 5 -->\n                            <div class=\"idea-list-item\" data-index=\"4\">\n                                <div class=\"idea-list-active-line\"></div>\n                                <span class=\"idea-number\">05</span>\n                                <h3 class=\"idea-heading\">Testing</h3>\n                            </div>\n\n                            <!-- Item 6 -->\n                            <div class=\"idea-list-item\" data-index=\"5\">\n                                <div class=\"idea-list-active-line\"></div>\n                                <span class=\"idea-number\">06</span>\n                                <h3 class=\"idea-heading\">Launch</h3>\n                            </div>"
+        }
+      ],
+      "TargetFile": "c:\\Users\\abhii\\OneDrive\\Desktop\\Dexze-2.1\\Dexze_9_Jun\\services-2.html",
+      "toolAction": "Updating ideas section",
+      "toolSummary": "Add subheadings to ideas section"
+    }
+  ],
+  [
+    "replace_file_content",
+    {
+      "AllowMultiple": false,
+      "Description": "Add heading and paragraph to the ideas section with a white background",
+      "EndLine": 694,
+      "Instruction": "Add the section heading content above the interactive ideas container",
+      "ReplacementContent": "                </section>\n\n                <section class=\"ideas-section\" style=\"padding-top: 120px; background-color: #fff;\">\n                    <div class=\"container\">\n                        <div class=\"row justify-content-center text-center\">\n                            <div class=\"col-lg-8\">\n                                <div style=\"display: flex; align-items: center; justify-content: center; margin-bottom: 24px;\">\n                                    <span style=\"display: inline-block; width: 40px; height: 1px; background-color: #ccc; margin-right: 15px;\"></span>\n                                    <span style=\"color: #666; font-size: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase;\">FROM AN IDEA TO A PRODUCT</span>\n                                    <span style=\"display: inline-block; width: 40px; height: 1px; background-color: #ccc; margin-left: 15px;\"></span>\n                                </div>\n                                <h2 style=\"font-family: var(--td-ff-heading), sans-serif; font-size: clamp(36px, 5vw, 64px); font-weight: 800; color: #111; line-height: 1.1; margin-bottom: 24px; letter-spacing: -2px;\">\n                                    Bring your ideas to life.\n                                </h2>\n                                <p style=\"font-family: var(--td-ff-body), sans-serif; font-size: 18px; color: #666; line-height: 1.6; margin: 0 auto; max-width: 700px;\">\n                                    We guide you through every stage of the product lifecycle\u2014from initial discovery and design to development, testing, and scalable deployment.<br>Partner with us to build digital experiences that matter.\n                                </p>\n                            </div>\n                        </div>\n                    </div>\n                    \n                    <!-- Interactive Ideas Section -->\n                    <div class=\"interactive-ideas-container\" style=\"max-width: 1400px; width: 100%; margin: 80px auto; padding: 0 32px; display: flex; gap: 80px; align-items: flex-start; position: relative;\">",
+      "StartLine": 690,
+      "TargetContent": "                </section>\n\n                \n                    <!-- Interactive Ideas Section -->\n                    <div class=\"interactive-ideas-container\" style=\"max-width: 1400px; width: 100%; margin: 80px auto; padding: 0 32px; display: flex; gap: 80px; align-items: flex-start; position: relative;\">",
+      "TargetFile": "c:\\Users\\abhii\\OneDrive\\Desktop\\Dexze-2.1\\Dexze_9_Jun\\services-2.html",
+      "toolAction": "Adding heading to ideas section",
+      "toolSummary": "Add heading for ideas section"
+    }
+  ],
+  [
+    "multi_replace_file_content",
+    {
+      "Description": "Update ideas section wrapper with bottom padding and close it properly",
+      "Instruction": "Update the section style to include padding bottom, and insert the closing section tag.",
+      "ReplacementChunks": [
+        {
+          "AllowMultiple": false,
+          "EndLine": 691,
+          "ReplacementContent": "                <section class=\"ideas-section\" style=\"padding: 120px 0 80px 0; background-color: #fff;\">",
+          "StartLine": 691,
+          "TargetContent": "                <section class=\"ideas-section\" style=\"padding-top: 120px; background-color: #fff;\">"
+        },
+        {
+          "AllowMultiple": false,
+          "EndLine": 1130,
+          "ReplacementContent": "                    </script>\n                </section>\n\n                <!-- Technology Marquee Section -->\n                <section class=\"tech-marquee-section\"",
+          "StartLine": 1127,
+          "TargetContent": "                    </script>\n\n                <!-- Technology Marquee Section -->\n                <section class=\"tech-marquee-section\""
+        }
+      ],
+      "TargetFile": "c:\\Users\\abhii\\OneDrive\\Desktop\\Dexze-2.1\\Dexze_9_Jun\\services-2.html",
+      "toolAction": "Updating ideas section wrapper",
+      "toolSummary": "Close ideas section"
+    }
+  ],
+  [
+    "multi_replace_file_content",
+    {
+      "Description": "Remove subheadings from the left side of ideas section",
+      "Instruction": "Remove the subheading elements and their wrapping divs, along with their associated CSS.",
+      "ReplacementChunks": [
+        {
+          "AllowMultiple": false,
+          "EndLine": 775,
+          "ReplacementContent": "                            <!-- Item 1 -->\n                            <div class=\"idea-list-item active\" data-index=\"0\">\n                                <div class=\"idea-list-active-line\"></div>\n                                <span class=\"idea-number\">01</span>\n                                <h3 class=\"idea-heading\">Discovery</h3>\n                            </div>\n                            \n                            <!-- Item 2 -->\n                            <div class=\"idea-list-item\" data-index=\"1\">\n                                <div class=\"idea-list-active-line\"></div>\n                                <span class=\"idea-number\">02</span>\n                                <h3 class=\"idea-heading\">Wireframes</h3>\n                            </div>\n\n                            <!-- Item 3 -->\n                            <div class=\"idea-list-item\" data-index=\"2\">\n                                <div class=\"idea-list-active-line\"></div>\n                                <span class=\"idea-number\">03</span>\n                                <h3 class=\"idea-heading\">UI Design</h3>\n                            </div>\n\n                            <!-- Item 4 -->\n                            <div class=\"idea-list-item\" data-index=\"3\">\n                                <div class=\"idea-list-active-line\"></div>\n                                <span class=\"idea-number\">04</span>\n                                <h3 class=\"idea-heading\">Development</h3>\n                            </div>\n\n                            <!-- Item 5 -->\n                            <div class=\"idea-list-item\" data-index=\"4\">\n                                <div class=\"idea-list-active-line\"></div>\n                                <span class=\"idea-number\">05</span>\n                                <h3 class=\"idea-heading\">Testing</h3>\n                            </div>\n\n                            <!-- Item 6 -->\n                            <div class=\"idea-list-item\" data-index=\"5\">\n                                <div class=\"idea-list-active-line\"></div>\n                                <span class=\"idea-number\">06</span>\n                                <h3 class=\"idea-heading\">Launch</h3>\n                            </div>",
+          "StartLine": 717,
+          "TargetContent": "                            <!-- Item 1 -->\n                            <div class=\"idea-list-item active\" data-index=\"0\">\n                                <div class=\"idea-list-active-line\"></div>\n                                <span class=\"idea-number\">01</span>\n                                <div>\n                                    <h3 class=\"idea-heading\">Discovery</h3>\n                                    <p class=\"idea-subheading\">Research & strategy</p>\n                                </div>\n                            </div>\n                            \n                            <!-- Item 2 -->\n                            <div class=\"idea-list-item\" data-index=\"1\">\n                                <div class=\"idea-list-active-line\"></div>\n                                <span class=\"idea-number\">02</span>\n                                <div>\n                                    <h3 class=\"idea-heading\">Wireframes</h3>\n                                    <p class=\"idea-subheading\">Structure & flow</p>\n                                </div>\n                            </div>\n\n                            <!-- Item 3 -->\n                            <div class=\"idea-list-item\" data-index=\"2\">\n                                <div class=\"idea-list-active-line\"></div>\n                                <span class=\"idea-number\">03</span>\n                                <div>\n                                    <h3 class=\"idea-heading\">UI Design</h3>\n                                    <p class=\"idea-subheading\">Visual aesthetics</p>\n                                </div>\n                            </div>\n\n                            <!-- Item 4 -->\n                            <div class=\"idea-list-item\" data-index=\"3\">\n                                <div class=\"idea-list-active-line\"></div>\n                                <span class=\"idea-number\">04</span>\n                                <div>\n                                    <h3 class=\"idea-heading\">Development</h3>\n                                    <p class=\"idea-subheading\">Code & implementation</p>\n                                </div>\n                            </div>\n\n                            <!-- Item 5 -->\n                            <div class=\"idea-list-item\" data-index=\"4\">\n                                <div class=\"idea-list-active-line\"></div>\n                                <span class=\"idea-number\">05</span>\n                                <div>\n                                    <h3 class=\"idea-heading\">Testing</h3>\n                                    <p class=\"idea-subheading\">Quality assurance</p>\n                                </div>\n                            </div>\n\n                            <!-- Item 6 -->\n                            <div class=\"idea-list-item\" data-index=\"5\">\n                                <div class=\"idea-list-active-line\"></div>\n                                <span class=\"idea-number\">06</span>\n                                <div>\n                                    <h3 class=\"idea-heading\">Launch</h3>\n                                    <p class=\"idea-subheading\">Deployment & support</p>\n                                </div>\n                            </div>"
+        },
+        {
+          "AllowMultiple": false,
+          "EndLine": 940,
+          "ReplacementContent": "                        .idea-list-item.active .idea-heading {\n                            font-weight: 700;\n                            color: #111;\n                            transform: translateX(6px);\n                        }\n\n                        /* Right Side Image */\n                        .ideas-images-wrapper {",
+          "StartLine": 920,
+          "TargetContent": "                        .idea-list-item.active .idea-heading {\n                            font-weight: 700;\n                            color: #111;\n                            transform: translateX(6px);\n                        }\n                        \n                        .idea-subheading {\n                            font-family: var(--td-ff-body), sans-serif;\n                            font-size: 16px;\n                            color: #999;\n                            margin: 6px 0 0 0;\n                            font-weight: 400;\n                            transition: all 0.4s ease;\n                        }\n                        .idea-list-item.active .idea-subheading {\n                            color: #666;\n                            transform: translateX(6px);\n                        }\n\n                        /* Right Side Image */\n                        .ideas-images-wrapper {"
+        }
+      ],
+      "TargetFile": "c:\\Users\\abhii\\OneDrive\\Desktop\\Dexze-2.1\\Dexze_9_Jun\\services-2.html",
+      "toolAction": "Removing subheadings",
+      "toolSummary": "Remove subheadings from ideas section"
+    }
+  ],
+  [
+    "replace_file_content",
+    {
+      "AllowMultiple": false,
+      "Description": "Decrease the size of the hero section video",
+      "EndLine": 217,
+      "Instruction": "Decrease the size of the video element by changing its min-height and width in the style attribute.",
+      "ReplacementContent": "                                <div class=\"mb-4 mx-auto\" style=\"flex-grow: 1; min-height: 340px; width: 90%; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.1); position: relative;\">",
+      "StartLine": 217,
+      "TargetContent": "                                <div class=\"mb-4\" style=\"flex-grow: 1; min-height: 400px; width: 100%; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.1); position: relative;\">",
+      "TargetFile": "c:\\Users\\abhii\\OneDrive\\Desktop\\Dexze-2.1\\Dexze_9_Jun\\services-2.html",
+      "toolAction": "Resizing hero section video",
+      "toolSummary": "Decrease size of hero video"
+    }
+  ],
+  [
+    "replace_file_content",
+    {
+      "AllowMultiple": false,
+      "Description": "Decrease the size of the images in the ideas section by setting width to 90% and centering it.",
+      "EndLine": 950,
+      "Instruction": "Update width of .ideas-images-wrapper to 90% and center it with margin",
+      "ReplacementContent": "                        /* Right Side Image */\n                        .ideas-images-wrapper {\n                            width: 90%;\n                            margin: 0 auto;\n                            aspect-ratio: 16/10;\n                            position: relative;\n                            border-radius: 16px;\n                            overflow: hidden;\n                            box-shadow: 0 16px 40px rgba(0,0,0,0.06);\n                            background: #f4f6f8;\n                            transition: transform 0.4s ease, box-shadow 0.4s ease;\n                            cursor: default;\n                        }",
+      "StartLine": 939,
+      "TargetContent": "                        /* Right Side Image */\n                        .ideas-images-wrapper {\n                            width: 100%;\n                            aspect-ratio: 16/10;\n                            position: relative;\n                            border-radius: 16px;\n                            overflow: hidden;\n                            box-shadow: 0 16px 40px rgba(0,0,0,0.06);\n                            background: #f4f6f8;\n                            transition: transform 0.4s ease, box-shadow 0.4s ease;\n                            cursor: default;\n                        }",
+      "TargetFile": "c:\\Users\\abhii\\OneDrive\\Desktop\\Dexze-2.1\\Dexze_9_Jun\\services-2.html",
+      "toolAction": "Decreasing image size",
+      "toolSummary": "Decrease image size"
+    }
+  ],
+  [
+    "multi_replace_file_content",
+    {
+      "Description": "Update the Ideas section text content: expand paragraphs, add two bullet points per section, and update bullet style to use fa-check icon",
+      "Instruction": "Update the HTML in the ideas-text-wrapper to include more text and bullets. Update the corresponding CSS to style the new i tag instead of the old span.",
+      "ReplacementChunks": [
+        {
+          "AllowMultiple": false,
+          "EndLine": 1040,
+          "ReplacementContent": "                        .idea-text-content ul li {\n                            display: flex;\n                            align-items: flex-start;\n                            gap: 12px;\n                            font-size: 16px;\n                            font-weight: 500;\n                            color: #333;\n                        }\n                        .idea-text-content ul li i {\n                            font-size: 14px;\n                            color: var(--td-color-theme, #6a35ff);\n                            margin-top: 4px;\n                        }\n                        ",
+          "StartLine": 1025,
+          "TargetContent": "                        .idea-text-content ul li {\n                            display: flex;\n                            align-items: center;\n                            gap: 12px;\n                            font-size: 16px;\n                            font-weight: 500;\n                            color: #333;\n                        }\n                        .idea-text-content ul li span {\n                            display: inline-block;\n                            width: 6px;\n                            height: 6px;\n                            background: var(--td-color-theme, #6a35ff);\n                            border-radius: 50%;\n                        }\n                        "
+        },
+        {
+          "AllowMultiple": false,
+          "EndLine": 860,
+          "ReplacementContent": "                            <!-- Text Wrapper -->\n                            <div class=\"ideas-text-wrapper\">\n                                \n                                <!-- Text 1 -->\n                                <div class=\"idea-text-content active\">\n                                    <h3>Discovery</h3>\n                                    <p>Understanding the business, users, pain points and goals. We lay a solid foundation for the entire product lifecycle by conducting deep industry research and analyzing competitive landscapes to ensure your idea is viable and positioned for long-term success in the market.</p>\n                                    <ul>\n                                        <li><i class=\"fa-solid fa-check\"></i> Market research</li>\n                                        <li><i class=\"fa-solid fa-check\"></i> Business planning</li>\n                                        <li><i class=\"fa-solid fa-check\"></i> Product discussion</li>\n                                        <li><i class=\"fa-solid fa-check\"></i> Competitive analysis</li>\n                                        <li><i class=\"fa-solid fa-check\"></i> User persona definition</li>\n                                    </ul>\n                                </div>\n\n                                <!-- Text 2 -->\n                                <div class=\"idea-text-content\">\n                                    <h3>Wireframes</h3>\n                                    <p>Mapping out user journeys and structural layouts. This crucial step ensures logical flow and intuitive navigation, reducing the risk of costly changes later on by providing a clear blueprint of the platform's functionality and user interaction patterns.</p>\n                                    <ul>\n                                        <li><i class=\"fa-solid fa-check\"></i> UX sketches</li>\n                                        <li><i class=\"fa-solid fa-check\"></i> Low-fidelity layouts</li>\n                                        <li><i class=\"fa-solid fa-check\"></i> User flows</li>\n                                        <li><i class=\"fa-solid fa-check\"></i> Information architecture</li>\n                                        <li><i class=\"fa-solid fa-check\"></i> Interactive prototypes</li>\n                                    </ul>\n                                </div>\n\n                                <!-- Text 3 -->\n                                <div class=\"idea-text-content\">\n                                    <h3>UI Design</h3>\n                                    <p>Creating premium, high-fidelity visual interfaces and style guides that captivate your target audience. We focus on modern aesthetics, accessibility, and brand consistency to deliver an engaging digital experience that stands out from the competition.</p>\n                                    <ul>\n                                        <li><i class=\"fa-solid fa-check\"></i> Figma screens</li>\n                                        <li><i class=\"fa-solid fa-check\"></i> Design systems</li>\n                                        <li><i class=\"fa-solid fa-check\"></i> Modern UI compositions</li>\n                                        <li><i class=\"fa-solid fa-check\"></i> Motion graphics</li>\n                                        <li><i class=\"fa-solid fa-check\"></i> Brand guidelines</li>\n                                    </ul>\n                                </div>\n\n                                <!-- Text 4 -->\n                                <div class=\"idea-text-content\">\n                                    <h3>Development</h3>\n                                    <p>Translating designs into clean, production-ready code with robust, scalable architectures. Our engineering team utilizes the latest frameworks and best practices to ensure optimal performance, security, and maintainability across all devices.</p>\n                                    <ul>\n                                        <li><i class=\"fa-solid fa-check\"></i> Enterprise SaaS dashboard</li>\n                                        <li><i class=\"fa-solid fa-check\"></i> Web application</li>\n                                        <li><i class=\"fa-solid fa-check\"></i> Mobile application</li>\n                                        <li><i class=\"fa-solid fa-check\"></i> API integration</li>\n                                        <li><i class=\"fa-solid fa-check\"></i> Database architecture</li>\n                                    </ul>\n                                </div>\n\n                                <!-- Text 5 -->\n                                <div class=\"idea-text-content\">\n                                    <h3>Testing</h3>\n                                    <p>Rigorous quality assurance, automated integration testing, and manual checks to ensure bug-free operation. We simulate real-world scenarios and perform security audits to guarantee that your product is stable and reliable before it reaches your users.</p>\n                                    <ul>\n                                        <li><i class=\"fa-solid fa-check\"></i> QA dashboard</li>\n                                        <li><i class=\"fa-solid fa-check\"></i> Analytics</li>\n                                        <li><i class=\"fa-solid fa-check\"></i> Bug tracking</li>\n                                        <li><i class=\"fa-solid fa-check\"></i> Performance testing</li>\n                                        <li><i class=\"fa-solid fa-check\"></i> Security audits</li>\n                                    </ul>\n                                </div>\n\n                                <!-- Text 6 -->\n                                <div class=\"idea-text-content\">\n                                    <h3>Launch</h3>\n                                    <p>Deploying the product smoothly to production servers with zero-downtime deployment strategies. We provide post-launch monitoring and continuous support to ensure your application performs optimally as your user base scales.</p>\n                                    <ul>\n                                        <li><i class=\"fa-solid fa-check\"></i> Live product</li>\n                                        <li><i class=\"fa-solid fa-check\"></i> Business analytics</li>\n                                        <li><i class=\"fa-solid fa-check\"></i> User adoption</li>\n                                        <li><i class=\"fa-solid fa-check\"></i> Ongoing maintenance</li>\n                                        <li><i class=\"fa-solid fa-check\"></i> Cloud hosting setup</li>\n                                    </ul>\n                                </div>\n\n                            </div>",
+          "StartLine": 791,
+          "TargetContent": "                            <!-- Text Wrapper -->\n                            <div class=\"ideas-text-wrapper\">\n                                \n                                <!-- Text 1 -->\n                                <div class=\"idea-text-content active\">\n                                    <h3>Discovery</h3>\n                                    <p>Understanding the business, users, pain points and goals. We lay a solid foundation for the entire product lifecycle.</p>\n                                    <ul>\n                                        <li><span></span> Strategy workshop</li>\n                                        <li><span></span> Business planning</li>\n                                        <li><span></span> Product discussion</li>\n                                    </ul>\n                                </div>\n\n                                <!-- Text 2 -->\n                                <div class=\"idea-text-content\">\n                                    <h3>Wireframes</h3>\n                                    <p>Mapping out user journeys and structural layouts. This crucial step ensures logical flow and intuitive navigation.</p>\n                                    <ul>\n                                        <li><span></span> UX sketches</li>\n                                        <li><span></span> Low-fidelity layouts</li>\n                                        <li><span></span> User flows</li>\n                                    </ul>\n                                </div>\n\n                                <!-- Text 3 -->\n                                <div class=\"idea-text-content\">\n                                    <h3>UI Design</h3>\n                                    <p>Creating premium, high-fidelity visual interfaces and style guides that captivate your target audience.</p>\n                                    <ul>\n                                        <li><span></span> Figma screens</li>\n                                        <li><span></span> Design systems</li>\n                                        <li><span></span> Modern UI compositions</li>\n                                    </ul>\n                                </div>\n\n                                <!-- Text 4 -->\n                                <div class=\"idea-text-content\">\n                                    <h3>Development</h3>\n                                    <p>Translating designs into clean, production-ready code with robust, scalable architectures.</p>\n                                    <ul>\n                                        <li><span></span> Enterprise SaaS dashboard</li>\n                                        <li><span></span> Web application</li>\n                                        <li><span></span> Mobile application</li>\n                                    </ul>\n                                </div>\n\n                                <!-- Text 5 -->\n                                <div class=\"idea-text-content\">\n                                    <h3>Testing</h3>\n                                    <p>Rigorous quality assurance, automated integration testing, and manual checks to ensure bug-free operation.</p>\n                                    <ul>\n                                        <li><span></span> QA dashboard</li>\n                                        <li><span></span> Analytics</li>\n                                        <li><span></span> Bug tracking</li>\n                                    </ul>\n                                </div>\n\n                                <!-- Text 6 -->\n                                <div class=\"idea-text-content\">\n                                    <h3>Launch</h3>\n                                    <p>Deploying the product smoothly to production servers with zero-downtime deployment strategies.</p>\n                                    <ul>\n                                        <li><span></span> Live product</li>\n                                        <li><span></span> Business analytics</li>\n                                        <li><span></span> User adoption</li>\n                                    </ul>\n                                </div>\n\n                            </div>"
+        }
+      ],
+      "TargetFile": "c:\\Users\\abhii\\OneDrive\\Desktop\\Dexze-2.1\\Dexze_9_Jun\\services-2.html",
+      "toolAction": "Updating text and bullets in ideas section",
+      "toolSummary": "Update ideas text content"
+    }
+  ],
+  [
+    "multi_replace_file_content",
+    {
+      "Description": "Make the right side images and text content in the ideas section scrollable independently.",
+      "Instruction": "Update the ideas-display-panel to have max-height and overflow-y: auto, and hide its scrollbar using CSS.",
+      "ReplacementChunks": [
+        {
+          "AllowMultiple": false,
+          "EndLine": 780,
+          "ReplacementContent": "                        <!-- Right Side: Visual & Text (65%) -->\n                        <div class=\"ideas-display-panel\" style=\"width: 65%; position: sticky; top: 120px; display: flex; flex-direction: column; gap: 40px; max-height: calc(100vh - 140px); overflow-y: auto;\">",
+          "StartLine": 779,
+          "TargetContent": "                        <!-- Right Side: Visual & Text (65%) -->\n                        <div class=\"ideas-display-panel\" style=\"width: 65%; position: sticky; top: 120px; display: flex; flex-direction: column; gap: 40px;\">"
+        },
+        {
+          "AllowMultiple": false,
+          "EndLine": 880,
+          "ReplacementContent": "                    <style>\n                        /* Interactive Ideas CSS */\n                        .interactive-ideas-container {\n                            min-height: 80vh;\n                        }\n                        .ideas-display-panel {\n                            scrollbar-width: none; /* Firefox */\n                            -ms-overflow-style: none; /* IE/Edge */\n                        }\n                        .ideas-display-panel::-webkit-scrollbar {\n                            display: none; /* Chrome/Safari/Opera */\n                        }",
+          "StartLine": 876,
+          "TargetContent": "                    <style>\n                        /* Interactive Ideas CSS */\n                        .interactive-ideas-container {\n                            min-height: 80vh;\n                        }"
+        }
+      ],
+      "TargetFile": "c:\\Users\\abhii\\OneDrive\\Desktop\\Dexze-2.1\\Dexze_9_Jun\\services-2.html",
+      "toolAction": "Make right side panel scrollable",
+      "toolSummary": "Make right panel scrollable"
+    }
+  ],
+  [
+    "replace_file_content",
+    {
+      "AllowMultiple": false,
+      "Description": "Restore the width of ideas images wrapper back to 100%",
+      "EndLine": 980,
+      "Instruction": "Revert the width of .ideas-images-wrapper back to 100% and remove margin: 0 auto;",
+      "ReplacementContent": "                        /* Right Side Image */\n                        .ideas-images-wrapper {\n                            width: 100%;\n                            aspect-ratio: 16/10;\n                            position: relative;\n                            border-radius: 16px;\n                            overflow: hidden;\n                            box-shadow: 0 16px 40px rgba(0,0,0,0.06);\n                            background: #f4f6f8;\n                            transition: transform 0.4s ease, box-shadow 0.4s ease;\n                            cursor: default;\n                        }",
+      "StartLine": 965,
+      "TargetContent": "                        /* Right Side Image */\n                        .ideas-images-wrapper {\n                            width: 90%;\n                            margin: 0 auto;\n                            aspect-ratio: 16/10;\n                            position: relative;\n                            border-radius: 16px;\n                            overflow: hidden;\n                            box-shadow: 0 16px 40px rgba(0,0,0,0.06);\n                            background: #f4f6f8;\n                            transition: transform 0.4s ease, box-shadow 0.4s ease;\n                            cursor: default;\n                        }",
+      "TargetFile": "c:\\Users\\abhii\\OneDrive\\Desktop\\Dexze-2.1\\Dexze_9_Jun\\services-2.html",
+      "toolAction": "Restoring image size",
+      "toolSummary": "Restore image size"
+    }
+  ],
+  [
+    "replace_file_content",
+    {
+      "AllowMultiple": false,
+      "Description": "Add flex-shrink: 0 to images wrapper to prevent squishing",
+      "EndLine": 969,
+      "Instruction": "Update .ideas-images-wrapper to include flex-shrink: 0",
+      "ReplacementContent": "                        /* Right Side Image */\n                        .ideas-images-wrapper {\n                            width: 100%;\n                            flex-shrink: 0;\n                            aspect-ratio: 16/10;\n                            position: relative;\n                            border-radius: 16px;\n                            overflow: hidden;\n                            box-shadow: 0 16px 40px rgba(0,0,0,0.06);\n                            background: #f4f6f8;\n                            transition: transform 0.4s ease, box-shadow 0.4s ease;\n                            cursor: default;\n                        }",
+      "StartLine": 958,
+      "TargetContent": "                        /* Right Side Image */\n                        .ideas-images-wrapper {\n                            width: 100%;\n                            aspect-ratio: 16/10;\n                            position: relative;\n                            border-radius: 16px;\n                            overflow: hidden;\n                            box-shadow: 0 16px 40px rgba(0,0,0,0.06);\n                            background: #f4f6f8;\n                            transition: transform 0.4s ease, box-shadow 0.4s ease;\n                            cursor: default;\n                        }",
+      "TargetFile": "c:\\Users\\abhii\\OneDrive\\Desktop\\Dexze-2.1\\Dexze_9_Jun\\services-2.html",
+      "toolAction": "Fixing image compression in flexbox",
+      "toolSummary": "Fix image compression"
+    }
+  ],
+  [
+    "replace_file_content",
+    {
+      "AllowMultiple": false,
+      "Description": "Reduce gaps and margins in the right panel to fit content without scrolling",
+      "EndLine": 782,
+      "Instruction": "Update the style of ideas-display-panel to reduce gap to 24px",
+      "ReplacementContent": "                        <!-- Right Side: Visual & Text (65%) -->\n                        <div class=\"ideas-display-panel\" style=\"width: 65%; position: sticky; top: 100px; display: flex; flex-direction: column; gap: 24px; max-height: calc(100vh - 120px); overflow-y: auto;\">\n                            <!-- Images Wrapper -->",
+      "StartLine": 779,
+      "TargetContent": "                        <!-- Right Side: Visual & Text (65%) -->\n                        <div class=\"ideas-display-panel\" style=\"width: 65%; position: sticky; top: 120px; display: flex; flex-direction: column; gap: 40px; max-height: calc(100vh - 140px); overflow-y: auto;\">\n                            <!-- Images Wrapper -->",
+      "TargetFile": "c:\\Users\\abhii\\OneDrive\\Desktop\\Dexze-2.1\\Dexze_9_Jun\\services-2.html",
+      "toolAction": "Reducing gaps in right panel",
+      "toolSummary": "Reduce gap in right panel"
+    }
+  ],
+  [
+    "multi_replace_file_content",
+    {
+      "Description": "Reduce margins and padding in the idea text content to make it more compact and visible without scrolling.",
+      "Instruction": "Reduce margins for h3, p, and gap for ul in .idea-text-content",
+      "ReplacementChunks": [
+        {
+          "AllowMultiple": false,
+          "EndLine": 1003,
+          "ReplacementContent": "                        .idea-text-content h3 {\n                            font-family: var(--td-ff-heading), sans-serif;\n                            font-size: clamp(28px, 3vw, 42px);\n                            font-weight: 700;\n                            color: #111;\n                            line-height: 1.15;\n                            margin-bottom: 12px;\n                            letter-spacing: -1px;\n                            text-transform: uppercase;\n                            opacity: 0;\n                            transform: translateY(20px);\n                            transition: opacity 0.5s ease, transform 0.5s ease;\n                        }",
+          "StartLine": 991,
+          "TargetContent": "                        .idea-text-content h3 {\n                            font-family: var(--td-ff-heading), sans-serif;\n                            font-size: clamp(28px, 3vw, 42px);\n                            font-weight: 700;\n                            color: #111;\n                            line-height: 1.15;\n                            margin-bottom: 16px;\n                            letter-spacing: -1px;\n                            text-transform: uppercase;\n                            opacity: 0;\n                            transform: translateY(20px);\n                            transition: opacity 0.5s ease, transform 0.5s ease;\n                        }"
+        },
+        {
+          "AllowMultiple": false,
+          "EndLine": 1013,
+          "ReplacementContent": "                        .idea-text-content p {\n                            color: #666;\n                            font-size: 16px;\n                            line-height: 1.5;\n                            margin-bottom: 16px;\n                            max-width: 90%;\n                            opacity: 0;\n                            transform: translateY(20px);\n                            transition: opacity 0.5s ease 0.1s, transform 0.5s ease 0.1s;\n                        }",
+          "StartLine": 1004,
+          "TargetContent": "                        .idea-text-content p {\n                            color: #666;\n                            font-size: 18px;\n                            line-height: 1.6;\n                            margin-bottom: 24px;\n                            max-width: 90%;\n                            opacity: 0;\n                            transform: translateY(20px);\n                            transition: opacity 0.5s ease 0.1s, transform 0.5s ease 0.1s;\n                        }"
+        },
+        {
+          "AllowMultiple": false,
+          "EndLine": 1024,
+          "ReplacementContent": "                        .idea-text-content ul {\n                            list-style: none;\n                            padding: 0;\n                            margin: 0;\n                            display: flex;\n                            flex-direction: column;\n                            gap: 10px;\n                            opacity: 0;\n                            transform: translateY(20px);\n                            transition: opacity 0.5s ease 0.2s, transform 0.5s ease 0.2s;\n                        }",
+          "StartLine": 1014,
+          "TargetContent": "                        .idea-text-content ul {\n                            list-style: none;\n                            padding: 0;\n                            margin: 0;\n                            display: flex;\n                            flex-direction: column;\n                            gap: 12px;\n                            opacity: 0;\n                            transform: translateY(20px);\n                            transition: opacity 0.5s ease 0.2s, transform 0.5s ease 0.2s;\n                        }"
+        }
+      ],
+      "TargetFile": "c:\\Users\\abhii\\OneDrive\\Desktop\\Dexze-2.1\\Dexze_9_Jun\\services-2.html",
+      "toolAction": "Making text more compact",
+      "toolSummary": "Compact text layout"
+    }
+  ],
+  [
+    "multi_replace_file_content",
+    {
+      "Description": "Fix white space and image sizes in Ideas section",
+      "Instruction": "Modify CSS for ideas-images-wrapper and ideas-text-wrapper to eliminate grid ghost height and fix image aspect ratio to discovery.png",
+      "ReplacementChunks": [
+        {
+          "AllowMultiple": false,
+          "EndLine": 970,
+          "ReplacementContent": "                        /* Right Side Image */\n                        .ideas-images-wrapper {\n                            width: 100%;\n                            flex-shrink: 0;\n                            position: relative;\n                            border-radius: 16px;\n                            overflow: hidden;\n                            box-shadow: 0 16px 40px rgba(0,0,0,0.06);\n                            background: #f4f6f8;\n                            transition: transform 0.4s ease, box-shadow 0.4s ease;\n                            cursor: default;\n                        }",
+          "StartLine": 958,
+          "TargetContent": "                        /* Right Side Image */\n                        .ideas-images-wrapper {\n                            width: 100%;\n                            flex-shrink: 0;\n                            aspect-ratio: 16/10;\n                            position: relative;\n                            border-radius: 16px;\n                            overflow: hidden;\n                            box-shadow: 0 16px 40px rgba(0,0,0,0.06);\n                            background: #f4f6f8;\n                            transition: transform 0.4s ease, box-shadow 0.4s ease;\n                            cursor: default;\n                        }"
+        },
+        {
+          "AllowMultiple": false,
+          "EndLine": 990,
+          "ReplacementContent": "                        .idea-image {\n                            position: absolute;\n                            top: 0;\n                            left: 0;\n                            width: 100%;\n                            height: 100%;\n                            object-fit: cover;\n                            opacity: 0;\n                            transform: scale(1.03);\n                            transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);\n                            will-change: transform, opacity;\n                        }\n                        .idea-image:first-child {\n                            position: relative !important;\n                            height: auto !important;\n                        }\n                        .idea-image.active {\n                            opacity: 1;\n                            transform: scale(1);\n                        }",
+          "StartLine": 975,
+          "TargetContent": "                        .idea-image {\n                            position: absolute;\n                            top: 0;\n                            left: 0;\n                            width: 100%;\n                            height: 100%;\n                            object-fit: cover;\n                            opacity: 0;\n                            transform: scale(1.03);\n                            transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);\n                            will-change: transform, opacity;\n                        }\n                        .idea-image.active {\n                            opacity: 1;\n                            transform: scale(1);\n                        }"
+        },
+        {
+          "AllowMultiple": false,
+          "EndLine": 1008,
+          "ReplacementContent": "                        /* Right Side Text */\n                        .ideas-text-wrapper {\n                            width: 100%;\n                            position: relative;\n                        }\n                        .idea-text-content {\n                            position: absolute;\n                            top: 0;\n                            left: 0;\n                            width: 100%;\n                            opacity: 0;\n                            pointer-events: none;\n                            visibility: hidden;\n                        }\n                        .idea-text-content.active {\n                            position: relative;\n                            opacity: 1;\n                            pointer-events: auto;\n                            visibility: visible;\n                        }",
+          "StartLine": 992,
+          "TargetContent": "                        /* Right Side Text */\n                        .ideas-text-wrapper {\n                            width: 100%;\n                            display: grid;\n                            grid-template-columns: 1fr;\n                            grid-template-rows: 1fr;\n                        }\n                        .idea-text-content {\n                            grid-column: 1;\n                            grid-row: 1;\n                            opacity: 0;\n                            pointer-events: none;\n                        }\n                        .idea-text-content.active {\n                            opacity: 1;\n                            pointer-events: auto;\n                        }"
+        }
+      ],
+      "TargetFile": "c:\\Users\\abhii\\OneDrive\\Desktop\\Dexze-2.1\\Dexze_9_Jun\\services-2.html",
+      "toolAction": "Fix CSS for Ideas Section",
+      "toolSummary": "Fix CSS for Ideas Section"
+    }
+  ],
+  [
+    "multi_replace_file_content",
+    {
+      "Description": "Apply styling tweaks to prevent image from clipping",
+      "Instruction": "Adjust sticky top, gap, and add max-height to the image wrapper",
+      "ReplacementChunks": [
+        {
+          "AllowMultiple": false,
+          "EndLine": 780,
+          "ReplacementContent": "                        <div class=\"ideas-display-panel\" style=\"width: 65%; position: sticky; top: 80px; display: flex; flex-direction: column; gap: 24px;\">",
+          "StartLine": 780,
+          "TargetContent": "                        <div class=\"ideas-display-panel\" style=\"width: 65%; position: sticky; top: 120px; display: flex; flex-direction: column; gap: 40px;\">"
+        },
+        {
+          "AllowMultiple": false,
+          "EndLine": 958,
+          "ReplacementContent": "                        /* Right Side Image */\n                        .ideas-images-wrapper {\n                            width: 90%;\n                            margin: 0 auto;\n                            max-height: 35vh;\n                            aspect-ratio: 16/10;\n                            position: relative;\n                            border-radius: 16px;",
+          "StartLine": 952,
+          "TargetContent": "                        /* Right Side Image */\n                        .ideas-images-wrapper {\n                            width: 90%;\n                            margin: 0 auto;\n                            aspect-ratio: 16/10;\n                            position: relative;\n                            border-radius: 16px;"
+        }
+      ],
+      "TargetFile": "c:\\Users\\abhii\\OneDrive\\Desktop\\Dexze-2.1\\Dexze_9_Jun\\services-2.html",
+      "toolAction": "Fixing clipping styles in services-2.html",
+      "toolSummary": "Fix image clipping CSS"
+    }
+  ],
+  [
+    "multi_replace_file_content",
+    {
+      "Description": "Add independent vertical scrolling to the left side headings panel in the ideas section with custom scrollbar styling",
+      "Instruction": "Update the style of ideas-list-panel to include max-height and overflow-y: auto, and add webkit scrollbar styles.",
+      "ReplacementChunks": [
+        {
+          "AllowMultiple": false,
+          "EndLine": 715,
+          "ReplacementContent": "                        <!-- Left Side: Editorial List (40%) -->\n                        <div class=\"ideas-list-panel\" style=\"width: 35%; display: flex; flex-direction: column; gap: 0; max-height: 70vh; overflow-y: auto; padding-right: 20px;\">",
+          "StartLine": 714,
+          "TargetContent": "                        <!-- Left Side: Editorial List (40%) -->\n                        <div class=\"ideas-list-panel\" style=\"width: 35%; display: flex; flex-direction: column; gap: 0;\">"
+        },
+        {
+          "AllowMultiple": false,
+          "EndLine": 882,
+          "ReplacementContent": "                        /* Interactive Ideas CSS */\n                        .interactive-ideas-container {\n                            min-height: 80vh;\n                        }\n\n                        /* Left Side List Scrollbar */\n                        .ideas-list-panel::-webkit-scrollbar {\n                            width: 4px;\n                        }\n                        .ideas-list-panel::-webkit-scrollbar-track {\n                            background: transparent;\n                        }\n                        .ideas-list-panel::-webkit-scrollbar-thumb {\n                            background: rgba(0, 0, 0, 0.1);\n                            border-radius: 10px;\n                        }\n                        .ideas-list-panel::-webkit-scrollbar-thumb:hover {\n                            background: rgba(0, 0, 0, 0.2);\n                        }\n\n                        /* Left Side List */",
+          "StartLine": 877,
+          "TargetContent": "                        /* Interactive Ideas CSS */\n                        .interactive-ideas-container {\n                            min-height: 80vh;\n                        }\n\n                        /* Left Side List */"
+        }
+      ],
+      "TargetFile": "c:\\Users\\abhii\\OneDrive\\Desktop\\Dexze-2.1\\Dexze_9_Jun\\services-2.html",
+      "toolAction": "Updating left side panel with independent scroll",
+      "toolSummary": "Add independent scroll"
+    }
+  ],
+  [
+    "multi_replace_file_content",
+    {
+      "Description": "Remove images from ideas section and adjust typography",
+      "Instruction": "Remove the ideas-images-wrapper, update the JS to remove image toggling logic, and update the CSS to remove image styles and adjust text sizes.",
+      "ReplacementChunks": [
+        {
+          "AllowMultiple": false,
+          "EndLine": 790,
+          "ReplacementContent": "                        <!-- Right Side: Text (65%) -->\n                        <div class=\"ideas-display-panel\" style=\"width: 65%; position: sticky; top: 120px; display: flex; flex-direction: column; gap: 40px;\">\n",
+          "StartLine": 779,
+          "TargetContent": "                        <!-- Right Side: Visual & Text (65%) -->\n                        <div class=\"ideas-display-panel\" style=\"width: 65%; position: sticky; top: 120px; display: flex; flex-direction: column; gap: 40px;\">\n                            <!-- Images Wrapper -->\n                            <div class=\"ideas-images-wrapper\">\n                                <img class=\"idea-image active\" src=\"assets/img/services-2/discovery.png\" alt=\"Discovery\">\n                                <img class=\"idea-image\" src=\"assets/img/services-2/wireframes.png\" alt=\"Wireframes\">\n                                <img class=\"idea-image\" src=\"assets/img/services-2/ui-design.png\" alt=\"UI Design\">\n                                <img class=\"idea-image\" src=\"assets/img/services-2/development.png\" alt=\"Development\">\n                                <img class=\"idea-image\" src=\"assets/img/services-2/testing.png\" alt=\"Testing\">\n                                <img class=\"idea-image\" src=\"assets/img/services-2/launch.png\" alt=\"Launch\">\n                            </div>\n"
+        },
+        {
+          "AllowMultiple": false,
+          "EndLine": 972,
+          "ReplacementContent": "                        /* Right Side Text */\n                        .ideas-text-wrapper {\n                            width: 100%;\n                            display: grid;\n                            grid-template-columns: 1fr;\n                            grid-template-rows: 1fr;\n                        }",
+          "StartLine": 939,
+          "TargetContent": "                        /* Right Side Image */\n                        .ideas-images-wrapper {\n                            width: 90%;\n                            margin: 0 auto;\n                            aspect-ratio: 16/10;\n                            position: relative;\n                            border-radius: 16px;\n                            overflow: hidden;\n                            box-shadow: 0 16px 40px rgba(0,0,0,0.06);\n                            background: #f4f6f8;\n                            transition: transform 0.4s ease, box-shadow 0.4s ease;\n                            cursor: default;\n                        }\n                        .ideas-images-wrapper:hover {\n                            transform: translateY(-4px);\n                            box-shadow: 0 24px 60px rgba(0,0,0,0.12);\n                        }\n                        .idea-image {\n                            position: absolute;\n                            top: 0;\n                            left: 0;\n                            width: 100%;\n                            height: 100%;\n                            object-fit: cover;\n                            opacity: 0;\n                            transform: scale(1.03);\n                            transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);\n                            will-change: transform, opacity;\n                        }\n                        .idea-image.active {\n                            opacity: 1;\n                            transform: scale(1);\n                        }\n\n                        /* Right Side Text */\n                        .ideas-text-wrapper {\n                            width: 100%;\n                            display: grid;\n                            grid-template-columns: 1fr;\n                            grid-template-rows: 1fr;\n                        }"
+        },
+        {
+          "AllowMultiple": false,
+          "EndLine": 1034,
+          "ReplacementContent": "                        .idea-text-content h3 {\n                            font-family: var(--td-ff-heading), sans-serif;\n                            font-size: clamp(36px, 4vw, 56px);\n                            font-weight: 800;\n                            color: #111;\n                            line-height: 1.15;\n                            margin-bottom: 24px;\n                            letter-spacing: -1px;\n                            text-transform: uppercase;\n                            opacity: 0;\n                            transform: translateY(20px);\n                            transition: opacity 0.5s ease, transform 0.5s ease;\n                        }\n                        .idea-text-content p {\n                            color: #666;\n                            font-size: 20px;\n                            line-height: 1.6;\n                            margin-bottom: 32px;\n                            max-width: 100%;\n                            opacity: 0;\n                            transform: translateY(20px);\n                            transition: opacity 0.5s ease 0.1s, transform 0.5s ease 0.1s;\n                        }\n                        .idea-text-content ul {\n                            list-style: none;\n                            padding: 0;\n                            margin: 0;\n                            display: flex;\n                            flex-direction: column;\n                            gap: 16px;\n                            opacity: 0;\n                            transform: translateY(20px);\n                            transition: opacity 0.5s ease 0.2s, transform 0.5s ease 0.2s;\n                        }\n                        .idea-text-content ul li {\n                            display: flex;\n                            align-items: flex-start;\n                            gap: 16px;\n                            font-size: 18px;\n                            font-weight: 500;\n                            color: #333;\n                        }\n                        .idea-text-content ul li i {\n                            font-size: 16px;\n                            color: var(--td-color-theme, #6a35ff);\n                            margin-top: 4px;\n                        }",
+          "StartLine": 991,
+          "TargetContent": "                        .idea-text-content h3 {\n                            font-family: var(--td-ff-heading), sans-serif;\n                            font-size: clamp(28px, 3vw, 42px);\n                            font-weight: 700;\n                            color: #111;\n                            line-height: 1.15;\n                            margin-bottom: 16px;\n                            letter-spacing: -1px;\n                            text-transform: uppercase;\n                            opacity: 0;\n                            transform: translateY(20px);\n                            transition: opacity 0.5s ease, transform 0.5s ease;\n                        }\n                        .idea-text-content p {\n                            color: #666;\n                            font-size: 18px;\n                            line-height: 1.6;\n                            margin-bottom: 24px;\n                            max-width: 90%;\n                            opacity: 0;\n                            transform: translateY(20px);\n                            transition: opacity 0.5s ease 0.1s, transform 0.5s ease 0.1s;\n                        }\n                        .idea-text-content ul {\n                            list-style: none;\n                            padding: 0;\n                            margin: 0;\n                            display: flex;\n                            flex-direction: column;\n                            gap: 12px;\n                            opacity: 0;\n                            transform: translateY(20px);\n                            transition: opacity 0.5s ease 0.2s, transform 0.5s ease 0.2s;\n                        }\n                        .idea-text-content ul li {\n                            display: flex;\n                            align-items: flex-start;\n                            gap: 12px;\n                            font-size: 16px;\n                            font-weight: 500;\n                            color: #333;\n                        }\n                        .idea-text-content ul li i {\n                            font-size: 14px;\n                            color: var(--td-color-theme, #6a35ff);\n                            margin-top: 4px;\n                        }"
+        },
+        {
+          "AllowMultiple": false,
+          "EndLine": 1138,
+          "ReplacementContent": "                    <script>\n                        document.addEventListener('DOMContentLoaded', () => {\n                            const listItems = document.querySelectorAll('.idea-list-item');\n                            const texts = document.querySelectorAll('.idea-text-content');\n                            \n                            function setActiveStage(index) {\n                                listItems.forEach(item => item.classList.remove('active'));\n                                texts.forEach(txt => txt.classList.remove('active'));\n                                \n                                listItems[index].classList.add('active');\n                                texts[index].classList.add('active');\n                            }\n                            \n                            listItems.forEach((item, index) => {\n                                // Desktop Hover\n                                item.addEventListener('mouseenter', () => {\n                                    if (window.innerWidth > 991) {\n                                        setActiveStage(index);\n                                    }\n                                });\n                                // Mobile Tap\n                                item.addEventListener('click', () => {\n                                    if (window.innerWidth <= 991) {\n                                        setActiveStage(index);\n                                    }\n                                });\n                            });\n                        });\n                    </script>",
+          "StartLine": 1080,
+          "TargetContent": "                    <script>\n                        document.addEventListener('DOMContentLoaded', () => {\n                            const listItems = document.querySelectorAll('.idea-list-item');\n                            const images = document.querySelectorAll('.idea-image');\n                            const texts = document.querySelectorAll('.idea-text-content');\n                            const imgWrapper = document.querySelector('.ideas-images-wrapper');\n                            \n                            function setActiveStage(index) {\n                                listItems.forEach(item => item.classList.remove('active'));\n                                images.forEach(img => img.classList.remove('active'));\n                                texts.forEach(txt => txt.classList.remove('active'));\n                                \n                                listItems[index].classList.add('active');\n                                images[index].classList.add('active');\n                                texts[index].classList.add('active');\n                            }\n                            \n                            listItems.forEach((item, index) => {\n                                // Desktop Hover\n                                item.addEventListener('mouseenter', () => {\n                                    if (window.innerWidth > 991) {\n                                        setActiveStage(index);\n                                    }\n                                });\n                                // Mobile Tap\n                                item.addEventListener('click', () => {\n                                    if (window.innerWidth <= 991) {\n                                        setActiveStage(index);\n                                    }\n                                });\n                            });\n\n                            // Gentle Parallax\n                            if (imgWrapper) {\n                                imgWrapper.addEventListener('mousemove', (e) => {\n                                    const rect = imgWrapper.getBoundingClientRect();\n                                    const x = e.clientX - rect.left - rect.width / 2;\n                                    const y = e.clientY - rect.top - rect.height / 2;\n                                    \n                                    const moveX = (x / rect.width) * 10;\n                                    const moveY = (y / rect.height) * 10;\n                                    \n                                    const activeImg = imgWrapper.querySelector('.idea-image.active');\n                                    if (activeImg) {\n                                        activeImg.style.transition = 'none';\n                                        activeImg.style.transform = `scale(1.02) translate(${moveX}px, ${moveY}px)`;\n                                    }\n                                });\n                                \n                                imgWrapper.addEventListener('mouseleave', () => {\n                                    const activeImg = imgWrapper.querySelector('.idea-image.active');\n                                    if (activeImg) {\n                                        activeImg.style.transition = 'opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)';\n                                        activeImg.style.transform = 'scale(1) translate(0, 0)';\n                                    }\n                                });\n                            }\n                        });\n                    </script>"
+        }
+      ],
+      "TargetFile": "c:\\Users\\abhii\\OneDrive\\Desktop\\Dexze-2.1\\Dexze_9_Jun\\services-2.html",
+      "toolAction": "Removing images and adjusting typography",
+      "toolSummary": "Remove images and update styles"
+    }
+  ],
+  [
+    "multi_replace_file_content",
+    {
+      "Description": "Update color of active numbers and tick marks to black",
+      "Instruction": "Change the color value for active numbers and checkmarks to black.",
+      "ReplacementChunks": [
+        {
+          "AllowMultiple": false,
+          "EndLine": 920,
+          "ReplacementContent": "                        .idea-list-item.active .idea-number {\n                            color: #000;\n                        }",
+          "StartLine": 918,
+          "TargetContent": "                        .idea-list-item.active .idea-number {\n                            color: var(--td-color-theme, #6a35ff);\n                        }"
+        },
+        {
+          "AllowMultiple": false,
+          "EndLine": 1029,
+          "ReplacementContent": "                        .idea-text-content ul li i {\n                            font-size: 14px;\n                            color: #000;\n                            margin-top: 4px;\n                        }",
+          "StartLine": 1025,
+          "TargetContent": "                        .idea-text-content ul li i {\n                            font-size: 14px;\n                            color: var(--td-color-theme, #6a35ff);\n                            margin-top: 4px;\n                        }"
+        }
+      ],
+      "TargetFile": "c:\\Users\\abhii\\OneDrive\\Desktop\\Dexze-2.1\\Dexze_9_Jun\\services-2.html",
+      "toolAction": "Updating colors to black",
+      "toolSummary": "Update colors to black"
+    }
+  ],
+  [
+    "replace_file_content",
+    {
+      "AllowMultiple": false,
+      "Description": "Change the active line indicator color to black",
+      "EndLine": 906,
+      "Instruction": "Change the background color of .idea-list-active-line to #000",
+      "ReplacementContent": "                        .idea-list-active-line {\n                            position: absolute;\n                            left: -24px;\n                            top: 50%;\n                            transform: translateY(-50%);\n                            width: 0;\n                            height: 2px;\n                            background: #000;\n                            transition: width 0.4s ease;\n                        }",
+      "StartLine": 897,
+      "TargetContent": "                        .idea-list-active-line {\n                            position: absolute;\n                            left: -24px;\n                            top: 50%;\n                            transform: translateY(-50%);\n                            width: 0;\n                            height: 2px;\n                            background: var(--td-color-theme, #6a35ff);\n                            transition: width 0.4s ease;\n                        }",
+      "TargetFile": "c:\\Users\\abhii\\OneDrive\\Desktop\\Dexze-2.1\\Dexze_9_Jun\\services-2.html",
+      "toolAction": "Changing active line color",
+      "toolSummary": "Change active line color"
+    }
+  ],
+  [
+    "multi_replace_file_content",
+    {
+      "Description": "Add a modern line separation between left and right panels, and adjust their widths.",
+      "Instruction": "Update the container gap, adjust the left panel width to 40% with a border-right and padding, and decrease the right panel width to 55%.",
+      "ReplacementChunks": [
+        {
+          "AllowMultiple": false,
+          "EndLine": 715,
+          "ReplacementContent": "                    <!-- Interactive Ideas Section -->\n                    <div class=\"interactive-ideas-container\" style=\"max-width: 1400px; width: 100%; margin: 80px auto; padding: 0 32px; display: flex; gap: 40px; align-items: flex-start; position: relative;\">\n                        \n                        <!-- Left Side: Editorial List (40%) -->\n                        <div class=\"ideas-list-panel\" style=\"width: 40%; display: flex; flex-direction: column; gap: 0; border-right: 1px solid rgba(0,0,0,0.1); padding-right: 60px;\">",
+          "StartLine": 711,
+          "TargetContent": "                    <!-- Interactive Ideas Section -->\n                    <div class=\"interactive-ideas-container\" style=\"max-width: 1400px; width: 100%; margin: 80px auto; padding: 0 32px; display: flex; gap: 80px; align-items: flex-start; position: relative;\">\n                        \n                        <!-- Left Side: Editorial List (40%) -->\n                        <div class=\"ideas-list-panel\" style=\"width: 35%; display: flex; flex-direction: column; gap: 0;\">"
+        },
+        {
+          "AllowMultiple": false,
+          "EndLine": 780,
+          "ReplacementContent": "                        <!-- Right Side: Visual & Text (55%) -->\n                        <div class=\"ideas-display-panel\" style=\"width: 55%; position: sticky; top: 120px; display: flex; flex-direction: column; gap: 40px;\">",
+          "StartLine": 779,
+          "TargetContent": "                        <!-- Right Side: Visual & Text (65%) -->\n                        <div class=\"ideas-display-panel\" style=\"width: 65%; position: sticky; top: 120px; display: flex; flex-direction: column; gap: 40px;\">"
+        }
+      ],
+      "TargetFile": "c:\\Users\\abhii\\OneDrive\\Desktop\\Dexze-2.1\\Dexze_9_Jun\\services-2.html",
+      "toolAction": "Updating layout for modern line separation",
+      "toolSummary": "Add modern line separation"
+    }
+  ],
+  [
+    "multi_replace_file_content",
+    {
+      "Description": "Add watermark HTML and modify right panel gap",
+      "Instruction": "Add the watermark div and adjust the display panel gap to 0 so the glassmorphism overlap works properly.",
+      "ReplacementChunks": [
+        {
+          "AllowMultiple": false,
+          "EndLine": 782,
+          "ReplacementContent": "                        <!-- Right Side: Visual & Text (55%) -->\n                        <div class=\"ideas-display-panel\" style=\"width: 55%; position: sticky; top: 120px; display: flex; flex-direction: column; gap: 0; z-index: 1;\">\n                            <!-- Giant Watermark -->\n                            <div class=\"idea-watermark\" id=\"idea-watermark\">01</div>\n                            \n                            <!-- Images Wrapper -->",
+          "StartLine": 779,
+          "TargetContent": "                        <!-- Right Side: Visual & Text (55%) -->\n                        <div class=\"ideas-display-panel\" style=\"width: 55%; position: sticky; top: 120px; display: flex; flex-direction: column; gap: 40px;\">\n                            <!-- Images Wrapper -->"
+        }
+      ],
+      "TargetFile": "c:\\Users\\abhii\\OneDrive\\Desktop\\Dexze-2.1\\Dexze_9_Jun\\services-2.html",
+      "toolAction": "Adding watermark to HTML",
+      "toolSummary": "Add watermark HTML"
+    }
+  ],
+  [
+    "multi_replace_file_content",
+    {
+      "Description": "Update JavaScript to support watermark and scroll reveal",
+      "Instruction": "Add the watermark updating logic inside setActiveStage, and add the IntersectionObserver logic at the end of the script for the scroll reveal effect.",
+      "ReplacementChunks": [
+        {
+          "AllowMultiple": false,
+          "EndLine": 1100,
+          "ReplacementContent": "                            const imgWrapper = document.querySelector('.ideas-images-wrapper');\n                            const watermark = document.getElementById('idea-watermark');\n                            \n                            function setActiveStage(index) {\n                                listItems.forEach(item => item.classList.remove('active'));\n                                images.forEach(img => img.classList.remove('active'));\n                                texts.forEach(txt => txt.classList.remove('active'));\n                                \n                                listItems[index].classList.add('active');\n                                images[index].classList.add('active');\n                                texts[index].classList.add('active');\n                                \n                                if (watermark) {\n                                    watermark.style.opacity = 0;\n                                    setTimeout(() => {\n                                        watermark.innerText = '0' + (index + 1);\n                                        watermark.style.opacity = 1;\n                                    }, 200);\n                                }\n                            }",
+          "StartLine": 1088,
+          "TargetContent": "                            const imgWrapper = document.querySelector('.ideas-images-wrapper');\n                            \n                            function setActiveStage(index) {\n                                listItems.forEach(item => item.classList.remove('active'));\n                                images.forEach(img => img.classList.remove('active'));\n                                texts.forEach(txt => txt.classList.remove('active'));\n                                \n                                listItems[index].classList.add('active');\n                                images[index].classList.add('active');\n                                texts[index].classList.add('active');\n                            }"
+        },
+        {
+          "AllowMultiple": false,
+          "EndLine": 1140,
+          "ReplacementContent": "                                imgWrapper.addEventListener('mouseleave', () => {\n                                    const activeImg = imgWrapper.querySelector('.idea-image.active');\n                                    if (activeImg) {\n                                        activeImg.style.transition = 'opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)';\n                                        activeImg.style.transform = 'scale(1) translate(0, 0)';\n                                    }\n                                });\n                            }\n\n                            // Scroll Reveal\n                            const container = document.querySelector('.interactive-ideas-container');\n                            if (container) {\n                                container.classList.add('not-in-view');\n                                const observer = new IntersectionObserver((entries) => {\n                                    entries.forEach(entry => {\n                                        if (entry.isIntersecting) {\n                                            container.classList.remove('not-in-view');\n                                            observer.unobserve(entry.target);\n                                        }\n                                    });\n                                }, { threshold: 0.15 });\n                                observer.observe(container);\n                            }\n                        });\n                    </script>",
+          "StartLine": 1132,
+          "TargetContent": "                                imgWrapper.addEventListener('mouseleave', () => {\n                                    const activeImg = imgWrapper.querySelector('.idea-image.active');\n                                    if (activeImg) {\n                                        activeImg.style.transition = 'opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)';\n                                        activeImg.style.transform = 'scale(1) translate(0, 0)';\n                                    }\n                                });\n                            }\n                        });\n                    </script>"
+        }
+      ],
+      "TargetFile": "c:\\Users\\abhii\\OneDrive\\Desktop\\Dexze-2.1\\Dexze_9_Jun\\services-2.html",
+      "toolAction": "Updating JS for watermark and scroll reveal",
+      "toolSummary": "Update JS functionality"
+    }
+  ],
+  [
+    "multi_replace_file_content",
+    {
+      "Description": "Add premium CSS styles for watermark, glassmorphism, micro-interactions, and scroll animations",
+      "Instruction": "Insert new CSS rules right before the Responsive media query.",
+      "ReplacementChunks": [
+        {
+          "AllowMultiple": false,
+          "EndLine": 1061,
+          "ReplacementContent": "                        /* Agency Premium Effects */\n                        .idea-watermark {\n                            position: absolute;\n                            top: -40px;\n                            right: -20px;\n                            font-size: 240px;\n                            font-family: var(--td-ff-heading), sans-serif;\n                            font-weight: 900;\n                            color: rgba(0,0,0,0.03);\n                            z-index: -1;\n                            line-height: 1;\n                            transition: opacity 0.4s ease;\n                            pointer-events: none;\n                        }\n                        \n                        .ideas-text-wrapper {\n                            margin-top: -60px;\n                            margin-left: -40px;\n                            background: rgba(255, 255, 255, 0.7);\n                            backdrop-filter: blur(20px);\n                            -webkit-backdrop-filter: blur(20px);\n                            border: 1px solid rgba(255, 255, 255, 0.8);\n                            border-radius: 20px;\n                            padding: 40px;\n                            box-shadow: 0 20px 50px rgba(0,0,0,0.06);\n                            position: relative;\n                            z-index: 10;\n                            width: calc(100% + 20px);\n                        }\n                        \n                        .idea-list-item:hover {\n                            transform: translateX(8px);\n                        }\n                        \n                        /* Scroll Reveal Entrance */\n                        .interactive-ideas-container.not-in-view .ideas-list-panel,\n                        .interactive-ideas-container.not-in-view .ideas-display-panel {\n                            opacity: 0;\n                            transform: translateY(40px);\n                        }\n                        \n                        .ideas-list-panel, .ideas-display-panel {\n                            transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);\n                        }\n                        .ideas-display-panel {\n                            transition-delay: 0.2s;\n                        }\n\n                        /* Responsive */",
+          "StartLine": 1060,
+          "TargetContent": "\n                        /* Responsive */"
+        }
+      ],
+      "TargetFile": "c:\\Users\\abhii\\OneDrive\\Desktop\\Dexze-2.1\\Dexze_9_Jun\\services-2.html",
+      "toolAction": "Adding premium CSS effects",
+      "toolSummary": "Add CSS effects"
+    }
+  ],
+  [
+    "replace_file_content",
+    {
+      "AllowMultiple": false,
+      "Description": "Change the text wrapper from glassmorphism to a clean solid white card to fix the visual seam over the image.",
+      "EndLine": 1088,
+      "Instruction": "Replace the glassmorphism CSS with solid white background and updated box-shadow.",
+      "ReplacementContent": "                        .ideas-text-wrapper {\n                            margin-top: -60px;\n                            margin-left: -40px;\n                            background: #ffffff;\n                            border-radius: 20px;\n                            padding: 40px;\n                            box-shadow: 0 20px 60px rgba(0,0,0,0.08);\n                            position: relative;\n                            z-index: 10;\n                            width: calc(100% + 40px);\n                        }",
+      "StartLine": 1075,
+      "TargetContent": "                        .ideas-text-wrapper {\n                            margin-top: -60px;\n                            margin-left: -40px;\n                            background: rgba(255, 255, 255, 0.7);\n                            backdrop-filter: blur(20px);\n                            -webkit-backdrop-filter: blur(20px);\n                            border: 1px solid rgba(255, 255, 255, 0.8);\n                            border-radius: 20px;\n                            padding: 40px;\n                            box-shadow: 0 20px 50px rgba(0,0,0,0.06);\n                            position: relative;\n                            z-index: 10;\n                            width: calc(100% + 20px);\n                        }",
+      "TargetFile": "c:\\Users\\abhii\\OneDrive\\Desktop\\Dexze-2.1\\Dexze_9_Jun\\services-2.html",
+      "toolAction": "Fixing text wrapper styling",
+      "toolSummary": "Fix text wrapper CSS"
+    }
+  ],
+  [
+    "replace_file_content",
+    {
+      "AllowMultiple": false,
+      "Description": "Remove the glassmorphism overlap to fix the layout issue",
+      "EndLine": 1088,
+      "Instruction": "Update the CSS for .ideas-text-wrapper to remove the negative margins and simplify the card.",
+      "ReplacementContent": "                        .ideas-text-wrapper {\n                            margin-top: 24px;\n                            background: #fff;\n                            border: 1px solid rgba(0, 0, 0, 0.05);\n                            border-radius: 20px;\n                            padding: 32px;\n                            box-shadow: 0 10px 40px rgba(0,0,0,0.03);\n                            position: relative;\n                            z-index: 10;\n                            width: 100%;\n                        }",
+      "StartLine": 1075,
+      "TargetContent": "                        .ideas-text-wrapper {\n                            margin-top: -60px;\n                            margin-left: -40px;\n                            background: rgba(255, 255, 255, 0.7);\n                            backdrop-filter: blur(20px);\n                            -webkit-backdrop-filter: blur(20px);\n                            border: 1px solid rgba(255, 255, 255, 0.8);\n                            border-radius: 20px;\n                            padding: 40px;\n                            box-shadow: 0 20px 50px rgba(0,0,0,0.06);\n                            position: relative;\n                            z-index: 10;\n                            width: calc(100% + 20px);\n                        }",
+      "TargetFile": "c:\\Users\\abhii\\OneDrive\\Desktop\\Dexze-2.1\\Dexze_9_Jun\\services-2.html",
+      "toolAction": "Removing text card overlap",
+      "toolSummary": "Fix text overlap"
+    }
+  ],
+  [
+    "multi_replace_file_content",
+    {
+      "Description": "Highlight separation lines and add black background hover state for list items",
+      "Instruction": "Increase opacity of the right and bottom borders to highlight the lines. Add horizontal padding to the list items and implement the black background on hover along with white text colors.",
+      "ReplacementChunks": [
+        {
+          "AllowMultiple": false,
+          "EndLine": 715,
+          "ReplacementContent": "                        <!-- Left Side: Editorial List (40%) -->\n                        <div class=\"ideas-list-panel\" style=\"width: 40%; display: flex; flex-direction: column; gap: 0; border-right: 1px solid rgba(0,0,0,0.3); padding-right: 60px;\">",
+          "StartLine": 714,
+          "TargetContent": "                        <!-- Left Side: Editorial List (40%) -->\n                        <div class=\"ideas-list-panel\" style=\"width: 40%; display: flex; flex-direction: column; gap: 0; border-right: 1px solid rgba(0,0,0,0.1); padding-right: 60px;\">"
+        },
+        {
+          "AllowMultiple": false,
+          "EndLine": 888,
+          "ReplacementContent": "                        /* Left Side List */\n                        .idea-list-item {\n                            padding: 32px 24px;\n                            border-bottom: 1px solid rgba(0,0,0,0.3);",
+          "StartLine": 885,
+          "TargetContent": "                        /* Left Side List */\n                        .idea-list-item {\n                            padding: 32px 0;\n                            border-bottom: 1px solid rgba(0,0,0,0.1);"
+        },
+        {
+          "AllowMultiple": false,
+          "EndLine": 1089,
+          "ReplacementContent": "                        .idea-list-item:hover {\n                            transform: translateX(8px);\n                            background-color: #000;\n                            border-radius: 12px;\n                            border-bottom-color: transparent;\n                        }\n                        \n                        .idea-list-item:hover .idea-heading,\n                        .idea-list-item:hover .idea-number {\n                            color: #fff;\n                        }\n                        \n                        .idea-list-item:hover .idea-subheading {\n                            color: #bbb;\n                        }",
+          "StartLine": 1087,
+          "TargetContent": "                        .idea-list-item:hover {\n                            transform: translateX(8px);\n                        }"
+        }
+      ],
+      "TargetFile": "c:\\Users\\abhii\\OneDrive\\Desktop\\Dexze-2.1\\Dexze_9_Jun\\services-2.html",
+      "toolAction": "Updating CSS and inline styles",
+      "toolSummary": "Update separation lines and hover"
+    }
+  ],
+  [
+    "multi_replace_file_content",
+    {
+      "Description": "Add auto motion to the Ideas section with hover pausing",
+      "Instruction": "Add an interval to automatically cycle through the ideas every 4 seconds, and pause it when the user hovers over the container.",
+      "ReplacementChunks": [
+        {
+          "AllowMultiple": false,
+          "EndLine": 1148,
+          "ReplacementContent": "                            const watermark = document.getElementById('idea-watermark');\n                            \n                            let currentIdeaIndex = 0;\n                            let autoMotionInterval;\n                            \n                            function setActiveStage(index) {\n                                currentIdeaIndex = index;",
+          "StartLine": 1145,
+          "TargetContent": "                            const watermark = document.getElementById('idea-watermark');\n                            \n                            function setActiveStage(index) {"
+        },
+        {
+          "AllowMultiple": false,
+          "EndLine": 1209,
+          "ReplacementContent": "                            // Auto Motion\n                            function startAutoMotion() {\n                                if (autoMotionInterval) clearInterval(autoMotionInterval);\n                                autoMotionInterval = setInterval(() => {\n                                    let nextIndex = (currentIdeaIndex + 1) % listItems.length;\n                                    setActiveStage(nextIndex);\n                                }, 4000);\n                            }\n\n                            function stopAutoMotion() {\n                                if (autoMotionInterval) {\n                                    clearInterval(autoMotionInterval);\n                                    autoMotionInterval = null;\n                                }\n                            }\n\n                            // Scroll Reveal & Auto Motion Init\n                            const container = document.querySelector('.interactive-ideas-container');\n                            if (container) {\n                                container.addEventListener('mouseenter', stopAutoMotion);\n                                container.addEventListener('mouseleave', startAutoMotion);\n                                container.addEventListener('touchstart', stopAutoMotion, {passive: true});\n                                startAutoMotion();\n\n                                container.classList.add('not-in-view');",
+          "StartLine": 1206,
+          "TargetContent": "                            // Scroll Reveal\n                            const container = document.querySelector('.interactive-ideas-container');\n                            if (container) {\n                                container.classList.add('not-in-view');"
+        }
+      ],
+      "TargetFile": "c:\\Users\\abhii\\OneDrive\\Desktop\\Dexze-2.1\\Dexze_9_Jun\\services-2.html",
+      "toolAction": "Updating JS for auto motion",
+      "toolSummary": "Add auto motion logic"
+    }
+  ],
+  [
+    "replace_file_content",
+    {
+      "AllowMultiple": false,
+      "Description": "Reduce auto motion interval to 1.5 seconds",
+      "EndLine": 1210,
+      "Instruction": "Change the setInterval timing from 4000 to 1500.",
+      "ReplacementContent": "                            // Auto Motion\n                            function startAutoMotion() {\n                                if (autoMotionInterval) clearInterval(autoMotionInterval);\n                                autoMotionInterval = setInterval(() => {\n                                    let nextIndex = (currentIdeaIndex + 1) % listItems.length;\n                                    setActiveStage(nextIndex);\n                                }, 1500);\n                            }",
+      "StartLine": 1202,
+      "TargetContent": "                            // Auto Motion\n                            function startAutoMotion() {\n                                if (autoMotionInterval) clearInterval(autoMotionInterval);\n                                autoMotionInterval = setInterval(() => {\n                                    let nextIndex = (currentIdeaIndex + 1) % listItems.length;\n                                    setActiveStage(nextIndex);\n                                }, 4000);\n                            }",
+      "TargetFile": "c:\\Users\\abhii\\OneDrive\\Desktop\\Dexze-2.1\\Dexze_9_Jun\\services-2.html",
+      "toolAction": "Reducing interval time",
+      "toolSummary": "Update interval time"
+    }
+  ],
+  [
+    "replace_file_content",
+    {
+      "AllowMultiple": false,
+      "Description": "Make active item style match hover style for auto-motion",
+      "EndLine": 1101,
+      "Instruction": "Update the hover CSS selectors to also apply to the .active class so the auto-motion has the same visual effect.",
+      "ReplacementContent": "                        .idea-list-item:hover,\n                        .idea-list-item.active {\n                            transform: translateX(8px);\n                            background-color: #000;\n                            border-radius: 12px;\n                            border-bottom-color: transparent;\n                        }\n                        \n                        .idea-list-item:hover .idea-heading,\n                        .idea-list-item:hover .idea-number,\n                        .idea-list-item.active .idea-heading,\n                        .idea-list-item.active .idea-number {\n                            color: #fff;\n                        }\n                        \n                        .idea-list-item:hover .idea-subheading,\n                        .idea-list-item.active .idea-subheading {\n                            color: #bbb;\n                        }",
+      "StartLine": 1087,
+      "TargetContent": "                        .idea-list-item:hover {\n                            transform: translateX(8px);\n                            background-color: #000;\n                            border-radius: 12px;\n                            border-bottom-color: transparent;\n                        }\n                        \n                        .idea-list-item:hover .idea-heading,\n                        .idea-list-item:hover .idea-number {\n                            color: #fff;\n                        }\n                        \n                        .idea-list-item:hover .idea-subheading {\n                            color: #bbb;\n                        }",
+      "TargetFile": "c:\\Users\\abhii\\OneDrive\\Desktop\\Dexze-2.1\\Dexze_9_Jun\\services-2.html",
+      "toolAction": "Applying active styles for auto-motion",
+      "toolSummary": "Update active styles"
+    }
+  ],
+  [
+    "multi_replace_file_content",
+    {
+      "Description": "Add a smooth left-to-right background reveal on hover/active",
+      "Instruction": "Add a ::before pseudo-element that transitions its width to create a left-to-right slide effect for the black background on list items.",
+      "ReplacementChunks": [
+        {
+          "AllowMultiple": false,
+          "EndLine": 896,
+          "ReplacementContent": "                        /* Left Side List */\n                        .idea-list-item {\n                            padding: 32px 24px;\n                            border-bottom: 1px solid rgba(0,0,0,0.3);\n                            cursor: pointer;\n                            display: flex;\n                            align-items: baseline;\n                            gap: 24px;\n                            position: relative;\n                            transition: all 0.4s ease;\n                            z-index: 1;\n                        }\n                        .idea-list-item::before {\n                            content: '';\n                            position: absolute;\n                            top: 0;\n                            left: 0;\n                            width: 0%;\n                            height: 100%;\n                            background-color: #000;\n                            z-index: -1;\n                            border-radius: 12px;\n                            transition: width 0.4s ease;\n                        }\n                        .idea-list-item:last-child {",
+          "StartLine": 885,
+          "TargetContent": "                        /* Left Side List */\n                        .idea-list-item {\n                            padding: 32px 24px;\n                            border-bottom: 1px solid rgba(0,0,0,0.3);\n                            cursor: pointer;\n                            display: flex;\n                            align-items: baseline;\n                            gap: 24px;\n                            position: relative;\n                            transition: all 0.4s ease;\n                        }\n                        .idea-list-item:last-child {"
+        },
+        {
+          "AllowMultiple": false,
+          "EndLine": 1093,
+          "ReplacementContent": "                        .idea-list-item:hover,\n                        .idea-list-item.active {\n                            transform: translateX(8px);\n                            border-bottom-color: transparent;\n                        }\n                        \n                        .idea-list-item:hover::before,\n                        .idea-list-item.active::before {\n                            width: 100%;\n                        }",
+          "StartLine": 1087,
+          "TargetContent": "                        .idea-list-item:hover,\n                        .idea-list-item.active {\n                            transform: translateX(8px);\n                            background-color: #000;\n                            border-radius: 12px;\n                            border-bottom-color: transparent;\n                        }"
+        }
+      ],
+      "TargetFile": "c:\\Users\\abhii\\OneDrive\\Desktop\\Dexze-2.1\\Dexze_9_Jun\\services-2.html",
+      "toolAction": "Updating CSS for hover animation",
+      "toolSummary": "Update CSS for left-to-right bg"
+    }
+  ],
+  [
+    "multi_replace_file_content",
+    {
+      "Description": "Fix auto-motion hover pausing logic",
+      "Instruction": "Move the pause/resume logic from the entire container to just the individual list items, allowing the user to move their mouse freely over the image without stopping the animation.",
+      "ReplacementChunks": [
+        {
+          "AllowMultiple": false,
+          "EndLine": 1202,
+          "ReplacementContent": "                            listItems.forEach((item, index) => {\n                                // Desktop Hover\n                                item.addEventListener('mouseenter', () => {\n                                    stopAutoMotion();\n                                    if (window.innerWidth > 991) {\n                                        setActiveStage(index);\n                                    }\n                                });\n                                item.addEventListener('mouseleave', () => {\n                                    startAutoMotion();\n                                });\n                                // Mobile Tap\n                                item.addEventListener('click', () => {\n                                    if (window.innerWidth <= 991) {\n                                        setActiveStage(index);\n                                    }\n                                });\n                            });",
+          "StartLine": 1189,
+          "TargetContent": "                            listItems.forEach((item, index) => {\n                                // Desktop Hover\n                                item.addEventListener('mouseenter', () => {\n                                    if (window.innerWidth > 991) {\n                                        setActiveStage(index);\n                                    }\n                                });\n                                // Mobile Tap\n                                item.addEventListener('click', () => {\n                                    if (window.innerWidth <= 991) {\n                                        setActiveStage(index);\n                                    }\n                                });\n                            });"
+        },
+        {
+          "AllowMultiple": false,
+          "EndLine": 1253,
+          "ReplacementContent": "                            // Scroll Reveal & Auto Motion Init\n                            const container = document.querySelector('.interactive-ideas-container');\n                            if (container) {\n                                startAutoMotion();\n\n                                container.classList.add('not-in-view');",
+          "StartLine": 1246,
+          "TargetContent": "                            // Scroll Reveal & Auto Motion Init\n                            const container = document.querySelector('.interactive-ideas-container');\n                            if (container) {\n                                container.addEventListener('mouseenter', stopAutoMotion);\n                                container.addEventListener('mouseleave', startAutoMotion);\n                                container.addEventListener('touchstart', stopAutoMotion, {passive: true});\n                                startAutoMotion();\n\n                                container.classList.add('not-in-view');"
+        }
+      ],
+      "TargetFile": "c:\\Users\\abhii\\OneDrive\\Desktop\\Dexze-2.1\\Dexze_9_Jun\\services-2.html",
+      "toolAction": "Updating JS for hover pausing",
+      "toolSummary": "Update auto motion pausing"
+    }
+  ],
+  [
+    "replace_file_content",
+    {
+      "AllowMultiple": false,
+      "Description": "Change heading to be shorter and professional",
+      "EndLine": 1212,
+      "Instruction": "Replace 'Scalable solutions engineered<br>for the future' with 'Engineered for scale'",
+      "ReplacementContent": "                        <h2 style=\"font-family: var(--td-ff-heading), sans-serif; font-size: clamp(40px, 6vw, 80px); font-weight: 800; color: #000; line-height: 1.05; margin-bottom: 32px; letter-spacing: -2px;\">\n                            Engineered for scale\n                        </h2>",
+      "StartLine": 1210,
+      "TargetContent": "                        <h2 style=\"font-family: var(--td-ff-heading), sans-serif; font-size: clamp(40px, 6vw, 80px); font-weight: 800; color: #000; line-height: 1.05; margin-bottom: 32px; letter-spacing: -2px;\">\n                            Scalable solutions engineered<br>for the future\n                        </h2>",
+      "TargetFile": "c:\\Users\\abhii\\OneDrive\\Desktop\\Dexze-2.1\\Dexze_9_Jun\\services-2.html",
+      "toolAction": "Updating heading text",
+      "toolSummary": "Update heading text"
+    }
+  ],
+  [
+    "replace_file_content",
+    {
+      "AllowMultiple": false,
+      "Description": "Make the heading shorter and more professional",
+      "EndLine": 1212,
+      "Instruction": "Replace the long heading with 'Engineered for scale.'",
+      "ReplacementContent": "                        <h2 style=\"font-family: var(--td-ff-heading), sans-serif; font-size: clamp(40px, 6vw, 80px); font-weight: 800; color: #000; line-height: 1.05; margin-bottom: 32px; letter-spacing: -2px;\">\n                            Engineered for scale.\n                        </h2>",
+      "StartLine": 1210,
+      "TargetContent": "                        <h2 style=\"font-family: var(--td-ff-heading), sans-serif; font-size: clamp(40px, 6vw, 80px); font-weight: 800; color: #000; line-height: 1.05; margin-bottom: 32px; letter-spacing: -2px;\">\n                            Scalable solutions engineered<br>for the future\n                        </h2>",
+      "TargetFile": "c:\\Users\\abhii\\OneDrive\\Desktop\\Dexze-2.1\\Dexze_9_Jun\\services-2.html",
+      "toolAction": "Changing heading text",
+      "toolSummary": "Update heading text"
+    }
+  ],
+  [
+    "replace_file_content",
+    {
+      "AllowMultiple": true,
+      "Description": "Fix malformed heading tags in Core Expertise section",
+      "EndLine": 600,
+      "Instruction": "Replace all instances of the malformed H3 tag that was caused by a bad find-and-replace.",
+      "ReplacementContent": "                                            <h3 style=\"",
+      "StartLine": 360,
+      "TargetContent": "                                            <h3 class=\"accent-heading\" style=\"<h3 style=\"",
+      "TargetFile": "c:\\Users\\abhii\\OneDrive\\Desktop\\Dexze-2.1\\Dexze_9_Jun\\services-2.html",
+      "toolAction": "Fixing malformed h3 tags",
+      "toolSummary": "Fix malformed h3 tags"
+    }
+  ],
+  [
+    "replace_file_content",
+    {
+      "AllowMultiple": true,
+      "Description": "Make the tech chips display vertically",
+      "EndLine": 600,
+      "Instruction": "Change flex-wrap: wrap to flex-direction: column for tech chips containers",
+      "ReplacementContent": "                                            <div style=\"display: flex; flex-direction: column; gap: 12px; margin-bottom: 32px;\">",
+      "StartLine": 360,
+      "TargetContent": "                                            <div style=\"display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 32px;\">",
+      "TargetFile": "c:\\Users\\abhii\\OneDrive\\Desktop\\Dexze-2.1\\Dexze_9_Jun\\services-2.html",
+      "toolAction": "Changing layout to vertical",
+      "toolSummary": "Change layout to vertical"
+    }
+  ],
+  [
+    "replace_file_content",
+    {
+      "AllowMultiple": true,
+      "Description": "Update Core Expertise card styles",
+      "EndLine": 600,
+      "Instruction": "Change border-radius and box-shadow for all unveil-card-inner divs",
+      "ReplacementContent": "                                    <div class=\"unveil-card-inner\" style=\"will-change: transform; transform: translateZ(0); display: flex; height: 100%; border-radius: 32px; border: 1px solid rgba(255,255,255,0.05); overflow: hidden; box-shadow: 0 12px 32px rgba(0,0,0,0.04); background: linear-gradient(180deg, #1B1B1B 0%, #111111 100%);\">",
+      "StartLine": 350,
+      "TargetContent": "                                    <div class=\"unveil-card-inner\" style=\"will-change: transform; transform: translateZ(0); display: flex; height: 100%; border-radius: 24px; border: 1px solid rgba(255,255,255,0.05); overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.08); background: linear-gradient(180deg, #1B1B1B 0%, #111111 100%);\">",
+      "TargetFile": "c:\\Users\\abhii\\OneDrive\\Desktop\\Dexze-2.1\\Dexze_9_Jun\\services-2.html",
+      "toolAction": "Changing card inner styles",
+      "toolSummary": "Change card inner styles"
+    }
+  ],
+  [
+    "replace_file_content",
+    {
+      "AllowMultiple": false,
+      "Description": "Update background color of Core Expertise section",
+      "EndLine": 325,
+      "Instruction": "Update the section background to a subtle radial gradient",
+      "ReplacementContent": "                <!-- Unveiling Stacked Cards Section -->\n                <section id=\"tech-scroll-section\" style=\"background: radial-gradient(circle at center, #FFFFFF 0%, #F8F8F8 100%); padding: 100px 0 50px 0; position: relative;\">\n                    <div class=\"container\" style=\"text-align: center; margin-bottom: 80px;\">\n                        <div style=\"display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 24px;\">",
+      "StartLine": 319,
+      "TargetContent": "                <!-- Unveiling Stacked Cards Section -->\n                <section id=\"tech-scroll-section\" style=\"background-color: #f7f9fa; padding: 100px 0 50px 0; position: relative;\">\n                    <div class=\"container\" style=\"text-align: center; margin-bottom: 80px;\">\n                        <div style=\"display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 24px;\">",
+      "TargetFile": "c:\\Users\\abhii\\OneDrive\\Desktop\\Dexze-2.1\\Dexze_9_Jun\\services-2.html",
+      "toolAction": "Changing background color",
+      "toolSummary": "Update background"
+    }
+  ],
+  [
+    "replace_file_content",
+    {
+      "AllowMultiple": true,
+      "Description": "Revert the layout back to horizontal",
+      "EndLine": 600,
+      "Instruction": "Change flex-direction: column back to flex-wrap: wrap for tech chips containers",
+      "ReplacementContent": "                                            <div style=\"display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 32px;\">",
+      "StartLine": 360,
+      "TargetContent": "                                            <div style=\"display: flex; flex-direction: column; gap: 12px; margin-bottom: 32px;\">",
+      "TargetFile": "c:\\Users\\abhii\\OneDrive\\Desktop\\Dexze-2.1\\Dexze_9_Jun\\services-2.html",
+      "toolAction": "Reverting layout back to horizontal",
+      "toolSummary": "Revert horizontal layout"
+    }
+  ],
+  [
+    "replace_file_content",
+    {
+      "AllowMultiple": false,
+      "Description": "Change the heading to Engineered for scale.",
+      "EndLine": 1500,
+      "Instruction": "Update the text",
+      "ReplacementContent": "                        <h2 style=\"font-family: var(--td-ff-heading), sans-serif; font-size: clamp(36px, 4vw, 56px); font-weight: 500; color: #1c2b33; line-height: 1.1; margin-bottom: 24px; letter-spacing: -1.5px; max-width: 800px; margin-left: auto; margin-right: auto;\">\n                            Engineered for scale.\n                        </h2>",
+      "StartLine": 1,
+      "TargetContent": "                        <h2 style=\"font-family: var(--td-ff-heading), sans-serif; font-size: clamp(36px, 4vw, 56px); font-weight: 500; color: #1c2b33; line-height: 1.1; margin-bottom: 24px; letter-spacing: -1.5px; max-width: 800px; margin-left: auto; margin-right: auto;\">\n                            Engineered for control,<br>transparency, and efficiency\n                        </h2>",
+      "TargetFile": "c:\\Users\\abhii\\OneDrive\\Desktop\\Dexze-2.1\\Dexze_9_Jun\\services-2.html",
+      "toolAction": "Updating heading to Engineered for scale",
+      "toolSummary": "Update heading"
+    }
+  ],
+  [
+    "replace_file_content",
+    {
+      "AllowMultiple": false,
+      "Description": "Revert the heading back to Engineering the future",
+      "EndLine": 1500,
+      "Instruction": "Revert to previous text",
+      "ReplacementContent": "                        <h2 style=\"font-family: var(--td-ff-heading), sans-serif; font-size: clamp(40px, 6vw, 80px); font-weight: 800; color: #000; line-height: 1.05; margin-bottom: 32px; letter-spacing: -2px;\">\n                            Engineering the future<br>of your business\n                        </h2>",
+      "StartLine": 1,
+      "TargetContent": "                        <h2 style=\"font-family: var(--td-ff-heading), sans-serif; font-size: clamp(36px, 4vw, 56px); font-weight: 500; color: #1c2b33; line-height: 1.1; margin-bottom: 24px; letter-spacing: -1.5px; max-width: 800px; margin-left: auto; margin-right: auto;\">\n                            Engineered for scale.\n                        </h2>",
+      "TargetFile": "c:\\Users\\abhii\\OneDrive\\Desktop\\Dexze-2.1\\Dexze_9_Jun\\services-2.html",
+      "toolAction": "Reverting the heading mistake",
+      "toolSummary": "Revert heading"
+    }
+  ]
+]

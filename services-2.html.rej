@@ -1,0 +1,1310 @@
+--- services-2.html
++++ services-2.html
+@@ -194,367 +194,1007 @@
+     <div id="smooth-wrapper">
+         <div id="smooth-content">
+             <main>
+-                <section class="services-hero-section d-flex align-items-end p-relative"
+-                    style="height: 100vh; min-height: 600px; padding-bottom: 2vw; padding-left: 2vw; overflow: hidden;">
+-
+-                    <!-- Full screen absolute video container (Background) -->
+-                    <div class="video-container"
+-                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #0b0b0c; z-index: 0;">
+-                        <video autoplay muted loop playsinline
+-                            style="width: 100%; height: 100%; object-fit: cover; opacity: 0.4;">
+-                            <source src="assets/video/services-tech.mp4" type="video/mp4">
+-                        </video>
+-                    </div>
+-
+-                    <!-- Small floating video (Bottom Right) -->
+-                    <div class="small-floating-video"
+-                        style="position: absolute; bottom: 4vw; right: 4vw; width: 20vw; min-width: 200px; max-width: 320px; aspect-ratio: 16/9; border-radius: 12px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.8); z-index: 5; border: 1px solid rgba(255,255,255,0.1); pointer-events: none;">
+-                        <video autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover;">
+-                            <source src="assets/video/tech-services.mp4" type="video/mp4">
+-                        </video>
+-                    </div>
+-
+-                    <!-- Big Text overlay with smooth parallax -->
+-                    <div class="content-overlay" style="position: relative; z-index: 10;" data-speed="1.2">
+-                        <h1
+-                            style="font-family: var(--td-ff-heading), sans-serif; font-size: clamp(80px, 16vw, 250px); font-weight: 700; color: #fff; line-height: 0.8; margin: 0; letter-spacing: -0.05em; text-transform: none;">
+-                            Services</h1>
+-                    </div>
+-
+-                </section>
+-
+-                <!-- Stats Grid Section (Light Theme) -->
+-                <section class="stats-grid-section" style="background-color: #f8f8f8; padding: 120px 0;">
++                <!-- New Custom Hero Section based on screenshot -->
++                <section class="survy-hero-section pb-120" style="background-color: #FFFFFF; position: relative; padding-top: 200px;">
+                     <div class="container">
+-                        <div class="row gx-4">
+-                            <!-- Card 1 -->
+-                            <div class="col-lg-4 col-md-6 mb-4 grid-card-reveal">
+-                                <div class="stat-card"
+-                                    style="background: #ffffff; border-radius: 20px; padding: 60px 50px; height: 100%; box-shadow: 0 15px 40px rgba(0,0,0,0.04); transition: transform 0.3s ease; transition-delay: 0.1s;">
+-                                    <span
+-                                        style="color: #888; font-size: 14px; font-weight: 500; letter-spacing: 1px; display: block; margin-bottom: 60px;">/
+-                                        01</span>
+-                                    <h2
+-                                        style="font-family: var(--td-ff-heading), sans-serif; font-size: 56px; font-weight: 700; color: #111; margin-bottom: 20px; letter-spacing: -1px;">
+-                                        <span class="count-up" data-target="10">0</span>+
+-                                    </h2>
+-                                    <p style="color: #555; font-size: 20px; line-height: 1.4; margin: 0;">Projects
+-                                        successfully<br>delivered to clients</p>
++                        <!-- Top Row: Text and Cards -->
++                        <div class="row">
++                            <!-- Left: Text content -->
++                            <div class="col-lg-5 mb-5 mb-lg-0">
++                                <div style="display: flex; align-items: center; margin-bottom: 30px;">
++                                    <span style="display: inline-block; width: 30px; height: 2px; background-color: #ff7b47; margin-right: 15px;"></span>
++                                    <span style="color: #ff7b47; font-size: 13px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;">ENGINEERING INNOVATION</span>
+                                 </div>
+-                            </div>
+-                            <!-- Card 2 -->
+-                            <div class="col-lg-4 col-md-6 mb-4 grid-card-reveal">
+-                                <div class="stat-card"
+-                                    style="background: #ffffff; border-radius: 20px; padding: 60px 50px; height: 100%; box-shadow: 0 15px 40px rgba(0,0,0,0.04); transition: transform 0.3s ease; position: relative; transition-delay: 0.3s;">
+-                                    <span
+-                                        style="color: #888; font-size: 14px; font-weight: 500; letter-spacing: 1px; display: block; margin-bottom: 60px;">/
+-                                        02</span>
+-                                    <h2
+-                                        style="font-family: var(--td-ff-heading), sans-serif; font-size: 56px; font-weight: 700; color: #111; margin-bottom: 20px; letter-spacing: -1px;">
+-                                        <span class="count-up" data-target="100">0</span>%
+-                                    </h2>
+-                                    <p style="color: #555; font-size: 20px; line-height: 1.4; margin: 0;">Client
+-                                        satisfaction<br>and retention rate</p>
++                                <h1 style="font-family: var(--td-ff-heading), sans-serif; font-size: clamp(40px, 4vw, 64px); font-weight: 800; color: #000; line-height: 1.1; margin-bottom: 40px; text-transform: uppercase; letter-spacing: -1px;">
++                                    DEVELOPMENT<br>
++                                    <span style="color: #6a35ff;">THAT BUILDS</span><br>
++                                    THE FUTURE
++                                </h1>
++                                <div style="border-left: 2px solid #000; padding-left: 20px; margin-bottom: 40px;">
++                                    <p style="color: #666; font-size: 17px; line-height: 1.6; margin: 0; max-width: 95%;">
++                                        Dexze builds scalable, high-performance digital products, robust web applications, and intuitive mobile solutions tailored for modern businesses.
++                                    </p>
++                                </div>
++                                <div class="d-flex flex-wrap align-items-center">
++                                    <a href="#" class="td-btn" style="background-color: #000; color: #fff; border: none; font-weight: 600; padding: 18px 40px; border-radius: 6px; text-decoration: none; font-size: 14px; transition: all 0.3s ease; text-transform: uppercase; letter-spacing: 1px;">
++                                        START A PROJECT
++                                    </a>
+                                 </div>
+                             </div>
+-                            <!-- Card 3 -->
+-                            <div class="col-lg-4 col-md-6 mb-4 grid-card-reveal">
+-                                <div class="stat-card"
+-                                    style="background: #ffffff; border-radius: 20px; padding: 60px 50px; height: 100%; box-shadow: 0 15px 40px rgba(0,0,0,0.04); transition: transform 0.3s ease; transition-delay: 0.1s;">
+-                                    <span
+-                                        style="color: #888; font-size: 14px; font-weight: 500; letter-spacing: 1px; display: block; margin-bottom: 60px;">/
+-                                        03</span>
+-                                    <h2
+-                                        style="font-family: var(--td-ff-heading), sans-serif; font-size: 44px; font-weight: 700; color: #111; margin-bottom: 20px; line-height: 1.1; letter-spacing: -1px;">
+-                                        Focused<br>On Quality</h2>
+-                                    <p style="color: #555; font-size: 20px; line-height: 1.4; margin: 0;">Driving growth
+-                                        &amp;<br>innovation daily</p>
++                            
++                            <!-- Right: VR Video and 3 White Cards -->
++                            <div class="col-lg-7 d-flex flex-column justify-content-end h-100">
++                                <!-- Large VR Girl Video filling the space -->
++                                <div class="mb-4" style="flex-grow: 1; min-height: 400px; width: 100%; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.1); position: relative;">
++                                    <video autoplay muted loop playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;">
++                                        <source src="assets/video/services-tech.mp4" type="video/mp4">
++                                    </video>
++                                </div>
++                                
++                                <!-- Place them at the bottom to align with the button -->
++                                <div class="row gx-3 align-items-end w-100 m-0 mt-2">
++                                    <!-- Card 1 -->
++                                    <div class="col-md-4 mb-4 mb-md-0 px-2">
++                                        <div style="background: #ffffff; border-radius: 12px; padding: 25px 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); height: 100%; min-height: 180px; display: flex; flex-direction: column; justify-content: center;">
++                                            <span style="color: #888; font-size: 11px; font-weight: 500; letter-spacing: 1px; display: block; margin-bottom: 20px;">/ 01</span>
++                                            <h3 style="font-family: var(--td-ff-heading), sans-serif; font-size: 32px; font-weight: 700; color: #111; margin-bottom: 10px; letter-spacing: -1px;">
++                                                <span class="odometer" data-count="10">0</span>+
++                                            </h3>
++                                            <p style="color: #555; font-size: 13px; line-height: 1.4; margin: 0;">Projects successfully<br>delivered</p>
++                                        </div>
++                                    </div>
++                                    <!-- Card 2 -->
++                                    <div class="col-md-4 mb-4 mb-md-0 px-2">
++                                        <div style="background: #ffffff; border-radius: 12px; padding: 25px 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); height: 100%; min-height: 180px; display: flex; flex-direction: column; justify-content: center;">
++                                            <span style="color: #888; font-size: 11px; font-weight: 500; letter-spacing: 1px; display: block; margin-bottom: 20px;">/ 02</span>
++                                            <h3 style="font-family: var(--td-ff-heading), sans-serif; font-size: 32px; font-weight: 700; color: #111; margin-bottom: 10px; letter-spacing: -1px;">
++                                                <span class="odometer" data-count="100">0</span>%
++                                            </h3>
++                                            <p style="color: #555; font-size: 13px; line-height: 1.4; margin: 0;">Client satisfaction<br>and retention</p>
++                                        </div>
++                                    </div>
++                                    <!-- Card 3 -->
++                                    <div class="col-md-4 px-2">
++                                        <div style="background: #ffffff; border-radius: 12px; padding: 25px 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); height: 100%; min-height: 180px; display: flex; flex-direction: column; justify-content: center;">
++                                            <span style="color: #888; font-size: 11px; font-weight: 500; letter-spacing: 1px; display: block; margin-bottom: 20px;">/ 03</span>
++                                            <h3 style="font-family: var(--td-ff-heading), sans-serif; font-size: 24px; font-weight: 700; color: #111; margin-bottom: 10px; line-height: 1.2; letter-spacing: -0.5px;">
++                                                Focused<br>On Quality
++                                            </h3>
++                                            <p style="color: #555; font-size: 13px; line-height: 1.4; margin: 0;">Driving growth &amp;<br>innovation</p>
++                                        </div>
++                                    </div>
+                                 </div>
+                             </div>
+                         </div>
++                    </div>
++                    
++                    <script>
++                        document.addEventListener("DOMContentLoaded", function () {
++                            const observer = new IntersectionObserver((entries) => {
++                                entries.forEach(entry => {
++                                    if (entry.isIntersecting) {
++                                        // Animate numbers
++                                        const counters = entry.target.querySelectorAll('.count-up');
++                                        counters.forEach(counter => {
++                                            if (!counter.classList.contains('counted')) {
++                                                counter.classList.add('counted');
++                                                const target = parseFloat(counter.getAttribute('data-target'));
++                                                const speed = 40; // The lower the slower
++                                                const increment = target / speed;
+ 
+-                        <style>
+-                            .stats-grid-section .row {
+-                                perspective: 1500px;
+-                            }
++                                                const updateCount = () => {
++                                                    const count = parseFloat(counter.innerText);
++                                                    if (count < target) {
++                                                        counter.innerText = (count + increment).toFixed(Number.isInteger(target) ? 0 : 1);
++                                                        setTimeout(updateCount, 40);
++                                                    } else {
++                                                        counter.innerText = target;
++                                                    }
++                                                };
+ 
+-                            /* 3D Fold-Out Reveal */
+-                            .grid-card-reveal {
+-                                opacity: 0;
+-                                transform: rotateX(45deg) translateY(80px) scale(0.9);
+-                                transform-origin: bottom center;
+-                                transition: opacity 1s ease, transform 1s cubic-bezier(0.2, 0.9, 0.3, 1.1);
+-                            }
++                                                setTimeout(updateCount, 200);
++                                            }
++                                        });
++                                    }
++                                });
++                            }, { threshold: 0.2 });
+ 
+-                            .grid-card-reveal:nth-child(1) {
+-                                transition-delay: 0.1s;
+-                            }
++                            document.querySelectorAll('.survy-hero-section').forEach(item => {
++                                observer.observe(item);
++                            });
++                        });
++                    </script>
++                </section>
+ 
+-                            .grid-card-reveal:nth-child(2) {
+-                                transition-delay: 0.3s;
+-                            }
++                                <!-- Unveiling Stacked Cards Section -->
++                <section id="tech-scroll-section" style="background-color: #f7f9fa; padding: 100px 0 50px 0; position: relative;">
++                    <div class="container" style="text-align: center; margin-bottom: 80px;">
++                        <div style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 24px;">
++                            <div style="height: 1px; width: 40px; background-color: #d2d2d2;"></div>
++                            <span style="font-family: var(--td-ff-body), sans-serif; font-size: 13px; font-weight: 600; color: #111; text-transform: uppercase; letter-spacing: 2px;">Core Expertise</span>
++                            <div style="height: 1px; width: 40px; background-color: #d2d2d2;"></div>
++                        </div>
++                        <h2 style="font-family: var(--td-ff-heading), sans-serif; font-size: clamp(40px, 6vw, 80px); font-weight: 800; color: #000; line-height: 1.05; margin-bottom: 32px; letter-spacing: -2px;">
++                            Engineering the future<br>of your business
++                        </h2>
++                        <p style="font-family: var(--td-ff-body), sans-serif; font-size: 20px; font-weight: 400; color: #666; max-width: 700px; margin: 0 auto; line-height: 1.8;">
++                            From immersive mobile experiences to autonomous AI systems, we deliver end-to-end technological excellence.
++                        </p>
++                    </div>
+ 
+-                            .grid-card-reveal:nth-child(3) {
+-                                transition-delay: 0.5s;
+-                            }
++                    <div class="unveil-cards-wrapper" style="position: relative; width: 100%;">
++                        <div class="unveil-cards-sticky" style="position: relative; height: 60vh; min-height: 500px; max-height: 600px;">
++                            <div class="unveil-cards-container" style="position: relative; width: 100%; height: 100%; max-width: 1400px; margin: 0 auto; padding: 0 20px;">
++                            
++                                <!-- Card 1 -->
++                                <div class="unveil-card" style="will-change: transform, opacity; transform: translateZ(0); position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 6; padding: 0 20px;">
++                                    <div class="unveil-card-inner" style="will-change: transform; transform: translateZ(0); display: flex; height: 100%; border-radius: 24px; border: 1px solid rgba(255,255,255,0.05); overflow: hidden; box-shadow: 0 30px 60px rgba(0,0,0,0.08); background: #1a1a1a;">
++                                        <!-- Left Side -->
++                                        <div class="unveil-card-left" style="width: 50%; padding: 40px 4vw; display: flex; flex-direction: column; justify-content: center;">
++                                            <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 24px;">
++    <span style="font-family: var(--td-ff-heading), sans-serif; font-size: 16px; font-weight: 600; color: #888;">01</span>
++    <div style="height: 1px; width: 40px; background-color: #444;"></div>
++    <span style="font-family: var(--td-ff-body), sans-serif; font-size: 15px; font-weight: 500; color: #aaa;">Web Development</span>
++</div>
++                                            <h3 style="font-size: clamp(28px, 3.5vw, 42px); font-weight: 500; color: #ffffff; line-height: 1.2; margin-bottom: 16px; letter-spacing: -1.5px;">
++                                                Enterprise web applications built for scale
++                                            </h3>
++                                            <p style="font-family: var(--td-ff-body), sans-serif; color: #999; font-size: 16px; line-height: 1.6; margin-bottom: 32px; max-width: 95%;">
++                                                We engineer robust, secure, and blazing-fast web applications that drive your business forward. Designed specifically for global enterprises.
++                                            </p>
++                                            <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 32px;">
++                                                <span style="display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 500; color: #fff;"><span style="display: inline-block; width: 4px; height: 4px; background: #fff; border-radius: 50%;"></span> React</span>
++                                                <span style="display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 500; color: #fff;"><span style="display: inline-block; width: 4px; height: 4px; background: #fff; border-radius: 50%;"></span> Next.js</span>
++                                                <span style="display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 500; color: #fff;"><span style="display: inline-block; width: 4px; height: 4px; background: #fff; border-radius: 50%;"></span> Node.js</span>
++                                            </div>
++                                            <div>
++                                                <div style="display: flex; align-items: center; gap: 16px; margin-top: 24px;"><a href="#" style="display: inline-flex; align-items: center; justify-content: center; padding: 12px 28px; background: transparent; color: #fff; border-radius: 40px; border: 1px solid rgba(255,255,255,0.2); font-size: 13px; font-weight: 600; text-decoration: none; text-transform: uppercase; letter-spacing: 1px; transition: all 0.3s ease;">View Details</a><a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border: 1px solid rgba(255,255,255,0.2); border-radius: 50%; color: #fff; text-decoration: none; transition: all 0.3s ease;"><i class="fa-solid fa-arrow-right" style="transform: rotate(-45deg);"></i></a></div>
++                                            </div>
++                                        </div>
++                                        <!-- Right Side -->
++                                        <div class="unveil-card-right" style="width: 50%; background: #222; display: flex; align-items: center; justify-content: center; position: relative; padding: 0;">
++                                            <img src="assets/img/services-2/web-development.jpg" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0; box-shadow: none;" class="unveil-img">
++                                        </div>
++                                    </div>
++                                </div>
+ 
+-                            .grid-card-reveal.is-visible {
+-                                opacity: 1;
+-                                transform: rotateX(0deg) translateY(0) scale(1);
+-                            }
++                                <!-- Card 2 -->
++                                <div class="unveil-card" style="will-change: transform, opacity; transform: translateZ(0); position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 5; padding: 0 20px;">
++                                    <div class="unveil-card-inner" style="will-change: transform; transform: translateZ(0); display: flex; height: 100%; border-radius: 24px; border: 1px solid rgba(255,255,255,0.05); overflow: hidden; box-shadow: 0 30px 60px rgba(0,0,0,0.08); background: #1a1a1a;">
++                                        <div class="unveil-card-left" style="width: 50%; padding: 40px 4vw; display: flex; flex-direction: column; justify-content: center;">
++                                            <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 24px;">
++    <span style="font-family: var(--td-ff-heading), sans-serif; font-size: 16px; font-weight: 600; color: #888;">02</span>
++    <div style="height: 1px; width: 40px; background-color: #444;"></div>
++    <span style="font-family: var(--td-ff-body), sans-serif; font-size: 15px; font-weight: 500; color: #aaa;">App Development</span>
++</div>
++                                            <h3 style="font-size: clamp(28px, 3.5vw, 42px); font-weight: 500; color: #ffffff; line-height: 1.2; margin-bottom: 16px; letter-spacing: -1.5px;">
++                                                Immersive mobile experiences that convert
++                                            </h3>
++                                            <p style="font-family: var(--td-ff-body), sans-serif; color: #999; font-size: 16px; line-height: 1.6; margin-bottom: 32px; max-width: 95%;">
++                                                From iOS to Android, we craft flawless, high-performance mobile applications focusing on frictionless user journeys and engagement.
++                                            </p>
++                                            <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 32px;">
++                                                <span style="display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 500; color: #fff;"><span style="display: inline-block; width: 4px; height: 4px; background: #fff; border-radius: 50%;"></span> SwiftUI</span>
++                                                <span style="display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 500; color: #fff;"><span style="display: inline-block; width: 4px; height: 4px; background: #fff; border-radius: 50%;"></span> Kotlin</span>
++                                                <span style="display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 500; color: #fff;"><span style="display: inline-block; width: 4px; height: 4px; background: #fff; border-radius: 50%;"></span> React Native</span>
++                                            </div>
++                                            <div>
++                                                <div style="display: flex; align-items: center; gap: 16px; margin-top: 24px;"><a href="#" style="display: inline-flex; align-items: center; justify-content: center; padding: 12px 28px; background: transparent; color: #fff; border-radius: 40px; border: 1px solid rgba(255,255,255,0.2); font-size: 13px; font-weight: 600; text-decoration: none; text-transform: uppercase; letter-spacing: 1px; transition: all 0.3s ease;">View Details</a><a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border: 1px solid rgba(255,255,255,0.2); border-radius: 50%; color: #fff; text-decoration: none; transition: all 0.3s ease;"><i class="fa-solid fa-arrow-right" style="transform: rotate(-45deg);"></i></a></div>
++                                            </div>
++                                        </div>
++                                        <div class="unveil-card-right" style="width: 50%; background: #eef1f6; display: flex; align-items: center; justify-content: center; position: relative; padding: 24px;">
++                                            <img src="assets/img/services-2/App-Development.jpg" style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px; box-shadow: 0 16px 40px rgba(0,0,0,0.1);" class="unveil-img">
++                                        </div>
++                                    </div>
++                                </div>
+ 
+-                            /* Staggered Inner Text Reveal */
+-                            .stat-card span,
+-                            .stat-card h2,
+-                            .stat-card p {
+-                                opacity: 0;
+-                                transform: translateY(20px);
+-                                transition: all 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+-                            }
++                                <!-- Card 3 -->
++                                <div class="unveil-card" style="will-change: transform, opacity; transform: translateZ(0); position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 4; padding: 0 20px;">
++                                    <div class="unveil-card-inner" style="will-change: transform; transform: translateZ(0); display: flex; height: 100%; border-radius: 24px; border: 1px solid rgba(255,255,255,0.05); overflow: hidden; box-shadow: 0 30px 60px rgba(0,0,0,0.08); background: #1a1a1a;">
++                                        <div class="unveil-card-left" style="width: 50%; padding: 40px 4vw; display: flex; flex-direction: column; justify-content: center;">
++                                            <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 24px;">
++    <span style="font-family: var(--td-ff-heading), sans-serif; font-size: 16px; font-weight: 600; color: #888;">03</span>
++    <div style="height: 1px; width: 40px; background-color: #444;"></div>
++    <span style="font-family: var(--td-ff-body), sans-serif; font-size: 15px; font-weight: 500; color: #aaa;">UI/UX Design</span>
++</div>
++                                            <h3 style="font-size: clamp(28px, 3.5vw, 42px); font-weight: 500; color: #ffffff; line-height: 1.2; margin-bottom: 16px; letter-spacing: -1.5px;">
++                                                Design systems that define industry standards
++                                            </h3>
++                                            <p style="font-family: var(--td-ff-body), sans-serif; color: #999; font-size: 16px; line-height: 1.6; margin-bottom: 32px; max-width: 95%;">
++                                                We combine deep user research with stunning visual design to build cohesive, scalable design systems that elevate your brand identity.
++                                            </p>
++                                            <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 32px;">
++                                                <span style="display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 500; color: #fff;"><span style="display: inline-block; width: 4px; height: 4px; background: #fff; border-radius: 50%;"></span> Figma</span>
++                                                <span style="display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 500; color: #fff;"><span style="display: inline-block; width: 4px; height: 4px; background: #fff; border-radius: 50%;"></span> Prototyping</span>
++                                                <span style="display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 500; color: #fff;"><span style="display: inline-block; width: 4px; height: 4px; background: #fff; border-radius: 50%;"></span> Design Systems</span>
++                                            </div>
++                                            <div>
++                                                <div style="display: flex; align-items: center; gap: 16px; margin-top: 24px;"><a href="#" style="display: inline-flex; align-items: center; justify-content: center; padding: 12px 28px; background: transparent; color: #fff; border-radius: 40px; border: 1px solid rgba(255,255,255,0.2); font-size: 13px; font-weight: 600; text-decoration: none; text-transform: uppercase; letter-spacing: 1px; transition: all 0.3s ease;">View Details</a><a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border: 1px solid rgba(255,255,255,0.2); border-radius: 50%; color: #fff; text-decoration: none; transition: all 0.3s ease;"><i class="fa-solid fa-arrow-right" style="transform: rotate(-45deg);"></i></a></div>
++                                            </div>
++                                        </div>
++                                        <div class="unveil-card-right" style="width: 50%; background: #f5f5f5; display: flex; align-items: center; justify-content: center; position: relative; padding: 24px;">
++                                            <img src="assets/img/services-2/UI-UX-Design.jpg" style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px; box-shadow: 0 16px 40px rgba(0,0,0,0.1);" class="unveil-img">
++                                        </div>
++                                    </div>
++                                </div>
+ 
+-                            .grid-card-reveal.is-visible .stat-card span {
+-                                transition-delay: 0.4s;
+-                                opacity: 1;
+-                                transform: translateY(0);
+-                            }
++                                <!-- Card 4 -->
++                                <div class="unveil-card" style="will-change: transform, opacity; transform: translateZ(0); position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 3; padding: 0 20px;">
++                                    <div class="unveil-card-inner" style="will-change: transform; transform: translateZ(0); display: flex; height: 100%; border-radius: 24px; border: 1px solid rgba(255,255,255,0.05); overflow: hidden; box-shadow: 0 30px 60px rgba(0,0,0,0.08); background: #1a1a1a;">
++                                        <div class="unveil-card-left" style="width: 50%; padding: 40px 4vw; display: flex; flex-direction: column; justify-content: center;">
++                                            <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 24px;">
++    <span style="font-family: var(--td-ff-heading), sans-serif; font-size: 16px; font-weight: 600; color: #888;">04</span>
++    <div style="height: 1px; width: 40px; background-color: #444;"></div>
++    <span style="font-family: var(--td-ff-body), sans-serif; font-size: 15px; font-weight: 500; color: #aaa;">Gen AI & LLMs</span>
++</div>
++                                            <h3 style="font-size: clamp(28px, 3.5vw, 42px); font-weight: 500; color: #ffffff; line-height: 1.2; margin-bottom: 16px; letter-spacing: -1.5px;">
++                                                Intelligence integrated seamlessly into your workflow
++                                            </h3>
++                                            <p style="font-family: var(--td-ff-body), sans-serif; color: #999; font-size: 16px; line-height: 1.6; margin-bottom: 32px; max-width: 95%;">
++                                                Leverage custom Large Language Models and generative interfaces to unlock unprecedented productivity and intelligent automation.
++                                            </p>
++                                            <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 32px;">
++                                                <span style="display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 500; color: #fff;"><span style="display: inline-block; width: 4px; height: 4px; background: #fff; border-radius: 50%;"></span> OpenAI</span>
++                                                <span style="display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 500; color: #fff;"><span style="display: inline-block; width: 4px; height: 4px; background: #fff; border-radius: 50%;"></span> LangChain</span>
++                                                <span style="display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 500; color: #fff;"><span style="display: inline-block; width: 4px; height: 4px; background: #fff; border-radius: 50%;"></span> RAG Systems</span>
++                                            </div>
++                                            <div>
++                                                <div style="display: flex; align-items: center; gap: 16px; margin-top: 24px;"><a href="#" style="display: inline-flex; align-items: center; justify-content: center; padding: 12px 28px; background: transparent; color: #fff; border-radius: 40px; border: 1px solid rgba(255,255,255,0.2); font-size: 13px; font-weight: 600; text-decoration: none; text-transform: uppercase; letter-spacing: 1px; transition: all 0.3s ease;">View Details</a><a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border: 1px solid rgba(255,255,255,0.2); border-radius: 50%; color: #fff; text-decoration: none; transition: all 0.3s ease;"><i class="fa-solid fa-arrow-right" style="transform: rotate(-45deg);"></i></a></div>
++                                            </div>
++                                        </div>
++                                        <div class="unveil-card-right" style="width: 50%; background: #1a1b1e; display: flex; align-items: center; justify-content: center; position: relative; padding: 24px;">
++                                            <img src="assets/img/services-2/Gen-AI & LLMs.jpg" style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px; box-shadow: 0 16px 40px rgba(0,0,0,0.3);" class="unveil-img">
++                                        </div>
++                                    </div>
++                                </div>
+ 
+-                            .grid-card-reveal.is-visible .stat-card h2 {
+-                                transition-delay: 0.6s;
+-                                opacity: 1;
+-                                transform: translateY(0);
+-                            }
++                                <!-- Card 5 -->
++                                <div class="unveil-card" style="will-change: transform, opacity; transform: translateZ(0); position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 2; padding: 0 20px;">
++                                    <div class="unveil-card-inner" style="will-change: transform; transform: translateZ(0); display: flex; height: 100%; border-radius: 24px; border: 1px solid rgba(255,255,255,0.05); overflow: hidden; box-shadow: 0 30px 60px rgba(0,0,0,0.08); background: #1a1a1a;">
++                                        <div class="unveil-card-left" style="width: 50%; padding: 40px 4vw; display: flex; flex-direction: column; justify-content: center;">
++                                            <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 24px;">
++    <span style="font-family: var(--td-ff-heading), sans-serif; font-size: 16px; font-weight: 600; color: #888;">05</span>
++    <div style="height: 1px; width: 40px; background-color: #444;"></div>
++    <span style="font-family: var(--td-ff-body), sans-serif; font-size: 15px; font-weight: 500; color: #aaa;">Intelligent Automations</span>
++</div>
++                                            <h3 style="font-size: clamp(28px, 3.5vw, 42px); font-weight: 500; color: #ffffff; line-height: 1.2; margin-bottom: 16px; letter-spacing: -1.5px;">
++                                                Complex pipelines simplified through automation
++                                            </h3>
++                                            <p style="font-family: var(--td-ff-body), sans-serif; color: #999; font-size: 16px; line-height: 1.6; margin-bottom: 32px; max-width: 95%;">
++                                                We build node-based visual workflows and robust API pipelines that eliminate manual tasks and optimize enterprise efficiency.
++                                            </p>
++                                            <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 32px;">
++                                                <span style="display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 500; color: #fff;"><span style="display: inline-block; width: 4px; height: 4px; background: #fff; border-radius: 50%;"></span> Pipelines</span>
++                                                <span style="display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 500; color: #fff;"><span style="display: inline-block; width: 4px; height: 4px; background: #fff; border-radius: 50%;"></span> Zapier/Make</span>
++                                                <span style="display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 500; color: #fff;"><span style="display: inline-block; width: 4px; height: 4px; background: #fff; border-radius: 50%;"></span> Custom APIs</span>
++                                            </div>
++                                            <div>
++                                                <div style="display: flex; align-items: center; gap: 16px; margin-top: 24px;"><a href="#" style="display: inline-flex; align-items: center; justify-content: center; padding: 12px 28px; background: transparent; color: #fff; border-radius: 40px; border: 1px solid rgba(255,255,255,0.2); font-size: 13px; font-weight: 600; text-decoration: none; text-transform: uppercase; letter-spacing: 1px; transition: all 0.3s ease;">View Details</a><a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border: 1px solid rgba(255,255,255,0.2); border-radius: 50%; color: #fff; text-decoration: none; transition: all 0.3s ease;"><i class="fa-solid fa-arrow-right" style="transform: rotate(-45deg);"></i></a></div>
++                                            </div>
++                                        </div>
++                                        <div class="unveil-card-right" style="width: 50%; background: #0b0c10; display: flex; align-items: center; justify-content: center; position: relative; padding: 24px;">
++                                            <img src="assets/img/services-2/Intelligent-Automations.jpg" style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px; box-shadow: 0 16px 40px rgba(0,0,0,0.4);" class="unveil-img">
++                                        </div>
++                                    </div>
++                                </div>
+ 
+-                            .grid-card-reveal.is-visible .stat-card p {
+-                                transition-delay: 0.8s;
+-                                opacity: 1;
+-                                transform: translateY(0);
+-                            }
++                                <!-- Card 6 -->
++                                <div class="unveil-card" style="will-change: transform, opacity; transform: translateZ(0); position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; padding: 0 20px;">
++                                    <div class="unveil-card-inner" style="will-change: transform; transform: translateZ(0); display: flex; height: 100%; border-radius: 24px; border: 1px solid rgba(255,255,255,0.05); overflow: hidden; box-shadow: 0 30px 60px rgba(0,0,0,0.08); background: #1a1a1a;">
++                                        <div class="unveil-card-left" style="width: 50%; padding: 40px 4vw; display: flex; flex-direction: column; justify-content: center;">
++                                            <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 24px;">
++    <span style="font-family: var(--td-ff-heading), sans-serif; font-size: 16px; font-weight: 600; color: #888;">06</span>
++    <div style="height: 1px; width: 40px; background-color: #444;"></div>
++    <span style="font-family: var(--td-ff-body), sans-serif; font-size: 15px; font-weight: 500; color: #aaa;">AI Agents & Systems</span>
++</div>
++                                            <h3 style="font-size: clamp(28px, 3.5vw, 42px); font-weight: 500; color: #ffffff; line-height: 1.2; margin-bottom: 16px; letter-spacing: -1.5px;">
++                                                Autonomous multi-agent ecosystems
++                                            </h3>
++                                            <p style="font-family: var(--td-ff-body), sans-serif; color: #999; font-size: 16px; line-height: 1.6; margin-bottom: 32px; max-width: 95%;">
++                                                Deploy sophisticated AI agents that reason, plan, and execute tasks autonomously 24/7 across your organizational command center.
++                                            </p>
++                                            <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 32px;">
++                                                <span style="display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 500; color: #fff;"><span style="display: inline-block; width: 4px; height: 4px; background: #fff; border-radius: 50%;"></span> AutoGPT</span>
++                                                <span style="display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 500; color: #fff;"><span style="display: inline-block; width: 4px; height: 4px; background: #fff; border-radius: 50%;"></span> Agents</span>
++                                                <span style="display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 500; color: #fff;"><span style="display: inline-block; width: 4px; height: 4px; background: #fff; border-radius: 50%;"></span> Command Center</span>
++                                            </div>
++                                            <div>
++                                                <div style="display: flex; align-items: center; gap: 16px; margin-top: 24px;"><a href="#" style="display: inline-flex; align-items: center; justify-content: center; padding: 12px 28px; background: transparent; color: #fff; border-radius: 40px; border: 1px solid rgba(255,255,255,0.2); font-size: 13px; font-weight: 600; text-decoration: none; text-transform: uppercase; letter-spacing: 1px; transition: all 0.3s ease;">View Details</a><a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border: 1px solid rgba(255,255,255,0.2); border-radius: 50%; color: #fff; text-decoration: none; transition: all 0.3s ease;"><i class="fa-solid fa-arrow-right" style="transform: rotate(-45deg);"></i></a></div>
++                                            </div>
++                                        </div>
++                                        <div class="unveil-card-right" style="width: 50%; background: #0f172a; display: flex; align-items: center; justify-content: center; position: relative; padding: 24px;">
++                                            <img src="assets/img/services-2/AI-Agents&Systems.jpg?v=2" style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px; box-shadow: 0 16px 40px rgba(0,0,0,0.5);" class="unveil-img">
++                                        </div>
++                                    </div>
++                                </div>
+ 
+-                            /* Premium Hover Effect */
+-                            .stat-card {
+-                                border: 1px solid transparent;
+-                                transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+-                            }
++                            </div>
++                        </div>
++                    </div>
++                    
++                                                                                <script>
++                        document.addEventListener("DOMContentLoaded", function () {
++                            if (window.gsap && window.ScrollTrigger) {
++                                gsap.registerPlugin(ScrollTrigger);
++
++                                const cards = gsap.utils.toArray('.unveil-card');
++                                
++                                // Initial Setup
++                                cards.forEach((card, i) => {
++                                    // Ensure cards scale from the bottom so they stay anchored
++                                    gsap.set(card, { transformOrigin: "center bottom" });
++                                    
++                                    const texts = card.querySelectorAll('.unveil-card-left > *');
++                                    if (i === 0) {
++                                        gsap.set(card, { scale: 1, yPercent: 0, opacity: 1 });
++                                        gsap.set(texts, { y: 0, opacity: 1 });
++                                    } else if (i === 1) {
++                                        gsap.set(card, { scale: 0.95, yPercent: 0, opacity: 1 });
++                                        gsap.set(texts, { y: 30, opacity: 0 });
++                                    } else {
++                                        gsap.set(card, { scale: 0.90, yPercent: 0, opacity: 1 });
++                                        gsap.set(texts, { y: 30, opacity: 0 });
++                                    }
++                                });
+ 
+-                            .stat-card:hover {
+-                                transform: translateY(-15px) scale(1.02) !important;
+-                                box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(0, 0, 0, 0.03) !important;
++                                // Create Master Timeline
++                                const tl = gsap.timeline({
++                                    scrollTrigger: {
++                                        trigger: '.unveil-cards-wrapper',
++                                        start: 'top 120px',
++                                        end: '+=500%', // Reduced scroll distance for smoother, faster experience
++                                        scrub: 1.5, // Ultra-smooth scrub trailing
++                                        pin: true,
++                                        anticipatePin: 1,
++                                        invalidateOnRefresh: true,
++                                    }
++                                });
++                                
++                                // Phase 1: Peel away cards (Scroll Down)
++                                for (let i = 0; i < cards.length - 1; i++) {
++                                    const card = cards[i];
++                                    const nextCard = cards[i+1];
++                                    const deeperCard = cards[i+2];
++                                    
++                                    const stepTl = gsap.timeline();
++                                    
++                                    // 1. Current card slides COMPLETELY down out of view
++                                    stepTl.to(card, {
++                                        yPercent: 110, // Moves fully down past the bottom
++                                        opacity: 0,    // Fades out as it goes down
++                                        duration: 1,
++                                        ease: 'none'
++                                    }, 0);
++                                    
++                                    // 2. Next card scales up to become active (scale 1)
++                                    stepTl.to(nextCard, {
++                                        scale: 1,
++                                        duration: 1,
++                                        ease: 'none'
++                                    }, 0);
++                                    
++                                    // 3. Deeper card (if any) scales up to next level (0.95)
++                                    if (deeperCard) {
++                                        stepTl.to(deeperCard, {
++                                            scale: 0.95,
++                                            duration: 1,
++                                            ease: 'none'
++                                        }, 0);
++                                    }
++                                    
++                                    // 4. Fade in typography of the newly active card
++                                    const nextTexts = nextCard.querySelectorAll('.unveil-card-left > *');
++                                    stepTl.to(nextTexts, {
++                                        y: 0,
++                                        opacity: 1,
++                                        stagger: 0.1,
++                                        duration: 0.5,
++                                        ease: 'power2.out'
++                                    }, 0.5); // Starts halfway through the slide
++                                    
++                                    tl.add(stepTl);
++                                }
++
++                                // Hold the final card for a tiny moment
++                                tl.addLabel("finalCardHold", "+=0.2");
++
++                                // Phase 2: Simultaneous Re-stack (One Scroll)
++                                // All cards animate back to their initial stacked state instantly
++                                const restackTl = gsap.timeline();
++                                cards.forEach((card, i) => {
++                                    restackTl.to(card, {
++                                        yPercent: 0,
++                                        opacity: 1,
++                                        scale: i === 0 ? 1 : (i === 1 ? 0.95 : 0.90),
++                                        duration: 0.8,
++                                        ease: 'none'
++                                    }, 0); // All trigger exactly at 0
++                                });
++                                
++                                tl.add(restackTl);
++                                
++                                // Hold the final stacked state briefly before unpinning
++                                tl.addLabel("endHold", "+=0.2");
++
++                                // Hover effects
++                                cards.forEach(card => {
++                                    const img = card.querySelector('.unveil-img');
++                                    card.addEventListener('mouseenter', () => {
++                                        gsap.to(img, { scale: 1.05, duration: 0.6, ease: "power2.out" });
++                                    });
++                                    card.addEventListener('mouseleave', () => {
++                                        gsap.to(img, { scale: 1, duration: 0.6, ease: "power2.out" });
++                                    });
++                                });
+                             }
++                        });
++                    </script>
++                </section>
+ 
+-                            .stat-card::after {
+-                                content: '';
+-                                position: absolute;
+-                                bottom: 0;
+-                                left: 0;
+-                                width: 100%;
+-                                height: 0;
+-                                background: linear-gradient(90deg, #6F2BFF, #00EBD6);
+-                                transition: height 0.3s ease;
+-                                border-radius: 0 0 20px 20px;
+-                                opacity: 0;
+-                            }
++                
++                <!-- Features Grid Section -->
++                <section class="features-grid-section" style="background-color: #ffffff; padding: 120px 0; position: relative;">
++                    <div class="container" style="text-align: center; margin-bottom: 60px;">
++                        <div style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 24px;">
++                            <div style="height: 1px; width: 40px; background-color: #d2d2d2;"></div>
++                            <span style="font-family: var(--td-ff-body), sans-serif; font-size: 13px; font-weight: 600; color: #111; text-transform: uppercase; letter-spacing: 2px;">Scale with Dexze</span>
++                            <div style="height: 1px; width: 40px; background-color: #d2d2d2;"></div>
++                        </div>
++                        <h2 style="font-family: var(--td-ff-heading), sans-serif; font-size: clamp(40px, 6vw, 80px); font-weight: 800; color: #000; line-height: 1.05; margin-bottom: 32px; letter-spacing: -2px;">
++                            Scalable solutions engineered<br>for the future
++                        </h2>
++                        <p style="font-family: var(--td-ff-body), sans-serif; font-size: 20px; font-weight: 400; color: #666; max-width: 700px; margin: 0 auto; line-height: 1.8;">
++                            We combine cutting-edge AI, modern frameworks, and human-centric design to build products that redefine industry standards.
++                        </p>
++                    </div>
+ 
+-                            .stat-card:hover::after {
+-                                height: 4px;
+-                                opacity: 1;
+-                            }
+-                        </style>
+-                        <script>
+-                            document.addEventListener("DOMContentLoaded", function () {
+-                                const observer = new IntersectionObserver((entries) => {
+-                                    entries.forEach(entry => {
+-                                        if (entry.isIntersecting) {
+-                                            entry.target.classList.add('is-visible');
+-
+-                                            // Animate numbers
+-                                            const counter = entry.target.querySelector('.count-up');
+-                                            if (counter && !counter.classList.contains('counted')) {
+-                                                counter.classList.add('counted');
+-                                                const target = +counter.getAttribute('data-target');
+-                                                const speed = 40; // The lower the slower
+-                                                const increment = target / speed;
++                    <div class="container" style="max-width: 1300px;">
++                        <div style="background-color: #272525; border-radius: 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); padding: 0;">
++                            
++                            <!-- Column 1 -->
++                            <div style="padding: 60px 50px; border-right: 1px solid rgba(255,255,255,0.05); display: flex; flex-direction: column; align-items: flex-start;">
++                                <div style="width: 64px; height: 64px; background: rgba(0, 235, 214, 0.1); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 32px;">
++                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#00EBD6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
++                                      <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
++                                      <polyline points="2 12 12 17 22 12"></polyline>
++                                      <polyline points="2 17 12 22 22 17"></polyline>
++                                    </svg>
++                                </div>
++                                <h4 style="font-size: 24px; font-weight: 600; color: #ffffff; margin-bottom: 16px;">Customised solutions</h4>
++                                <p style="font-size: 16px; color: #aaa; line-height: 1.6; margin: 0;">
++                                    Unlock custom software solutions built for global enterprises, startups, and scalable platforms.
++                                </p>
++                            </div>
+ 
+-                                                const updateCount = () => {
+-                                                    const count = +counter.innerText;
+-                                                    if (count < target) {
+-                                                        counter.innerText = Math.ceil(count + increment);
+-                                                        setTimeout(updateCount, 40);
+-                                                    } else {
+-                                                        counter.innerText = target;
+-                                                    }
+-                                                };
++                            <!-- Column 2 -->
++                            <div style="padding: 60px 50px; border-right: 1px solid rgba(255,255,255,0.05); display: flex; flex-direction: column; align-items: flex-start;">
++                                <div style="width: 64px; height: 64px; background: rgba(0, 235, 214, 0.1); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 32px;">
++                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#00EBD6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
++                                      <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
++                                      <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
++                                      <line x1="12" y1="22.08" x2="12" y2="12"></line>
++                                    </svg>
++                                </div>
++                                <h4 style="font-size: 24px; font-weight: 600; color: #ffffff; margin-bottom: 16px;">Dedicated support</h4>
++                                <p style="font-size: 16px; color: #aaa; line-height: 1.6; margin: 0;">
++                                    Scale faster with dedicated technical expertise and round-the-clock infrastructure monitoring.
++                                </p>
++                            </div>
+ 
+-                                                // Delay counter to match the 3D flip stagger timing
+-                                                setTimeout(updateCount, 600);
+-                                            }
+-                                        }
+-                                    });
+-                                }, { threshold: 0.2 });
++                            <!-- Column 3 -->
++                            <div style="padding: 60px 50px; display: flex; flex-direction: column; align-items: flex-start;">
++                                <div style="width: 64px; height: 64px; background: rgba(0, 235, 214, 0.1); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 32px;">
++                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#00EBD6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
++                                      <line x1="18" y1="20" x2="18" y2="10"></line>
++                                      <line x1="12" y1="20" x2="12" y2="4"></line>
++                                      <line x1="6" y1="20" x2="6" y2="14"></line>
++                                    </svg>
++                                </div>
++                                <h4 style="font-size: 24px; font-weight: 600; color: #ffffff; margin-bottom: 16px;">Real-time clarity</h4>
++                                <p style="font-size: 16px; color: #aaa; line-height: 1.6; margin: 0;">
++                                    Gain oversight of your digital performance in a single view for better data-driven decisions.
++                                </p>
++                            </div>
+ 
+-                                document.querySelectorAll('.grid-card-reveal').forEach(item => {
+-                                    observer.observe(item);
+-                                });
+-                            });
+-                        </script>
++                        </div>
+                     </div>
+                 </section>
+ 
+-                <!-- Transparent Scrolling Tech Section -->
+-                <section id="tech-scroll-section" style="position: relative; background: transparent;">
+-
+-                    <!-- Scrolling Text Content (Video shows through from behind wrapper) -->
+-                    <div style="position: relative; z-index: 10;">
+-
+-                        <!-- Item 1 (Left) -->
+-                        <div class="tech-item reveal-item"
+-                            style="height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; text-align: left; padding: 0 5vw; width: 100%;">
+-                            <div data-speed="1.2" style="max-width: 900px;">
+-                                <span
+-                                    style="color: #FF6A00; font-size: 18px; font-weight: 500; letter-spacing: 2px; margin-bottom: 20px; display: block;">01
+-                                    /</span>
+-                                <h2
+-                                    style="font-family: var(--td-ff-heading), sans-serif; font-size: clamp(36px, 6vw, 90px); font-weight: 700; line-height: 1.1; margin: 0 0 30px 0; letter-spacing: -3px; background: linear-gradient(135deg, #FF6A00 0%, #FF9D00 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+-                                    Web<br>Development</h2>
+-                                <p
+-                                    style="color: rgba(255,255,255,0.8); font-size: clamp(18px, 2vw, 24px); line-height: 1.6; font-weight: 400; margin: 0; max-width: 600px;">
+-                                    We build fast, secure, and highly scalable web applications. Our custom web
+-                                    solutions are designed to deliver exceptional performance and seamless user
+-                                    experiences across all devices.</p>
+-                            </div>
++                <!-- Ideas Become Products Section -->
++                <section id="ideas-become-products-section" style="background-color: #ffffff; position: relative; width: 100%; overflow: visible; z-index: 10;">
++                    <!-- Section Header (Scrolls naturally) -->
++                    <div class="container" style="max-width: 1400px; margin: 0 auto; padding: 80px 32px 20px 32px; text-align: center;">
++                        <div style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 24px;">
++                            <div style="height: 1px; width: 40px; background-color: #d2d2d2;"></div>
++                            <span style="font-family: var(--td-ff-body), sans-serif; font-size: 13px; font-weight: 600; color: #111; text-transform: uppercase; letter-spacing: 2px;">FROM AN IDEA TO A PRODUCT</span>
++                            <div style="height: 1px; width: 40px; background-color: #d2d2d2;"></div>
+                         </div>
++                        <h2 style="font-family: var(--td-ff-heading), sans-serif; font-size: clamp(40px, 6vw, 80px); font-weight: 800; color: #000; line-height: 1.05; margin-bottom: 32px; letter-spacing: -2px;">
++                            Bring your ideas to life.
++                        </h2>
++                        <p style="font-family: var(--td-ff-body), sans-serif; font-size: 20px; font-weight: 400; color: #666; max-width: 700px; margin: 0 auto; line-height: 1.8;">
++                            We guide you through every stage of the product lifecycle???from initial discovery and design to development, testing, and scalable deployment. Partner with us to build digital experiences that matter.
++                        </p>
++                    </div>
+ 
+-                        <!-- Item 2 (Right) -->
+-                        <div class="tech-item reveal-item"
+-                            style="height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: flex-end; text-align: right; padding: 0 5vw; width: 100%;">
+-                            <div data-speed="1.2" style="max-width: 900px;">
+-                                <span
+-                                    style="color: #00EBD6; font-size: 18px; font-weight: 500; letter-spacing: 2px; margin-bottom: 20px; display: block;">02
+-                                    /</span>
+-                                <h2
+-                                    style="font-family: var(--td-ff-heading), sans-serif; font-size: clamp(36px, 6vw, 90px); font-weight: 700; line-height: 1.1; margin: 0 0 30px 0; letter-spacing: -3px; background: linear-gradient(135deg, #00EBD6 0%, #008F82 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+-                                    App<br>Development</h2>
+-                                <p
+-                                    style="color: rgba(255,255,255,0.8); font-size: clamp(18px, 2vw, 24px); line-height: 1.6; font-weight: 400; margin: 0; max-width: 600px;">
+-                                    Transform your ideas into powerful mobile experiences. We develop intuitive,
+-                                    cross-platform applications that engage users and drive business growth from day
+-                                    one.</p>
++                    
++                    <!-- Interactive Ideas Section -->
++                    <div class="interactive-ideas-container" style="max-width: 1400px; width: 100%; margin: 80px auto; padding: 0 32px; display: flex; gap: 80px; align-items: flex-start; position: relative;">
++                        
++                        <!-- Left Side: Editorial List (40%) -->
++                        <div class="ideas-list-panel" style="width: 35%; display: flex; flex-direction: column; gap: 0;">
++                            
++                            <!-- Item 1 -->
++                            <div class="idea-list-item active" data-index="0">
++                                <div class="idea-list-active-line"></div>
++                                <span class="idea-number">01</span>
++                                <div class="idea-text-group">
++                                    <h3 class="idea-heading">Discovery</h3>
++                                    <p class="idea-subtext">Research & strategy</p>
++                                </div>
++                            </div>
++                            
++                            <!-- Item 2 -->
++                            <div class="idea-list-item" data-index="1">
++                                <div class="idea-list-active-line"></div>
++                                <span class="idea-number">02</span>
++                                <div class="idea-text-group">
++                                    <h3 class="idea-heading">Wireframes</h3>
++                                    <p class="idea-subtext">Structure & flow</p>
++                                </div>
+                             </div>
+-                        </div>
+ 
+-                        <!-- Item 3 (Left) -->
+-                        <div class="tech-item reveal-item"
+-                            style="height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; text-align: left; padding: 0 5vw; width: 100%;">
+-                            <div data-speed="1.2" style="max-width: 900px;">
+-                                <span
+-                                    style="color: #6F2BFF; font-size: 18px; font-weight: 500; letter-spacing: 2px; margin-bottom: 20px; display: block;">03
+-                                    /</span>
+-                                <h2
+-                                    style="font-family: var(--td-ff-heading), sans-serif; font-size: clamp(36px, 6vw, 90px); font-weight: 700; line-height: 1.1; margin: 0 0 30px 0; letter-spacing: -3px; background: linear-gradient(135deg, #6F2BFF 0%, #9B66FF 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+-                                    Web<br>Design</h2>
+-                                <p
+-                                    style="color: rgba(255,255,255,0.8); font-size: clamp(18px, 2vw, 24px); line-height: 1.6; font-weight: 400; margin: 0; max-width: 600px;">
+-                                    Captivate your audience with stunning, modern aesthetics. We craft pixel-perfect,
+-                                    user-centric interfaces that not only look beautiful but are built for conversion
+-                                    and high usability.</p>
++                            <!-- Item 3 -->
++                            <div class="idea-list-item" data-index="2">
++                                <div class="idea-list-active-line"></div>
++                                <span class="idea-number">03</span>
++                                <div class="idea-text-group">
++                                    <h3 class="idea-heading">UI Design</h3>
++                                    <p class="idea-subtext">Visual aesthetics</p>
++                                </div>
++                            </div>
++
++                            <!-- Item 4 -->
++                            <div class="idea-list-item" data-index="3">
++                                <div class="idea-list-active-line"></div>
++                                <span class="idea-number">04</span>
++                                <div class="idea-text-group">
++                                    <h3 class="idea-heading">Development</h3>
++                                    <p class="idea-subtext">Code & architecture</p>
++                                </div>
+                             </div>
+-                        </div>
+ 
+-                        <!-- Item 4 (Right) -->
+-                        <div class="tech-item reveal-item"
+-                            style="height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: flex-end; text-align: right; padding: 0 5vw; width: 100%;">
+-                            <div data-speed="1.2" style="max-width: 900px;">
+-                                <span
+-                                    style="color: #FF6A00; font-size: 18px; font-weight: 500; letter-spacing: 2px; margin-bottom: 20px; display: block;">04
+-                                    /</span>
+-                                <h2
+-                                    style="font-family: var(--td-ff-heading), sans-serif; font-size: clamp(36px, 6vw, 90px); font-weight: 700; line-height: 1.1; margin: 0 0 30px 0; letter-spacing: -3px; background: linear-gradient(135deg, #FF6A00 0%, #FF9D00 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+-                                    Gen AI &<br>LLMs</h2>
+-                                <p
+-                                    style="color: rgba(255,255,255,0.8); font-size: clamp(18px, 2vw, 24px); line-height: 1.6; font-weight: 400; margin: 0; max-width: 600px;">
+-                                    Unlock the power of Generative AI and Large Language Models. We integrate
+-                                    cutting-edge AI technologies into your workflows to generate dynamic content and
+-                                    accelerate innovation.</p>
++                            <!-- Item 5 -->
++                            <div class="idea-list-item" data-index="4">
++                                <div class="idea-list-active-line"></div>
++                                <span class="idea-number">05</span>
++                                <div class="idea-text-group">
++                                    <h3 class="idea-heading">Testing</h3>
++                                    <p class="idea-subtext">Quality assurance</p>
++                                </div>
+                             </div>
+-                        </div>
+ 
+-                        <!-- Item 5 (Left) -->
+-                        <div class="tech-item reveal-item"
+-                            style="height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; text-align: left; padding: 0 5vw; width: 100%;">
+-                            <div data-speed="1.2" style="max-width: 900px;">
+-                                <span
+-                                    style="color: #00EBD6; font-size: 18px; font-weight: 500; letter-spacing: 2px; margin-bottom: 20px; display: block;">05
+-                                    /</span>
+-                                <h2
+-                                    style="font-family: var(--td-ff-heading), sans-serif; font-size: clamp(36px, 6vw, 90px); font-weight: 700; line-height: 1.1; margin: 0 0 30px 0; letter-spacing: -3px; background: linear-gradient(135deg, #00EBD6 0%, #008F82 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+-                                    Intelligent<br>Automations</h2>
+-                                <p
+-                                    style="color: rgba(255,255,255,0.8); font-size: clamp(18px, 2vw, 24px); line-height: 1.6; font-weight: 400; margin: 0; max-width: 600px;">
+-                                    Streamline your operations and eliminate repetitive tasks. Our intelligent
+-                                    automation solutions leverage smart algorithms to optimize efficiency, saving
+-                                    countless hours of manual work.</p>
++                            <!-- Item 6 -->
++                            <div class="idea-list-item" data-index="5">
++                                <div class="idea-list-active-line"></div>
++                                <span class="idea-number">06</span>
++                                <div class="idea-text-group">
++                                    <h3 class="idea-heading">Launch</h3>
++                                    <p class="idea-subtext">Deployment & scale</p>
++                                </div>
+                             </div>
++
+                         </div>
+ 
+-                        <!-- Item 6 (Right) -->
+-                        <div class="tech-item reveal-item"
+-                            style="height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: flex-end; text-align: right; padding: 0 5vw; width: 100%;">
+-                            <div data-speed="1.2" style="max-width: 900px;">
+-                                <span
+-                                    style="color: #6F2BFF; font-size: 18px; font-weight: 500; letter-spacing: 2px; margin-bottom: 20px; display: block;">06
+-                                    /</span>
+-                                <h2
+-                                    style="font-family: var(--td-ff-heading), sans-serif; font-size: clamp(36px, 6vw, 90px); font-weight: 700; line-height: 1.1; margin: 0 0 30px 0; letter-spacing: -3px; background: linear-gradient(135deg, #6F2BFF 0%, #9B66FF 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+-                                    AI Agents<br>& Systems</h2>
+-                                <p
+-                                    style="color: rgba(255,255,255,0.8); font-size: clamp(18px, 2vw, 24px); line-height: 1.6; font-weight: 400; margin: 0; max-width: 600px;">
+-                                    Deploy autonomous AI agents that work for you 24/7. From customer support bots to
+-                                    complex operational systems, we build intelligent agents that scale your business
+-                                    dynamically.</p>
++                        <!-- Right Side: Visual & Text (65%) -->
++                        <div class="ideas-display-panel" style="width: 65%; position: sticky; top: 120px; display: flex; flex-direction: column; gap: 40px;">
++                            <!-- Images Wrapper -->
++                            <div class="ideas-images-wrapper">
++                                <img class="idea-image active" src="assets/img/services-2/discovery.png" alt="Discovery">
++                                <img class="idea-image" src="assets/img/services-2/wireframes.png" alt="Wireframes">
++                                <img class="idea-image" src="assets/img/services-2/ui-design.png" alt="UI Design">
++                                <img class="idea-image" src="assets/img/services-2/development.png" alt="Development">
++                                <img class="idea-image" src="assets/img/services-2/testing.png" alt="Testing">
++                                <img class="idea-image" src="assets/img/services-2/launch.png" alt="Launch">
+                             </div>
+-                        </div>
+ 
++                                                        <!-- Text Wrapper -->
++                            <div class="ideas-text-wrapper">
++                                
++                                <!-- Text 1 -->
++                                <div class="idea-text-content active">
++                                    <h3>Discovery</h3>
++                                    <p>Before writing a single line of code, we dive deep into understanding your business, users, pain points, and long-term goals. This phase is critical to mitigating risks and ensuring the final product aligns perfectly with market demands.</p>
++                                    <p>We conduct deep-dive interviews, extensive competitor analysis, and collaborative stakeholder workshops to lay a rock-solid foundation for the entire product lifecycle.</p>
++                                                                        <p>By fostering open communication and transparency throughout this exploratory phase, we ensure that every stakeholder is fully aligned. This collaborative approach minimizes surprises later in development and maximizes the overall return on your digital investment.</p>
++                                    <h4 class="idea-deliverables-title">Key Activities & Deliverables</h4>
++                                    <ul>
++                                        <li><span></span> Strategy & vision workshops</li>
++                                        <li><span></span> Competitor & market analysis</li>
++                                        <li><span></span> Technical feasibility assessment</li>
++                                        <li><span></span> Product roadmap & timeline</li>
++                                        <li><span></span> Resource allocation planning</li>
++                                    </ul>
++                                </div>
++
++                                <!-- Text 2 -->
++                                <div class="idea-text-content">
++                                    <h3>Wireframes</h3>
++                                    <p>Mapping out user journeys, structural layouts, and core interaction patterns. This crucial step ensures logical flow and intuitive navigation before any visual styling is applied, helping to catch usability issues early on.</p>
++                                    <p>By prioritizing information architecture and user psychology, we guarantee that your customers can achieve their goals with zero friction and absolute clarity.</p>
++                                                                        <p>We also conduct rigorous accessibility checks and cognitive walkthroughs during this stage. By validating these structural blueprints against real-world user scenarios, we ensure your product is intuitive for everyone from the very first interaction.</p>
++                                    <h4 class="idea-deliverables-title">Key Activities & Deliverables</h4>
++                                    <ul>
++                                        <li><span></span> Low-fidelity wireframes</li>
++                                        <li><span></span> Comprehensive user flows</li>
++                                        <li><span></span> Information architecture (IA)</li>
++                                        <li><span></span> Interactive clickable prototypes</li>
++                                        <li><span></span> Early usability testing</li>
++                                    </ul>
++                                </div>
++
++                                <!-- Text 3 -->
++                                <div class="idea-text-content">
++                                    <h3>UI Design</h3>
++                                    <p>Creating premium, high-fidelity visual interfaces and comprehensive style guides that captivate your target audience. We focus heavily on modern aesthetics, accessibility standards, and strict brand alignment.</p>
++                                    <p>Every component is meticulously crafted to deliver an award-winning digital experience that feels luxurious, intentional, and perfectly tailored to your brand identity.</p>
++                                                                        <p>We leverage advanced animation principles and micro-interactions to breathe life into the static screens. This meticulous attention to motion design not only delights users but also provides essential visual feedback that guides them effortlessly through complex workflows.</p>
++                                    <h4 class="idea-deliverables-title">Key Activities & Deliverables</h4>
++                                    <ul>
++                                        <li><span></span> High-fidelity Figma compositions</li>
++                                        <li><span></span> Comprehensive design systems</li>
++                                        <li><span></span> Micro-interaction guidelines</li>
++                                        <li><span></span> Responsive layout adaptions</li>
++                                        <li><span></span> Final production visual assets</li>
++                                    </ul>
++                                </div>
++
++                                <!-- Text 4 -->
++                                <div class="idea-text-content">
++                                    <h3>Development</h3>
++                                    <p>Translating pixel-perfect designs into clean, production-ready code. Our engineers build robust, scalable architectures leveraging the absolute latest in web and mobile technologies.</p>
++                                    <p>We enforce strict coding standards, conduct thorough peer reviews, and utilize modern frameworks to guarantee blazing-fast performance, rock-solid security, and future-proof scalability.</p>
++                                                                        <p>Furthermore, our rigorous DevOps practices and continuous integration pipelines ensure that new features are seamlessly merged, tested, and deployed. This agile methodology allows us to maintain rapid development cycles without ever compromising on code quality or system stability.</p>
++                                    <h4 class="idea-deliverables-title">Key Activities & Deliverables</h4>
++                                    <ul>
++                                        <li><span></span> Custom frontend engineering</li>
++                                        <li><span></span> Secure backend architecture</li>
++                                        <li><span></span> API & third-party integrations</li>
++                                        <li><span></span> Database schema & optimization</li>
++                                        <li><span></span> Scalable cloud infrastructure</li>
++                                    </ul>
++                                </div>
++
++                                <!-- Text 5 -->
++                                <div class="idea-text-content">
++                                    <h3>Testing</h3>
++                                    <p>Rigorous quality assurance to ensure bug-free operation under any condition. We implement a combination of automated integration testing and extensive manual checks.</p>
++                                    <p>We stress-test the application across all modern devices, browsers, and operating systems to identify bottlenecks, ensuring flawless execution from day one of launch.</p>
++                                                                        <p>Beyond functional correctness, we heavily prioritize performance profiling and security auditing. By simulating high-traffic scenarios and employing ethical hacking techniques, we fortify your application against potential breaches and ensure it remains lightning-fast under pressure.</p>
++                                    <h4 class="idea-deliverables-title">Key Activities & Deliverables</h4>
++                                    <ul>
++                                        <li><span></span> Automated testing suites (E2E)</li>
++                                        <li><span></span> Manual cross-browser QA</li>
++                                        <li><span></span> Performance & load testing</li>
++                                        <li><span></span> Security vulnerability audits</li>
++                                        <li><span></span> Bug tracking & resolution</li>
++                                    </ul>
++                                </div>
++
++                                <!-- Text 6 -->
++                                <div class="idea-text-content">
++                                    <h3>Launch</h3>
++                                    <p>Deploying the product smoothly to production servers with zero-downtime deployment strategies. We manage the entire rollout process meticulously, ensuring a seamless transition.</p>
++                                    <p>Post-launch, we set up strict real-time monitoring, analytics tracking, and instant rollback capabilities to safeguard your live environment and track user adoption.</p>
++                                                                        <p>We also provide comprehensive post-launch support and iterative growth strategies. By analyzing real user behavior and conversion metrics, we continually refine the user experience, rolling out strategic updates that keep your product ahead of the competition.</p>
++                                    <h4 class="idea-deliverables-title">Key Activities & Deliverables</h4>
++                                    <ul>
++                                        <li><span></span> CI/CD pipeline configuration</li>
++                                        <li><span></span> Domain & SSL provisioning</li>
++                                        <li><span></span> Live server deployment</li>
++                                        <li><span></span> Real-time monitoring setup</li>
++                                        <li><span></span> Initial launch analytics</li>
++                                    </ul>
++                                </div>
++
++                            </div>
++                        </div>
++                    </div>
+                     </div>
+ 
+-                    <!-- Custom Creative Animations -->
+                     <style>
+-                        .reveal-item>div {
++                        /* Interactive Ideas CSS */
++                        .interactive-ideas-container {
++                            min-height: 80vh;
++                        }
++
++                        /* Left Side List */
++                        .idea-list-item {
++                            padding: 48px 0;
++                            border-bottom: 1px solid rgba(0,0,0,0.1);
++                            cursor: pointer;
++                            display: flex;
++                            align-items: baseline;
++                            gap: 24px;
++                            position: relative;
++                            transition: all 0.4s ease;
++                        }
++                        .idea-list-item:last-child {
++                            border-bottom: none;
++                        }
++                        
++                        .idea-list-active-line {
++                            position: absolute;
++                            left: -24px;
++                            top: 50%;
++                            transform: translateY(-50%);
++                            width: 0;
++                            height: 2px;
++                            background: var(--td-color-theme, #6a35ff);
++                            transition: width 0.4s ease;
++                        }
++                        .idea-list-item.active .idea-list-active-line {
++                            width: 16px;
++                        }
++                        
++                        .idea-number {
++                            font-family: var(--td-ff-heading), sans-serif;
++                            font-size: 24px;
++                            font-weight: 500;
++                            color: #999;
++                            transition: color 0.4s ease;
++                        }
++                        .idea-list-item.active .idea-number {
++                            color: var(--td-color-theme, #6a35ff);
++                        }
++                        
++                        .idea-text-group {
++                            display: flex;
++                            flex-direction: column;
++                            gap: 4px;
++                            transition: all 0.4s ease;
++                        }
++                        .idea-heading {
++                            font-family: var(--td-ff-heading), sans-serif;
++                            font-size: clamp(24px, 2.5vw, 36px);
++                            font-weight: 500;
++                            color: #666;
++                            margin: 0;
++                            transition: all 0.4s ease;
++                            text-transform: capitalize;
++                            letter-spacing: -0.5px;
++                        }
++                        .idea-subtext {
++                            font-family: var(--td-ff-body), sans-serif;
++                            font-size: 16px;
++                            color: #aaa;
++                            margin: 0;
++                            font-weight: 400;
++                            transition: color 0.4s ease;
++                        }
++                        .idea-list-item.active .idea-text-group {
++                            transform: translateX(6px);
++                        }
++                        .idea-list-item.active .idea-heading {
++                            font-weight: 700;
++                            color: #111;
++                        }
++                        .idea-list-item.active .idea-subtext {
++                            color: #666;
++                        }
++
++                        /* Right Side Image */
++                        .ideas-images-wrapper {
++                            width: 100%;
++                            aspect-ratio: 16/10;
++                            position: relative;
++                            border-radius: 16px;
++                            overflow: hidden;
++                            box-shadow: 0 16px 40px rgba(0,0,0,0.06);
++                            background: #f4f6f8;
++                            transition: transform 0.4s ease, box-shadow 0.4s ease;
++                            cursor: default;
++                        }
++                        .ideas-images-wrapper:hover {
++                            transform: translateY(-4px);
++                            box-shadow: 0 24px 60px rgba(0,0,0,0.12);
++                        }
++                        .idea-image {
++                            position: absolute;
++                            top: 0;
++                            left: 0;
++                            width: 100%;
++                            height: 100%;
++                            object-fit: cover;
+                             opacity: 0;
+-                            transform: translateY(60px) scale(0.95);
+-                            filter: blur(10px);
+-                            transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
++                            transform: scale(1.03);
++                            transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
++                            will-change: transform, opacity;
++                        }
++                        .idea-image.active {
++                            opacity: 1;
++                            transform: scale(1);
+                         }
+ 
+-                        .reveal-item.is-visible>div {
++                        /* Right Side Text */
++                        .ideas-text-wrapper {
++                            width: 100%;
++                            position: relative;
++                            min-height: 250px;
++                        }
++                        .idea-text-content {
++                            position: absolute;
++                            top: 0;
++                            left: 0;
++                            width: 100%;
++                            opacity: 0;
++                            pointer-events: none;
++                        }
++                        .idea-text-content.active {
++                            opacity: 1;
++                            pointer-events: auto;
++                        }
++                        
++                        .idea-text-content h3 {
++                            font-family: var(--td-ff-heading), sans-serif;
++                            font-size: clamp(28px, 3vw, 42px);
++                            font-weight: 700;
++                            color: #111;
++                            line-height: 1.15;
++                            margin-bottom: 16px;
++                            letter-spacing: -1px;
++                            text-transform: uppercase;
++                            opacity: 0;
++                            transform: translateY(20px);
++                            transition: opacity 0.5s ease, transform 0.5s ease;
++                        }
++                        /*                         .idea-text-content p {
++                            color: #666;
++                            font-size: 18px;
++                            line-height: 1.6;
++                            margin-bottom: 24px;
++                            max-width: 90%;
++                            opacity: 0;
++                            transform: translateY(20px);
++                            transition: opacity 0.5s ease, transform 0.5s ease;
++                        }
++                        .idea-text-content p:nth-of-type(1) { transition-delay: 0.05s; }
++                        .idea-text-content p:nth-of-type(2) { transition-delay: 0.10s; }
++                        .idea-text-content ul {
++                            list-style: none;
++                            padding: 0;
++                            margin: 0;
++                            display: flex;
++                            flex-direction: column;
++                            gap: 12px;
++                            opacity: 0;
++                            transform: translateY(20px);
++                            transition: opacity 0.5s ease 0.2s, transform 0.5s ease 0.2s;
++                        }
++                        .idea-text-content ul li {
++                            display: flex;
++                            align-items: center;
++                            gap: 12px;
++                            font-size: 16px;
++                            font-weight: 500;
++                            color: #333;
++                        }
++                        .idea-text-content ul li span {
++                            display: inline-block;
++                            width: 6px;
++                            height: 6px;
++                            background: var(--td-color-theme, #6a35ff);
++                            border-radius: 50%;
++                        }
++                        
++                        .idea-text-content h4.idea-deliverables-title {
++                            font-family: var(--td-ff-heading), sans-serif;
++                            font-size: 13px;
++                            font-weight: 700;
++                            color: #111;
++                            text-transform: uppercase;
++                            letter-spacing: 1.5px;
++                            margin: 32px 0 16px 0;
++                            opacity: 0;
++                            transform: translateY(20px);
++                            transition: opacity 0.5s ease 0.15s, transform 0.5s ease 0.15s;
++                        }
++                        .idea-text-content.active h3,
++                        .idea-text-content.active p,
++                        .idea-text-content.active h4,
++                        .idea-text-content.active ul {
+                             opacity: 1;
+-                            transform: translateY(0) scale(1);
+-                            filter: blur(0);
++                            transform: translateY(0);
++                        }
++
++                        /* Responsive */
++                        @media (max-width: 991.98px) {
++                            .interactive-ideas-container {
++                                flex-direction: column;
++                                gap: 48px;
++                            }
++                            .ideas-list-panel {
++                                width: 100% !important;
++                            }
++                            .ideas-display-panel {
++                                width: 100% !important;
++                                position: static !important;
++                            }
++                            .idea-list-item {
++                                padding: 20px 0;
++                            }
++                            .idea-heading {
++                                font-size: 28px;
++                            }
+                         }
+                     </style>
++
+                     <script>
+-                        document.addEventListener("DOMContentLoaded", function () {
+-                            const observer = new IntersectionObserver((entries) => {
+-                                entries.forEach(entry => {
+-                                    if (entry.isIntersecting) {
+-                                        entry.target.classList.add('is-visible');
+-                                    } else {
+-                                        entry.target.classList.remove('is-visible');
++                        document.addEventListener('DOMContentLoaded', () => {
++                            const listItems = document.querySelectorAll('.idea-list-item');
++                            const images = document.querySelectorAll('.idea-image');
++                            const texts = document.querySelectorAll('.idea-text-content');
++                            const imgWrapper = document.querySelector('.ideas-images-wrapper');
++                            
++                            function setActiveStage(index) {
++                                listItems.forEach(item => item.classList.remove('active'));
++                                images.forEach(img => img.classList.remove('active'));
++                                texts.forEach(txt => txt.classList.remove('active'));
++                                
++                                listItems[index].classList.add('active');
++                                images[index].classList.add('active');
++                                texts[index].classList.add('active');
++                            }
++                            
++                            listItems.forEach((item, index) => {
++                                // Desktop Hover
++                                item.addEventListener('mouseenter', () => {
++                                    if (window.innerWidth > 991) {
++                                        setActiveStage(index);
++                                    }
++                                });
++                                // Mobile Tap
++                                item.addEventListener('click', () => {
++                                    if (window.innerWidth <= 991) {
++                                        setActiveStage(index);
+                                     }
+                                 });
+-                            }, { threshold: 0.3 });
+-
+-                            document.querySelectorAll('.reveal-item').forEach(item => {
+-                                observer.observe(item);
+                             });
++
++                            // Gentle Parallax
++                            if (imgWrapper) {
++                                imgWrapper.addEventListener('mousemove', (e) => {
++                                    const rect = imgWrapper.getBoundingClientRect();
++                                    const x = e.clientX - rect.left - rect.width / 2;
++                                    const y = e.clientY - rect.top - rect.height / 2;
++                                    
++                                    const moveX = (x / rect.width) * 10;
++                                    const moveY = (y / rect.height) * 10;
++                                    
++                                    const activeImg = imgWrapper.querySelector('.idea-image.active');
++                                    if (activeImg) {
++                                        activeImg.style.transition = 'none';
++                                        activeImg.style.transform = `scale(1.02) translate(${moveX}px, ${moveY}px)`;
++                                    }
++                                });
++                                
++                                imgWrapper.addEventListener('mouseleave', () => {
++                                    const activeImg = imgWrapper.querySelector('.idea-image.active');
++                                    if (activeImg) {
++                                        activeImg.style.transition = 'opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
++                                        activeImg.style.transform = 'scale(1) translate(0, 0)';
++                                    }
++                                });
++                            }
+                         });
+                     </script>
+                 </section>
+-
+-                <!-- Technology Marquee Section -->
++<!-- Technology Marquee Section -->
+                 <section class="tech-marquee-section"
+                     style="background: #ffffff; padding: 60px 0; overflow: hidden; position: relative;">
+                     <div style="text-align: center; margin-bottom: 50px;">
+                         <h3
+-                            style="font-family: var(--td-ff-heading), sans-serif; font-size: clamp(36px, 5vw, 56px); font-weight: 700; color: #111; letter-spacing: -2px;">
++                            style="font-family: var(--td-ff-heading), sans-serif; font-size: clamp(40px, 6vw, 80px); font-weight: 800; color: #000; line-height: 1.05; margin-bottom: 32px; letter-spacing: -2px;">
+                             Technologies we master</h3>
+                     </div>
+                     <style>

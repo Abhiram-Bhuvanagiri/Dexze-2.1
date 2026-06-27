@@ -1,0 +1,16 @@
+{
+  "Description": "Add premium CSS styles for watermark, glassmorphism, micro-interactions, and scroll animations",
+  "Instruction": "Insert new CSS rules right before the Responsive media query.",
+  "ReplacementChunks": [
+    {
+      "AllowMultiple": false,
+      "EndLine": 1061,
+      "ReplacementContent": "                        /* Agency Premium Effects */\n                        .idea-watermark {\n                            position: absolute;\n                            top: -40px;\n                            right: -20px;\n                            font-size: 240px;\n                            font-family: var(--td-ff-heading), sans-serif;\n                            font-weight: 900;\n                            color: rgba(0,0,0,0.03);\n                            z-index: -1;\n                            line-height: 1;\n                            transition: opacity 0.4s ease;\n                            pointer-events: none;\n                        }\n                        \n                        .ideas-text-wrapper {\n                            margin-top: -60px;\n                            margin-left: -40px;\n                            background: rgba(255, 255, 255, 0.7);\n                            backdrop-filter: blur(20px);\n                            -webkit-backdrop-filter: blur(20px);\n                            border: 1px solid rgba(255, 255, 255, 0.8);\n                            border-radius: 20px;\n                            padding: 40px;\n                            box-shadow: 0 20px 50px rgba(0,0,0,0.06);\n                            position: relative;\n                            z-index: 10;\n                            width: calc(100% + 20px);\n                        }\n                        \n                        .idea-list-item:hover {\n                            transform: translateX(8px);\n                        }\n                        \n                        /* Scroll Reveal Entrance */\n                        .interactive-ideas-container.not-in-view .ideas-list-panel,\n                        .interactive-ideas-container.not-in-view .ideas-display-panel {\n                            opacity: 0;\n                            transform: translateY(40px);\n                        }\n                        \n                        .ideas-list-panel, .ideas-display-panel {\n                            transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);\n                        }\n                        .ideas-display-panel {\n                            transition-delay: 0.2s;\n                        }\n\n                        /* Responsive */",
+      "StartLine": 1060,
+      "TargetContent": "\n                        /* Responsive */"
+    }
+  ],
+  "TargetFile": "c:\\Users\\abhii\\OneDrive\\Desktop\\Dexze-2.1\\Dexze_9_Jun\\services-2.html",
+  "toolAction": "Adding premium CSS effects",
+  "toolSummary": "Add CSS effects"
+}

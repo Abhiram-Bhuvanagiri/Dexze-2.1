@@ -1,0 +1,98 @@
+[2026-06-27T04:37:44Z] USER: <USER_REQUEST>
+remove services-bg.mp4 video from ideas section bg
+</USER_REQUEST>
+<ADDITIONAL_METADA
+[2026-06-27T04:41:47Z] USER: <USER_REQUEST>
+in ideas section for left side heading add small sub headings like given in screensho
+[2026-06-27T04:46:01Z] USER: <USER_REQUEST>
+add this heading content with that para to section without black bg
+</USER_REQUEST>
+<
+[2026-06-27T04:48:29Z] USER: <USER_REQUEST>
+remove those subheadings on left side in ideas section 
+</USER_REQUEST>
+<ADDITIONAL_M
+[2026-06-27T04:50:42Z] USER: <USER_REQUEST>
+decrease the size of the images little in the right side of hero section
+</USER_REQUE
+[2026-06-27T04:53:11Z] USER: <USER_REQUEST>
+decrease the size of the images little in the right side of ideas section
+</USER_REQU
+[2026-06-27T04:57:07Z] USER: <USER_REQUEST>
+add just few  lines for para and two more points in the right side of idea section ch
+[2026-06-27T05:04:43Z] USER: <USER_REQUEST>
+for ideas section right side images content should be abled to scroll up to view whil
+[2026-06-27T05:09:39Z] USER: <USER_REQUEST>
+u decreased image size completely keep the images size as it was and add independentl
+[2026-06-27T05:12:32Z] USER: <USER_REQUEST>
+content is going down into scroll fix it the content should visible before scrolling 
+[2026-06-27T05:14:28Z] USER: <USER_REQUEST>
+scroll indepent creating big white space fix it  properly 
+</USER_REQUEST>
+<ADDITIONA
+[2026-06-27T05:19:42Z] USER: <USER_REQUEST>
+fix this white space while preserving the images size and content size and scroll ind
+[2026-06-27T05:28:41Z] USER: <USER_REQUEST>
+images are getting cut for few headings propose an idea to fix those while preserving
+[2026-06-27T05:30:25Z] USER: Comments on artifact URI: file:///c%3A/Users/abhii/.gemini/antigravity-ide/brain/a46578d7-6274-4213-
+[2026-06-27T05:33:29Z] USER: <USER_REQUEST>
+add independent scroll up for the left side headings bar in ideas section
+</USER_REQU
+[2026-06-27T05:35:28Z] USER: <USER_REQUEST>
+remove the images completely and adjust the typograpghy content
+</USER_REQUEST>
+<ADDI
+[2026-06-27T05:39:26Z] USER: <USER_REQUEST>
+change the colors of numbers and tick marks to black in ideas section
+</USER_REQUEST>
+[2026-06-27T05:40:50Z] USER: <USER_REQUEST>
+change that underscores to black
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current lo
+[2026-06-27T05:43:06Z] USER: <USER_REQUEST>
+i would like a modern line separation between left and right sides in the ideas secti
+[2026-06-27T05:45:17Z] USER: <USER_REQUEST>
+propse something to add in the ideas sections to make it more premium and agency leve
+[2026-06-27T05:47:17Z] USER: <USER_REQUEST>
+go head and implemet those changes with no mistakes without changing the format struc
+[2026-06-27T05:47:53Z] USER: Comments on artifact URI: file:///c%3A/Users/abhii/.gemini/antigravity-ide/brain/a46578d7-6274-4213-
+[2026-06-27T05:50:47Z] USER: <USER_REQUEST>
+fix it
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-06-27T11
+[2026-06-27T05:52:33Z] USER: <USER_REQUEST>
+fix the content glass morph card its getting overlapped with images
+</USER_REQUEST>
+<
+[2026-06-27T05:54:41Z] USER: <USER_REQUEST>
+highlight the separation lines in the idea section more and also add a color backgrou
+[2026-06-27T05:57:21Z] USER: <USER_REQUEST>
+lets keep an auto motion to the idea section if no action is performing if user tries
+[2026-06-27T05:59:53Z] USER: <USER_REQUEST>
+reduce the time to 1.5 seconds
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current loca
+[2026-06-27T06:01:34Z] USER: <USER_REQUEST>
+add left side headings bg color change to auto motion also
+</USER_REQUEST>
+<ADDITIONA
+[2026-06-27T06:03:26Z] USER: <USER_REQUEST>
+add motion left to right smooth transition of bg color change to black for left side 
+[2026-06-27T06:07:06Z] USER: <USER_REQUEST>
+auto motion is completely getting stopped  even for slight cursor movement remove tha
+[2026-06-27T06:09:46Z] USER: <USER_REQUEST>
+now swap the scale with dexze section with ideas section without changing anything ev
+[2026-06-27T06:15:23Z] USER: <USER_REQUEST>
+change this heading its too long make it short and professional also try to not inclu
+[2026-06-27T06:16:55Z] USER: <USER_REQUEST>
+change this heading its too long make it  professional 
+</USER_REQUEST>
+<ADDITIONAL_M
+[2026-06-27T06:38:18Z] USER: <USER_REQUEST>
+                TECH STACK
+
+         Technologies we master
+ Build with modern framew

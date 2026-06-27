@@ -1,0 +1,3 @@
+                        .idea-list-item.active .idea-number {
+                            color: #000;
+                        }

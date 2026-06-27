@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html class="no-js" lang="zxx">
 
 <head>
@@ -67,6 +67,25 @@
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
     </style>
+
+<style>
+.section-subtitle-lines {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.section-subtitle-lines::before,
+.section-subtitle-lines::after {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 1px;
+    background-color: currentColor;
+    opacity: 0.5;
+}
+</style>
+
 </head>
 
 <body>
@@ -178,18 +197,6 @@
 
     <!-- header-area-end -->
 
-    <!-- Global Fixed Video Background for Tech Scroll Section -->
-    <!-- It stays fixed globally and only shows through transparent sections -->
-    <div
-        style="position: fixed; top: 0; left: 0; width: 100%; height: 100vh; overflow: hidden; z-index: -3; background: #0b0b0c;">
-        <video autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover; opacity: 0.5;">
-            <source src="assets/video/services-bg.mp4" type="video/mp4">
-        </video>
-        <!-- Gradient Overlay -->
-        <div
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 100%);">
-        </div>
-    </div>
 
     <div id="smooth-wrapper">
         <div id="smooth-content">
@@ -201,11 +208,7 @@
                         <div class="row">
                             <!-- Left: Text content -->
                             <div class="col-lg-5 mb-5 mb-lg-0">
-                                <div style="display: flex; align-items: center; margin-bottom: 30px;">
-                                    <span style="display: inline-block; width: 30px; height: 2px; background-color: #ff7b47; margin-right: 15px;"></span>
-                                    <span style="color: #ff7b47; font-size: 13px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;">ENGINEERING INNOVATION</span>
-                                </div>
-                                <h1 style="font-family: var(--td-ff-heading), sans-serif; font-size: clamp(40px, 4vw, 64px); font-weight: 800; color: #000; line-height: 1.1; margin-bottom: 40px; text-transform: uppercase; letter-spacing: -1px;">
+                                <h1 style="font-family: var(--td-ff-heading), sans-serif; font-size: clamp(45px, 5vw, 75px); font-weight: 800; color: #000; line-height: 1.1; margin-bottom: 40px; text-transform: uppercase; letter-spacing: -1px;">
                                     DEVELOPMENT<br>
                                     <span style="color: #6a35ff;">THAT BUILDS</span><br>
                                     THE FUTURE
@@ -215,15 +218,24 @@
                                         Dexze builds scalable, high-performance digital products, robust web applications, and intuitive mobile solutions tailored for modern businesses.
                                     </p>
                                 </div>
+                                <style>
+                                    .hero-contact-btn-custom {
+                                        transition: background-color 0.3s ease, color 0.3s ease;
+                                    }
+                                    .hero-contact-btn-custom:hover {
+                                        background-color: #ffffff !important;
+                                        color: #000000 !important;
+                                    }
+                                </style>
                                 <div class="d-flex flex-wrap align-items-center">
-                                    <a href="#" class="td-btn" style="background-color: #000; color: #fff; border: none; font-weight: 600; padding: 18px 40px; border-radius: 6px; text-decoration: none; font-size: 14px; transition: all 0.3s ease; text-transform: uppercase; letter-spacing: 1px;">
-                                        START A PROJECT
+                                    <a href="contact.html" class="td-hero-btn-black hero-contact-btn-custom">
+                                        Start a Project
                                     </a>
                                 </div>
                             </div>
                             
                             <!-- Right: VR Video and 3 White Cards -->
-                            <div class="col-lg-7 d-flex flex-column justify-content-end h-100">
+                            <div class="col-lg-6 offset-lg-1 d-flex flex-column justify-content-end h-100">
                                 <!-- Large VR Girl Video filling the space -->
                                 <div class="mb-4" style="flex-grow: 1; min-height: 400px; width: 100%; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.1); position: relative;">
                                     <video autoplay muted loop playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;">
@@ -236,7 +248,7 @@
                                     <!-- Card 1 -->
                                     <div class="col-md-4 mb-4 mb-md-0 px-2">
                                         <div style="background: #ffffff; border-radius: 12px; padding: 25px 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); height: 100%; min-height: 180px; display: flex; flex-direction: column; justify-content: center;">
-                                            <span style="color: #888; font-size: 11px; font-weight: 500; letter-spacing: 1px; display: block; margin-bottom: 20px;">/ 01</span>
+                                            <span style="color: #000; font-size: 11px; font-weight: 500; letter-spacing: 1px; display: block; margin-bottom: 20px;">/ 01</span>
                                             <h3 style="font-family: var(--td-ff-heading), sans-serif; font-size: 32px; font-weight: 700; color: #111; margin-bottom: 10px; letter-spacing: -1px;">
                                                 <span class="odometer" data-count="10">0</span>+
                                             </h3>
@@ -246,7 +258,7 @@
                                     <!-- Card 2 -->
                                     <div class="col-md-4 mb-4 mb-md-0 px-2">
                                         <div style="background: #ffffff; border-radius: 12px; padding: 25px 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); height: 100%; min-height: 180px; display: flex; flex-direction: column; justify-content: center;">
-                                            <span style="color: #888; font-size: 11px; font-weight: 500; letter-spacing: 1px; display: block; margin-bottom: 20px;">/ 02</span>
+                                            <span style="color: #000; font-size: 11px; font-weight: 500; letter-spacing: 1px; display: block; margin-bottom: 20px;">/ 02</span>
                                             <h3 style="font-family: var(--td-ff-heading), sans-serif; font-size: 32px; font-weight: 700; color: #111; margin-bottom: 10px; letter-spacing: -1px;">
                                                 <span class="odometer" data-count="100">0</span>%
                                             </h3>
@@ -256,7 +268,7 @@
                                     <!-- Card 3 -->
                                     <div class="col-md-4 px-2">
                                         <div style="background: #ffffff; border-radius: 12px; padding: 25px 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); height: 100%; min-height: 180px; display: flex; flex-direction: column; justify-content: center;">
-                                            <span style="color: #888; font-size: 11px; font-weight: 500; letter-spacing: 1px; display: block; margin-bottom: 20px;">/ 03</span>
+                                            <span style="color: #000; font-size: 11px; font-weight: 500; letter-spacing: 1px; display: block; margin-bottom: 20px;">/ 03</span>
                                             <h3 style="font-family: var(--td-ff-heading), sans-serif; font-size: 24px; font-weight: 700; color: #111; margin-bottom: 10px; line-height: 1.2; letter-spacing: -0.5px;">
                                                 Focused<br>On Quality
                                             </h3>
@@ -310,9 +322,9 @@
                 <section id="tech-scroll-section" style="background-color: #f7f9fa; padding: 100px 0 50px 0; position: relative;">
                     <div class="container" style="text-align: center; margin-bottom: 80px;">
                         <div style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 24px;">
-                            <div style="height: 1px; width: 40px; background-color: #d2d2d2;"></div>
+                            <div style="height: 1px; width: 40px; background-color: #a0a0a0;"></div>
                             <span style="font-family: var(--td-ff-body), sans-serif; font-size: 13px; font-weight: 600; color: #111; text-transform: uppercase; letter-spacing: 2px;">Core Expertise</span>
-                            <div style="height: 1px; width: 40px; background-color: #d2d2d2;"></div>
+                            <div style="height: 1px; width: 40px; background-color: #a0a0a0;"></div>
                         </div>
                         <h2 style="font-family: var(--td-ff-heading), sans-serif; font-size: clamp(40px, 6vw, 80px); font-weight: 800; color: #000; line-height: 1.05; margin-bottom: 32px; letter-spacing: -2px;">
                             Engineering the future<br>of your business
@@ -632,97 +644,24 @@
                 </section>
 
                 
-                <!-- Features Grid Section -->
-                <section class="features-grid-section" style="background-color: #ffffff; padding: 120px 0; position: relative;">
-                    <div class="container" style="text-align: center; margin-bottom: 60px;">
-                        <div style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 24px;">
-                            <div style="height: 1px; width: 40px; background-color: #d2d2d2;"></div>
-                            <span style="font-family: var(--td-ff-body), sans-serif; font-size: 13px; font-weight: 600; color: #111; text-transform: uppercase; letter-spacing: 2px;">Scale with Dexze</span>
-                            <div style="height: 1px; width: 40px; background-color: #d2d2d2;"></div>
-                        </div>
-                        <h2 style="font-family: var(--td-ff-heading), sans-serif; font-size: clamp(40px, 6vw, 80px); font-weight: 800; color: #000; line-height: 1.05; margin-bottom: 32px; letter-spacing: -2px;">
-                            Scalable solutions engineered<br>for the future
-                        </h2>
-                        <p style="font-family: var(--td-ff-body), sans-serif; font-size: 20px; font-weight: 400; color: #666; max-width: 700px; margin: 0 auto; line-height: 1.8;">
-                            We combine cutting-edge AI, modern frameworks, and human-centric design to build products that redefine industry standards.
-                        </p>
-                    </div>
-
-                    <div class="container" style="max-width: 1300px;">
-                        <div style="background-color: #272525; border-radius: 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); padding: 0;">
-                            
-                            <!-- Column 1 -->
-                            <div style="padding: 60px 50px; border-right: 1px solid rgba(255,255,255,0.05); display: flex; flex-direction: column; align-items: flex-start;">
-                                <div style="width: 64px; height: 64px; background: rgba(0, 235, 214, 0.1); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 32px;">
-                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#00EBD6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                      <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-                                      <polyline points="2 12 12 17 22 12"></polyline>
-                                      <polyline points="2 17 12 22 22 17"></polyline>
-                                    </svg>
-                                </div>
-                                <h4 style="font-size: 24px; font-weight: 600; color: #ffffff; margin-bottom: 16px;">Customised solutions</h4>
-                                <p style="font-size: 16px; color: #aaa; line-height: 1.6; margin: 0;">
-                                    Unlock custom software solutions built for global enterprises, startups, and scalable platforms.
-                                </p>
-                            </div>
-
-                            <!-- Column 2 -->
-                            <div style="padding: 60px 50px; border-right: 1px solid rgba(255,255,255,0.05); display: flex; flex-direction: column; align-items: flex-start;">
-                                <div style="width: 64px; height: 64px; background: rgba(0, 235, 214, 0.1); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 32px;">
-                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#00EBD6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                      <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-                                      <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-                                      <line x1="12" y1="22.08" x2="12" y2="12"></line>
-                                    </svg>
-                                </div>
-                                <h4 style="font-size: 24px; font-weight: 600; color: #ffffff; margin-bottom: 16px;">Dedicated support</h4>
-                                <p style="font-size: 16px; color: #aaa; line-height: 1.6; margin: 0;">
-                                    Scale faster with dedicated technical expertise and round-the-clock infrastructure monitoring.
-                                </p>
-                            </div>
-
-                            <!-- Column 3 -->
-                            <div style="padding: 60px 50px; display: flex; flex-direction: column; align-items: flex-start;">
-                                <div style="width: 64px; height: 64px; background: rgba(0, 235, 214, 0.1); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 32px;">
-                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#00EBD6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                      <line x1="18" y1="20" x2="18" y2="10"></line>
-                                      <line x1="12" y1="20" x2="12" y2="4"></line>
-                                      <line x1="6" y1="20" x2="6" y2="14"></line>
-                                    </svg>
-                                </div>
-                                <h4 style="font-size: 24px; font-weight: 600; color: #ffffff; margin-bottom: 16px;">Real-time clarity</h4>
-                                <p style="font-size: 16px; color: #aaa; line-height: 1.6; margin: 0;">
-                                    Gain oversight of your digital performance in a single view for better data-driven decisions.
-                                </p>
-                            </div>
-
-                        </div>
-                    </div>
-                </section>
-
                 <!-- Ideas Become Products Section -->
-                <section id="ideas-become-products-section" style="background-color: #ffffff; position: relative; width: 100%; overflow: visible; z-index: 10;">
+                <section id="ideas-become-products-section" style="background-color: #ffffff; position: relative; width: 100%; overflow: visible; z-index: 10; padding: 160px 0;">
                     <!-- Section Header (Scrolls naturally) -->
-                    <div class="container" style="max-width: 1400px; margin: 0 auto; padding: 80px 32px 20px 32px; text-align: center;">
-                        <div style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 24px;">
-                            <div style="height: 1px; width: 40px; background-color: #d2d2d2;"></div>
-                            <span style="font-family: var(--td-ff-body), sans-serif; font-size: 13px; font-weight: 600; color: #111; text-transform: uppercase; letter-spacing: 2px;">FROM AN IDEA TO A PRODUCT</span>
-                            <div style="height: 1px; width: 40px; background-color: #d2d2d2;"></div>
-                        </div>
-                        <h2 style="font-family: var(--td-ff-heading), sans-serif; font-size: clamp(40px, 6vw, 80px); font-weight: 800; color: #000; line-height: 1.05; margin-bottom: 32px; letter-spacing: -2px;">
-                            Bring your ideas to life.
-                        </h2>
-                        <p style="font-family: var(--td-ff-body), sans-serif; font-size: 20px; font-weight: 400; color: #666; max-width: 700px; margin: 0 auto; line-height: 1.8;">
+                    <div class="container" style="text-align: center; margin-bottom: 64px; display: flex; flex-direction: column; align-items: center;">
+                        <span class="section-subtitle-lines" style="font-family: var(--td-ff-body), sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #8A8A8A; margin-bottom: 16px;">FROM AN IDEA TO A PRODUCT</span>
+                        <h3 style="font-family: var(--td-ff-heading), sans-serif; font-size: clamp(40px, 6vw, 80px); font-weight: 800; color: #000; line-height: 1.05; margin: 0; letter-spacing: -2px;">
+                            Bring your ideas to life.</h3>
+                        <p style="max-width: 850px; font-family: var(--td-ff-body), sans-serif; font-size: 20px; line-height: 1.6; font-weight: 400; color: rgba(0,0,0,0.65); margin: 24px auto 0 auto;">
                             We guide you through every stage of the product lifecycle—from initial discovery and design to development, testing, and scalable deployment. Partner with us to build digital experiences that matter.
                         </p>
                     </div>
 
                     
                     <!-- Interactive Ideas Section -->
-                    <div class="interactive-ideas-container" style="max-width: 1400px; width: 100%; margin: 80px auto; padding: 0 32px; display: flex; gap: 80px; align-items: flex-start; position: relative;">
+                    <div class="interactive-ideas-container container" style="margin: 100px auto 0 auto; display: flex; gap: 60px; align-items: flex-start; position: relative;">
                         
                         <!-- Left Side: Editorial List (40%) -->
-                        <div class="ideas-list-panel" style="width: 35%; display: flex; flex-direction: column; gap: 0;">
+                        <div class="ideas-list-panel" style="width: 45%; display: flex; flex-direction: column; gap: 0; border-right: 1px solid rgba(0,0,0,0.2); padding-right: 60px;">
                             
                             <!-- Item 1 -->
                             <div class="idea-list-item active" data-index="0">
@@ -787,7 +726,7 @@
                         </div>
 
                         <!-- Right Side: Visual & Text (65%) -->
-                        <div class="ideas-display-panel" style="width: 65%; position: sticky; top: 120px; display: flex; flex-direction: column; gap: 40px;">
+                        <div class="ideas-display-panel" style="width: 55%; position: sticky; top: 120px; display: flex; flex-direction: column; gap: 40px;">
                             <!-- Images Wrapper -->
                             <div class="ideas-images-wrapper">
                                 <img class="idea-image active" src="assets/img/services-2/discovery.png" alt="Discovery">
@@ -804,89 +743,83 @@
                                 <!-- Text 1 -->
                                 <div class="idea-text-content active">
                                     <h3 style="text-transform: uppercase;">Discovery</h3>
-                                    <p>Before writing a single line of code, we dive deep into understanding your business, users, pain points, and long-term goals. This phase is critical to mitigating risks and ensuring the final product aligns perfectly with market demands. We conduct deep-dive interviews, extensive competitor analysis, and collaborative stakeholder workshops to lay a rock-solid foundation for the entire product lifecycle.</p>
-                                                                        <p>By fostering open communication and transparency throughout this exploratory phase, we ensure that every stakeholder is fully aligned. This collaborative approach minimizes surprises later in development and maximizes the overall return on your digital investment.</p>
+                                    <p>Before writing a single line of code, we dive deep into understanding your business, users, and long-term goals. We conduct deep-dive interviews and competitor analysis to lay a rock-solid foundation for the entire product lifecycle.</p>
                                     <ul>
-                                        <li><span></span> Strategy & vision workshops</li>
-                                        <li><span></span> Competitor & market analysis</li>
-                                        <li><span></span> Technical feasibility assessment</li>
-                                        <li><span></span> Product roadmap & timeline</li>
-                                        <li><span></span> Resource allocation planning</li>
+                                        <li><i class="fa-solid fa-check"></i> Strategy & vision workshops</li>
+                                        <li><i class="fa-solid fa-check"></i> Competitor & market analysis</li>
+                                        <li><i class="fa-solid fa-check"></i> Technical feasibility assessment</li>
+                                        <li><i class="fa-solid fa-check"></i> Product roadmap & timeline</li>
+                                        <li><i class="fa-solid fa-check"></i> Resource allocation planning</li>
                                     </ul>
                                 </div>
 
                                 <!-- Text 2 -->
                                 <div class="idea-text-content">
                                     <h3 style="text-transform: uppercase;">Wireframes</h3>
-                                    <p>Mapping out user journeys, structural layouts, and core interaction patterns. This crucial step ensures logical flow and intuitive navigation before any visual styling is applied, helping to catch usability issues early on. By prioritizing information architecture and user psychology, we guarantee that your customers can achieve their goals with zero friction and absolute clarity.</p>
-                                                                        <p>We also conduct rigorous accessibility checks and cognitive walkthroughs during this stage. By validating these structural blueprints against real-world user scenarios, we ensure your product is intuitive for everyone from the very first interaction.</p>
+                                    <p>Mapping out user journeys and core interaction patterns ensures logical flow and intuitive navigation. We validate structural blueprints against real-world scenarios to guarantee a frictionless experience from the very first interaction.</p>
                                     <ul>
-                                        <li><span></span> Low-fidelity wireframes</li>
-                                        <li><span></span> Comprehensive user flows</li>
-                                        <li><span></span> Information architecture (IA)</li>
-                                        <li><span></span> Interactive clickable prototypes</li>
-                                        <li><span></span> Early usability testing</li>
+                                        <li><i class="fa-solid fa-check"></i> Low-fidelity wireframes</li>
+                                        <li><i class="fa-solid fa-check"></i> Comprehensive user flows</li>
+                                        <li><i class="fa-solid fa-check"></i> Information architecture (IA)</li>
+                                        <li><i class="fa-solid fa-check"></i> Interactive clickable prototypes</li>
+                                        <li><i class="fa-solid fa-check"></i> Early usability testing</li>
                                     </ul>
                                 </div>
 
                                 <!-- Text 3 -->
                                 <div class="idea-text-content">
                                     <h3 style="text-transform: uppercase;">UI Design</h3>
-                                    <p>Creating premium, high-fidelity visual interfaces and comprehensive style guides that captivate your target audience. We focus heavily on modern aesthetics, accessibility standards, and strict brand alignment. Every component is meticulously crafted to deliver an award-winning digital experience that feels luxurious, intentional, and perfectly tailored to your brand identity.</p>
-                                                                        <p>We leverage advanced animation principles and micro-interactions to breathe life into the static screens. This meticulous attention to motion design not only delights users but also provides essential visual feedback that guides them effortlessly through complex workflows.</p>
+                                    <p>We create premium, high-fidelity visual interfaces and style guides that captivate your target audience. Every component is meticulously crafted to deliver an award-winning digital experience tailored to your brand identity.</p>
                                     <ul>
-                                        <li><span></span> High-fidelity Figma compositions</li>
-                                        <li><span></span> Comprehensive design systems</li>
-                                        <li><span></span> Micro-interaction guidelines</li>
-                                        <li><span></span> Responsive layout adaptions</li>
-                                        <li><span></span> Final production visual assets</li>
+                                        <li><i class="fa-solid fa-check"></i> High-fidelity Figma compositions</li>
+                                        <li><i class="fa-solid fa-check"></i> Comprehensive design systems</li>
+                                        <li><i class="fa-solid fa-check"></i> Micro-interaction guidelines</li>
+                                        <li><i class="fa-solid fa-check"></i> Responsive layout adaptions</li>
+                                        <li><i class="fa-solid fa-check"></i> Final production visual assets</li>
                                     </ul>
                                 </div>
 
                                 <!-- Text 4 -->
                                 <div class="idea-text-content">
                                     <h3 style="text-transform: uppercase;">Development</h3>
-                                    <p>Translating pixel-perfect designs into clean, production-ready code. Our engineers build robust, scalable architectures leveraging the absolute latest in web and mobile technologies. We enforce strict coding standards, conduct thorough peer reviews, and utilize modern frameworks to guarantee blazing-fast performance, rock-solid security, and future-proof scalability.</p>
-                                                                        <p>Furthermore, our rigorous DevOps practices and continuous integration pipelines ensure that new features are seamlessly merged, tested, and deployed. This agile methodology allows us to maintain rapid development cycles without ever compromising on code quality or system stability.</p>
+                                    <p>Translating pixel-perfect designs into clean, production-ready code. Our engineers build robust, scalable architectures leveraging the latest technologies to guarantee blazing-fast performance and future-proof scalability.</p>
                                     <ul>
-                                        <li><span></span> Custom frontend engineering</li>
-                                        <li><span></span> Secure backend architecture</li>
-                                        <li><span></span> API & third-party integrations</li>
-                                        <li><span></span> Database schema & optimization</li>
-                                        <li><span></span> Scalable cloud infrastructure</li>
+                                        <li><i class="fa-solid fa-check"></i> Custom frontend engineering</li>
+                                        <li><i class="fa-solid fa-check"></i> Secure backend architecture</li>
+                                        <li><i class="fa-solid fa-check"></i> API & third-party integrations</li>
+                                        <li><i class="fa-solid fa-check"></i> Database schema & optimization</li>
+                                        <li><i class="fa-solid fa-check"></i> Scalable cloud infrastructure</li>
                                     </ul>
                                 </div>
 
                                 <!-- Text 5 -->
                                 <div class="idea-text-content">
                                     <h3 style="text-transform: uppercase;">Testing</h3>
-                                    <p>Rigorous quality assurance to ensure bug-free operation under any condition. We implement a combination of automated integration testing and extensive manual checks. We stress-test the application across all modern devices, browsers, and operating systems to identify bottlenecks, ensuring flawless execution from day one of launch.</p>
-                                                                        <p>Beyond functional correctness, we heavily prioritize performance profiling and security auditing. By simulating high-traffic scenarios and employing ethical hacking techniques, we fortify your application against potential breaches and ensure it remains lightning-fast under pressure.</p>
+                                    <p>Rigorous quality assurance ensures bug-free operation under any condition. We implement extensive automated and manual testing to simulate high-traffic scenarios, fortifying your application against potential bottlenecks.</p>
                                     <ul>
-                                        <li><span></span> Automated testing suites (E2E)</li>
-                                        <li><span></span> Manual cross-browser QA</li>
-                                        <li><span></span> Performance & load testing</li>
-                                        <li><span></span> Security vulnerability audits</li>
-                                        <li><span></span> Bug tracking & resolution</li>
+                                        <li><i class="fa-solid fa-check"></i> Automated testing suites (E2E)</li>
+                                        <li><i class="fa-solid fa-check"></i> Manual cross-browser QA</li>
+                                        <li><i class="fa-solid fa-check"></i> Performance & load testing</li>
+                                        <li><i class="fa-solid fa-check"></i> Security vulnerability audits</li>
+                                        <li><i class="fa-solid fa-check"></i> Bug tracking & resolution</li>
                                     </ul>
                                 </div>
 
                                 <!-- Text 6 -->
                                 <div class="idea-text-content">
                                     <h3 style="text-transform: uppercase;">Launch</h3>
-                                    <p>Deploying the product smoothly to production servers with zero-downtime deployment strategies. We provide post-launch monitoring and continuous support to ensure your application performs optimally as your user base scales.</p>
+                                    <p>Deploying the product smoothly to production servers with zero-downtime deployment strategies. We provide post-launch monitoring to ensure optimal performance as you scale.</p>
                                     <ul>
-                                        <li><i class="fa-solid fa-check" style="color: var(--td-color-theme, #6a35ff);"></i> Live product</li>
-                                        <li><i class="fa-solid fa-check" style="color: var(--td-color-theme, #6a35ff);"></i> Business analytics</li>
-                                        <li><i class="fa-solid fa-check" style="color: var(--td-color-theme, #6a35ff);"></i> User adoption</li>
-                                        <li><i class="fa-solid fa-check" style="color: var(--td-color-theme, #6a35ff);"></i> Ongoing maintenance</li>
-                                        <li><i class="fa-solid fa-check" style="color: var(--td-color-theme, #6a35ff);"></i> Cloud hosting setup</li>
+                                        <li><i class="fa-solid fa-check"></i> Live product</li>
+                                        <li><i class="fa-solid fa-check"></i> Business analytics</li>
+                                        <li><i class="fa-solid fa-check"></i> User adoption</li>
+                                        <li><i class="fa-solid fa-check"></i> Ongoing maintenance</li>
+                                        <li><i class="fa-solid fa-check"></i> Cloud hosting setup</li>
                                     </ul>
                                 </div>
 
                             </div>
                         </div>
-                    </div>
                     </div>
 
                     <style>
@@ -897,27 +830,45 @@
 
                         /* Left Side List */
                         .idea-list-item {
-                            padding: 48px 0;
-                            border-bottom: 1px solid rgba(0,0,0,0.1);
+                            padding: 48px 24px;
+                            margin: 0 -24px;
+                            border-bottom: 1px solid rgba(0,0,0,0.2);
                             cursor: pointer;
                             display: flex;
                             align-items: baseline;
                             gap: 24px;
                             position: relative;
+                            z-index: 1;
                             transition: all 0.4s ease;
                         }
+                        .idea-list-item::before {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 0;
+                            height: 100%;
+                            background-color: #000000;
+                            z-index: -1;
+                            transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                        }
+                        .idea-list-item:hover::before,
+                        .idea-list-item.active::before {
+                            width: 100%;
+                        }
+
                         .idea-list-item:last-child {
                             border-bottom: none;
                         }
                         
                         .idea-list-active-line {
                             position: absolute;
-                            left: -24px;
+                            left: 0;
                             top: 50%;
                             transform: translateY(-50%);
                             width: 0;
                             height: 2px;
-                            background: var(--td-color-theme, #6a35ff);
+                            background: #000; /* changed to black */
                             transition: width 0.4s ease;
                         }
                         .idea-list-item.active .idea-list-active-line {
@@ -928,11 +879,22 @@
                             font-family: var(--td-ff-heading), sans-serif;
                             font-size: 24px;
                             font-weight: 500;
-                            color: #999;
+                            color: #000;
                             transition: color 0.4s ease;
                         }
-                        .idea-list-item.active .idea-number {
-                            color: #000 !important;
+                                                .idea-list-item:hover .idea-number,
+                        .idea-list-item:hover .idea-heading,
+                        .idea-list-item.active .idea-number,
+                        .idea-list-item.active .idea-heading {
+                            color: #ffffff !important;
+                        }
+                        .idea-list-item:hover .idea-list-active-line,
+                        .idea-list-item.active .idea-list-active-line {
+                            background: #ffffff;
+                        }
+                        .idea-list-item:hover .idea-subtext,
+                        .idea-list-item.active .idea-subtext {
+                            color: rgba(255, 255, 255, 0.7) !important;
                         }
                         
                         .idea-text-group {
@@ -964,16 +926,13 @@
                         }
                         .idea-list-item.active .idea-heading {
                             font-weight: 700;
-                            color: #111;
                         }
-                        .idea-list-item.active .idea-subtext {
-                            color: #666;
-                        }
+                        
 
                         /* Right Side Image */
                         .ideas-images-wrapper {
                             width: 100%;
-                            aspect-ratio: 16/10;
+                            aspect-ratio: 3/2;
                             position: relative;
                             border-radius: 16px;
                             overflow: hidden;
@@ -1035,7 +994,9 @@
                             transform: translateY(20px);
                             transition: opacity 0.5s ease, transform 0.5s ease;
                         }
-                        /*                         .idea-text-content p {
+                        
+                        .idea-text-content p {
+                            font-family: var(--td-ff-body), sans-serif;
                             color: #666;
                             font-size: 18px;
                             line-height: 1.6;
@@ -1047,13 +1008,14 @@
                         }
                         .idea-text-content p:nth-of-type(1) { transition-delay: 0.05s; }
                         .idea-text-content p:nth-of-type(2) { transition-delay: 0.10s; }
+                        
                         .idea-text-content ul {
                             list-style: none;
                             padding: 0;
                             margin: 0;
                             display: flex;
                             flex-direction: column;
-                            gap: 12px;
+                            gap: 16px;
                             opacity: 0;
                             transform: translateY(20px);
                             transition: opacity 0.5s ease 0.2s, transform 0.5s ease 0.2s;
@@ -1062,16 +1024,14 @@
                             display: flex;
                             align-items: center;
                             gap: 12px;
+                            font-family: var(--td-ff-body), sans-serif;
                             font-size: 16px;
                             font-weight: 500;
                             color: #333;
                         }
-                        .idea-text-content ul li span {
-                            display: inline-block;
-                            width: 6px;
-                            height: 6px;
-                            background: var(--td-color-theme, #6a35ff);
-                            border-radius: 50%;
+                        .idea-text-content ul li i {
+                            color: #000;
+                            font-size: 14px;
                         }
                         
                         .idea-text-content h4.idea-deliverables-title {
@@ -1133,16 +1093,63 @@
                                 texts[index].classList.add('active');
                             }
                             
+                            let currentStageIndex = 0;
+                            let autoMotionInterval;
+
+                            function startAutoMotion() {
+                                clearInterval(autoMotionInterval);
+                                autoMotionInterval = setInterval(() => {
+                                    currentStageIndex = (currentStageIndex + 1) % listItems.length;
+                                    setActiveStage(currentStageIndex);
+                                }, 1500);
+                            }
+
+                            let hasInteracted = false;
+
+                            const ideasListPanel = document.querySelector('.ideas-list-panel');
+                            if (ideasListPanel) {
+                                ideasListPanel.addEventListener('mouseenter', () => {
+                                    hasInteracted = true;
+                                    clearInterval(autoMotionInterval);
+                                });
+                                // Optional: touchstart for mobile
+                                ideasListPanel.addEventListener('touchstart', () => {
+                                    hasInteracted = true;
+                                    clearInterval(autoMotionInterval);
+                                }, {passive: true});
+                            }
+
+                            const ideasSection = document.getElementById('ideas-become-products-section');
+                            if (ideasSection) {
+                                const observer = new IntersectionObserver((entries) => {
+                                    entries.forEach(entry => {
+                                        if (!entry.isIntersecting) {
+                                            // User scrolled away, reset interaction state and stop timer
+                                            hasInteracted = false;
+                                            clearInterval(autoMotionInterval);
+                                        } else {
+                                            // User scrolled back into view
+                                            if (!hasInteracted) {
+                                                startAutoMotion();
+                                            }
+                                        }
+                                    });
+                                }, { threshold: 0.1 });
+                                observer.observe(ideasSection);
+                            }
+
                             listItems.forEach((item, index) => {
                                 // Desktop Hover
                                 item.addEventListener('mouseenter', () => {
                                     if (window.innerWidth > 991) {
+                                        currentStageIndex = index;
                                         setActiveStage(index);
                                     }
                                 });
                                 // Mobile Tap
                                 item.addEventListener('click', () => {
                                     if (window.innerWidth <= 991) {
+                                        currentStageIndex = index;
                                         setActiveStage(index);
                                     }
                                 });
@@ -1176,224 +1183,203 @@
                         });
                     </script>
                 </section>
-<!-- Technology Marquee Section -->
+
+                <!-- Technology Marquee Section -->
                 <section class="tech-marquee-section"
-                    style="background: #ffffff; padding: 60px 0; overflow: hidden; position: relative;">
-                    <div style="text-align: center; margin-bottom: 50px;">
+                    style="background: radial-gradient(circle at center, #FFFFFF 0%, #F8F8F8 100%); padding: 160px 0; overflow: hidden; position: relative;">
+                    <div style="text-align: center; margin-bottom: 64px; display: flex; flex-direction: column; align-items: center;">
+                        <span class="section-subtitle-lines" style="font-family: var(--td-ff-body), sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #8A8A8A; margin-bottom: 16px;">TECH STACK</span>
                         <h3
-                            style="font-family: var(--td-ff-heading), sans-serif; font-size: clamp(40px, 6vw, 80px); font-weight: 800; color: #000; line-height: 1.05; margin-bottom: 32px; letter-spacing: -2px;">
+                            style="font-family: var(--td-ff-heading), sans-serif; font-size: clamp(40px, 6vw, 80px); font-weight: 800; color: #000; line-height: 1.05; margin: 0; letter-spacing: -2px;">
                             Technologies we master</h3>
+                        <p style="max-width: 620px; font-family: var(--td-ff-body), sans-serif; font-size: 20px; line-height: 1.6; font-weight: 400; color: rgba(0,0,0,0.65); margin: 24px auto 0 auto;">
+                            Building digital products with trusted frameworks, AI platforms, and modern development tools.
+                        </p>
                     </div>
                     <style>
+                        .marquee-container {
+                            mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+                            -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+                            display: flex;
+                            flex-direction: column;
+                            gap: 40px;
+                        }
+
                         .marquee-track {
                             display: flex;
+                            gap: 16px;
                             width: max-content;
-                            margin-bottom: 20px;
+                            will-change: transform;
                         }
 
                         .marquee-track.left {
-                            animation: scrollMarqueeLeft 40s linear infinite;
+                            animation: scrollMarqueeLeft 30s linear infinite;
                         }
 
                         .marquee-track.right {
-                            animation: scrollMarqueeRight 40s linear infinite;
-                            /* Offset so it doesn't align perfectly with the top row */
-                            transform: translateX(-50%);
+                            animation: scrollMarqueeRight 42s linear infinite;
                         }
 
                         .marquee-item {
                             display: flex;
                             align-items: center;
                             justify-content: center;
-                            background-color: #f4f5f6;
-                            padding: 15px 30px;
-                            margin: 0 10px;
-                            border-radius: 8px;
+                            gap: 12px;
+                            background: #FAFAFA;
+                            border: 1px solid rgba(0,0,0,0.05);
+                            border-radius: 18px;
+                            padding: 18px 28px;
+                            height: 68px;
+                            box-shadow: 0 8px 24px rgba(0,0,0,0.04);
                             font-family: var(--td-ff-heading), sans-serif;
-                            font-size: 20px;
+                            font-size: 18px;
                             font-weight: 600;
                             color: #111;
+                            transition: transform 250ms ease-out, border-color 250ms ease-out, box-shadow 250ms ease-out;
+                            cursor: default;
                             white-space: nowrap;
-                            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
-                            transition: transform 0.3s ease;
-                        }
-
-                        .marquee-item:hover {
-                            transform: translateY(-5px);
                         }
 
                         .marquee-item img {
-                            width: 28px;
-                            height: 28px;
-                            margin-right: 12px;
+                            height: 24px;
+                            width: auto;
                             object-fit: contain;
+                            transition: transform 250ms ease-out;
+                        }
+
+                        .marquee-item:hover {
+                            transform: translateY(-4px);
+                            border-color: rgba(0,0,0,0.1);
+                            box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+                        }
+
+                        .marquee-item:hover img {
+                            transform: scale(1.05);
                         }
 
                         @keyframes scrollMarqueeLeft {
-                            0% {
-                                transform: translateX(0);
-                            }
-
-                            100% {
-                                transform: translateX(-50%);
-                            }
+                            0% { transform: translateX(0); }
+                            100% { transform: translateX(-50%); }
                         }
 
                         @keyframes scrollMarqueeRight {
-                            0% {
-                                transform: translateX(-50%);
-                            }
-
-                            100% {
-                                transform: translateX(0);
-                            }
+                            0% { transform: translateX(-50%); }
+                            100% { transform: translateX(0); }
                         }
                     </style>
 
-                    <!-- Top Row: Web, App, Design (Scrolling Left) -->
-                    <div class="marquee-track left">
-                        <!-- Group 1 -->
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/nextdotjs" alt="Next.js">
-                            Next.js</div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/react" alt="React"> React</div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/nodedotjs" alt="Node.js">
-                            Node.js</div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/vuedotjs" alt="Vue.js"> Vue.js
-                        </div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/typescript" alt="TypeScript">
-                            TypeScript</div>
-
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/flutter" alt="Flutter"> Flutter
-                        </div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/swift" alt="Swift"> Swift</div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/kotlin" alt="Kotlin"> Kotlin
-                        </div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/firebase" alt="Firebase">
-                            Firebase</div>
-
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/figma" alt="Figma"> Figma</div>
-                        <div class="marquee-item"><img
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/xd/xd-original.svg"
-                                alt="Adobe XD"> Adobe
-                            XD</div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/sketch" alt="Sketch"> Sketch
-                        </div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/webflow" alt="Webflow"> Webflow
-                        </div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/framer" alt="Framer"> Framer
+                    <div class="marquee-container">
+                        <!-- Top Row: Frontend & Database (Scrolling Left) -->
+                        <div class="marquee-track left">
+                            <!-- Group 1 -->
+                            <div class="marquee-item"><img src="https://cdn.simpleicons.org/webflow" alt="Webflow"> Webflow</div>
+                            <div class="marquee-item"><img src="https://cdn.simpleicons.org/framer" alt="Framer"> Framer</div>
+                            <div class="marquee-item"><img src="https://cdn.simpleicons.org/nextdotjs" alt="Next.js"> Next.js</div>
+                            <div class="marquee-item"><img src="https://cdn.simpleicons.org/react" alt="React"> React</div>
+                            <div class="marquee-item"><img src="https://cdn.simpleicons.org/vuedotjs" alt="Vue"> Vue</div>
+                            <div class="marquee-item"><img src="https://cdn.simpleicons.org/supabase" alt="Supabase"> Supabase</div>
+                            <div class="marquee-item"><img src="https://cdn.simpleicons.org/firebase" alt="Firebase"> Firebase</div>
+                            
+                            <!-- Group 2 (Duplicate for infinite loop) -->
+                            <div class="marquee-item"><img src="https://cdn.simpleicons.org/webflow" alt="Webflow"> Webflow</div>
+                            <div class="marquee-item"><img src="https://cdn.simpleicons.org/framer" alt="Framer"> Framer</div>
+                            <div class="marquee-item"><img src="https://cdn.simpleicons.org/nextdotjs" alt="Next.js"> Next.js</div>
+                            <div class="marquee-item"><img src="https://cdn.simpleicons.org/react" alt="React"> React</div>
+                            <div class="marquee-item"><img src="https://cdn.simpleicons.org/vuedotjs" alt="Vue"> Vue</div>
+                            <div class="marquee-item"><img src="https://cdn.simpleicons.org/supabase" alt="Supabase"> Supabase</div>
+                            <div class="marquee-item"><img src="https://cdn.simpleicons.org/firebase" alt="Firebase"> Firebase</div>
                         </div>
 
-                        <!-- Group 2 (Duplicate for loop) -->
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/nextdotjs" alt="Next.js">
-                            Next.js</div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/react" alt="React"> React</div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/nodedotjs" alt="Node.js">
-                            Node.js</div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/vuedotjs" alt="Vue.js"> Vue.js
-                        </div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/typescript" alt="TypeScript">
-                            TypeScript</div>
-
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/flutter" alt="Flutter"> Flutter
-                        </div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/swift" alt="Swift"> Swift</div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/kotlin" alt="Kotlin"> Kotlin
-                        </div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/firebase" alt="Firebase">
-                            Firebase</div>
-
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/figma" alt="Figma"> Figma</div>
-                        <div class="marquee-item"><img
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/xd/xd-original.svg"
-                                alt="Adobe XD"> Adobe
-                            XD</div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/sketch" alt="Sketch"> Sketch
-                        </div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/webflow" alt="Webflow"> Webflow
-                        </div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/framer" alt="Framer"> Framer
+                        <!-- Bottom Row: Backend, AI, Automation (Scrolling Right) -->
+                        <div class="marquee-track right">
+                            <!-- Group 1 -->
+                            <div class="marquee-item"><img src="https://cdn.simpleicons.org/nodedotjs" alt="Node.js"> Node.js</div>
+                            <div class="marquee-item"><img src="https://cdn.simpleicons.org/python" alt="Python"> Python</div>
+                            <div class="marquee-item"><img src="https://cdn.simpleicons.org/anthropic" alt="Anthropic"> Anthropic</div>
+                            <div class="marquee-item"><img src="https://cdn.simpleicons.org/pytorch" alt="PyTorch"> PyTorch</div>
+                            <div class="marquee-item"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg" alt="OpenAI"> OpenAI</div>
+                            <div class="marquee-item"><img src="https://cdn.simpleicons.org/zapier" alt="Zapier"> Zapier</div>
+                            <div class="marquee-item"><img src="https://cdn.simpleicons.org/make" alt="Make"> Make</div>
+                            <div class="marquee-item"><img src="https://cdn.simpleicons.org/uipath" alt="UiPath"> UiPath</div>
+                            
+                            <!-- Group 2 (Duplicate for infinite loop) -->
+                            <div class="marquee-item"><img src="https://cdn.simpleicons.org/nodedotjs" alt="Node.js"> Node.js</div>
+                            <div class="marquee-item"><img src="https://cdn.simpleicons.org/python" alt="Python"> Python</div>
+                            <div class="marquee-item"><img src="https://cdn.simpleicons.org/anthropic" alt="Anthropic"> Anthropic</div>
+                            <div class="marquee-item"><img src="https://cdn.simpleicons.org/pytorch" alt="PyTorch"> PyTorch</div>
+                            <div class="marquee-item"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg" alt="OpenAI"> OpenAI</div>
+                            <div class="marquee-item"><img src="https://cdn.simpleicons.org/zapier" alt="Zapier"> Zapier</div>
+                            <div class="marquee-item"><img src="https://cdn.simpleicons.org/make" alt="Make"> Make</div>
+                            <div class="marquee-item"><img src="https://cdn.simpleicons.org/uipath" alt="UiPath"> UiPath</div>
                         </div>
                     </div>
+                </section>
+<!-- Features Grid Section -->
+                <section class="features-grid-section" style="background-color: #ffffff; padding: 160px 0; position: relative;">
+                    <div class="container" style="text-align: center; margin-bottom: 64px; display: flex; flex-direction: column; align-items: center;">
+                        <span class="section-subtitle-lines" style="font-family: var(--td-ff-body), sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #8A8A8A; margin-bottom: 16px;">SCALE WITH DEXZE</span>
+                        <h3 style="font-family: var(--td-ff-heading), sans-serif; font-size: clamp(40px, 6vw, 80px); font-weight: 800; color: #000; line-height: 1.05; margin: 0; letter-spacing: -2px;">
+                            Scalable solutions engineered<br>for the future</h3>
+                        <p style="max-width: 620px; font-family: var(--td-ff-body), sans-serif; font-size: 20px; line-height: 1.6; font-weight: 400; color: rgba(0,0,0,0.65); margin: 24px auto 0 auto;">
+                            We combine cutting-edge AI, modern frameworks, and human-centric design to build products that redefine industry standards.
+                        </p>
+                    </div>
 
-                    <!-- Bottom Row: AI, Automation, Agents (Scrolling Right) -->
-                    <div class="marquee-track right">
-                        <!-- Group 1 -->
-                        <div class="marquee-item"><img
-                                src="https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg" alt="OpenAI">
-                            OpenAI
-                        </div>
-                        <div class="marquee-item"><img
-                                src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg"
-                                alt="Hugging Face">
-                            Hugging Face</div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/anthropic" alt="Anthropic">
-                            Anthropic</div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/python" alt="Python"> Python
-                        </div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/pytorch" alt="PyTorch"> PyTorch
-                        </div>
+                    <div class="container" style="max-width: 1300px; margin-top: 36px;">
+                        <div style="background-color: #272525; border-radius: 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); padding: 0;">
+                            
+                            <!-- Column 1 -->
+                            <div style="padding: 60px 50px; border-right: 1px solid rgba(255,255,255,0.05); display: flex; flex-direction: column; align-items: flex-start;">
+                                <div style="width: 64px; height: 64px; background: rgba(0, 235, 214, 0.1); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 32px;">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#00EBD6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                      <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                      <polyline points="2 12 12 17 22 12"></polyline>
+                                      <polyline points="2 17 12 22 22 17"></polyline>
+                                    </svg>
+                                </div>
+                                <h4 style="font-size: 24px; font-weight: 600; color: #ffffff; margin-bottom: 16px;">Customised solutions</h4>
+                                <p style="font-size: 16px; color: #aaa; line-height: 1.6; margin: 0;">
+                                    Unlock custom software solutions built for global enterprises, startups, and scalable platforms.
+                                </p>
+                            </div>
 
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/zapier" alt="Zapier"> Zapier
-                        </div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/make" alt="Make"> Make</div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/uipath" alt="UiPath"> UiPath
-                        </div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/selenium" alt="Selenium">
-                            Selenium</div>
+                            <!-- Column 2 -->
+                            <div style="padding: 60px 50px; border-right: 1px solid rgba(255,255,255,0.05); display: flex; flex-direction: column; align-items: flex-start;">
+                                <div style="width: 64px; height: 64px; background: rgba(0, 235, 214, 0.1); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 32px;">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#00EBD6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                      <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                      <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                      <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                                    </svg>
+                                </div>
+                                <h4 style="font-size: 24px; font-weight: 600; color: #ffffff; margin-bottom: 16px;">Dedicated support</h4>
+                                <p style="font-size: 16px; color: #aaa; line-height: 1.6; margin: 0;">
+                                    Scale faster with dedicated technical expertise and round-the-clock infrastructure monitoring.
+                                </p>
+                            </div>
 
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/tensorflow" alt="TensorFlow">
-                            TensorFlow</div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/langchain" alt="LangChain">
-                            LangChain</div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/docker" alt="Docker"> Docker
-                        </div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/kubernetes" alt="Kubernetes">
-                            Kubernetes</div>
-                        <div class="marquee-item"><img
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
-                                alt="AWS"> AWS</div>
+                            <!-- Column 3 -->
+                            <div style="padding: 60px 50px; display: flex; flex-direction: column; align-items: flex-start;">
+                                <div style="width: 64px; height: 64px; background: rgba(0, 235, 214, 0.1); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 32px;">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#00EBD6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                      <line x1="18" y1="20" x2="18" y2="10"></line>
+                                      <line x1="12" y1="20" x2="12" y2="4"></line>
+                                      <line x1="6" y1="20" x2="6" y2="14"></line>
+                                    </svg>
+                                </div>
+                                <h4 style="font-size: 24px; font-weight: 600; color: #ffffff; margin-bottom: 16px;">Real-time clarity</h4>
+                                <p style="font-size: 16px; color: #aaa; line-height: 1.6; margin: 0;">
+                                    Gain oversight of your digital performance in a single view for better data-driven decisions.
+                                </p>
+                            </div>
 
-                        <!-- Group 2 (Duplicate for loop) -->
-                        <div class="marquee-item"><img
-                                src="https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg" alt="OpenAI">
-                            OpenAI
                         </div>
-                        <div class="marquee-item"><img
-                                src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg"
-                                alt="Hugging Face">
-                            Hugging Face</div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/anthropic" alt="Anthropic">
-                            Anthropic</div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/python" alt="Python"> Python
-                        </div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/pytorch" alt="PyTorch"> PyTorch
-                        </div>
-
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/zapier" alt="Zapier"> Zapier
-                        </div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/make" alt="Make"> Make</div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/uipath" alt="UiPath"> UiPath
-                        </div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/selenium" alt="Selenium">
-                            Selenium</div>
-
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/tensorflow" alt="TensorFlow">
-                            TensorFlow</div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/langchain" alt="LangChain">
-                            LangChain</div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/docker" alt="Docker"> Docker
-                        </div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/kubernetes" alt="Kubernetes">
-                            Kubernetes</div>
-                        <div class="marquee-item"><img
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
-                                alt="AWS"> AWS</div>
                     </div>
                 </section>
 
                 <!-- Creative CTA Section -->
                 <section class="creative-cta-section"
-                    style="background-color: #1a1a1a; padding: 10vw 5vw; display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 40px;">
+                    style="background-color: #1a1a1a; padding: 10vw 5vw; display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 40px; margin-bottom: 100px;">
 
                     <style>
                         @keyframes textShine {
@@ -1442,10 +1428,20 @@
 
                     <!-- Button Side -->
                     <div style="padding-bottom: 10px;">
-                        <a href="contact.html"
-                            style="font-family: var(--td-ff-heading), sans-serif; font-size: 18px; font-weight: 700; color: #ffffff; text-decoration: none; display: flex; align-items: center; gap: 15px; border-bottom: 1px solid #ffffff; padding-bottom: 5px; transition: opacity 0.3s;">
-                            Get in touch
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        <style>
+                            .cta-btn-custom {
+                                transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+                            }
+                            .cta-btn-custom:hover {
+                                background-color: #ffffff !important;
+                                color: #000000 !important;
+                                transform: translateY(-3px);
+                            }
+                        </style>
+                        <a href="contact.html" class="td-btn cta-btn-custom"
+                            style="background-color: #00EBD6; color: #000; border: none; font-weight: 700; padding: 18px 40px; border-radius: 6px; text-decoration: none; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; display: inline-flex; align-items: center; gap: 10px;">
+                            GET IN TOUCH
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <line x1="5" y1="12" x2="19" y2="12"></line>
                                 <polyline points="12 5 19 12 12 19"></polyline>
@@ -1572,9 +1568,50 @@
     <script src="assets/js/ajax-form.js"></script>
     <!--<< main.Js >>-->
     <script src="assets/js/main.js"></script>
-</body>
+    <!-- Agency Level Text Motion Animations -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+                gsap.registerPlugin(ScrollTrigger);
 
-</html>ript src="assets/js/main.js"></script>
-</body>
+                // 1. Hero Section Opening Animation (Smooth Upward Motion)
+                const heroTl = gsap.timeline({ delay: 0.2 });
 
+                heroTl.fromTo('.survy-hero-section h1',
+                    { opacity: 0, y: 80 },
+                    { opacity: 1, y: 0, duration: 1.8, ease: "power3.out" }
+                )
+                .fromTo('.survy-hero-section p',
+                    { opacity: 0, y: 40 },
+                    { opacity: 1, y: 0, duration: 1.6, ease: "power3.out" },
+                    "-=1.4"
+                )
+                .fromTo('.survy-hero-section .td-btn',
+                    { opacity: 0, y: 30 },
+                    { opacity: 1, y: 0, duration: 1.2, ease: "power3.out" },
+                    "-=1.2"
+                );
+
+                // 2. All Section Headings, Subheadings, and Text Upward Motion
+                const scrollElements = gsap.utils.toArray('#ideas-become-products-section h3, #ideas-become-products-section span, .tech-marquee-section h3, .tech-marquee-section span, .tech-marquee-section p, .features-grid-section h3, .features-grid-section span, .creative-cta-section h2, .creative-cta-section a');
+                
+                scrollElements.forEach(el => {
+                    gsap.fromTo(el,
+                        { opacity: 0, y: 60 },
+                        {
+                            scrollTrigger: {
+                                trigger: el,
+                                start: "top 90%", // triggers smoothly as it comes into view
+                            },
+                            opacity: 1, 
+                            y: 0, 
+                            duration: 1.6, 
+                            ease: "power3.out"
+                        }
+                    );
+                });
+            }
+        });
+</script>
+</body>
 </html>

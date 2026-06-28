@@ -47,7 +47,7 @@
             display: inline-block;
             background-color: #000;
             color: #fff !important;
-            padding: 16px 32px;
+            padding: 12px 30px;
             border-radius: 50px;
             font-weight: 600;
             text-transform: uppercase;
@@ -63,8 +63,8 @@
             background-color: #fff;
             color: #000 !important;
             border-color: #000;
-            transform: translateY(-4px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
 
         /* Marquee styles */
@@ -1531,12 +1531,6 @@
                     { opacity: 0, y: 30 },
                     { opacity: 1, y: 0, duration: 1.2, ease: "power3.out" },
                     "-=1.0" // overlap with title animation
-                )
-                // Button pop in
-                .fromTo('.td-hero-btn-black',
-                    { opacity: 0, y: 20, scale: 0.95 },
-                    { opacity: 1, y: 0, scale: 1, duration: 0.8, ease: "back.out(1.5)" },
-                    "-=0.8"
                 );
 
             // Dexter Realistic "Pouring" Animation
@@ -1655,4 +1649,4 @@
     </script>
 </body>
 
-</html>
+</html>

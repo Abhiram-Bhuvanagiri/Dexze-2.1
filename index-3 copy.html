@@ -8,31 +8,59 @@
     <meta name="description" content="Parody - Digital Agency Portfolio Html Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/logo/favicon.png">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
     <!--<< Bootstrap min.css >>-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <!--<< magnific-popup.css >>-->
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="./assets/css/magnific-popup.css">
     <!--<< fontawesome-all.min.css >>-->
-    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="./assets/css/fontawesome-all.min.css">
     <!--<< swiper-bundle.min.css >>-->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
     <!--<< odometer.css >>-->
-    <link rel="stylesheet" href="assets/css/odometer.css">
+    <link rel="stylesheet" href="./assets/css/odometer.css">
     <!--<< ion.rangeSlider.min.css >>-->
-    <link rel="stylesheet" href="assets/css/ion.rangeSlider.min.css">
+    <link rel="stylesheet" href="./assets/css/ion.rangeSlider.min.css">
    <!--<< effect-slicer.css >>-->
-    <link rel="stylesheet" href="assets/css/effect-slicer.css">
+    <link rel="stylesheet" href="./assets/css/effect-slicer.css">
     <!--<< animate.css >>-->
-    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="./assets/css/animate.css">
     <!--<< defauls-spacing.css >>-->
-    <link rel="stylesheet" href="assets/css/defauls-spacing.css">
+    <link rel="stylesheet" href="./assets/css/defauls-spacing.css">
     <!--<< main.css >>-->
-    <link rel="stylesheet" href="assets/css/main.css">
-</head>
+    <link rel="stylesheet" href="./assets/css/main.css">
+<style>
+                /* Nav Hover Staggered Dial Effect */
+        .staggered-hover {
+            display: inline-flex;
+            vertical-align: top;
+            perspective: 600px;
+        }
+        .staggered-hover span {
+            position: relative;
+            display: inline-block;
+            transition: transform 0.9s cubic-bezier(0.19, 1, 0.22, 1);
+            transition-delay: var(--delay);
+            white-space: pre;
+            transform-style: preserve-3d;
+        }
+        .staggered-hover span::after {
+            content: attr(data-char);
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            transform: rotateX(-90deg);
+            transform-origin: center top;
+        }
+        .tdmenu__nav ul.navigation li a:hover .staggered-hover span {
+            transform: translateY(-100%) rotateX(90deg);
+        }
+</style>\n</head>
 
 <body>
 
@@ -142,23 +170,22 @@
                 <div class="row align-items-center">
                     <div class="col-xl-3 col-5">
                         <div class="logo">
-                            <a class="logo-1" href="index.html"><img data-width="120" src="assets/img/logo/logo.png"
+                            <a class="logo-1" href="index.html"><img data-width="120" src="./assets/img/logo/logo.png"
                                     alt="Logo"></a>
                             <a class="logo-2 d-none" href="index.html"><img data-width="120"
-                                    src="assets/img/logo/logo.png" alt="Logo"></a>
+                                    src="./assets/img/logo/logo.png" alt="Logo"></a>
                         </div>
                     </div>
                     <div class="col-xl-6 d-none d-xl-block">
                         <div class="tdmenu__wrap tdmenu-2-wrap">
                             <nav class="tdmenu__nav">
-                                <div class="tdmenu__navbar-wrap tdmenu__main-menu">
+                                                                <div class="tdmenu__navbar-wrap tdmenu__main-menu">
                                     <ul class="navigation">
-                                        <li class="menu-item-has-children"><a href="index.html">Home</a></li>
-                                        <li class="menu-item-has-children"><a href="about.html">about</a></li>
-                                        <li class="menu-item-has-children"><a href="service.html">Services</a></li>
-                                        <li class="menu-item-has-children"><a href="services-2.html">Services-2</a></li>
-                                        <li class="menu-item-has-children"><a href="work2.html">Work</a></li>
-
+                                        <li class="menu-item-has-children"><a href="index.html"><span class="hover-text-wrap" data-hover="Home"><span class="hover-text">Home</span></span></a></li>
+                                        <li class="menu-item-has-children"><a href="about.html"><span class="hover-text-wrap" data-hover="About"><span class="hover-text">About</span></span></a></li>
+                                        <li class="menu-item-has-children"><a href="service.html"><span class="hover-text-wrap" data-hover="Services"><span class="hover-text">Services</span></span></a></li>
+                                        <li class="menu-item-has-children services2-nav-item" style="display: none;"><a href="services-2.html"><span class="hover-text-wrap" data-hover="Services-2"><span class="hover-text">Services-2</span></span></a></li>
+                                        <li class="menu-item-has-children"><a href="work2.html"><span class="hover-text-wrap" data-hover="Work"><span class="hover-text">Work</span></span></a></li>
                                     </ul>
                                 </div>
                             </nav>
@@ -191,7 +218,7 @@
             <nav class="tdmobile__menu-box">
                 <div class="close-btn"><i class="fa-solid fa-xmark"></i></div>
                 <div class="nav-logo">
-                    <a href="index.html"><img data-width="96" src="assets/img/logo/logo.png" alt="logo"></a>
+                    <a href="index.html"><img loading="lazy" data-width="96" src="./assets/img/logo/logo.png" alt="logo"></a>
                 </div>
                 <div class="tdmobile__search">
                     <form action="#">
@@ -245,12 +272,12 @@
                                         <span> experience</span>
                                     </h2>
                                     <div class="td-hero-3-content pt-100 p-relative wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1s">
-                                        <img class="td-hero-3-shape" src="assets/img/hero/hero-3/icon.png" alt="">
+                                        <img loading="lazy" class="td-hero-3-shape" src="./assets/img/hero/hero-3/icon.png" alt="">
                                         <div class="row align-items-center">
                                             <div class="col-xxl-2 col-xl-2 col-lg-3">
                                                 <div class="p-relative mb-30 d-inline-block">
-                                                    <img class="likes" src="assets/img/hero/hero-3/like.png" alt="">
-                                                    <img class="round-text td-live-anim-spin" src="assets/img/hero/hero-3/text.png" alt="">
+                                                    <img loading="lazy" class="likes" src="./assets/img/hero/hero-3/like.png" alt="">
+                                                    <img loading="lazy" class="round-text td-live-anim-spin" src="./assets/img/hero/hero-3/text.png" alt="">
                                                 </div>
                                             </div>
                                             <div class="col-xxl-6 col-xl-5 col-lg-4">
@@ -295,7 +322,7 @@
                             </div>
                             <div class="col-lg-4 col-md-7 fix">
                                 <div class="td-about-3-thumb mb-30 td_image_animetion">
-                                    <img class="w-100" src="assets/img/about/3/thumb.jpg" alt="">
+                                    <img loading="lazy" class="w-100" src="./assets/img/about/3/thumb.jpg" alt="">
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-5">
@@ -326,32 +353,32 @@
                                         <div class="swiper-wrapper slide-transtion">
                                             <div class="swiper-slide">
                                                 <div class="td-brand-item">
-                                                    <img src="assets/img/brand/logo-1.png" alt="">
+                                                    <img loading="lazy" src="./assets/img/brand/logo-1.png" alt="">
                                                 </div>
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="td-brand-item">
-                                                    <img src="assets/img/brand/logo-2.png" alt="">
+                                                    <img loading="lazy" src="./assets/img/brand/logo-2.png" alt="">
                                                 </div>
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="td-brand-item">
-                                                    <img src="assets/img/brand/logo-3.png" alt="">
+                                                    <img loading="lazy" src="./assets/img/brand/logo-3.png" alt="">
                                                 </div>
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="td-brand-item">
-                                                    <img src="assets/img/brand/logo-4.png" alt="">
+                                                    <img loading="lazy" src="./assets/img/brand/logo-4.png" alt="">
                                                 </div>
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="td-brand-item">
-                                                    <img src="assets/img/brand/logo-5.png" alt="">
+                                                    <img loading="lazy" src="./assets/img/brand/logo-5.png" alt="">
                                                 </div>
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="td-brand-item">
-                                                    <img src="assets/img/brand/logo-3.png" alt="">
+                                                    <img loading="lazy" src="./assets/img/brand/logo-3.png" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -369,7 +396,7 @@
                         <div class="row justify-content-center">
                             <div class="col-xl-8">
                                 <div class="td-service-3-title-wrap ml-60 mb-80 p-relative wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1s">
-                                    <img class="td-service-3-ok" src="assets/img/service/ok.png" alt="">
+                                    <img loading="lazy" class="td-service-3-ok" src="./assets/img/service/ok.png" alt="">
                                     <h2 class="td-section-3-title">Parody is an award <br> winning creative digital
                                         studio with <span>visual designers</span></h2>
                                 </div>
@@ -546,7 +573,7 @@
                             <div class="col-lg-6">
                                 <div class="td-portfolio-3-wrap mb-90 wow fadeInLeft" data-wow-delay=".4s" data-wow-duration="1s">
                                     <div class="td-portfolio-3-thumb mb-20">
-                                        <img class="w-100" src="assets/img/project/3/thumb.jpg" alt="">
+                                        <img loading="lazy" class="w-100" src="./assets/img/project/3/thumb.jpg" alt="">
                                     </div>
                                     <div class="td-portfolio-3-content d-flex justify-content-between align-items-end">
                                         <div class="td-portfolio-3-title">
@@ -564,7 +591,7 @@
                                 </div>
                                 <div class="td-portfolio-3-wrap mb-90 wow fadeInLeft" data-wow-delay=".4s" data-wow-duration="1s">
                                     <div class="td-portfolio-3-thumb mb-20">
-                                        <img class="w-100" src="assets/img/project/3/thumb-2.jpg" alt="">
+                                        <img loading="lazy" class="w-100" src="./assets/img/project/3/thumb-2.jpg" alt="">
                                     </div>
                                     <div class="td-portfolio-3-content d-flex justify-content-between align-items-end">
                                         <div class="td-portfolio-3-title">
@@ -582,7 +609,7 @@
                                 </div>
                                 <div class="td-portfolio-3-wrap mb-90 wow fadeInLeft" data-wow-delay=".4s" data-wow-duration="1s">
                                     <div class="td-portfolio-3-thumb mb-20">
-                                        <img class="w-100" src="assets/img/project/3/thumb-3.jpg" alt="">
+                                        <img loading="lazy" class="w-100" src="./assets/img/project/3/thumb-3.jpg" alt="">
                                     </div>
                                     <div class="td-portfolio-3-content d-flex justify-content-between align-items-end">
                                         <div class="td-portfolio-3-title">
@@ -602,7 +629,7 @@
                             <div class="col-lg-6">
                                 <div class="td-portfolio-3-wrap mt mb-90 wow fadeInRight" data-wow-delay=".4s" data-wow-duration="1s">
                                     <div class="td-portfolio-3-thumb mb-20">
-                                        <img class="w-100" src="assets/img/project/3/thumb-4.jpg" alt="">
+                                        <img loading="lazy" class="w-100" src="./assets/img/project/3/thumb-4.jpg" alt="">
                                     </div>
                                     <div class="td-portfolio-3-content d-flex justify-content-between align-items-end">
                                         <div class="td-portfolio-3-title">
@@ -620,7 +647,7 @@
                                 </div>
                                 <div class="td-portfolio-3-wrap mb-90 wow fadeInRight" data-wow-delay=".4s" data-wow-duration="1s">
                                     <div class="td-portfolio-3-thumb mb-20">
-                                        <img class="w-100" src="assets/img/project/3/thumb-5.jpg" alt="">
+                                        <img loading="lazy" class="w-100" src="./assets/img/project/3/thumb-5.jpg" alt="">
                                     </div>
                                     <div class="td-portfolio-3-content d-flex justify-content-between align-items-end">
                                         <div class="td-portfolio-3-title">
@@ -638,7 +665,7 @@
                                 </div>
                                 <div class="td-portfolio-3-wrap mb-90 wow fadeInRight" data-wow-delay=".4s" data-wow-duration="1s">
                                     <div class="td-portfolio-3-thumb mb-20">
-                                        <img class="w-100" src="assets/img/project/3/thumb-6.jpg" alt="">
+                                        <img loading="lazy" class="w-100" src="./assets/img/project/3/thumb-6.jpg" alt="">
                                     </div>
                                     <div class="td-portfolio-3-content d-flex justify-content-between align-items-end">
                                         <div class="td-portfolio-3-title">
@@ -687,7 +714,7 @@
                             <div class="col-xl-4 col-lg-6 col-md-6">
                                 <div class="td-counter-3-item p-relative mb-30 wow fadeInRight" data-wow-delay=".7s" data-wow-duration="1s">
                                     <span class="td-counter-3-shape">
-                                        <img src="assets/img/counter/shape.png" alt="">
+                                        <img loading="lazy" src="./assets/img/counter/shape.png" alt="">
                                     </span>
                                     <h2 class="title"><span class="odometer" data-count="11">0</span>+</h2>
                                     <span class="para">Years of<br> experience</span>
@@ -696,7 +723,7 @@
                             <div class="col-xl-4 col-lg-6 col-md-6">
                                 <div class="td-counter-3-item p-relative mb-30 wow fadeInUp" data-wow-delay=".7s" data-wow-duration="1s">
                                     <span class="td-counter-3-shape">
-                                        <img src="assets/img/counter/shape.png" alt="">
+                                        <img loading="lazy" src="./assets/img/counter/shape.png" alt="">
                                     </span>
                                     <h2 class="title"><span class="odometer" data-count="25">0</span>K</h2>
                                     <span class="para">Paid<br> customers</span>
@@ -705,7 +732,7 @@
                             <div class="col-xl-4 col-lg-6 col-md-6">
                                 <div class="td-counter-3-item p-relative mb-30 wow fadeInLeft" data-wow-delay=".7s" data-wow-duration="1s">
                                     <span class="td-counter-3-shape">
-                                        <img src="assets/img/counter/shape-2.png" alt="">
+                                        <img loading="lazy" src="./assets/img/counter/shape-2.png" alt="">
                                     </span>
                                     <h2 class="title"><span class="odometer" data-count="99">0</span>%</h2>
                                     <span class="para">Satisfaction <br> rate</span>
@@ -729,7 +756,7 @@
                             </div>
                             <div class="col-xl-7 col-lg-6">
                                 <div class="td-chose-3-thumb text-center td-btn-bounce mb-30">
-                                    <img src="assets/img/chose/shape.png" alt="">
+                                    <img loading="lazy" src="./assets/img/chose/shape.png" alt="">
                                 </div>
                             </div>
                             <div class="col-xl-5 col-lg-6">
@@ -791,7 +818,7 @@
                                                     we have been constantly providing solutions.
                                                     We are committed to delive</p>
                                                 <span class="td-border mb-30"></span>
-                                                <img class="td-rounded" src="assets/img/testimonial/tes-3/avatar.png" alt="">
+                                                <img loading="lazy" class="td-rounded" src="./assets/img/testimonial/tes-3/avatar.png" alt="">
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
@@ -802,7 +829,7 @@
                                                     we have been constantly providing solutions.
                                                     We are committed to delive</p>
                                                 <span class="td-border mb-30"></span>
-                                                <img class="td-rounded" src="assets/img/testimonial/tes-3/avatar-2.png" alt="">
+                                                <img loading="lazy" class="td-rounded" src="./assets/img/testimonial/tes-3/avatar-2.png" alt="">
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
@@ -813,7 +840,7 @@
                                                     we have been constantly providing solutions.
                                                     We are committed to delive</p>
                                                 <span class="td-border mb-30"></span>
-                                                <img class="td-rounded" src="assets/img/testimonial/tes-3/avatar-3.png" alt="">
+                                                <img loading="lazy" class="td-rounded" src="./assets/img/testimonial/tes-3/avatar-3.png" alt="">
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
@@ -824,7 +851,7 @@
                                                     we have been constantly providing solutions.
                                                     We are committed to delive</p>
                                                 <span class="td-border mb-30"></span>
-                                                <img class="td-rounded" src="assets/img/testimonial/tes-3/avatar.png" alt="">
+                                                <img loading="lazy" class="td-rounded" src="./assets/img/testimonial/tes-3/avatar.png" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -877,7 +904,9 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="text-center pt-20">
-                                    <h2 class="td-footer-3-middle-title">Dexze Agency</h2>
+                                    <h2 class="td-footer-3-middle-title">
+                                        <img src="./assets/img/logo/Asset%201.png" alt="Dexze Logo" style="height: 1em; width: auto; max-width: 100%; object-fit: contain;">
+                                    </h2>
                                 </div>
                             </div>
                         </div>
@@ -912,43 +941,54 @@
 
     <!-- JS here -->
     <!--<< jquery.Js >>-->
-    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="./assets/js/vendor/jquery.js"></script>
     <!--<< bootstrap.min.Js >>-->
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
     <!--<< gsap.Js >>-->
-    <script src="assets/js/jsap/gsap.js"></script>
+    <script src="./assets/js/jsap/gsap.js"></script>
    <!--<< gsap-scroll-smoother.Js >>-->
-    <script src="assets/js/jsap/gsap-scroll-smoother.js"></script>
+    <script src="./assets/js/jsap/gsap-scroll-smoother.js"></script>
    <!--<< gsap-scroll-trigger.Js >>-->
-    <script src="assets/js/jsap/gsap-scroll-trigger.js"></script>
+    <script src="./assets/js/jsap/gsap-scroll-trigger.js"></script>
    <!--<< gsap-scroll-to-plugin.Js >>-->
-    <script src="assets/js/jsap/gsap-scroll-to-plugin.js"></script>
+    <script src="./assets/js/jsap/gsap-scroll-to-plugin.js"></script>
     <!--<< gsap-split-text.Js >>-->
-    <script src="assets/js/jsap/gsap-split-text.js"></script>
+    <script src="./assets/js/jsap/gsap-split-text.js"></script>
     <!--<< isotope.pkgd.min.Js >>-->
-    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="./assets/js/isotope.pkgd.min.js"></script>
     <!--<< ion.rangeSlider.min.Js >>-->
-    <script src="assets/js/ion.rangeSlider.min.js"></script>
+    <script src="./assets/js/ion.rangeSlider.min.js"></script>
     <!--<< effect-slicer.Js >>-->
-    <script src="assets/js/effect-slicer.js"></script>
+    <script src="./assets/js/effect-slicer.js"></script>
     <!--<< imagesloaded.pkgd.min.Js >>-->
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="./assets/js/imagesloaded.pkgd.min.js"></script>
     <!--<< jquery.magnific-popup.min.Js >>-->
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.min.js"></script>
     <!--<< jquery.odometer.min.Js >>-->
-    <script src="assets/js/jquery.odometer.min.js"></script>
+    <script src="./assets/js/jquery.odometer.min.js"></script>
     <!--<< jquery-appear.Js >>-->
-    <script src="assets/js/jquery-appear.js"></script>
+    <script src="./assets/js/jquery-appear.js"></script>
     <!--<< swiper-bundle.min.Js >>-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
     <!--<< jquery.nice-select.min.Js >>-->
-    <script src="assets/js/nice-select.js"></script>
+    <script src="./assets/js/nice-select.js"></script>
     <!--<< wow.Js >>-->    
-    <script src="assets/js/wow.js"></script>
+    <script src="./assets/js/wow.js"></script>
     <!--<< ajax-form.Js >>-->
-    <script src="assets/js/ajax-form.js"></script>
+    <script src="./assets/js/ajax-form.js"></script>
     <!--<< main.Js >>-->
-    <script src="assets/js/main.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var page = window.location.pathname.split("/").pop();
+    if(page === "service.html" || page === "services-2.html" || page === "service-details.html") {
+        document.querySelectorAll(".services2-nav-item").forEach(function(el) {
+            el.style.display = "inline-block";
+        });
+    }
+});
+</script>
 </body>
 
 </html>

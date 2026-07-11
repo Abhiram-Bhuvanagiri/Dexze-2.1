@@ -8,31 +8,59 @@
     <meta name="description" content="Parody - Digital Agency Portfolio Html Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/logo/favicon.png">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
     <!--<< Bootstrap min.css >>-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <!--<< magnific-popup.css >>-->
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="./assets/css/magnific-popup.css">
     <!--<< fontawesome-all.min.css >>-->
-    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="./assets/css/fontawesome-all.min.css">
     <!--<< swiper-bundle.min.css >>-->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
     <!--<< odometer.css >>-->
-    <link rel="stylesheet" href="assets/css/odometer.css">
+    <link rel="stylesheet" href="./assets/css/odometer.css">
     <!--<< ion.rangeSlider.min.css >>-->
-    <link rel="stylesheet" href="assets/css/ion.rangeSlider.min.css">
+    <link rel="stylesheet" href="./assets/css/ion.rangeSlider.min.css">
    <!--<< effect-slicer.css >>-->
-    <link rel="stylesheet" href="assets/css/effect-slicer.css">
+    <link rel="stylesheet" href="./assets/css/effect-slicer.css">
     <!--<< animate.css >>-->
-    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="./assets/css/animate.css">
     <!--<< default.css >>-->
-    <link rel="stylesheet" href="assets/css/defauls-spacing.css">
+    <link rel="stylesheet" href="./assets/css/defauls-spacing.css">
     <!--<< main.css >>-->
-    <link rel="stylesheet" href="assets/css/main.css">
-</head>
+    <link rel="stylesheet" href="./assets/css/main.css">
+<style>
+                /* Nav Hover Staggered Dial Effect */
+        .staggered-hover {
+            display: inline-flex;
+            vertical-align: top;
+            perspective: 600px;
+        }
+        .staggered-hover span {
+            position: relative;
+            display: inline-block;
+            transition: transform 0.9s cubic-bezier(0.19, 1, 0.22, 1);
+            transition-delay: var(--delay);
+            white-space: pre;
+            transform-style: preserve-3d;
+        }
+        .staggered-hover span::after {
+            content: attr(data-char);
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            transform: rotateX(-90deg);
+            transform-origin: center top;
+        }
+        .tdmenu__nav ul.navigation li a:hover .staggered-hover span {
+            transform: translateY(-100%) rotateX(90deg);
+        }
+</style>\n</head>
 
 <body >
 
@@ -142,23 +170,22 @@
                 <div class="row align-items-center">
                     <div class="col-xl-3 col-5">
                         <div class="logo">
-                            <a class="logo-1" href="index.html"><img data-width="120" src="assets/img/logo/logo.png"
+                            <a class="logo-1" href="index.html"><img data-width="120" src="./assets/img/logo/logo.png"
                                     alt="Logo"></a>
                             <a class="logo-2 d-none" href="index.html"><img data-width="120"
-                                    src="assets/img/logo/logo.png" alt="Logo"></a>
+                                    src="./assets/img/logo/logo.png" alt="Logo"></a>
                         </div>
                     </div>
                     <div class="col-xl-6 d-none d-xl-block">
                         <div class="tdmenu__wrap tdmenu-2-wrap">
                             <nav class="tdmenu__nav">
-                                <div class="tdmenu__navbar-wrap tdmenu__main-menu">
+                                                                <div class="tdmenu__navbar-wrap tdmenu__main-menu">
                                     <ul class="navigation">
-                                        <li class="menu-item-has-children"><a href="index.html">Home</a></li>
-                                        <li class="menu-item-has-children"><a href="about.html">about</a></li>
-                                        <li class="menu-item-has-children"><a href="service.html">Services</a></li>
-                                        <li class="menu-item-has-children"><a href="services-2.html">Services-2</a></li>
-                                        <li class="menu-item-has-children"><a href="work2.html">Work</a></li>
-
+                                        <li class="menu-item-has-children"><a href="index.html"><span class="hover-text-wrap" data-hover="Home"><span class="hover-text">Home</span></span></a></li>
+                                        <li class="menu-item-has-children"><a href="about.html"><span class="hover-text-wrap" data-hover="About"><span class="hover-text">About</span></span></a></li>
+                                        <li class="menu-item-has-children"><a href="service.html"><span class="hover-text-wrap" data-hover="Services"><span class="hover-text">Services</span></span></a></li>
+                                        <li class="menu-item-has-children services2-nav-item" style="display: none;"><a href="services-2.html"><span class="hover-text-wrap" data-hover="Services-2"><span class="hover-text">Services-2</span></span></a></li>
+                                        <li class="menu-item-has-children"><a href="work2.html"><span class="hover-text-wrap" data-hover="Work"><span class="hover-text">Work</span></span></a></li>
                                     </ul>
                                 </div>
                             </nav>
@@ -191,7 +218,7 @@
             <nav class="tdmobile__menu-box">
                 <div class="close-btn"><i class="fa-solid fa-xmark"></i></div>
                 <div class="nav-logo">
-                    <a href="index.html"><img data-width="96" src="assets/img/logo/logo.png" alt="logo"></a>
+                    <a href="index.html"><img loading="lazy" data-width="96" src="./assets/img/logo/logo.png" alt="logo"></a>
                 </div>
                 <div class="tdmobile__search">
                     <form action="#">
@@ -254,7 +281,7 @@
                                             </span>
                                             <br>
                                             <span class="ml-30 d-inline-block">
-                                                <img class="d-none d-lg-inline-block" src="assets/img/hero/hero-6/shape.png" alt="">
+                                                <img loading="lazy" class="d-none d-lg-inline-block" src="./assets/img/hero/hero-6/shape.png" alt="">
                                                 MARKETING
                                             </span>
                                         </h2>
@@ -280,47 +307,47 @@
                                     <div class="swiper-wrapper slide-transtion">
                                         <div class="swiper-slide">
                                             <div class="td-hero-6-thumb">
-                                                <img src="assets/img/hero/hero-6/thumb.jpg" alt="">
+                                                <img loading="lazy" src="./assets/img/hero/hero-6/thumb.jpg" alt="">
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="td-hero-6-thumb">
-                                                <img src="assets/img/hero/hero-6/thumb-2.jpg" alt="">
+                                                <img loading="lazy" src="./assets/img/hero/hero-6/thumb-2.jpg" alt="">
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="td-hero-6-thumb">
-                                                <img src="assets/img/hero/hero-6/thumb-3.jpg" alt="">
+                                                <img loading="lazy" src="./assets/img/hero/hero-6/thumb-3.jpg" alt="">
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="td-hero-6-thumb">
-                                                <img src="assets/img/hero/hero-6/thumb-4.jpg" alt="">
+                                                <img loading="lazy" src="./assets/img/hero/hero-6/thumb-4.jpg" alt="">
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="td-hero-6-thumb">
-                                                <img src="assets/img/hero/hero-6/thumb-5.jpg" alt="">
+                                                <img loading="lazy" src="./assets/img/hero/hero-6/thumb-5.jpg" alt="">
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="td-hero-6-thumb">
-                                                <img src="assets/img/hero/hero-6/thumb-6.jpg" alt="">
+                                                <img loading="lazy" src="./assets/img/hero/hero-6/thumb-6.jpg" alt="">
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="td-hero-6-thumb">
-                                                <img src="assets/img/hero/hero-6/thumb-7.jpg" alt="">
+                                                <img loading="lazy" src="./assets/img/hero/hero-6/thumb-7.jpg" alt="">
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="td-hero-6-thumb">
-                                                <img src="assets/img/hero/hero-6/thumb-4.jpg" alt="">
+                                                <img loading="lazy" src="./assets/img/hero/hero-6/thumb-4.jpg" alt="">
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="td-hero-6-thumb">
-                                                <img src="assets/img/hero/hero-6/thumb-5.jpg" alt="">
+                                                <img loading="lazy" src="./assets/img/hero/hero-6/thumb-5.jpg" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -352,14 +379,14 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="td-about-6-thumb text-end p-relative z-index-1 mb-30">
-                                    <img class="shape td-live-anim-spin d-none d-lg-inline-block" src="assets/img/about/shape.png" alt="">
-                                    <img src="assets/img/about/about-6/thumb.jpg" alt="">
+                                    <img loading="lazy" class="shape td-live-anim-spin d-none d-lg-inline-block" src="./assets/img/about/shape.png" alt="">
+                                    <img loading="lazy" src="./assets/img/about/about-6/thumb.jpg" alt="">
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="td-about-6-author ml-115 mb-30">
                                     <div class="td-about-6-author-top mb-40">
-                                        <img class="mb-25" src="assets/img/about/about-6/avatar.png" alt="">
+                                        <img loading="lazy" class="mb-25" src="./assets/img/about/about-6/avatar.png" alt="">
                                         <p class="mb-25">Driven by a passion for innovation, we specialize in<br>
                                             delivering top-quality design solutions</p>
                                     </div>
@@ -536,7 +563,7 @@
                                     <h2 class="td-portfolio-6-transparent">01</h2>
                                     <div class="td-portfolio-6-thumb ml-110">
                                         <div class="roun fix mb-25 p-relative">
-                                            <img class="w-100" src="assets/img/portfolio/portfolio-6/thumb.jpg" alt="">
+                                            <img loading="lazy" class="w-100" src="./assets/img/portfolio/portfolio-6/thumb.jpg" alt="">
                                             <a href="portfolio-details.html" class="td-portfolio-6-btn">
                                                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M1 13L13 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -556,7 +583,7 @@
                                     <h2 class="td-portfolio-6-transparent">02</h2>
                                     <div class="td-portfolio-6-thumb ml-110">
                                         <div class="roun fix mb-25 p-relative">
-                                            <img class="w-100" src="assets/img/portfolio/portfolio-6/thumb-2.jpg" alt="">
+                                            <img loading="lazy" class="w-100" src="./assets/img/portfolio/portfolio-6/thumb-2.jpg" alt="">
                                             <a href="portfolio-details.html" class="td-portfolio-6-btn">
                                                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M1 13L13 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -576,7 +603,7 @@
                                     <h2 class="td-portfolio-6-transparent">03</h2>
                                     <div class="td-portfolio-6-thumb ml-110">
                                         <div class="roun fix mb-25 p-relative">
-                                            <img class="w-100" src="assets/img/portfolio/portfolio-6/thumb-4.jpg" alt="">
+                                            <img loading="lazy" class="w-100" src="./assets/img/portfolio/portfolio-6/thumb-4.jpg" alt="">
                                             <a href="portfolio-details.html" class="td-portfolio-6-btn">
                                                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M1 13L13 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -596,7 +623,7 @@
                                     <h2 class="td-portfolio-6-transparent">04</h2>
                                     <div class="td-portfolio-6-thumb ml-110">
                                         <div class="roun fix mb-25 p-relative">
-                                            <img class="w-100" src="assets/img/portfolio/portfolio-6/thumb-3.jpg" alt="">
+                                            <img loading="lazy" class="w-100" src="./assets/img/portfolio/portfolio-6/thumb-3.jpg" alt="">
                                             <a href="portfolio-details.html" class="td-portfolio-6-btn">
                                                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M1 13L13 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -616,7 +643,7 @@
                                     <h2 class="td-portfolio-6-transparent">05</h2>
                                     <div class="td-portfolio-6-thumb ml-110">
                                         <div class="roun fix mb-25 p-relative">
-                                            <img class="w-100" src="assets/img/portfolio/portfolio-6/thumb-5.jpg" alt="">
+                                            <img loading="lazy" class="w-100" src="./assets/img/portfolio/portfolio-6/thumb-5.jpg" alt="">
                                             <a href="portfolio-details.html" class="td-portfolio-6-btn">
                                                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M1 13L13 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -780,17 +807,17 @@
                                         <div class="swiper-wrapper">
                                            <div class="swiper-slide">
                                               <div class="td-testimonial-bottom-thumb">
-                                                 <img src="assets/img/testimonial/tes-6/01.png" alt="">
+                                                 <img loading="lazy" src="./assets/img/testimonial/tes-6/01.png" alt="">
                                               </div>
                                            </div>
                                            <div class="swiper-slide">
                                               <div class="td-testimonial-bottom-thumb">
-                                                <img src="assets/img/testimonial/tes-6/02.png" alt="">
+                                                <img loading="lazy" src="./assets/img/testimonial/tes-6/02.png" alt="">
                                               </div>
                                            </div>
                                            <div class="swiper-slide">
                                               <div class="td-testimonial-bottom-thumb">
-                                                <img src="assets/img/testimonial/tes-6/03.png" alt="">
+                                                <img loading="lazy" src="./assets/img/testimonial/tes-6/03.png" alt="">
                                               </div>
                                            </div>
                                         </div>
@@ -807,47 +834,47 @@
                                         <div class="swiper-wrapper slide-transtion">
                                             <div class="swiper-slide">
                                                 <div class="brands-logo">
-                                                    <a href="#"><img src="assets/img/brand/brands-6/logo.png" alt=""></a>
+                                                    <a href="#"><img loading="lazy" src="./assets/img/brand/brands-6/logo.png" alt=""></a>
                                                 </div>
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="brands-logo">
-                                                    <a href="#"><img src="assets/img/brand/brands-6/logo-2.png" alt=""></a>
+                                                    <a href="#"><img loading="lazy" src="./assets/img/brand/brands-6/logo-2.png" alt=""></a>
                                                 </div>
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="brands-logo">
-                                                    <a href="#"><img src="assets/img/brand/brands-6/logo-3.png" alt=""></a>
+                                                    <a href="#"><img loading="lazy" src="./assets/img/brand/brands-6/logo-3.png" alt=""></a>
                                                 </div>
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="brands-logo">
-                                                    <a href="#"><img src="assets/img/brand/brands-6/logo-4.png" alt=""></a>
+                                                    <a href="#"><img loading="lazy" src="./assets/img/brand/brands-6/logo-4.png" alt=""></a>
                                                 </div>
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="brands-logo">
-                                                    <a href="#"><img src="assets/img/brand/brands-6/logo-5.png" alt=""></a>
+                                                    <a href="#"><img loading="lazy" src="./assets/img/brand/brands-6/logo-5.png" alt=""></a>
                                                 </div>
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="brands-logo">
-                                                    <a href="#"><img src="assets/img/brand/brands-6/logo-6.png" alt=""></a>
+                                                    <a href="#"><img loading="lazy" src="./assets/img/brand/brands-6/logo-6.png" alt=""></a>
                                                 </div>
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="brands-logo">
-                                                    <a href="#"><img src="assets/img/brand/brands-6/logo-7.png" alt=""></a>
+                                                    <a href="#"><img loading="lazy" src="./assets/img/brand/brands-6/logo-7.png" alt=""></a>
                                                 </div>
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="brands-logo">
-                                                    <a href="#"><img src="assets/img/brand/brands-6/logo-8.png" alt=""></a>
+                                                    <a href="#"><img loading="lazy" src="./assets/img/brand/brands-6/logo-8.png" alt=""></a>
                                                 </div>
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="brands-logo">
-                                                    <a href="#"><img src="assets/img/brand/brands-6/logo-6.png" alt=""></a>
+                                                    <a href="#"><img loading="lazy" src="./assets/img/brand/brands-6/logo-6.png" alt=""></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -873,7 +900,7 @@
                             </div>
                             <div class="col-xl-7 col-lg-6">
                                 <div class="td-chose-6-thumb mr-110 mb-30 wow fadeInLeft" data-wow-delay=".4s" data-wow-duration="1s">
-                                    <img class="w-100" src="assets/img/chose/chose-6/thumb.jpg" alt="">
+                                    <img loading="lazy" class="w-100" src="./assets/img/chose/chose-6/thumb.jpg" alt="">
                                 </div>
                             </div>
                             <div class="col-xl-5 col-lg-6">
@@ -928,7 +955,7 @@
                                             <div class="td-team-6-wrap">
                                                 <div class="td-team-6-thumb mb-20">
                                                     <a href="#">
-                                                        <img class="w-100" src="assets/img/team/thumb-6/thumb.jpg" alt="">
+                                                        <img loading="lazy" class="w-100" src="./assets/img/team/thumb-6/thumb.jpg" alt="">
                                                     </a>
                                                 </div>
                                                 <div class="td-team-6-content">
@@ -941,7 +968,7 @@
                                             <div class="td-team-6-wrap">
                                                 <div class="td-team-6-thumb mb-20">
                                                     <a href="#">
-                                                        <img class="w-100" src="assets/img/team/thumb-6/thumb-2.jpg" alt="">
+                                                        <img loading="lazy" class="w-100" src="./assets/img/team/thumb-6/thumb-2.jpg" alt="">
                                                     </a>
                                                 </div>
                                                 <div class="td-team-6-content">
@@ -954,7 +981,7 @@
                                             <div class="td-team-6-wrap">
                                                 <div class="td-team-6-thumb mb-20">
                                                     <a href="#">
-                                                        <img class="w-100" src="assets/img/team/thumb-6/thumb-3.jpg" alt="">
+                                                        <img loading="lazy" class="w-100" src="./assets/img/team/thumb-6/thumb-3.jpg" alt="">
                                                     </a>
                                                 </div>
                                                 <div class="td-team-6-content">
@@ -967,7 +994,7 @@
                                             <div class="td-team-6-wrap">
                                                 <div class="td-team-6-thumb mb-20">
                                                     <a href="#">
-                                                        <img class="w-100" src="assets/img/team/thumb-6/thumb-4.jpg" alt="">
+                                                        <img loading="lazy" class="w-100" src="./assets/img/team/thumb-6/thumb-4.jpg" alt="">
                                                     </a>
                                                 </div>
                                                 <div class="td-team-6-content">
@@ -980,7 +1007,7 @@
                                             <div class="td-team-6-wrap">
                                                 <div class="td-team-6-thumb mb-20">
                                                     <a href="#">
-                                                        <img class="w-100" src="assets/img/team/thumb-6/thumb-5.jpg" alt="">
+                                                        <img loading="lazy" class="w-100" src="./assets/img/team/thumb-6/thumb-5.jpg" alt="">
                                                     </a>
                                                 </div>
                                                 <div class="td-team-6-content">
@@ -993,7 +1020,7 @@
                                             <div class="td-team-6-wrap">
                                                 <div class="td-team-6-thumb mb-20">
                                                     <a href="#">
-                                                        <img class="w-100" src="assets/img/team/thumb-6/thumb-6.jpg" alt="">
+                                                        <img loading="lazy" class="w-100" src="./assets/img/team/thumb-6/thumb-6.jpg" alt="">
                                                     </a>
                                                 </div>
                                                 <div class="td-team-6-content">
@@ -1006,7 +1033,7 @@
                                             <div class="td-team-6-wrap">
                                                 <div class="td-team-6-thumb mb-20">
                                                     <a href="#">
-                                                        <img class="w-100" src="assets/img/team/thumb-6/thumb-3.jpg" alt="">
+                                                        <img loading="lazy" class="w-100" src="./assets/img/team/thumb-6/thumb-3.jpg" alt="">
                                                     </a>
                                                 </div>
                                                 <div class="td-team-6-content">
@@ -1077,7 +1104,7 @@
                             <div class="col-lg-3 col-md-6 col-sm-6">
                                 <div class="td-footer-logo mb-30">
                                     <a href="index.html">
-                                        <img src="assets/img/logo/logo-green.png" alt="">
+                                        <img loading="lazy" src="assets/img/logo/logo.png" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -1173,43 +1200,54 @@
 
     <!-- JS here -->
     <!--<< jquery.Js >>-->
-    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="./assets/js/vendor/jquery.js"></script>
     <!--<< bootstrap.min.Js >>-->
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
     <!--<< gsap.Js >>-->
-    <script src="assets/js/jsap/gsap.js"></script>
+    <script src="./assets/js/jsap/gsap.js"></script>
    <!--<< gsap-scroll-smoother.Js >>-->
-    <script src="assets/js/jsap/gsap-scroll-smoother.js"></script>
+    <script src="./assets/js/jsap/gsap-scroll-smoother.js"></script>
    <!--<< gsap-scroll-trigger.Js >>-->
-    <script src="assets/js/jsap/gsap-scroll-trigger.js"></script>
+    <script src="./assets/js/jsap/gsap-scroll-trigger.js"></script>
    <!--<< gsap-scroll-to-plugin.Js >>-->
-    <script src="assets/js/jsap/gsap-scroll-to-plugin.js"></script>
+    <script src="./assets/js/jsap/gsap-scroll-to-plugin.js"></script>
     <!--<< gsap-split-text.Js >>-->
-    <script src="assets/js/jsap/gsap-split-text.js"></script>
+    <script src="./assets/js/jsap/gsap-split-text.js"></script>
     <!--<< isotope.pkgd.min.Js >>-->
-    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="./assets/js/isotope.pkgd.min.js"></script>
     <!--<< ion.rangeSlider.min.Js >>-->
-    <script src="assets/js/ion.rangeSlider.min.js"></script>
+    <script src="./assets/js/ion.rangeSlider.min.js"></script>
     <!--<< effect-slicer.Js >>-->
-    <script src="assets/js/effect-slicer.js"></script>
+    <script src="./assets/js/effect-slicer.js"></script>
     <!--<< imagesloaded.pkgd.min.Js >>-->
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="./assets/js/imagesloaded.pkgd.min.js"></script>
     <!--<< jquery.magnific-popup.min.Js >>-->
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.min.js"></script>
     <!--<< jquery.odometer.min.Js >>-->
-    <script src="assets/js/jquery.odometer.min.js"></script>
+    <script src="./assets/js/jquery.odometer.min.js"></script>
     <!--<< jquery-appear.Js >>-->
-    <script src="assets/js/jquery-appear.js"></script>
+    <script src="./assets/js/jquery-appear.js"></script>
     <!--<< swiper-bundle.min.Js >>-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
     <!--<< jquery.nice-select.min.Js >>-->
-    <script src="assets/js/nice-select.js"></script>
+    <script src="./assets/js/nice-select.js"></script>
     <!--<< wow.Js >>-->    
-    <script src="assets/js/wow.js"></script>
+    <script src="./assets/js/wow.js"></script>
     <!--<< ajax-form.Js >>-->
-    <script src="assets/js/ajax-form.js"></script>
+    <script src="./assets/js/ajax-form.js"></script>
     <!--<< main.Js >>-->
-    <script src="assets/js/main.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var page = window.location.pathname.split("/").pop();
+    if(page === "service.html" || page === "services-2.html" || page === "service-details.html") {
+        document.querySelectorAll(".services2-nav-item").forEach(function(el) {
+            el.style.display = "inline-block";
+        });
+    }
+});
+</script>
 </body>
 
 </html>

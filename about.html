@@ -18,29 +18,29 @@
     <meta name="author" content="Dexze">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/logo/favicon.png">
     <!-- Place favicon.ico in the root directory -->
 
     <!--<< Bootstrap min.css >>-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <!--<< magnific-popup.css >>-->
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="./assets/css/magnific-popup.css">
     <!--<< fontawesome-all.min.css >>-->
-    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="./assets/css/fontawesome-all.min.css">
     <!--<< swiper-bundle.min.css >>-->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
     <!--<< odometer.css >>-->
-    <link rel="stylesheet" href="assets/css/odometer.css">
+    <link rel="stylesheet" href="./assets/css/odometer.css">
     <!--<< ion.rangeSlider.min.css >>-->
-    <link rel="stylesheet" href="assets/css/ion.rangeSlider.min.css">
+    <link rel="stylesheet" href="./assets/css/ion.rangeSlider.min.css">
     <!--<< effect-slicer.css >>-->
-    <link rel="stylesheet" href="assets/css/effect-slicer.css">
+    <link rel="stylesheet" href="./assets/css/effect-slicer.css">
     <!--<< animate.css >>-->
-    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="./assets/css/animate.css">
     <!--<< default.css >>-->
-    <link rel="stylesheet" href="assets/css/defauls-spacing.css">
+    <link rel="stylesheet" href="./assets/css/defauls-spacing.css">
     <!--<< main.css >>-->
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
 
     <style>
         .td-hero-btn-black {
@@ -307,7 +307,35 @@
                 opacity: 0;
             }
         }
-    </style>
+    
+                /* Nav Hover Staggered Dial Effect */
+        .staggered-hover {
+            display: inline-flex;
+            vertical-align: top;
+            perspective: 600px;
+        }
+        .staggered-hover span {
+            position: relative;
+            display: inline-block;
+            transition: transform 0.9s cubic-bezier(0.19, 1, 0.22, 1);
+            transition-delay: var(--delay);
+            white-space: pre;
+            transform-style: preserve-3d;
+        }
+        .staggered-hover span::after {
+            content: attr(data-char);
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            transform: rotateX(-90deg);
+            transform-origin: center top;
+        }
+        .tdmenu__nav ul.navigation li a:hover .staggered-hover span {
+            transform: translateY(-100%) rotateX(90deg);
+        }
+</style>
 </head>
 
 <body>
@@ -331,22 +359,22 @@
                 <div class="row align-items-center">
                     <div class="col-xl-3 col-5">
                         <div class="logo">
-                            <a class="logo-1" href="index.html"><img data-width="120" src="assets/img/logo/logo.png"
+                            <a class="logo-1" href="index.html"><img data-width="120" src="./assets/img/logo/logo.png"
                                     alt="Logo"></a>
                             <a class="logo-2 d-none" href="index.html"><img data-width="120"
-                                    src="assets/img/logo/logo.png" alt="Logo"></a>
+                                    src="./assets/img/logo/logo.png" alt="Logo"></a>
                         </div>
                     </div>
                     <div class="col-xl-6 d-none d-xl-block">
                         <div class="tdmenu__wrap tdmenu-2-wrap">
                             <nav class="tdmenu__nav">
-                                <div class="tdmenu__navbar-wrap tdmenu__main-menu">
+                                                                <div class="tdmenu__navbar-wrap tdmenu__main-menu">
                                     <ul class="navigation">
-                                        <li class="menu-item-has-children"><a href="index.html">Home</a></li>
-                                        <li class="menu-item-has-children"><a href="about.html">about</a></li>
-                                        <li class="menu-item-has-children"><a href="service.html">Services</a></li>
-                                        <li class="menu-item-has-children"><a href="work2.html">Work</a></li>
-
+                                        <li class="menu-item-has-children"><a href="index.html"><span class="hover-text-wrap" data-hover="Home"><span class="hover-text">Home</span></span></a></li>
+                                        <li class="menu-item-has-children"><a href="about.html"><span class="hover-text-wrap" data-hover="About"><span class="hover-text">About</span></span></a></li>
+                                        <li class="menu-item-has-children"><a href="service.html"><span class="hover-text-wrap" data-hover="Services"><span class="hover-text">Services</span></span></a></li>
+                                        <li class="menu-item-has-children services2-nav-item" style="display: none;"><a href="services-2.html"><span class="hover-text-wrap" data-hover="Services-2"><span class="hover-text">Services-2</span></span></a></li>
+                                        <li class="menu-item-has-children"><a href="work2.html"><span class="hover-text-wrap" data-hover="Work"><span class="hover-text">Work</span></span></a></li>
                                     </ul>
                                 </div>
                             </nav>
@@ -379,7 +407,7 @@
             <nav class="tdmobile__menu-box">
                 <div class="close-btn"><i class="fa-solid fa-xmark"></i></div>
                 <div class="nav-logo">
-                    <a href="index.html"><img data-width="96" src="assets/img/logo/logo.png" alt="logo"></a>
+                    <a href="index.html"><img loading="lazy" data-width="96" src="./assets/img/logo/logo.png" alt="logo"></a>
                 </div>
                 <div class="tdmobile__search">
                     <form action="#">
@@ -623,13 +651,13 @@
                             <div class="col-lg-6">
                                 <div class="td-about-6-thumb text-end p-relative z-index-1" style="padding-left: 48px;">
                                     <img class="shape td-live-anim-spin d-none d-lg-inline-block"
-                                        src="assets/img/about/shape.png" alt="Decorative Shape" loading="lazy"
+                                        src="./assets/img/about/shape.png" alt="Decorative Shape" loading="lazy"
                                         style="position: absolute; top: -64px; left: 16px; z-index: -1; width: 140px; opacity: 0.8;">
-                                    <img src="assets/img/about/about-6/thumb.jpg" alt="Dexze Founders and Team"
+                                    <img src="./assets/img/about/about-6/thumb.jpg" alt="Dexze Founders and Team"
                                         loading="lazy"
                                         style="border-radius: 16px; width: 100%; box-shadow: 0 24px 48px rgba(0,0,0,0.05);">
                                     <img class="shape td-live-anim-spin d-none d-lg-inline-block"
-                                        src="assets/img/about/shape.png" alt="Decorative Shape" loading="lazy"
+                                        src="./assets/img/about/shape.png" alt="Decorative Shape" loading="lazy"
                                         style="position: absolute; top: auto; left: auto; bottom: -64px; right: -32px; z-index: -1; width: 140px; opacity: 0.8;">
                                 </div>
                             </div>
@@ -665,7 +693,7 @@
                                         <span class="td-hero-title-main mb-0 anim-equals"
                                             style="margin-right: 20px;">=</span>
                                         <div class="position-relative d-inline-block">
-                                            <img src="assets/img/logo/logo.png" alt="DEXZE" class="dexze-anim-logo">
+                                            <img loading="lazy" src="./assets/img/logo/logo.png" alt="DEXZE" class="dexze-anim-logo">
                                             <div class="dexze-thunder-glow"></div>
                                             <!-- SSJ2 Electricity Arcs -->
                                             <div class="ssj-sparks-container">
@@ -703,7 +731,7 @@
                                     <!-- Floating Dexter Image Card -->
                                     <div class="d-none d-md-block dexter-anim-container"
                                         style="position: absolute; top: clamp(-50px, -4vw, -80px); right: clamp(-50px, -4vw, -80px); width: clamp(180px, 12vw, 300px); height: clamp(180px, 12vw, 300px); border-radius: 28px; overflow: hidden; box-shadow: 0 40px 80px rgba(0,0,0,0.15); border: 8px solid #fff; z-index: 10; background: #fff;">
-                                        <img src="assets/img/awards/awards-5/award.png" class="dexter-img"
+                                        <img src="./assets/img/awards/awards-5/award.png" class="dexter-img"
                                             alt="Dexter Inspiration Character" loading="lazy"
                                             style="width: 100%; height: 100%; object-fit: contain; position: relative; z-index: 1;">
 
@@ -1054,22 +1082,22 @@
                                     <div class="scroll-images-wrapper">
                                         <!-- Image 1 -->
                                         <div class="scroll-img-item active" data-index="1">
-                                            <img src="assets/img/about/main/scroll-img-1.jpg"
+                                            <img src="./assets/img/about/main/scroll-img-1.jpg"
                                                 alt="Strategic Thinking Process" loading="lazy">
                                         </div>
                                         <!-- Image 2 -->
                                         <div class="scroll-img-item" data-index="2">
-                                            <img src="assets/img/about/main/scroll-img-2.jpg" alt="Design Excellence Example"
+                                            <img src="./assets/img/about/main/scroll-img-2.jpg" alt="Design Excellence Example"
                                                 loading="lazy">
                                         </div>
                                         <!-- Image 3 -->
                                         <div class="scroll-img-item" data-index="3">
-                                            <img src="assets/img/about/main/scroll-img-3.jpg"
+                                            <img src="./assets/img/about/main/scroll-img-3.jpg"
                                                 alt="Technology With Purpose Development" loading="lazy">
                                         </div>
                                         <!-- Image 4 -->
                                         <div class="scroll-img-item" data-index="4">
-                                            <img src="assets/img/about/main/scroll-img-4.jpg"
+                                            <img src="./assets/img/about/main/scroll-img-4.jpg"
                                                 alt="Partnerships That Last Teamwork" loading="lazy">
                                         </div>
                                     </div>
@@ -1385,7 +1413,7 @@
                                         data-wow-delay=".2s">
                                         <img class="td-rounded-10 w-100"
                                             style="max-height: 600px; object-fit: cover; object-position: center;"
-                                            src="assets/img/service/replace/thumb.jpg" alt="Teamwork and Collaboration"
+                                            src="./assets/img/service/replace/thumb.jpg" alt="Teamwork and Collaboration"
                                             loading="lazy">
                                     </div>
                                 </div>
@@ -1441,8 +1469,9 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="text-center pt-20">
-                                    <h2 class="td-footer-3-middle-title wow fadeInUp" data-wow-duration="0.8s"
-                                        data-wow-delay=".2s">Dexze</h2>
+                                    <h2 class="td-footer-3-middle-title">
+                                        <img src="./assets/img/logo/Asset%201.png" alt="Dexze Logo" style="height: 1em; width: auto; max-width: 100%; object-fit: contain;">
+                                    </h2>
                                 </div>
                             </div>
                         </div>
@@ -1476,43 +1505,43 @@
 
     <!-- JS here -->
     <!--<< jquery.Js >>-->
-    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="./assets/js/vendor/jquery.js"></script>
     <!--<< bootstrap.min.Js >>-->
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
     <!--<< gsap.Js >>-->
-    <script src="assets/js/jsap/gsap.js"></script>
+    <script src="./assets/js/jsap/gsap.js"></script>
     <!--<< gsap-scroll-smoother.Js >>-->
-    <script src="assets/js/jsap/gsap-scroll-smoother.js"></script>
+    <script src="./assets/js/jsap/gsap-scroll-smoother.js"></script>
     <!--<< gsap-scroll-trigger.Js >>-->
-    <script src="assets/js/jsap/gsap-scroll-trigger.js"></script>
+    <script src="./assets/js/jsap/gsap-scroll-trigger.js"></script>
     <!--<< gsap-scroll-to-plugin.Js >>-->
-    <script src="assets/js/jsap/gsap-scroll-to-plugin.js"></script>
+    <script src="./assets/js/jsap/gsap-scroll-to-plugin.js"></script>
     <!--<< gsap-split-text.Js >>-->
-    <script src="assets/js/jsap/gsap-split-text.js"></script>
+    <script src="./assets/js/jsap/gsap-split-text.js"></script>
     <!--<< isotope.pkgd.min.Js >>-->
-    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="./assets/js/isotope.pkgd.min.js"></script>
     <!--<< ion.rangeSlider.min.Js >>-->
-    <script src="assets/js/ion.rangeSlider.min.js"></script>
+    <script src="./assets/js/ion.rangeSlider.min.js"></script>
     <!--<< effect-slicer.Js >>-->
-    <script src="assets/js/effect-slicer.js"></script>
+    <script src="./assets/js/effect-slicer.js"></script>
     <!--<< imagesloaded.pkgd.min.Js >>-->
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="./assets/js/imagesloaded.pkgd.min.js"></script>
     <!--<< jquery.magnific-popup.min.Js >>-->
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.min.js"></script>
     <!--<< jquery.odometer.min.Js >>-->
-    <script src="assets/js/jquery.odometer.min.js"></script>
+    <script src="./assets/js/jquery.odometer.min.js"></script>
     <!--<< jquery-appear.Js >>-->
-    <script src="assets/js/jquery-appear.js"></script>
+    <script src="./assets/js/jquery-appear.js"></script>
     <!--<< swiper-bundle.min.Js >>-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
     <!--<< jquery.nice-select.min.Js >>-->
-    <script src="assets/js/nice-select.js"></script>
+    <script src="./assets/js/nice-select.js"></script>
     <!--<< wow.Js >>-->
-    <script src="assets/js/wow.js"></script>
+    <script src="./assets/js/wow.js"></script>
     <!--<< ajax-form.Js >>-->
-    <script src="assets/js/ajax-form.js"></script>
+    <script src="./assets/js/ajax-form.js"></script>
     <!--<< main.Js >>-->
-    <script src="assets/js/main.js"></script>
+    <script src="./assets/js/main.js"></script>
 
     <!-- Premium GSAP Typography Reveal Animation -->
     <script>
@@ -1647,6 +1676,17 @@
 
         });
     </script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var page = window.location.pathname.split("/").pop();
+    if(page === "service.html" || page === "services-2.html" || page === "service-details.html") {
+        document.querySelectorAll(".services2-nav-item").forEach(function(el) {
+            el.style.display = "inline-block";
+        });
+    }
+});
+</script>
 </body>
 
 </html>

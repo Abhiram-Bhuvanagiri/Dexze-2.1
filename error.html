@@ -8,31 +8,59 @@
     <meta name="description" content="Parody - Digital Agency Portfolio Html Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/logo/favicon.png">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
     <!--<< Bootstrap min.css >>-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <!--<< magnific-popup.css >>-->
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="./assets/css/magnific-popup.css">
     <!--<< fontawesome-all.min.css >>-->
-    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="./assets/css/fontawesome-all.min.css">
     <!--<< swiper-bundle.min.css >>-->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
     <!--<< odometer.css >>-->
-    <link rel="stylesheet" href="assets/css/odometer.css">
+    <link rel="stylesheet" href="./assets/css/odometer.css">
     <!--<< ion.rangeSlider.min.css >>-->
-    <link rel="stylesheet" href="assets/css/ion.rangeSlider.min.css">
+    <link rel="stylesheet" href="./assets/css/ion.rangeSlider.min.css">
    <!--<< effect-slicer.css >>-->
-    <link rel="stylesheet" href="assets/css/effect-slicer.css">
+    <link rel="stylesheet" href="./assets/css/effect-slicer.css">
     <!--<< animate.css >>-->
-    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="./assets/css/animate.css">
     <!--<< default.css >>-->
-    <link rel="stylesheet" href="assets/css/defauls-spacing.css">
+    <link rel="stylesheet" href="./assets/css/defauls-spacing.css">
     <!--<< main.css >>-->
-    <link rel="stylesheet" href="assets/css/main.css">
-</head>
+    <link rel="stylesheet" href="./assets/css/main.css">
+<style>
+                /* Nav Hover Staggered Dial Effect */
+        .staggered-hover {
+            display: inline-flex;
+            vertical-align: top;
+            perspective: 600px;
+        }
+        .staggered-hover span {
+            position: relative;
+            display: inline-block;
+            transition: transform 0.9s cubic-bezier(0.19, 1, 0.22, 1);
+            transition-delay: var(--delay);
+            white-space: pre;
+            transform-style: preserve-3d;
+        }
+        .staggered-hover span::after {
+            content: attr(data-char);
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            transform: rotateX(-90deg);
+            transform-origin: center top;
+        }
+        .tdmenu__nav ul.navigation li a:hover .staggered-hover span {
+            transform: translateY(-100%) rotateX(90deg);
+        }
+</style>\n</head>
 
 <body>
 
@@ -100,7 +128,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="td-error-thumb d-none d-lg-block">
-                        <img src="assets/img/error/thumb.jpg" alt="">
+                        <img src="./assets/img/error/thumb.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -130,43 +158,54 @@
 
     <!-- JS here -->
     <!--<< jquery.Js >>-->
-    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="./assets/js/vendor/jquery.js"></script>
     <!--<< bootstrap.min.Js >>-->
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
     <!--<< gsap.Js >>-->
-    <script src="assets/js/jsap/gsap.js"></script>
+    <script src="./assets/js/jsap/gsap.js"></script>
    <!--<< gsap-scroll-smoother.Js >>-->
-    <script src="assets/js/jsap/gsap-scroll-smoother.js"></script>
+    <script src="./assets/js/jsap/gsap-scroll-smoother.js"></script>
    <!--<< gsap-scroll-trigger.Js >>-->
-    <script src="assets/js/jsap/gsap-scroll-trigger.js"></script>
+    <script src="./assets/js/jsap/gsap-scroll-trigger.js"></script>
    <!--<< gsap-scroll-to-plugin.Js >>-->
-    <script src="assets/js/jsap/gsap-scroll-to-plugin.js"></script>
+    <script src="./assets/js/jsap/gsap-scroll-to-plugin.js"></script>
     <!--<< gsap-split-text.Js >>-->
-    <script src="assets/js/jsap/gsap-split-text.js"></script>
+    <script src="./assets/js/jsap/gsap-split-text.js"></script>
     <!--<< isotope.pkgd.min.Js >>-->
-    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="./assets/js/isotope.pkgd.min.js"></script>
     <!--<< ion.rangeSlider.min.Js >>-->
-    <script src="assets/js/ion.rangeSlider.min.js"></script>
+    <script src="./assets/js/ion.rangeSlider.min.js"></script>
     <!--<< effect-slicer.Js >>-->
-    <script src="assets/js/effect-slicer.js"></script>
+    <script src="./assets/js/effect-slicer.js"></script>
     <!--<< imagesloaded.pkgd.min.Js >>-->
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="./assets/js/imagesloaded.pkgd.min.js"></script>
     <!--<< jquery.magnific-popup.min.Js >>-->
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.min.js"></script>
     <!--<< jquery.odometer.min.Js >>-->
-    <script src="assets/js/jquery.odometer.min.js"></script>
+    <script src="./assets/js/jquery.odometer.min.js"></script>
     <!--<< jquery-appear.Js >>-->
-    <script src="assets/js/jquery-appear.js"></script>
+    <script src="./assets/js/jquery-appear.js"></script>
     <!--<< swiper-bundle.min.Js >>-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
     <!--<< jquery.nice-select.min.Js >>-->
-    <script src="assets/js/nice-select.js"></script>
+    <script src="./assets/js/nice-select.js"></script>
     <!--<< wow.Js >>-->    
-    <script src="assets/js/wow.js"></script>
+    <script src="./assets/js/wow.js"></script>
     <!--<< ajax-form.Js >>-->
-    <script src="assets/js/ajax-form.js"></script>
+    <script src="./assets/js/ajax-form.js"></script>
     <!--<< main.Js >>-->
-    <script src="assets/js/main.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var page = window.location.pathname.split("/").pop();
+    if(page === "service.html" || page === "services-2.html" || page === "service-details.html") {
+        document.querySelectorAll(".services2-nav-item").forEach(function(el) {
+            el.style.display = "inline-block";
+        });
+    }
+});
+</script>
 </body>
 
 </html>

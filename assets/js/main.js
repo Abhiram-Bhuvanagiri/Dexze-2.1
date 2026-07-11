@@ -979,6 +979,21 @@
 		},
 	});
 
+	// Moonshot hover text effect
+	$(document).ready(function() {
+		$('.hover-text-wrap').each(function() {
+			var text = $(this).attr('data-hover') || $(this).text().trim();
+			$(this).empty();
+			
+			var delay = 0;
+			for (var i = 0; i < text.length; i++) {
+				var char = text[i];
+				var span = $('<span class="moonshot-char"></span>').attr('data-char', char).text(char);
+				span.css('--delay', delay + 's');
+				$(this).append(span);
+				delay += 0.03; // stagger delay
+			}
+		});
+	});
+
 })(jQuery);
-
-

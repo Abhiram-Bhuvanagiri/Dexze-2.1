@@ -8,31 +8,59 @@
     <meta name="description" content="Parody - Digital Agency Portfolio Html Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/logo/favicon.png">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
     <!--<< Bootstrap min.css >>-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <!--<< magnific-popup.css >>-->
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="./assets/css/magnific-popup.css">
     <!--<< fontawesome-all.min.css >>-->
-    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="./assets/css/fontawesome-all.min.css">
     <!--<< swiper-bundle.min.css >>-->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
     <!--<< odometer.css >>-->
-    <link rel="stylesheet" href="assets/css/odometer.css">
+    <link rel="stylesheet" href="./assets/css/odometer.css">
     <!--<< ion.rangeSlider.min.css >>-->
-    <link rel="stylesheet" href="assets/css/ion.rangeSlider.min.css">
+    <link rel="stylesheet" href="./assets/css/ion.rangeSlider.min.css">
    <!--<< effect-slicer.css >>-->
-    <link rel="stylesheet" href="assets/css/effect-slicer.css">
+    <link rel="stylesheet" href="./assets/css/effect-slicer.css">
     <!--<< animate.css >>-->
-    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="./assets/css/animate.css">
     <!--<< default.css >>-->
-    <link rel="stylesheet" href="assets/css/defauls-spacing.css">
+    <link rel="stylesheet" href="./assets/css/defauls-spacing.css">
     <!--<< main.css >>-->
-    <link rel="stylesheet" href="assets/css/main.css">
-</head>
+    <link rel="stylesheet" href="./assets/css/main.css">
+<style>
+                /* Nav Hover Staggered Dial Effect */
+        .staggered-hover {
+            display: inline-flex;
+            vertical-align: top;
+            perspective: 600px;
+        }
+        .staggered-hover span {
+            position: relative;
+            display: inline-block;
+            transition: transform 0.9s cubic-bezier(0.19, 1, 0.22, 1);
+            transition-delay: var(--delay);
+            white-space: pre;
+            transform-style: preserve-3d;
+        }
+        .staggered-hover span::after {
+            content: attr(data-char);
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            transform: rotateX(-90deg);
+            transform-origin: center top;
+        }
+        .tdmenu__nav ul.navigation li a:hover .staggered-hover span {
+            transform: translateY(-100%) rotateX(90deg);
+        }
+</style>\n</head>
 
 <body>
 
@@ -142,23 +170,22 @@
                 <div class="row align-items-center">
                     <div class="col-xl-3 col-5">
                         <div class="logo">
-                            <a class="logo-1" href="index.html"><img data-width="120" src="assets/img/logo/logo.png"
+                            <a class="logo-1" href="index.html"><img data-width="120" src="./assets/img/logo/logo.png"
                                     alt="Logo"></a>
                             <a class="logo-2 d-none" href="index.html"><img data-width="120"
-                                    src="assets/img/logo/logo.png" alt="Logo"></a>
+                                    src="./assets/img/logo/logo.png" alt="Logo"></a>
                         </div>
                     </div>
                     <div class="col-xl-6 d-none d-xl-block">
                         <div class="tdmenu__wrap tdmenu-2-wrap">
                             <nav class="tdmenu__nav">
-                                <div class="tdmenu__navbar-wrap tdmenu__main-menu">
+                                                                <div class="tdmenu__navbar-wrap tdmenu__main-menu">
                                     <ul class="navigation">
-                                        <li class="menu-item-has-children"><a href="index.html">Home</a></li>
-                                        <li class="menu-item-has-children"><a href="about.html">about</a></li>
-                                        <li class="menu-item-has-children"><a href="service.html">Services</a></li>
-                                        <li class="menu-item-has-children"><a href="services-2.html">Services-2</a></li>
-                                        <li class="menu-item-has-children"><a href="work2.html">Work</a></li>
-
+                                        <li class="menu-item-has-children"><a href="index.html"><span class="hover-text-wrap" data-hover="Home"><span class="hover-text">Home</span></span></a></li>
+                                        <li class="menu-item-has-children"><a href="about.html"><span class="hover-text-wrap" data-hover="About"><span class="hover-text">About</span></span></a></li>
+                                        <li class="menu-item-has-children"><a href="service.html"><span class="hover-text-wrap" data-hover="Services"><span class="hover-text">Services</span></span></a></li>
+                                        <li class="menu-item-has-children services2-nav-item" style="display: none;"><a href="services-2.html"><span class="hover-text-wrap" data-hover="Services-2"><span class="hover-text">Services-2</span></span></a></li>
+                                        <li class="menu-item-has-children"><a href="work2.html"><span class="hover-text-wrap" data-hover="Work"><span class="hover-text">Work</span></span></a></li>
                                     </ul>
                                 </div>
                             </nav>
@@ -191,7 +218,7 @@
             <nav class="tdmobile__menu-box">
                 <div class="close-btn"><i class="fa-solid fa-xmark"></i></div>
                 <div class="nav-logo">
-                    <a href="index.html"><img data-width="96" src="assets/img/logo/logo.png" alt="logo"></a>
+                    <a href="index.html"><img loading="lazy" data-width="96" src="./assets/img/logo/logo.png" alt="logo"></a>
                 </div>
                 <div class="tdmobile__search">
                     <form action="#">
@@ -251,11 +278,11 @@
                             <div class="col-lg-5">
                                 <div class="td-hero-2-thumb p-relative z-index-1">
                                     <div class="td-btn-bounce">
-                                        <img class="thumb-3" src="assets/img/hero/hero-2/shape-1.png" alt="">
+                                        <img loading="lazy" class="thumb-3" src="./assets/img/hero/hero-2/shape-1.png" alt="">
                                     </div>
-                                    <img class="thumb-4 td-btn-bounce" src="assets/img/hero/hero-2/shape-2.png" alt="">
-                                    <img class="thumb-1" src="assets/img/hero/hero-2/thumb.jpg" alt="">
-                                    <img class="thumb-2 d-none d-sm-inline-block" src="assets/img/hero/hero-2/thumb-2.jpg" alt="">
+                                    <img loading="lazy" class="thumb-4 td-btn-bounce" src="./assets/img/hero/hero-2/shape-2.png" alt="">
+                                    <img loading="lazy" class="thumb-1" src="./assets/img/hero/hero-2/thumb.jpg" alt="">
+                                    <img loading="lazy" class="thumb-2 d-none d-sm-inline-block" src="./assets/img/hero/hero-2/thumb-2.jpg" alt="">
                                 </div>
                             </div>
                             <div class="col-12">
@@ -332,7 +359,7 @@
                             </div>
                             <div class="col-lg-3 col-md-3 d-none d-md-block">
                                 <div class="td-service-2-shape mb-40  td-btn-bounce">
-                                    <img src="assets/img/service/service-2/ok.png" alt="">
+                                    <img loading="lazy" src="./assets/img/service/service-2/ok.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -340,20 +367,20 @@
                             <div class="col-lg-5">
                                 <div class="td-service-2-img-wrapper image-container mt-65 mb-40">
                                     <div class="hover-image active">
-                                        <img class="thumb" src="assets/img/service/service-2/thumb.png" alt="Service Image">
-                                        <img class="shape" src="assets/img/service/service-2/shape.png" alt="">
+                                        <img loading="lazy" class="thumb" src="./assets/img/service/service-2/thumb.png" alt="Service Image">
+                                        <img loading="lazy" class="shape" src="./assets/img/service/service-2/shape.png" alt="">
                                     </div>
                                     <div class="hover-image">
-                                        <img class="thumb" src="assets/img/service/service-2/thumb-2.jpg" alt="Service Image">
-                                        <img class="shape" src="assets/img/service/service-2/shape.png" alt="">
+                                        <img loading="lazy" class="thumb" src="./assets/img/service/service-2/thumb-2.jpg" alt="Service Image">
+                                        <img loading="lazy" class="shape" src="./assets/img/service/service-2/shape.png" alt="">
                                     </div>
                                     <div class="hover-image">
-                                        <img class="thumb" src="assets/img/service/service-2/thumb-3.jpg" alt="Service Image">
-                                        <img class="shape" src="assets/img/service/service-2/shape.png" alt="">
+                                        <img loading="lazy" class="thumb" src="./assets/img/service/service-2/thumb-3.jpg" alt="Service Image">
+                                        <img loading="lazy" class="shape" src="./assets/img/service/service-2/shape.png" alt="">
                                     </div>
                                     <div class="hover-image">
-                                        <img class="thumb" src="assets/img/service/service-2/thumb-4.jpg" alt="Service Image">
-                                        <img class="shape" src="assets/img/service/service-2/shape.png" alt="">
+                                        <img loading="lazy" class="thumb" src="./assets/img/service/service-2/thumb-4.jpg" alt="Service Image">
+                                        <img loading="lazy" class="shape" src="./assets/img/service/service-2/shape.png" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -439,7 +466,7 @@
                                 <div class="swiper-slide">
                                     <div class="td-portfolio-2-item p-relative">
                                         <div class="td-portfolio-2-thumb fix">
-                                            <img src="assets/img/portfolio/2/thumb.jpg" alt="">
+                                            <img loading="lazy" src="./assets/img/portfolio/2/thumb.jpg" alt="">
                                         </div>
                                         <div class="td-portfolio-2-content">
                                             <div class="dates mb-10">
@@ -454,7 +481,7 @@
                                 <div class="swiper-slide">
                                     <div class="td-portfolio-2-item p-relative">
                                         <div class="td-portfolio-2-thumb fix">
-                                            <img src="assets/img/portfolio/2/thumb-2.jpg" alt="">
+                                            <img loading="lazy" src="./assets/img/portfolio/2/thumb-2.jpg" alt="">
                                         </div>
                                         <div class="td-portfolio-2-content">
                                             <div class="dates mb-10">
@@ -469,7 +496,7 @@
                                 <div class="swiper-slide">
                                     <div class="td-portfolio-2-item p-relative">
                                         <div class="td-portfolio-2-thumb fix">
-                                            <img src="assets/img/portfolio/2/thumb-3.jpg" alt="">
+                                            <img loading="lazy" src="./assets/img/portfolio/2/thumb-3.jpg" alt="">
                                         </div>
                                         <div class="td-portfolio-2-content">
                                             <div class="dates mb-10">
@@ -484,7 +511,7 @@
                                 <div class="swiper-slide">
                                     <div class="td-portfolio-2-item p-relative">
                                         <div class="td-portfolio-2-thumb fix">
-                                            <img src="assets/img/portfolio/2/thumb-4.jpg" alt="">
+                                            <img loading="lazy" src="./assets/img/portfolio/2/thumb-4.jpg" alt="">
                                         </div>
                                         <div class="td-portfolio-2-content">
                                             <div class="dates mb-10">
@@ -499,7 +526,7 @@
                                 <div class="swiper-slide">
                                     <div class="td-portfolio-2-item p-relative">
                                         <div class="td-portfolio-2-thumb fix">
-                                            <img src="assets/img/portfolio/2/thumb-5.jpg" alt="">
+                                            <img loading="lazy" src="./assets/img/portfolio/2/thumb-5.jpg" alt="">
                                         </div>
                                         <div class="td-portfolio-2-content">
                                             <div class="dates mb-10">
@@ -514,7 +541,7 @@
                                 <div class="swiper-slide">
                                     <div class="td-portfolio-2-item p-relative">
                                         <div class="td-portfolio-2-thumb fix">
-                                            <img src="assets/img/portfolio/2/thumb-6.jpg" alt="">
+                                            <img loading="lazy" src="./assets/img/portfolio/2/thumb-6.jpg" alt="">
                                         </div>
                                         <div class="td-portfolio-2-content">
                                             <div class="dates mb-10">
@@ -529,7 +556,7 @@
                                 <div class="swiper-slide">
                                     <div class="td-portfolio-2-item p-relative">
                                         <div class="td-portfolio-2-thumb fix">
-                                            <img src="assets/img/portfolio/2/thumb-7.jpg" alt="">
+                                            <img loading="lazy" src="./assets/img/portfolio/2/thumb-7.jpg" alt="">
                                         </div>
                                         <div class="td-portfolio-2-content">
                                             <div class="dates mb-10">
@@ -544,7 +571,7 @@
                                 <div class="swiper-slide">
                                     <div class="td-portfolio-2-item p-relative">
                                         <div class="td-portfolio-2-thumb fix">
-                                            <img src="assets/img/portfolio/2/thumb-8.jpg" alt="">
+                                            <img loading="lazy" src="./assets/img/portfolio/2/thumb-8.jpg" alt="">
                                         </div>
                                         <div class="td-portfolio-2-content">
                                             <div class="dates mb-10">
@@ -565,7 +592,7 @@
                                 <div class="swiper-slide">
                                     <div class="td-portfolio-2-item p-relative">
                                         <div class="td-portfolio-2-thumb fix">
-                                            <img src="assets/img/portfolio/2/thumb-7.jpg" alt="">
+                                            <img loading="lazy" src="./assets/img/portfolio/2/thumb-7.jpg" alt="">
                                         </div>
                                         <div class="td-portfolio-2-content">
                                             <div class="dates mb-10">
@@ -580,7 +607,7 @@
                                 <div class="swiper-slide">
                                     <div class="td-portfolio-2-item p-relative">
                                         <div class="td-portfolio-2-thumb fix">
-                                            <img src="assets/img/portfolio/2/thumb-8.jpg" alt="">
+                                            <img loading="lazy" src="./assets/img/portfolio/2/thumb-8.jpg" alt="">
                                         </div>
                                         <div class="td-portfolio-2-content">
                                             <div class="dates mb-10">
@@ -595,7 +622,7 @@
                                 <div class="swiper-slide">
                                     <div class="td-portfolio-2-item p-relative">
                                         <div class="td-portfolio-2-thumb fix">
-                                            <img src="assets/img/portfolio/2/thumb.jpg" alt="">
+                                            <img loading="lazy" src="./assets/img/portfolio/2/thumb.jpg" alt="">
                                         </div>
                                         <div class="td-portfolio-2-content">
                                             <div class="dates mb-10">
@@ -610,7 +637,7 @@
                                 <div class="swiper-slide">
                                     <div class="td-portfolio-2-item p-relative">
                                         <div class="td-portfolio-2-thumb fix">
-                                            <img src="assets/img/portfolio/2/thumb-2.jpg" alt="">
+                                            <img loading="lazy" src="./assets/img/portfolio/2/thumb-2.jpg" alt="">
                                         </div>
                                         <div class="td-portfolio-2-content">
                                             <div class="dates mb-10">
@@ -625,7 +652,7 @@
                                 <div class="swiper-slide">
                                     <div class="td-portfolio-2-item p-relative">
                                         <div class="td-portfolio-2-thumb fix">
-                                            <img src="assets/img/portfolio/2/thumb-3.jpg" alt="">
+                                            <img loading="lazy" src="./assets/img/portfolio/2/thumb-3.jpg" alt="">
                                         </div>
                                         <div class="td-portfolio-2-content">
                                             <div class="dates mb-10">
@@ -640,7 +667,7 @@
                                 <div class="swiper-slide">
                                     <div class="td-portfolio-2-item p-relative">
                                         <div class="td-portfolio-2-thumb fix">
-                                            <img src="assets/img/portfolio/2/thumb-4.jpg" alt="">
+                                            <img loading="lazy" src="./assets/img/portfolio/2/thumb-4.jpg" alt="">
                                         </div>
                                         <div class="td-portfolio-2-content">
                                             <div class="dates mb-10">
@@ -655,7 +682,7 @@
                                 <div class="swiper-slide">
                                     <div class="td-portfolio-2-item p-relative">
                                         <div class="td-portfolio-2-thumb fix">
-                                            <img src="assets/img/portfolio/2/thumb-5.jpg" alt="">
+                                            <img loading="lazy" src="./assets/img/portfolio/2/thumb-5.jpg" alt="">
                                         </div>
                                         <div class="td-portfolio-2-content">
                                             <div class="dates mb-10">
@@ -670,7 +697,7 @@
                                 <div class="swiper-slide">
                                     <div class="td-portfolio-2-item p-relative">
                                         <div class="td-portfolio-2-thumb fix">
-                                            <img src="assets/img/portfolio/2/thumb-6.jpg" alt="">
+                                            <img loading="lazy" src="./assets/img/portfolio/2/thumb-6.jpg" alt="">
                                         </div>
                                         <div class="td-portfolio-2-content">
                                             <div class="dates mb-10">
@@ -700,7 +727,7 @@
                             </div>
                             <div class="col-lg-3">
                                 <div class="td-testimonial-left mb-40  td-btn-bounce">
-                                    <img class="mb-20" src="assets/img/testimonial/user.png" alt="">
+                                    <img loading="lazy" class="mb-20" src="./assets/img/testimonial/user.png" alt="">
                                     <p>More than 25k clients all<br>
                                         over the world</p>
                                 </div>
@@ -727,7 +754,7 @@
                             </div>
                             <div class="col-lg-4 order-md-1 order-lg-1">
                                 <div class="td-testimonial-thumb mb-40">
-                                    <img class="w-100 td-rounded-10" src="assets/img/testimonial/tes-2/thumb.jpg" alt="">
+                                    <img loading="lazy" class="w-100 td-rounded-10" src="./assets/img/testimonial/tes-2/thumb.jpg" alt="">
                                 </div>
                             </div>
                             <div class="col-lg-6 order-md-3">
@@ -868,7 +895,7 @@
                 <!-- td-feature-area-start -->
                 <div class="td-feature-area fix">
                     <div class="fix">
-                        <img data-speed=".9" class="w-100" src="assets/img/bigimage/thumb.jpg" alt="">
+                        <img loading="lazy" data-speed=".9" class="w-100" src="./assets/img/bigimage/thumb.jpg" alt="">
                     </div>
                     <div class="td-feature-slide-wrap td-feature-2-spacing">
                         <div class="swiper-container td-feature-2-slider">
@@ -971,32 +998,32 @@
                                         <div class="swiper-wrapper slide-transtion">
                                             <div class="swiper-slide">
                                                 <div class="td-brand-item">
-                                                    <img src="assets/img/brand/logo-1.png" alt="">
+                                                    <img loading="lazy" src="./assets/img/brand/logo-1.png" alt="">
                                                 </div>
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="td-brand-item">
-                                                    <img src="assets/img/brand/logo-2.png" alt="">
+                                                    <img loading="lazy" src="./assets/img/brand/logo-2.png" alt="">
                                                 </div>
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="td-brand-item">
-                                                    <img src="assets/img/brand/logo-3.png" alt="">
+                                                    <img loading="lazy" src="./assets/img/brand/logo-3.png" alt="">
                                                 </div>
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="td-brand-item">
-                                                    <img src="assets/img/brand/logo-4.png" alt="">
+                                                    <img loading="lazy" src="./assets/img/brand/logo-4.png" alt="">
                                                 </div>
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="td-brand-item">
-                                                    <img src="assets/img/brand/logo-5.png" alt="">
+                                                    <img loading="lazy" src="./assets/img/brand/logo-5.png" alt="">
                                                 </div>
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="td-brand-item">
-                                                    <img src="assets/img/brand/logo-3.png" alt="">
+                                                    <img loading="lazy" src="./assets/img/brand/logo-3.png" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -1014,7 +1041,7 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="td-faq-2-thumb mb-30 wow fadeInLeft fix td-rounded-10" data-wow-delay=".5s" data-wow-duration="1s">
-                                    <img data-speed=".9" class="td-rounded-10" src="assets/img/faq/faq-2/thumb.jpg" alt="">
+                                    <img loading="lazy" data-speed=".9" class="td-rounded-10" src="./assets/img/faq/faq-2/thumb.jpg" alt="">
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -1229,7 +1256,7 @@
                         <div class="row mb-20">
                             <div class="col-lg-5 col-md-5">
                                 <div class="td-testimonial-left mb-40 td-btn-bounce">
-                                    <img class="mb-20" src="assets/img/testimonial/user.png" alt="">
+                                    <img loading="lazy" class="mb-20" src="./assets/img/testimonial/user.png" alt="">
                                     <p>More than 25k clients all<br>
                                         over the world</p>
                                 </div>
@@ -1247,7 +1274,7 @@
                                     <div class="row align-items-center">
                                         <div class="col-lg-7 col-md-6 col-sm-6">
                                             <div class="td-team-2-thumb fix td-rounded-10 mb-30">
-                                                <img class="td-rounded-10 w-100" src="assets/img/team/team-2/thumb.jpg" alt="">
+                                                <img loading="lazy" class="td-rounded-10 w-100" src="./assets/img/team/team-2/thumb.jpg" alt="">
                                             </div>
                                         </div>
                                         <div class="col-lg-5 col-md-6 col-sm-6">
@@ -1289,7 +1316,7 @@
                                     <div class="row align-items-center">
                                         <div class="col-lg-7 col-md-6 col-sm-6">
                                             <div class="td-team-2-thumb fix td-rounded-10 mb-30">
-                                                <img class="td-rounded-10 w-100" src="assets/img/team/team-2/thumb-2.jpg" alt="">
+                                                <img loading="lazy" class="td-rounded-10 w-100" src="./assets/img/team/team-2/thumb-2.jpg" alt="">
                                             </div>
                                         </div>
                                         <div class="col-lg-5 col-md-6 col-sm-6">
@@ -1344,7 +1371,7 @@
                                     <div class="row align-items-center">
                                         <div class="col-lg-7 col-md-6 col-sm-6">
                                             <div class="td-team-2-thumb fix td-rounded-10 mb-30">
-                                                <img class="td-rounded-10 w-100" src="assets/img/team/team-2/thumb-2.jpg" alt="">
+                                                <img loading="lazy" class="td-rounded-10 w-100" src="./assets/img/team/team-2/thumb-2.jpg" alt="">
                                             </div>
                                         </div>
                                         <div class="col-lg-5 col-md-6 col-sm-6">
@@ -1386,7 +1413,7 @@
                                     <div class="row align-items-center">
                                         <div class="col-lg-7 col-md-6 col-sm-6">
                                             <div class="td-team-2-thumb fix td-rounded-10 mb-30">
-                                                <img class="td-rounded-10 w-100" src="assets/img/team/team-2/thumb-4.jpg" alt="">
+                                                <img loading="lazy" class="td-rounded-10 w-100" src="./assets/img/team/team-2/thumb-4.jpg" alt="">
                                             </div>
                                         </div>
                                         <div class="col-lg-5 col-md-6 col-sm-6">
@@ -1455,25 +1482,25 @@
                         <div class="row">
                             <div class="col-lg-3 col-md-6 cil-sm-6 wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1s">
                                 <div class="td-achievement-item text-center mb-30">
-                                    <img class="mb-20" src="assets/img/achivment/icon.png" alt="">
+                                    <img loading="lazy" class="mb-20" src="./assets/img/achivment/icon.png" alt="">
                                     <p>100% Job Success on <br>Upwork</p>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6 cil-sm-6 wow fadeInUp" data-wow-delay=".5s" data-wow-duration="1s">
                                 <div class="td-achievement-item text-center mb-30">
-                                    <img class="mb-20" src="assets/img/achivment/icon-2.png" alt="">
+                                    <img loading="lazy" class="mb-20" src="./assets/img/achivment/icon-2.png" alt="">
                                     <p>5 Stars Rating on<br>  GoodFirms</p>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6 cil-sm-6 wow fadeInUp" data-wow-delay=".7s" data-wow-duration="1s">
                                 <div class="td-achievement-item text-center mb-30">
-                                    <img class="mb-20" src="assets/img/achivment/icon-3.png" alt="">
+                                    <img loading="lazy" class="mb-20" src="./assets/img/achivment/icon-3.png" alt="">
                                     <p>Top 100 Global Companies<br> on Clutch</p>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6 cil-sm-6 wow fadeInUp" data-wow-delay=".9s" data-wow-duration="1s">
                                 <div class="td-achievement-item text-center mb-30">
-                                    <img class="mb-20" src="assets/img/achivment/icon-4.png" alt="">
+                                    <img loading="lazy" class="mb-20" src="./assets/img/achivment/icon-4.png" alt="">
                                     <p>#1 Team in the world<br> on Dribbble</p>
                                 </div>
                             </div>
@@ -1512,7 +1539,7 @@
                                     <div class="td-blog-2-avatar-wrap mb-25 d-flex justify-content-between align-items-center">
                                         <div class="d-flex align-items-center">
                                             <div class="td-blog-2-avatar-thumb mr-15">
-                                                <img src="assets/img/blog/blog-2/avatar.png" alt="">
+                                                <img loading="lazy" src="./assets/img/blog/blog-2/avatar.png" alt="">
                                             </div>
                                             <div class="td-blog-2-avatar-content">
                                                 <h6 class="mb-0">David Marlon</h6>
@@ -1524,7 +1551,7 @@
                                         </div>
                                     </div>
                                     <div class="td-blog-2-thumb td-rounded-10 fix mb-25">
-                                        <img class="w-100 td-rounded-10" src="assets/img/blog/blog-2/blog.jpg" alt="">
+                                        <img loading="lazy" class="w-100 td-rounded-10" src="./assets/img/blog/blog-2/blog.jpg" alt="">
                                     </div>
                                     <h3 class="td-blog-2-title"><a href="blog-details.html">Our mission is to revolutionize of
                                         creative work for companies</a></h3>
@@ -1535,7 +1562,7 @@
                                     <div class="td-blog-2-avatar-wrap mb-25 d-flex justify-content-between align-items-center">
                                         <div class="d-flex align-items-center">
                                             <div class="td-blog-2-avatar-thumb mr-15">
-                                                <img src="assets/img/blog/blog-2/avatar-2.png" alt="">
+                                                <img loading="lazy" src="./assets/img/blog/blog-2/avatar-2.png" alt="">
                                             </div>
                                             <div class="td-blog-2-avatar-content">
                                                 <h6 class="mb-0">Huaka Brain</h6>
@@ -1547,7 +1574,7 @@
                                         </div>
                                     </div>
                                     <div class="td-blog-2-thumb td-rounded-10 fix mb-25">
-                                        <img class="w-100 td-rounded-10" src="assets/img/blog/blog-2/blog-2.jpg" alt="">
+                                        <img loading="lazy" class="w-100 td-rounded-10" src="./assets/img/blog/blog-2/blog-2.jpg" alt="">
                                     </div>
                                     <h3 class="td-blog-2-title"><a href="blog-details.html">Our brand strategy services focus
                                         on creating a cohesive</a></h3>
@@ -1558,7 +1585,7 @@
                                     <div class="td-blog-2-avatar-wrap mb-25 d-flex justify-content-between align-items-center">
                                         <div class="d-flex align-items-center">
                                             <div class="td-blog-2-avatar-thumb mr-15">
-                                                <img src="assets/img/blog/blog-2/avatar-3.png" alt="">
+                                                <img loading="lazy" src="./assets/img/blog/blog-2/avatar-3.png" alt="">
                                             </div>
                                             <div class="td-blog-2-avatar-content">
                                                 <h6 class="mb-0">Navana Juisa</h6>
@@ -1570,7 +1597,7 @@
                                         </div>
                                     </div>
                                     <div class="td-blog-2-thumb td-rounded-10 fix mb-25">
-                                        <img class="w-100 td-rounded-10" src="assets/img/blog/blog-2/blog-3.jpg" alt="">
+                                        <img loading="lazy" class="w-100 td-rounded-10" src="./assets/img/blog/blog-2/blog-3.jpg" alt="">
                                     </div>
                                     <h3 class="td-blog-2-title"><a href="blog-details.html">Our mission is to revolutionize of
                                         creative work for companies</a></h3>
@@ -1586,7 +1613,7 @@
                     <div class="td-contact-7-text-slider">
                         <div class="td-contact-7-text-btn text-center pt-30">
                             <a href="contact.html">
-                                <img class="td-live-anim-spin" src="assets/img/contact/text.png" alt="">
+                                <img loading="lazy" class="td-live-anim-spin" src="./assets/img/contact/text.png" alt="">
                                 <span class="icon">
                                     <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M7.07031 22.0708L21.2124 7.92867" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -1709,43 +1736,54 @@
 
     <!-- JS here -->
     <!--<< jquery.Js >>-->
-    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="./assets/js/vendor/jquery.js"></script>
     <!--<< bootstrap.min.Js >>-->
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
     <!--<< gsap.Js >>-->
-    <script src="assets/js/jsap/gsap.js"></script>
+    <script src="./assets/js/jsap/gsap.js"></script>
    <!--<< gsap-scroll-smoother.Js >>-->
-    <script src="assets/js/jsap/gsap-scroll-smoother.js"></script>
+    <script src="./assets/js/jsap/gsap-scroll-smoother.js"></script>
    <!--<< gsap-scroll-trigger.Js >>-->
-    <script src="assets/js/jsap/gsap-scroll-trigger.js"></script>
+    <script src="./assets/js/jsap/gsap-scroll-trigger.js"></script>
    <!--<< gsap-scroll-to-plugin.Js >>-->
-    <script src="assets/js/jsap/gsap-scroll-to-plugin.js"></script>
+    <script src="./assets/js/jsap/gsap-scroll-to-plugin.js"></script>
     <!--<< gsap-split-text.Js >>-->
-    <script src="assets/js/jsap/gsap-split-text.js"></script>
+    <script src="./assets/js/jsap/gsap-split-text.js"></script>
     <!--<< isotope.pkgd.min.Js >>-->
-    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="./assets/js/isotope.pkgd.min.js"></script>
     <!--<< ion.rangeSlider.min.Js >>-->
-    <script src="assets/js/ion.rangeSlider.min.js"></script>
+    <script src="./assets/js/ion.rangeSlider.min.js"></script>
     <!--<< effect-slicer.Js >>-->
-    <script src="assets/js/effect-slicer.js"></script>
+    <script src="./assets/js/effect-slicer.js"></script>
     <!--<< imagesloaded.pkgd.min.Js >>-->
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="./assets/js/imagesloaded.pkgd.min.js"></script>
     <!--<< jquery.magnific-popup.min.Js >>-->
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.min.js"></script>
     <!--<< jquery.odometer.min.Js >>-->
-    <script src="assets/js/jquery.odometer.min.js"></script>
+    <script src="./assets/js/jquery.odometer.min.js"></script>
     <!--<< jquery-appear.Js >>-->
-    <script src="assets/js/jquery-appear.js"></script>
+    <script src="./assets/js/jquery-appear.js"></script>
     <!--<< swiper-bundle.min.Js >>-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
     <!--<< jquery.nice-select.min.Js >>-->
-    <script src="assets/js/nice-select.js"></script>
+    <script src="./assets/js/nice-select.js"></script>
     <!--<< wow.Js >>-->    
-    <script src="assets/js/wow.js"></script>
+    <script src="./assets/js/wow.js"></script>
     <!--<< ajax-form.Js >>-->
-    <script src="assets/js/ajax-form.js"></script>
+    <script src="./assets/js/ajax-form.js"></script>
     <!--<< main.Js >>-->
-    <script src="assets/js/main.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var page = window.location.pathname.split("/").pop();
+    if(page === "service.html" || page === "services-2.html" || page === "service-details.html") {
+        document.querySelectorAll(".services2-nav-item").forEach(function(el) {
+            el.style.display = "inline-block";
+        });
+    }
+});
+</script>
 </body>
 
 </html>

@@ -8,31 +8,59 @@
     <meta name="description" content="Parody - Digital Agency Portfolio Html Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/logo/favicon.png">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
     <!--<< Bootstrap min.css >>-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <!--<< magnific-popup.css >>-->
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="./assets/css/magnific-popup.css">
     <!--<< fontawesome-all.min.css >>-->
-    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="./assets/css/fontawesome-all.min.css">
     <!--<< swiper-bundle.min.css >>-->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
     <!--<< odometer.css >>-->
-    <link rel="stylesheet" href="assets/css/odometer.css">
+    <link rel="stylesheet" href="./assets/css/odometer.css">
     <!--<< ion.rangeSlider.min.css >>-->
-    <link rel="stylesheet" href="assets/css/ion.rangeSlider.min.css">
+    <link rel="stylesheet" href="./assets/css/ion.rangeSlider.min.css">
    <!--<< effect-slicer.css >>-->
-    <link rel="stylesheet" href="assets/css/effect-slicer.css">
+    <link rel="stylesheet" href="./assets/css/effect-slicer.css">
     <!--<< animate.css >>-->
-    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="./assets/css/animate.css">
     <!--<< default.css >>-->
-    <link rel="stylesheet" href="assets/css/defauls-spacing.css">
+    <link rel="stylesheet" href="./assets/css/defauls-spacing.css">
     <!--<< main.css >>-->
-    <link rel="stylesheet" href="assets/css/main.css">
-</head>
+    <link rel="stylesheet" href="./assets/css/main.css">
+<style>
+                /* Nav Hover Staggered Dial Effect */
+        .staggered-hover {
+            display: inline-flex;
+            vertical-align: top;
+            perspective: 600px;
+        }
+        .staggered-hover span {
+            position: relative;
+            display: inline-block;
+            transition: transform 0.9s cubic-bezier(0.19, 1, 0.22, 1);
+            transition-delay: var(--delay);
+            white-space: pre;
+            transform-style: preserve-3d;
+        }
+        .staggered-hover span::after {
+            content: attr(data-char);
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            transform: rotateX(-90deg);
+            transform-origin: center top;
+        }
+        .tdmenu__nav ul.navigation li a:hover .staggered-hover span {
+            transform: translateY(-100%) rotateX(90deg);
+        }
+</style>\n</head>
 
 <body>
 
@@ -102,23 +130,22 @@
                 <div class="row align-items-center">
                     <div class="col-xl-3 col-5">
                         <div class="logo">
-                            <a class="logo-1" href="index.html"><img data-width="120" src="assets/img/logo/logo.png"
+                            <a class="logo-1" href="index.html"><img data-width="120" src="./assets/img/logo/logo.png"
                                     alt="Logo"></a>
                             <a class="logo-2 d-none" href="index.html"><img data-width="120"
-                                    src="assets/img/logo/logo.png" alt="Logo"></a>
+                                    src="./assets/img/logo/logo.png" alt="Logo"></a>
                         </div>
                     </div>
                     <div class="col-xl-6 d-none d-xl-block">
                         <div class="tdmenu__wrap tdmenu-2-wrap">
                             <nav class="tdmenu__nav">
-                                <div class="tdmenu__navbar-wrap tdmenu__main-menu">
+                                                                <div class="tdmenu__navbar-wrap tdmenu__main-menu">
                                     <ul class="navigation">
-                                        <li class="menu-item-has-children"><a href="index.html">Home</a></li>
-                                        <li class="menu-item-has-children"><a href="about.html">about</a></li>
-                                        <li class="menu-item-has-children"><a href="service.html">Services</a></li>
-                                        <li class="menu-item-has-children"><a href="services-2.html">Services-2</a></li>
-                                        <li class="menu-item-has-children"><a href="work2.html">Work</a></li>
-
+                                        <li class="menu-item-has-children"><a href="index.html"><span class="hover-text-wrap" data-hover="Home"><span class="hover-text">Home</span></span></a></li>
+                                        <li class="menu-item-has-children"><a href="about.html"><span class="hover-text-wrap" data-hover="About"><span class="hover-text">About</span></span></a></li>
+                                        <li class="menu-item-has-children"><a href="service.html"><span class="hover-text-wrap" data-hover="Services"><span class="hover-text">Services</span></span></a></li>
+                                        <li class="menu-item-has-children services2-nav-item" style="display: none;"><a href="services-2.html"><span class="hover-text-wrap" data-hover="Services-2"><span class="hover-text">Services-2</span></span></a></li>
+                                        <li class="menu-item-has-children"><a href="work2.html"><span class="hover-text-wrap" data-hover="Work"><span class="hover-text">Work</span></span></a></li>
                                     </ul>
                                 </div>
                             </nav>
@@ -151,7 +178,7 @@
             <nav class="tdmobile__menu-box">
                 <div class="close-btn"><i class="fa-solid fa-xmark"></i></div>
                 <div class="nav-logo">
-                    <a href="index.html"><img data-width="96" src="assets/img/logo/logo.png" alt="logo"></a>
+                    <a href="index.html"><img loading="lazy" data-width="96" src="./assets/img/logo/logo.png" alt="logo"></a>
                 </div>
                 <div class="tdmobile__search">
                     <form action="#">
@@ -203,7 +230,7 @@
                                     <h2 class="td-section-page-title mb-55  wow fadeInUp" data-wow-delay=".7s" data-wow-duration="1s">Emphasize on creative<br> design <span>aspects</span></h2>
                                     <div class="td-blog-details-author d-flex align-items-center  wow fadeInUp" data-wow-delay=".9s" data-wow-duration="1s">
                                         <div class="td-blog-details-author-thumb d-flex align-items-center mr-80">
-                                            <img class="mr-20" src="assets/img/blog/blog-details/avatar.jpg" alt="">
+                                            <img loading="lazy" class="mr-20" src="./assets/img/blog/blog-details/avatar.jpg" alt="">
                                             <div class="td-blog-details-author-content">
                                                 <span>Written by</span>
                                                 <span class="bolds mt-5">Alexander</span>
@@ -227,7 +254,7 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="td-blog-details-thumb fix td-rounded-10">
-                                    <img data-speed=".9" class="w-100 td-rounded-10" src="assets/img/blog/blog-details/thumb-3.jpg" alt="">
+                                    <img loading="lazy" data-speed=".9" class="w-100 td-rounded-10" src="./assets/img/blog/blog-details/thumb-3.jpg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -244,12 +271,12 @@
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-sm-6">
                                         <div class="td-blog-details-thumb fix td-rounded-10 mb-30">
-                                            <img data-speed=".9" class="td-rounded-10 w-100" src="assets/img/blog/blog-details/thumb-4.jpg" alt="">
+                                            <img loading="lazy" data-speed=".9" class="td-rounded-10 w-100" src="./assets/img/blog/blog-details/thumb-4.jpg" alt="">
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6">
                                         <div class="td-blog-details-thumb  fix td-rounded-10 mb-30">
-                                            <img data-speed=".9" class="td-rounded-10  w-100" src="assets/img/blog/blog-details/thumb-6.jpg" alt="">
+                                            <img loading="lazy" data-speed=".9" class="td-rounded-10  w-100" src="./assets/img/blog/blog-details/thumb-6.jpg" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -273,7 +300,7 @@
                             </div>
                             <div class="col-lg-11">
                                 <div class="td-blog-details-thumb fix td-rounded-10 mb-30 mt-90">
-                                    <img  data-speed=".9" class="td-rounded-10  w-100" src="assets/img/blog/blog-details/thumb-2.jpg" alt="">
+                                    <img loading="lazy" data-speed=".9" class="td-rounded-10  w-100" src="./assets/img/blog/blog-details/thumb-2.jpg" alt="">
                                 </div>
                             </div>
                             <div class="col-lg-8">
@@ -315,7 +342,7 @@
                                     <div class="row">
                                         <div class="col-lg-4 col-md-4">
                                             <div class="td-blog-details-author-bottom-thumb h-100">
-                                                <img src="assets/img/blog/blog-details/thumb.jpg" alt="">
+                                                <img loading="lazy" src="./assets/img/blog/blog-details/thumb.jpg" alt="">
                                             </div>
                                         </div>
                                         <div class="col-lg-8 col-md-8">
@@ -379,7 +406,7 @@
                             <div class="col-xl-4 col-lg-6 col-md-6">
                                 <div class="td-blog-wrap mb-30">
                                     <div class="td-blog-thumb fix mb-25">
-                                        <img class="w-100" src="assets/img/blog/thumb.jpg" alt="">
+                                        <img loading="lazy" class="w-100" src="./assets/img/blog/thumb.jpg" alt="">
                                     </div>
                                     <div class="td-blog-content">
                                         <h3 class="td-blog-title mb-30"><a href="blog-details.html">Our strategic planning ensures
@@ -396,7 +423,7 @@
                             <div class="col-xl-4 col-lg-6 col-md-6">
                                 <div class="td-blog-wrap mb-30">
                                     <div class="td-blog-thumb fix mb-25">
-                                        <img class="w-100" src="assets/img/blog/thumb-2.jpg" alt="">
+                                        <img loading="lazy" class="w-100" src="./assets/img/blog/thumb-2.jpg" alt="">
                                     </div>
                                     <div class="td-blog-content">
                                         <h3 class="td-blog-title mb-30"><a href="blog-details.html">The complex but awesome CSS
@@ -413,7 +440,7 @@
                             <div class="col-xl-4 col-lg-6 col-md-6">
                                 <div class="td-blog-wrap mb-30">
                                     <div class="td-blog-thumb fix mb-25">
-                                        <img class="w-100" src="assets/img/blog/thumb-3.jpg" alt="">
+                                        <img loading="lazy" class="w-100" src="./assets/img/blog/thumb-3.jpg" alt="">
                                     </div>
                                     <div class="td-blog-content">
                                         <h3 class="td-blog-title mb-30"><a href="blog-details.html">The complex but awesome CSS
@@ -442,7 +469,7 @@
                             <div class="col-lg-3 col-md-6 col-sm-6">
                                 <div class="td-footer-logo mb-30">
                                     <a href="index.html">
-                                        <img src="assets/img/logo/logo-white.png" alt="">
+                                        <img loading="lazy" src="assets/img/logo/w_logo.png" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -539,43 +566,54 @@
 
     <!-- JS here -->
     <!--<< jquery.Js >>-->
-    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="./assets/js/vendor/jquery.js"></script>
     <!--<< bootstrap.min.Js >>-->
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
     <!--<< gsap.Js >>-->
-    <script src="assets/js/jsap/gsap.js"></script>
+    <script src="./assets/js/jsap/gsap.js"></script>
    <!--<< gsap-scroll-smoother.Js >>-->
-    <script src="assets/js/jsap/gsap-scroll-smoother.js"></script>
+    <script src="./assets/js/jsap/gsap-scroll-smoother.js"></script>
    <!--<< gsap-scroll-trigger.Js >>-->
-    <script src="assets/js/jsap/gsap-scroll-trigger.js"></script>
+    <script src="./assets/js/jsap/gsap-scroll-trigger.js"></script>
    <!--<< gsap-scroll-to-plugin.Js >>-->
-    <script src="assets/js/jsap/gsap-scroll-to-plugin.js"></script>
+    <script src="./assets/js/jsap/gsap-scroll-to-plugin.js"></script>
     <!--<< gsap-split-text.Js >>-->
-    <script src="assets/js/jsap/gsap-split-text.js"></script>
+    <script src="./assets/js/jsap/gsap-split-text.js"></script>
     <!--<< isotope.pkgd.min.Js >>-->
-    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="./assets/js/isotope.pkgd.min.js"></script>
     <!--<< ion.rangeSlider.min.Js >>-->
-    <script src="assets/js/ion.rangeSlider.min.js"></script>
+    <script src="./assets/js/ion.rangeSlider.min.js"></script>
     <!--<< effect-slicer.Js >>-->
-    <script src="assets/js/effect-slicer.js"></script>
+    <script src="./assets/js/effect-slicer.js"></script>
     <!--<< imagesloaded.pkgd.min.Js >>-->
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="./assets/js/imagesloaded.pkgd.min.js"></script>
     <!--<< jquery.magnific-popup.min.Js >>-->
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.min.js"></script>
     <!--<< jquery.odometer.min.Js >>-->
-    <script src="assets/js/jquery.odometer.min.js"></script>
+    <script src="./assets/js/jquery.odometer.min.js"></script>
     <!--<< jquery-appear.Js >>-->
-    <script src="assets/js/jquery-appear.js"></script>
+    <script src="./assets/js/jquery-appear.js"></script>
     <!--<< swiper-bundle.min.Js >>-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
     <!--<< jquery.nice-select.min.Js >>-->
-    <script src="assets/js/nice-select.js"></script>
+    <script src="./assets/js/nice-select.js"></script>
     <!--<< wow.Js >>-->    
-    <script src="assets/js/wow.js"></script>
+    <script src="./assets/js/wow.js"></script>
     <!--<< ajax-form.Js >>-->
-    <script src="assets/js/ajax-form.js"></script>
+    <script src="./assets/js/ajax-form.js"></script>
     <!--<< main.Js >>-->
-    <script src="assets/js/main.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var page = window.location.pathname.split("/").pop();
+    if(page === "service.html" || page === "services-2.html" || page === "service-details.html") {
+        document.querySelectorAll(".services2-nav-item").forEach(function(el) {
+            el.style.display = "inline-block";
+        });
+    }
+});
+</script>
 </body>
 
 </html>

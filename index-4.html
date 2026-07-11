@@ -8,31 +8,59 @@
     <meta name="description" content="Parody - Digital Agency Portfolio Html Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/logo/favicon.png">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
     <!--<< Bootstrap min.css >>-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <!--<< magnific-popup.css >>-->
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="./assets/css/magnific-popup.css">
     <!--<< fontawesome-all.min.css >>-->
-    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="./assets/css/fontawesome-all.min.css">
     <!--<< swiper-bundle.min.css >>-->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
     <!--<< odometer.css >>-->
-    <link rel="stylesheet" href="assets/css/odometer.css">
+    <link rel="stylesheet" href="./assets/css/odometer.css">
     <!--<< ion.rangeSlider.min.css >>-->
-    <link rel="stylesheet" href="assets/css/ion.rangeSlider.min.css">
+    <link rel="stylesheet" href="./assets/css/ion.rangeSlider.min.css">
    <!--<< effect-slicer.css >>-->
-    <link rel="stylesheet" href="assets/css/effect-slicer.css">
+    <link rel="stylesheet" href="./assets/css/effect-slicer.css">
     <!--<< animate.css >>-->
-    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="./assets/css/animate.css">
     <!--<< default.css >>-->
-    <link rel="stylesheet" href="assets/css/defauls-spacing.css">
+    <link rel="stylesheet" href="./assets/css/defauls-spacing.css">
     <!--<< main.css >>-->
-    <link rel="stylesheet" href="assets/css/main.css">
-</head>
+    <link rel="stylesheet" href="./assets/css/main.css">
+<style>
+                /* Nav Hover Staggered Dial Effect */
+        .staggered-hover {
+            display: inline-flex;
+            vertical-align: top;
+            perspective: 600px;
+        }
+        .staggered-hover span {
+            position: relative;
+            display: inline-block;
+            transition: transform 0.9s cubic-bezier(0.19, 1, 0.22, 1);
+            transition-delay: var(--delay);
+            white-space: pre;
+            transform-style: preserve-3d;
+        }
+        .staggered-hover span::after {
+            content: attr(data-char);
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            transform: rotateX(-90deg);
+            transform-origin: center top;
+        }
+        .tdmenu__nav ul.navigation li a:hover .staggered-hover span {
+            transform: translateY(-100%) rotateX(90deg);
+        }
+</style>\n</head>
 
 <body class="theme-bg">
 
@@ -135,23 +163,22 @@
                 <div class="row align-items-center">
                     <div class="col-xl-3 col-5">
                         <div class="logo">
-                            <a class="logo-1" href="index.html"><img data-width="120" src="assets/img/logo/logo.png"
+                            <a class="logo-1" href="index.html"><img data-width="120" src="./assets/img/logo/logo.png"
                                     alt="Logo"></a>
                             <a class="logo-2 d-none" href="index.html"><img data-width="120"
-                                    src="assets/img/logo/logo.png" alt="Logo"></a>
+                                    src="./assets/img/logo/logo.png" alt="Logo"></a>
                         </div>
                     </div>
                     <div class="col-xl-6 d-none d-xl-block">
                         <div class="tdmenu__wrap tdmenu-2-wrap">
                             <nav class="tdmenu__nav">
-                                <div class="tdmenu__navbar-wrap tdmenu__main-menu">
+                                                                <div class="tdmenu__navbar-wrap tdmenu__main-menu">
                                     <ul class="navigation">
-                                        <li class="menu-item-has-children"><a href="index.html">Home</a></li>
-                                        <li class="menu-item-has-children"><a href="about.html">about</a></li>
-                                        <li class="menu-item-has-children"><a href="service.html">Services</a></li>
-                                        <li class="menu-item-has-children"><a href="services-2.html">Services-2</a></li>
-                                        <li class="menu-item-has-children"><a href="work2.html">Work</a></li>
-
+                                        <li class="menu-item-has-children"><a href="index.html"><span class="hover-text-wrap" data-hover="Home"><span class="hover-text">Home</span></span></a></li>
+                                        <li class="menu-item-has-children"><a href="about.html"><span class="hover-text-wrap" data-hover="About"><span class="hover-text">About</span></span></a></li>
+                                        <li class="menu-item-has-children"><a href="service.html"><span class="hover-text-wrap" data-hover="Services"><span class="hover-text">Services</span></span></a></li>
+                                        <li class="menu-item-has-children services2-nav-item" style="display: none;"><a href="services-2.html"><span class="hover-text-wrap" data-hover="Services-2"><span class="hover-text">Services-2</span></span></a></li>
+                                        <li class="menu-item-has-children"><a href="work2.html"><span class="hover-text-wrap" data-hover="Work"><span class="hover-text">Work</span></span></a></li>
                                     </ul>
                                 </div>
                             </nav>
@@ -184,7 +211,7 @@
             <nav class="tdmobile__menu-box">
                 <div class="close-btn"><i class="fa-solid fa-xmark"></i></div>
                 <div class="nav-logo">
-                    <a href="index.html"><img data-width="96" src="assets/img/logo/logo.png" alt="logo"></a>
+                    <a href="index.html"><img loading="lazy" data-width="96" src="./assets/img/logo/logo.png" alt="logo"></a>
                 </div>
                 <div class="tdmobile__search">
                     <form action="#">
@@ -242,14 +269,14 @@
                                 <div class="td-hero-4-thumb p-relative mb-30">
                                     <div class="td-hero-4-circale">
                                         <div class="td-hero-4-circale-inner td-btn-bounce p-relative">
-                                            <img class="td-live-anim-spin" src="assets/img/hero/hero-4/vector.png" alt="">
-                                            <img class="shape" src="assets/img/hero/hero-4/shape.png" alt="">
+                                            <img loading="lazy" class="td-live-anim-spin" src="./assets/img/hero/hero-4/vector.png" alt="">
+                                            <img loading="lazy" class="shape" src="./assets/img/hero/hero-4/shape.png" alt="">
                                         </div>
                                     </div>
-                                    <img class="thumb" src="assets/img/hero/hero-4/thumb.png" alt="">
+                                    <img loading="lazy" class="thumb" src="./assets/img/hero/hero-4/thumb.png" alt="">
                                     <div class="thumb-2 include-bg td-btn-bounce d-none d-md-inline-block" data-background="assets/img/hero/hero-4/subtract.png">
                                         <h5 class="titles mb-75">Best<br> agency</h5>
-                                        <img class="mb-75" src="assets/img/hero/hero-4/shape-3.png" alt="">
+                                        <img loading="lazy" class="mb-75" src="./assets/img/hero/hero-4/shape-3.png" alt="">
                                         <h5>2025</h5>
                                     </div>
                                 </div>
@@ -260,10 +287,10 @@
                             <div class="col-xl-6 col-lg-8">
                                 <div class="td-hero-4-bottom pt-30">
                                     <div class="icon d-none d-md-block">
-                                        <img src="assets/img/hero/hero-4/icon.png" alt="">
+                                        <img loading="lazy" src="./assets/img/hero/hero-4/icon.png" alt="">
                                     </div>
                                     <div class="td-hero-4-bottom-content p-relative">
-                                        <img class="mb-35" src="assets/img/hero/hero-4/avatar.png" alt="">
+                                        <img loading="lazy" class="mb-35" src="./assets/img/hero/hero-4/avatar.png" alt="">
                                         <h6 class="count mb-0">1200+</h6>
                                         <p>Parody customer get<br>
                                             our creative agency
@@ -276,9 +303,9 @@
                 </div>
                 <div class="td-hero-4-bottom-thumb p-relative td-btn-trigger">
                     <div class="td-btn-bounce td-hero-4-shape d-none d-xl-block">
-                        <img src="assets/img/hero/hero-4/shape-1.png" alt="">
+                        <img loading="lazy" src="./assets/img/hero/hero-4/shape-1.png" alt="">
                     </div>
-                    <img class="w-100" src="assets/img/banner/big-image.jpg" alt="">
+                    <img loading="lazy" class="w-100" src="./assets/img/banner/big-image.jpg" alt="">
                 </div>
                 <!-- td-hero-area-end -->
 
@@ -333,12 +360,12 @@
                         <div class="row">
                             <div class="col-lg-4">
                                 <div class="td-about-4-thumb mb-30 wow fadeInLeft fix td-rounded-10" data-wow-delay=".5s" data-wow-duration="1s">
-                                    <img data-speed=".9" class="w-100" src="assets/img/about/about-4/thumb.jpg" alt="">
+                                    <img loading="lazy" data-speed=".9" class="w-100" src="./assets/img/about/about-4/thumb.jpg" alt="">
                                 </div>
                             </div>
                             <div class="col-lg-8">
                                 <div class="td-about-4-content mb-30 pl-110 p-relative wow fadeInRight" data-wow-delay=".5s" data-wow-duration="1s">
-                                    <img class="td-about-4-shape d-none d-sm-block" src="assets/img/about/about-4/shape.png" alt="">
+                                    <img loading="lazy" class="td-about-4-shape d-none d-sm-block" src="./assets/img/about/about-4/shape.png" alt="">
                                     <h2 class="td-section-4-title mb-15">
                                         Have a brilliant idea boost
                                         the growth <span> development
@@ -368,7 +395,7 @@
                                        </span> 
                                     </a>
                                     <div class="text-end mt-10 fix td-rounded-10">
-                                        <img data-speed=".9" src="assets/img/about/about-4/thumb-2.jpg" alt="">
+                                        <img loading="lazy" data-speed=".9" src="./assets/img/about/about-4/thumb-2.jpg" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -407,7 +434,7 @@
                                                         </div>
                                                         <div class="col-lg-9 col-md-8">
                                                             <div class="td-portfolio-4-thumb">
-                                                                <img class="w-100" src="assets/img/portfolio/portfolio.jpg" alt="">
+                                                                <img loading="lazy" class="w-100" src="./assets/img/portfolio/portfolio.jpg" alt="">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -432,7 +459,7 @@
                                                         </div>
                                                         <div class="col-lg-9 col-md-8">
                                                             <div class="td-portfolio-4-thumb">
-                                                                <img class="w-100" src="assets/img/portfolio/portfolio-2.jpg" alt="">
+                                                                <img loading="lazy" class="w-100" src="./assets/img/portfolio/portfolio-2.jpg" alt="">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -457,7 +484,7 @@
                                                         </div>
                                                         <div class="col-lg-9 col-md-8">
                                                             <div class="td-portfolio-4-thumb">
-                                                                <img class="w-100" src="assets/img/portfolio/portfolio-3.jpg" alt="">
+                                                                <img loading="lazy" class="w-100" src="./assets/img/portfolio/portfolio-3.jpg" alt="">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -481,7 +508,7 @@
                                     <span class="td-section-4-subtitle mb-20 td-split-text td-split-in-right">//  OUR SERVICES</span>
                                     <h2 class="td-section-4-title fw-600 td-split-text td-split-in-right">WE PROVIDE PREMIUM<br> <span>PARODY SERVICE</span></h2>
                                     <div class="text-end mr-90 mt-10 d-none d-lg-block">
-                                        <img src="assets/img/service/service-4/shape.png" alt="">
+                                        <img loading="lazy" src="./assets/img/service/service-4/shape.png" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -499,7 +526,7 @@
                             <div class="col-lg-12">
                                 <div class="td-service-4-item p-relative">
                                     <div class="td-service-4-thumb">
-                                        <img src="assets/img/service/service-4/thumb-2.png" alt="">
+                                        <img loading="lazy" src="./assets/img/service/service-4/thumb-2.png" alt="">
                                     </div>
                                     <div class="row align-items-center">
                                         <div class="col-lg-5">
@@ -521,7 +548,7 @@
                                                     <svg width="130" height="130" viewBox="0 0 130 130" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M58.6957 3.50452C61.9534 -0.481752 68.0466 -0.481752 71.3043 3.50452C74.073 6.89259 78.8543 7.84365 82.7089 5.77305C87.2441 3.33685 92.8735 5.66865 94.3577 10.5981C95.6191 14.7879 99.6725 17.4963 104.026 17.0583C109.148 16.5431 113.457 20.8517 112.942 25.9739C112.504 30.3275 115.212 34.3809 119.402 35.6423C124.331 37.1265 126.663 42.7559 124.227 47.2911C122.156 51.1456 123.107 55.927 126.495 58.6957C130.482 61.9534 130.482 68.0466 126.495 71.3043C123.107 74.073 122.156 78.8543 124.227 82.7089C126.663 87.2441 124.331 92.8735 119.402 94.3577C115.212 95.6191 112.504 99.6725 112.942 104.026C113.457 109.148 109.148 113.457 104.026 112.942C99.6725 112.504 95.6191 115.212 94.3577 119.402C92.8735 124.331 87.2441 126.663 82.7089 124.227C78.8543 122.156 74.073 123.107 71.3043 126.495C68.0466 130.482 61.9534 130.482 58.6957 126.495C55.927 123.107 51.1456 122.156 47.2911 124.227C42.7559 126.663 37.1265 124.331 35.6423 119.402C34.3809 115.212 30.3275 112.504 25.9739 112.942C20.8517 113.457 16.5431 109.148 17.0583 104.026C17.4963 99.6725 14.7879 95.6191 10.5981 94.3577C5.66864 92.8735 3.33685 87.2441 5.77305 82.7089C7.84365 78.8543 6.89259 74.073 3.50452 71.3043C-0.481752 68.0466 -0.481752 61.9534 3.50452 58.6957C6.89259 55.927 7.84365 51.1456 5.77305 47.2911C3.33685 42.7559 5.66865 37.1265 10.5981 35.6423C14.7879 34.3809 17.4963 30.3275 17.0583 25.9739C16.5431 20.8517 20.8517 16.5431 25.9739 17.0583C30.3275 17.4963 34.3809 14.7879 35.6423 10.5981C37.1265 5.66865 42.7559 3.33685 47.2911 5.77305C51.1456 7.84365 55.927 6.89259 58.6957 3.50452Z" stroke="currentColor"/>
                                                     </svg>
-                                                    <img class="td-service-4-icon" src="assets/img/service/service-4/icon.png" alt="">
+                                                    <img loading="lazy" class="td-service-4-icon" src="./assets/img/service/service-4/icon.png" alt="">
                                                 </a>
                                             </div>
                                         </div>
@@ -531,7 +558,7 @@
                             <div class="col-lg-12">
                                 <div class="td-service-4-item p-relative">
                                     <div class="td-service-4-thumb">
-                                        <img src="assets/img/service/service-4/thumb-3.png" alt="">
+                                        <img loading="lazy" src="./assets/img/service/service-4/thumb-3.png" alt="">
                                     </div>
                                     <div class="row align-items-center">
                                         <div class="col-lg-5">
@@ -553,7 +580,7 @@
                                                     <svg width="130" height="130" viewBox="0 0 130 130" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M58.6957 3.50452C61.9534 -0.481752 68.0466 -0.481752 71.3043 3.50452C74.073 6.89259 78.8543 7.84365 82.7089 5.77305C87.2441 3.33685 92.8735 5.66865 94.3577 10.5981C95.6191 14.7879 99.6725 17.4963 104.026 17.0583C109.148 16.5431 113.457 20.8517 112.942 25.9739C112.504 30.3275 115.212 34.3809 119.402 35.6423C124.331 37.1265 126.663 42.7559 124.227 47.2911C122.156 51.1456 123.107 55.927 126.495 58.6957C130.482 61.9534 130.482 68.0466 126.495 71.3043C123.107 74.073 122.156 78.8543 124.227 82.7089C126.663 87.2441 124.331 92.8735 119.402 94.3577C115.212 95.6191 112.504 99.6725 112.942 104.026C113.457 109.148 109.148 113.457 104.026 112.942C99.6725 112.504 95.6191 115.212 94.3577 119.402C92.8735 124.331 87.2441 126.663 82.7089 124.227C78.8543 122.156 74.073 123.107 71.3043 126.495C68.0466 130.482 61.9534 130.482 58.6957 126.495C55.927 123.107 51.1456 122.156 47.2911 124.227C42.7559 126.663 37.1265 124.331 35.6423 119.402C34.3809 115.212 30.3275 112.504 25.9739 112.942C20.8517 113.457 16.5431 109.148 17.0583 104.026C17.4963 99.6725 14.7879 95.6191 10.5981 94.3577C5.66864 92.8735 3.33685 87.2441 5.77305 82.7089C7.84365 78.8543 6.89259 74.073 3.50452 71.3043C-0.481752 68.0466 -0.481752 61.9534 3.50452 58.6957C6.89259 55.927 7.84365 51.1456 5.77305 47.2911C3.33685 42.7559 5.66865 37.1265 10.5981 35.6423C14.7879 34.3809 17.4963 30.3275 17.0583 25.9739C16.5431 20.8517 20.8517 16.5431 25.9739 17.0583C30.3275 17.4963 34.3809 14.7879 35.6423 10.5981C37.1265 5.66865 42.7559 3.33685 47.2911 5.77305C51.1456 7.84365 55.927 6.89259 58.6957 3.50452Z" stroke="currentColor"/>
                                                     </svg>
-                                                    <img class="td-service-4-icon" src="assets/img/service/service-4/icon.png" alt="">
+                                                    <img loading="lazy" class="td-service-4-icon" src="./assets/img/service/service-4/icon.png" alt="">
                                                 </a>
                                             </div>
                                         </div>
@@ -563,7 +590,7 @@
                             <div class="col-lg-12">
                                 <div class="td-service-4-item p-relative">
                                     <div class="td-service-4-thumb">
-                                        <img src="assets/img/service/service-4/thumb-4.png" alt="">
+                                        <img loading="lazy" src="./assets/img/service/service-4/thumb-4.png" alt="">
                                     </div>
                                     <div class="row align-items-center">
                                         <div class="col-lg-5">
@@ -585,7 +612,7 @@
                                                     <svg width="130" height="130" viewBox="0 0 130 130" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M58.6957 3.50452C61.9534 -0.481752 68.0466 -0.481752 71.3043 3.50452C74.073 6.89259 78.8543 7.84365 82.7089 5.77305C87.2441 3.33685 92.8735 5.66865 94.3577 10.5981C95.6191 14.7879 99.6725 17.4963 104.026 17.0583C109.148 16.5431 113.457 20.8517 112.942 25.9739C112.504 30.3275 115.212 34.3809 119.402 35.6423C124.331 37.1265 126.663 42.7559 124.227 47.2911C122.156 51.1456 123.107 55.927 126.495 58.6957C130.482 61.9534 130.482 68.0466 126.495 71.3043C123.107 74.073 122.156 78.8543 124.227 82.7089C126.663 87.2441 124.331 92.8735 119.402 94.3577C115.212 95.6191 112.504 99.6725 112.942 104.026C113.457 109.148 109.148 113.457 104.026 112.942C99.6725 112.504 95.6191 115.212 94.3577 119.402C92.8735 124.331 87.2441 126.663 82.7089 124.227C78.8543 122.156 74.073 123.107 71.3043 126.495C68.0466 130.482 61.9534 130.482 58.6957 126.495C55.927 123.107 51.1456 122.156 47.2911 124.227C42.7559 126.663 37.1265 124.331 35.6423 119.402C34.3809 115.212 30.3275 112.504 25.9739 112.942C20.8517 113.457 16.5431 109.148 17.0583 104.026C17.4963 99.6725 14.7879 95.6191 10.5981 94.3577C5.66864 92.8735 3.33685 87.2441 5.77305 82.7089C7.84365 78.8543 6.89259 74.073 3.50452 71.3043C-0.481752 68.0466 -0.481752 61.9534 3.50452 58.6957C6.89259 55.927 7.84365 51.1456 5.77305 47.2911C3.33685 42.7559 5.66865 37.1265 10.5981 35.6423C14.7879 34.3809 17.4963 30.3275 17.0583 25.9739C16.5431 20.8517 20.8517 16.5431 25.9739 17.0583C30.3275 17.4963 34.3809 14.7879 35.6423 10.5981C37.1265 5.66865 42.7559 3.33685 47.2911 5.77305C51.1456 7.84365 55.927 6.89259 58.6957 3.50452Z" stroke="currentColor"/>
                                                     </svg>
-                                                    <img class="td-service-4-icon" src="assets/img/service/service-4/icon.png" alt="">
+                                                    <img loading="lazy" class="td-service-4-icon" src="./assets/img/service/service-4/icon.png" alt="">
                                                 </a>
                                             </div>
                                         </div>
@@ -595,7 +622,7 @@
                             <div class="col-lg-12">
                                 <div class="td-service-4-item p-relative">
                                     <div class="td-service-4-thumb">
-                                        <img src="assets/img/service/service-4/thumb.png" alt="">
+                                        <img loading="lazy" src="./assets/img/service/service-4/thumb.png" alt="">
                                     </div>
                                     <div class="row align-items-center">
                                         <div class="col-lg-5">
@@ -617,7 +644,7 @@
                                                     <svg width="130" height="130" viewBox="0 0 130 130" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M58.6957 3.50452C61.9534 -0.481752 68.0466 -0.481752 71.3043 3.50452C74.073 6.89259 78.8543 7.84365 82.7089 5.77305C87.2441 3.33685 92.8735 5.66865 94.3577 10.5981C95.6191 14.7879 99.6725 17.4963 104.026 17.0583C109.148 16.5431 113.457 20.8517 112.942 25.9739C112.504 30.3275 115.212 34.3809 119.402 35.6423C124.331 37.1265 126.663 42.7559 124.227 47.2911C122.156 51.1456 123.107 55.927 126.495 58.6957C130.482 61.9534 130.482 68.0466 126.495 71.3043C123.107 74.073 122.156 78.8543 124.227 82.7089C126.663 87.2441 124.331 92.8735 119.402 94.3577C115.212 95.6191 112.504 99.6725 112.942 104.026C113.457 109.148 109.148 113.457 104.026 112.942C99.6725 112.504 95.6191 115.212 94.3577 119.402C92.8735 124.331 87.2441 126.663 82.7089 124.227C78.8543 122.156 74.073 123.107 71.3043 126.495C68.0466 130.482 61.9534 130.482 58.6957 126.495C55.927 123.107 51.1456 122.156 47.2911 124.227C42.7559 126.663 37.1265 124.331 35.6423 119.402C34.3809 115.212 30.3275 112.504 25.9739 112.942C20.8517 113.457 16.5431 109.148 17.0583 104.026C17.4963 99.6725 14.7879 95.6191 10.5981 94.3577C5.66864 92.8735 3.33685 87.2441 5.77305 82.7089C7.84365 78.8543 6.89259 74.073 3.50452 71.3043C-0.481752 68.0466 -0.481752 61.9534 3.50452 58.6957C6.89259 55.927 7.84365 51.1456 5.77305 47.2911C3.33685 42.7559 5.66865 37.1265 10.5981 35.6423C14.7879 34.3809 17.4963 30.3275 17.0583 25.9739C16.5431 20.8517 20.8517 16.5431 25.9739 17.0583C30.3275 17.4963 34.3809 14.7879 35.6423 10.5981C37.1265 5.66865 42.7559 3.33685 47.2911 5.77305C51.1456 7.84365 55.927 6.89259 58.6957 3.50452Z" stroke="currentColor"/>
                                                     </svg>
-                                                    <img class="td-service-4-icon" src="assets/img/service/service-4/icon.png" alt="">
+                                                    <img loading="lazy" class="td-service-4-icon" src="./assets/img/service/service-4/icon.png" alt="">
                                                 </a>
                                             </div>
                                         </div>
@@ -673,16 +700,16 @@
                             <div class="col-lg-5">
                                 <div class="td-awards-4-brands">
                                     <div>
-                                        <a href="#"><img src="assets/img/awards/logo.png" alt=""></a>
+                                        <a href="#"><img loading="lazy" src="./assets/img/awards/logo.png" alt=""></a>
                                     </div>
                                     <div>
-                                        <a href="#"><img src="assets/img/awards/logo-2.png" alt=""></a>
+                                        <a href="#"><img loading="lazy" src="./assets/img/awards/logo-2.png" alt=""></a>
                                     </div>
                                     <div>
-                                        <a href="#"><img src="assets/img/awards/logo-3.png" alt=""></a>
+                                        <a href="#"><img loading="lazy" src="./assets/img/awards/logo-3.png" alt=""></a>
                                     </div>
                                     <div>
-                                        <a href="#"><img src="assets/img/awards/logo-4.png" alt=""></a>
+                                        <a href="#"><img loading="lazy" src="./assets/img/awards/logo-4.png" alt=""></a>
                                     </div>
                                 </div>
                             </div>
@@ -706,7 +733,7 @@
                             <div class="col-lg-3 col-md-6 col-sm-6">
                                 <div class="td-team-4-wrap p-relative mb-30">
                                     <div class="td-team-4-thumb">
-                                        <img class="w-100" src="assets/img/team/thumb.jpg" alt="">
+                                        <img loading="lazy" class="w-100" src="./assets/img/team/thumb.jpg" alt="">
                                     </div>
                                     <div class="td-team-4-content text-center">
                                         <span class="td-team-4-subtitle">Developer</span>
@@ -743,7 +770,7 @@
                             <div class="col-lg-3 col-md-6 col-sm-6">
                                 <div class="td-team-4-wrap p-relative mb-30">
                                     <div class="td-team-4-thumb">
-                                        <img class="w-100" src="assets/img/team/thumb-2.jpg" alt="">
+                                        <img loading="lazy" class="w-100" src="./assets/img/team/thumb-2.jpg" alt="">
                                     </div>
                                     <div class="td-team-4-content text-center">
                                         <span class="td-team-4-subtitle">Developer</span>
@@ -780,7 +807,7 @@
                             <div class="col-lg-3 col-md-6 col-sm-6">
                                 <div class="td-team-4-wrap p-relative mb-30">
                                     <div class="td-team-4-thumb">
-                                        <img class="w-100" src="assets/img/team/thumb-3.jpg" alt="">
+                                        <img loading="lazy" class="w-100" src="./assets/img/team/thumb-3.jpg" alt="">
                                     </div>
                                     <div class="td-team-4-content text-center">
                                         <span class="td-team-4-subtitle">Developer</span>
@@ -817,7 +844,7 @@
                             <div class="col-lg-3 col-md-6 col-sm-6">
                                 <div class="td-team-4-wrap p-relative mb-30">
                                     <div class="td-team-4-thumb">
-                                        <img class="w-100" src="assets/img/team/thumb-4.jpg" alt="">
+                                        <img loading="lazy" class="w-100" src="./assets/img/team/thumb-4.jpg" alt="">
                                     </div>
                                     <div class="td-team-4-content text-center">
                                         <span class="td-team-4-subtitle">Developer</span>
@@ -885,7 +912,7 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="td-faq-4-wrap p-relative mb-50  wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="1s">
-                                    <img class="mb-50" src="assets/img/faq/avatar.png" alt="">
+                                    <img loading="lazy" class="mb-50" src="./assets/img/faq/avatar.png" alt="">
                                     <p class="mb-45">We are excited for our work and how it<br>
                                         positively impacts clients. With over 12<br>
                                         years of experience we have been<br>
@@ -911,7 +938,7 @@
                                        </span> 
                                     </a>
                                     <div class="td-faq-4-circale d-none d-sm-block">
-                                        <img class="td-live-anim-spin" src="assets/img/faq/icon.png" alt="">
+                                        <img loading="lazy" class="td-live-anim-spin" src="./assets/img/faq/icon.png" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -1028,7 +1055,7 @@
                             <div class="col-lg-6 col-md-6 mb-30">
                                 <div class="td-blog-4-wrap p-relative wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1s">
                                     <div class="td-blog-4-thumb">
-                                        <img src="assets/img/blog/blog-4/thumb-2.jpg" alt="">
+                                        <img loading="lazy" src="./assets/img/blog/blog-4/thumb-2.jpg" alt="">
                                     </div>
                                     <div class="td-blog-4-content">
                                         <span class="td-blog-4-date mb-20 d-inline-block">Branding - June 4, 2024</span>
@@ -1060,7 +1087,7 @@
                             <div class="col-lg-6 col-md-6 mb-30">
                                 <div class="td-blog-4-wrap p-relative wow fadeInUp" data-wow-delay=".5s" data-wow-duration="1s">
                                     <div class="td-blog-4-thumb">
-                                        <img src="assets/img/blog/blog-4/thumb.jpg" alt="">
+                                        <img loading="lazy" src="./assets/img/blog/blog-4/thumb.jpg" alt="">
                                     </div>
                                     <div class="td-blog-4-content">
                                         <span class="td-blog-4-date mb-20 d-inline-block">Branding - June 4, 2024</span>
@@ -1105,10 +1132,10 @@
                             <div class="col-12">
                                 <div class="td-footer-4-bg text-center p-relative">
                                     <div class="td-footer-4-shape td-btn-bounce d-none d-lg-block">
-                                        <img src="assets/img/cta/cta-4/shape.png" alt="">
+                                        <img loading="lazy" src="./assets/img/cta/cta-4/shape.png" alt="">
                                     </div>
                                     <div class="td-footer-4-shape-2 td-btn-bounce d-none d-lg-block">
-                                        <img src="assets/img/cta/cta-4/shape-2.png" alt="">
+                                        <img loading="lazy" src="./assets/img/cta/cta-4/shape-2.png" alt="">
                                     </div>
                                     <h2 class="td-footer-4-bigtitle mb-45 td-split-text td-split-in-right">BRING YOUR CREATIVE<br>
                                         JOURNEY NOW</h2>
@@ -1184,43 +1211,54 @@
 
     <!-- JS here -->
     <!--<< jquery.Js >>-->
-    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="./assets/js/vendor/jquery.js"></script>
     <!--<< bootstrap.min.Js >>-->
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
     <!--<< gsap.Js >>-->
-    <script src="assets/js/jsap/gsap.js"></script>
+    <script src="./assets/js/jsap/gsap.js"></script>
    <!--<< gsap-scroll-smoother.Js >>-->
-    <script src="assets/js/jsap/gsap-scroll-smoother.js"></script>
+    <script src="./assets/js/jsap/gsap-scroll-smoother.js"></script>
    <!--<< gsap-scroll-trigger.Js >>-->
-    <script src="assets/js/jsap/gsap-scroll-trigger.js"></script>
+    <script src="./assets/js/jsap/gsap-scroll-trigger.js"></script>
    <!--<< gsap-scroll-to-plugin.Js >>-->
-    <script src="assets/js/jsap/gsap-scroll-to-plugin.js"></script>
+    <script src="./assets/js/jsap/gsap-scroll-to-plugin.js"></script>
     <!--<< gsap-split-text.Js >>-->
-    <script src="assets/js/jsap/gsap-split-text.js"></script>
+    <script src="./assets/js/jsap/gsap-split-text.js"></script>
     <!--<< isotope.pkgd.min.Js >>-->
-    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="./assets/js/isotope.pkgd.min.js"></script>
     <!--<< ion.rangeSlider.min.Js >>-->
-    <script src="assets/js/ion.rangeSlider.min.js"></script>
+    <script src="./assets/js/ion.rangeSlider.min.js"></script>
     <!--<< effect-slicer.Js >>-->
-    <script src="assets/js/effect-slicer.js"></script>
+    <script src="./assets/js/effect-slicer.js"></script>
     <!--<< imagesloaded.pkgd.min.Js >>-->
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="./assets/js/imagesloaded.pkgd.min.js"></script>
     <!--<< jquery.magnific-popup.min.Js >>-->
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.min.js"></script>
     <!--<< jquery.odometer.min.Js >>-->
-    <script src="assets/js/jquery.odometer.min.js"></script>
+    <script src="./assets/js/jquery.odometer.min.js"></script>
     <!--<< jquery-appear.Js >>-->
-    <script src="assets/js/jquery-appear.js"></script>
+    <script src="./assets/js/jquery-appear.js"></script>
     <!--<< swiper-bundle.min.Js >>-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
     <!--<< jquery.nice-select.min.Js >>-->
-    <script src="assets/js/nice-select.js"></script>
+    <script src="./assets/js/nice-select.js"></script>
     <!--<< wow.Js >>-->    
-    <script src="assets/js/wow.js"></script>
+    <script src="./assets/js/wow.js"></script>
     <!--<< ajax-form.Js >>-->
-    <script src="assets/js/ajax-form.js"></script>
+    <script src="./assets/js/ajax-form.js"></script>
     <!--<< main.Js >>-->
-    <script src="assets/js/main.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var page = window.location.pathname.split("/").pop();
+    if(page === "service.html" || page === "services-2.html" || page === "service-details.html") {
+        document.querySelectorAll(".services2-nav-item").forEach(function(el) {
+            el.style.display = "inline-block";
+        });
+    }
+});
+</script>
 </body>
 
 </html>

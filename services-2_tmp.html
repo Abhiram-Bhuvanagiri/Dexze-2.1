@@ -18,29 +18,29 @@
     <meta name="author" content="Dexze">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/logo/favicon.png">
     <!-- Place favicon.ico in the root directory -->
 
     <!--<< Bootstrap min.css >>-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <!--<< magnific-popup.css >>-->
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="./assets/css/magnific-popup.css">
     <!--<< fontawesome-all.min.css >>-->
-    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="./assets/css/fontawesome-all.min.css">
     <!--<< swiper-bundle.min.css >>-->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
     <!--<< odometer.css >>-->
-    <link rel="stylesheet" href="assets/css/odometer.css">
+    <link rel="stylesheet" href="./assets/css/odometer.css">
     <!--<< ion.rangeSlider.min.css >>-->
-    <link rel="stylesheet" href="assets/css/ion.rangeSlider.min.css">
+    <link rel="stylesheet" href="./assets/css/ion.rangeSlider.min.css">
     <!--<< effect-slicer.css >>-->
-    <link rel="stylesheet" href="assets/css/effect-slicer.css">
+    <link rel="stylesheet" href="./assets/css/effect-slicer.css">
     <!--<< animate.css >>-->
-    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="./assets/css/animate.css">
     <!--<< default.css >>-->
-    <link rel="stylesheet" href="assets/css/defauls-spacing.css">
+    <link rel="stylesheet" href="./assets/css/defauls-spacing.css">
     <!--<< main.css >>-->
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
 
     <style>
         .td-hero-btn-black {
@@ -66,7 +66,35 @@
             transform: translateY(-3px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
-    </style>
+    
+                /* Nav Hover Staggered Dial Effect */
+        .staggered-hover {
+            display: inline-flex;
+            vertical-align: top;
+            perspective: 600px;
+        }
+        .staggered-hover span {
+            position: relative;
+            display: inline-block;
+            transition: transform 0.9s cubic-bezier(0.19, 1, 0.22, 1);
+            transition-delay: var(--delay);
+            white-space: pre;
+            transform-style: preserve-3d;
+        }
+        .staggered-hover span::after {
+            content: attr(data-char);
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            transform: rotateX(-90deg);
+            transform-origin: center top;
+        }
+        .tdmenu__nav ul.navigation li a:hover .staggered-hover span {
+            transform: translateY(-100%) rotateX(90deg);
+        }
+</style>
 </head>
 
 <body>
@@ -90,23 +118,22 @@
                 <div class="row align-items-center">
                     <div class="col-xl-3 col-5">
                         <div class="logo">
-                            <a class="logo-1" href="index.html"><img data-width="120" src="assets/img/logo/logo.png"
+                            <a class="logo-1" href="index.html"><img data-width="120" src="./assets/img/logo/logo.png"
                                     alt="Logo"></a>
                             <a class="logo-2 d-none" href="index.html"><img data-width="120"
-                                    src="assets/img/logo/logo.png" alt="Logo"></a>
+                                    src="./assets/img/logo/logo.png" alt="Logo"></a>
                         </div>
                     </div>
                     <div class="col-xl-6 d-none d-xl-block">
                         <div class="tdmenu__wrap tdmenu-2-wrap">
                             <nav class="tdmenu__nav">
-                                <div class="tdmenu__navbar-wrap tdmenu__main-menu">
+                                                                <div class="tdmenu__navbar-wrap tdmenu__main-menu">
                                     <ul class="navigation">
-                                        <li class="menu-item-has-children"><a href="index.html">Home</a></li>
-                                        <li class="menu-item-has-children"><a href="about.html">about</a></li>
-                                        <li class="menu-item-has-children"><a href="service.html">Services</a></li>
-                                        <li class="menu-item-has-children"><a href="services-2.html">Services-2</a></li>
-                                        <li class="menu-item-has-children"><a href="work2.html">Work</a></li>
-
+                                        <li class="menu-item-has-children"><a href="index.html"><span class="hover-text-wrap" data-hover="Home"><span class="hover-text">Home</span></span></a></li>
+                                        <li class="menu-item-has-children"><a href="about.html"><span class="hover-text-wrap" data-hover="About"><span class="hover-text">About</span></span></a></li>
+                                        <li class="menu-item-has-children"><a href="service.html"><span class="hover-text-wrap" data-hover="Services"><span class="hover-text">Services</span></span></a></li>
+                                        <li class="menu-item-has-children services2-nav-item" style="display: none;"><a href="services-2.html"><span class="hover-text-wrap" data-hover="Services-2"><span class="hover-text">Services-2</span></span></a></li>
+                                        <li class="menu-item-has-children"><a href="work2.html"><span class="hover-text-wrap" data-hover="Work"><span class="hover-text">Work</span></span></a></li>
                                     </ul>
                                 </div>
                             </nav>
@@ -139,7 +166,7 @@
             <nav class="tdmobile__menu-box">
                 <div class="close-btn"><i class="fa-solid fa-xmark"></i></div>
                 <div class="nav-logo">
-                    <a href="index.html"><img data-width="96" src="assets/img/logo/logo.png" alt="logo"></a>
+                    <a href="index.html"><img loading="lazy" data-width="96" src="./assets/img/logo/logo.png" alt="logo"></a>
                 </div>
                 <div class="tdmobile__search">
                     <form action="#">
@@ -183,7 +210,7 @@
     <div
         style="position: fixed; top: 0; left: 0; width: 100%; height: 100vh; overflow: hidden; z-index: -3; background: #0b0b0c;">
         <video autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover; opacity: 0.5;">
-            <source src="assets/video/services-bg.mp4" type="video/mp4">
+            <source src="./assets/video/services-bg.mp4" type="video/mp4">
         </video>
         <!-- Gradient Overlay -->
         <div
@@ -227,7 +254,7 @@
                                 <!-- Large VR Girl Video filling the space -->
                                 <div class="mb-4" style="flex-grow: 1; min-height: 400px; width: 100%; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.1); position: relative;">
                                     <video autoplay muted loop playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;">
-                                        <source src="assets/video/services-tech.mp4" type="video/mp4">
+                                        <source src="./assets/video/services-tech.mp4" type="video/mp4">
                                     </video>
                                 </div>
                                 
@@ -353,7 +380,7 @@
                                         </div>
                                         <!-- Right Side -->
                                         <div class="unveil-card-right" style="width: 50%; background: #222; display: flex; align-items: center; justify-content: center; position: relative; padding: 0;">
-                                            <img src="assets/img/services-2/web-development.jpg" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0; box-shadow: none;" class="unveil-img">
+                                            <img loading="lazy" src="./assets/img/services-2/web-development.jpg" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0; box-shadow: none;" class="unveil-img">
                                         </div>
                                     </div>
                                 </div>
@@ -383,7 +410,7 @@
                                             </div>
                                         </div>
                                         <div class="unveil-card-right" style="width: 50%; background: #eef1f6; display: flex; align-items: center; justify-content: center; position: relative; padding: 24px;">
-                                            <img src="assets/img/services-2/App-Development.jpg" style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px; box-shadow: 0 16px 40px rgba(0,0,0,0.1);" class="unveil-img">
+                                            <img loading="lazy" src="./assets/img/services-2/App-Development.jpg" style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px; box-shadow: 0 16px 40px rgba(0,0,0,0.1);" class="unveil-img">
                                         </div>
                                     </div>
                                 </div>
@@ -413,7 +440,7 @@
                                             </div>
                                         </div>
                                         <div class="unveil-card-right" style="width: 50%; background: #f5f5f5; display: flex; align-items: center; justify-content: center; position: relative; padding: 24px;">
-                                            <img src="assets/img/services-2/UI-UX-Design.jpg" style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px; box-shadow: 0 16px 40px rgba(0,0,0,0.1);" class="unveil-img">
+                                            <img loading="lazy" src="./assets/img/services-2/UI-UX-Design.jpg" style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px; box-shadow: 0 16px 40px rgba(0,0,0,0.1);" class="unveil-img">
                                         </div>
                                     </div>
                                 </div>
@@ -443,7 +470,7 @@
                                             </div>
                                         </div>
                                         <div class="unveil-card-right" style="width: 50%; background: #1a1b1e; display: flex; align-items: center; justify-content: center; position: relative; padding: 24px;">
-                                            <img src="assets/img/services-2/Gen-AI & LLMs.jpg" style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px; box-shadow: 0 16px 40px rgba(0,0,0,0.3);" class="unveil-img">
+                                            <img loading="lazy" src="./assets/img/services-2/Gen-AI & LLMs.jpg" style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px; box-shadow: 0 16px 40px rgba(0,0,0,0.3);" class="unveil-img">
                                         </div>
                                     </div>
                                 </div>
@@ -473,7 +500,7 @@
                                             </div>
                                         </div>
                                         <div class="unveil-card-right" style="width: 50%; background: #0b0c10; display: flex; align-items: center; justify-content: center; position: relative; padding: 24px;">
-                                            <img src="assets/img/services-2/Intelligent-Automations.jpg" style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px; box-shadow: 0 16px 40px rgba(0,0,0,0.4);" class="unveil-img">
+                                            <img loading="lazy" src="./assets/img/services-2/Intelligent-Automations.jpg" style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px; box-shadow: 0 16px 40px rgba(0,0,0,0.4);" class="unveil-img">
                                         </div>
                                     </div>
                                 </div>
@@ -503,7 +530,7 @@
                                             </div>
                                         </div>
                                         <div class="unveil-card-right" style="width: 50%; background: #0f172a; display: flex; align-items: center; justify-content: center; position: relative; padding: 24px;">
-                                            <img src="assets/img/services-2/AI-Agents&Systems.jpg?v=2" style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px; box-shadow: 0 16px 40px rgba(0,0,0,0.5);" class="unveil-img">
+                                            <img loading="lazy" src="assets/img/services-2/AI-Agents&Systems.jpg" style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px; box-shadow: 0 16px 40px rgba(0,0,0,0.5);" class="unveil-img">
                                         </div>
                                     </div>
                                 </div>
@@ -790,12 +817,12 @@
                         <div class="ideas-display-panel" style="width: 65%; position: sticky; top: 120px; display: flex; flex-direction: column; gap: 40px;">
                             <!-- Images Wrapper -->
                             <div class="ideas-images-wrapper">
-                                <img class="idea-image active" src="assets/img/services-2/discovery.png" alt="Discovery">
-                                <img class="idea-image" src="assets/img/services-2/wireframes.png" alt="Wireframes">
-                                <img class="idea-image" src="assets/img/services-2/ui-design.png" alt="UI Design">
-                                <img class="idea-image" src="assets/img/services-2/development.png" alt="Development">
-                                <img class="idea-image" src="assets/img/services-2/testing.png" alt="Testing">
-                                <img class="idea-image" src="assets/img/services-2/launch.png" alt="Launch">
+                                <img loading="lazy" class="idea-image active" src="./assets/img/services-2/discovery.png" alt="Discovery">
+                                <img loading="lazy" class="idea-image" src="./assets/img/services-2/wireframes.png" alt="Wireframes">
+                                <img loading="lazy" class="idea-image" src="./assets/img/services-2/ui-design.png" alt="UI Design">
+                                <img loading="lazy" class="idea-image" src="./assets/img/services-2/development.png" alt="Development">
+                                <img loading="lazy" class="idea-image" src="./assets/img/services-2/testing.png" alt="Testing">
+                                <img loading="lazy" class="idea-image" src="./assets/img/services-2/launch.png" alt="Launch">
                             </div>
 
                                                         <!-- Text Wrapper -->
@@ -1266,140 +1293,132 @@
                     <!-- Top Row: Web, App, Design (Scrolling Left) -->
                     <div class="marquee-track left">
                         <!-- Group 1 -->
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/nextdotjs" alt="Next.js">
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/nextdotjs" alt="Next.js">
                             Next.js</div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/react" alt="React"> React</div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/nodedotjs" alt="Node.js">
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/react" alt="React"> React</div>
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/nodedotjs" alt="Node.js">
                             Node.js</div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/vuedotjs" alt="Vue.js"> Vue.js
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/vuedotjs" alt="Vue.js"> Vue.js
                         </div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/typescript" alt="TypeScript">
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/typescript" alt="TypeScript">
                             TypeScript</div>
 
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/flutter" alt="Flutter"> Flutter
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/flutter" alt="Flutter"> Flutter
                         </div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/swift" alt="Swift"> Swift</div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/kotlin" alt="Kotlin"> Kotlin
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/swift" alt="Swift"> Swift</div>
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/kotlin" alt="Kotlin"> Kotlin
                         </div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/firebase" alt="Firebase">
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/firebase" alt="Firebase">
                             Firebase</div>
 
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/figma" alt="Figma"> Figma</div>
-                        <div class="marquee-item"><img
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/xd/xd-original.svg"
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/figma" alt="Figma"> Figma</div>
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/xd/xd-original.svg"
                                 alt="Adobe XD"> Adobe
                             XD</div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/sketch" alt="Sketch"> Sketch
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/sketch" alt="Sketch"> Sketch
                         </div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/webflow" alt="Webflow"> Webflow
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/webflow" alt="Webflow"> Webflow
                         </div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/framer" alt="Framer"> Framer
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/framer" alt="Framer"> Framer
                         </div>
 
                         <!-- Group 2 (Duplicate for loop) -->
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/nextdotjs" alt="Next.js">
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/nextdotjs" alt="Next.js">
                             Next.js</div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/react" alt="React"> React</div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/nodedotjs" alt="Node.js">
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/react" alt="React"> React</div>
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/nodedotjs" alt="Node.js">
                             Node.js</div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/vuedotjs" alt="Vue.js"> Vue.js
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/vuedotjs" alt="Vue.js"> Vue.js
                         </div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/typescript" alt="TypeScript">
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/typescript" alt="TypeScript">
                             TypeScript</div>
 
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/flutter" alt="Flutter"> Flutter
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/flutter" alt="Flutter"> Flutter
                         </div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/swift" alt="Swift"> Swift</div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/kotlin" alt="Kotlin"> Kotlin
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/swift" alt="Swift"> Swift</div>
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/kotlin" alt="Kotlin"> Kotlin
                         </div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/firebase" alt="Firebase">
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/firebase" alt="Firebase">
                             Firebase</div>
 
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/figma" alt="Figma"> Figma</div>
-                        <div class="marquee-item"><img
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/xd/xd-original.svg"
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/figma" alt="Figma"> Figma</div>
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/xd/xd-original.svg"
                                 alt="Adobe XD"> Adobe
                             XD</div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/sketch" alt="Sketch"> Sketch
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/sketch" alt="Sketch"> Sketch
                         </div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/webflow" alt="Webflow"> Webflow
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/webflow" alt="Webflow"> Webflow
                         </div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/framer" alt="Framer"> Framer
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/framer" alt="Framer"> Framer
                         </div>
                     </div>
 
                     <!-- Bottom Row: AI, Automation, Agents (Scrolling Right) -->
                     <div class="marquee-track right">
                         <!-- Group 1 -->
-                        <div class="marquee-item"><img
-                                src="https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg" alt="OpenAI">
+                        <div class="marquee-item"><img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg" alt="OpenAI">
                             OpenAI
                         </div>
-                        <div class="marquee-item"><img
-                                src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg"
+                        <div class="marquee-item"><img loading="lazy" src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg"
                                 alt="Hugging Face">
                             Hugging Face</div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/anthropic" alt="Anthropic">
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/anthropic" alt="Anthropic">
                             Anthropic</div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/python" alt="Python"> Python
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/python" alt="Python"> Python
                         </div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/pytorch" alt="PyTorch"> PyTorch
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/pytorch" alt="PyTorch"> PyTorch
                         </div>
 
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/zapier" alt="Zapier"> Zapier
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/zapier" alt="Zapier"> Zapier
                         </div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/make" alt="Make"> Make</div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/uipath" alt="UiPath"> UiPath
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/make" alt="Make"> Make</div>
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/uipath" alt="UiPath"> UiPath
                         </div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/selenium" alt="Selenium">
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/selenium" alt="Selenium">
                             Selenium</div>
 
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/tensorflow" alt="TensorFlow">
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/tensorflow" alt="TensorFlow">
                             TensorFlow</div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/langchain" alt="LangChain">
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/langchain" alt="LangChain">
                             LangChain</div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/docker" alt="Docker"> Docker
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/docker" alt="Docker"> Docker
                         </div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/kubernetes" alt="Kubernetes">
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/kubernetes" alt="Kubernetes">
                             Kubernetes</div>
-                        <div class="marquee-item"><img
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
                                 alt="AWS"> AWS</div>
 
                         <!-- Group 2 (Duplicate for loop) -->
-                        <div class="marquee-item"><img
-                                src="https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg" alt="OpenAI">
+                        <div class="marquee-item"><img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg" alt="OpenAI">
                             OpenAI
                         </div>
-                        <div class="marquee-item"><img
-                                src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg"
+                        <div class="marquee-item"><img loading="lazy" src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg"
                                 alt="Hugging Face">
                             Hugging Face</div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/anthropic" alt="Anthropic">
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/anthropic" alt="Anthropic">
                             Anthropic</div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/python" alt="Python"> Python
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/python" alt="Python"> Python
                         </div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/pytorch" alt="PyTorch"> PyTorch
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/pytorch" alt="PyTorch"> PyTorch
                         </div>
 
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/zapier" alt="Zapier"> Zapier
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/zapier" alt="Zapier"> Zapier
                         </div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/make" alt="Make"> Make</div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/uipath" alt="UiPath"> UiPath
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/make" alt="Make"> Make</div>
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/uipath" alt="UiPath"> UiPath
                         </div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/selenium" alt="Selenium">
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/selenium" alt="Selenium">
                             Selenium</div>
 
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/tensorflow" alt="TensorFlow">
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/tensorflow" alt="TensorFlow">
                             TensorFlow</div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/langchain" alt="LangChain">
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/langchain" alt="LangChain">
                             LangChain</div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/docker" alt="Docker"> Docker
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/docker" alt="Docker"> Docker
                         </div>
-                        <div class="marquee-item"><img src="https://cdn.simpleicons.org/kubernetes" alt="Kubernetes">
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.simpleicons.org/kubernetes" alt="Kubernetes">
                             Kubernetes</div>
-                        <div class="marquee-item"><img
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+                        <div class="marquee-item"><img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
                                 alt="AWS"> AWS</div>
                     </div>
                 </section>
@@ -1514,7 +1533,9 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="text-center pt-20">
-                                    <h2 class="td-footer-3-middle-title">DEXZE</h2>
+                                    <h2 class="td-footer-3-middle-title">
+                                        <img src="./assets/img/logo/Asset%201.png" alt="Dexze Logo" style="height: 1em; width: auto; max-width: 100%; object-fit: contain;">
+                                    </h2>
                                 </div>
                             </div>
                         </div>
@@ -1548,46 +1569,57 @@
 
     <!-- JS here -->
     <!--<< jquery.Js >>-->
-    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="./assets/js/vendor/jquery.js"></script>
     <!--<< bootstrap.min.Js >>-->
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
     <!--<< gsap.Js >>-->
-    <script src="assets/js/jsap/gsap.js"></script>
+    <script src="./assets/js/jsap/gsap.js"></script>
     <!--<< gsap-scroll-smoother.Js >>-->
-    <script src="assets/js/jsap/gsap-scroll-smoother.js"></script>
+    <script src="./assets/js/jsap/gsap-scroll-smoother.js"></script>
     <!--<< gsap-scroll-trigger.Js >>-->
-    <script src="assets/js/jsap/gsap-scroll-trigger.js"></script>
+    <script src="./assets/js/jsap/gsap-scroll-trigger.js"></script>
     <!--<< gsap-scroll-to-plugin.Js >>-->
-    <script src="assets/js/jsap/gsap-scroll-to-plugin.js"></script>
+    <script src="./assets/js/jsap/gsap-scroll-to-plugin.js"></script>
     <!--<< gsap-split-text.Js >>-->
-    <script src="assets/js/jsap/gsap-split-text.js"></script>
+    <script src="./assets/js/jsap/gsap-split-text.js"></script>
     <!--<< isotope.pkgd.min.Js >>-->
-    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="./assets/js/isotope.pkgd.min.js"></script>
     <!--<< ion.rangeSlider.min.Js >>-->
-    <script src="assets/js/ion.rangeSlider.min.js"></script>
+    <script src="./assets/js/ion.rangeSlider.min.js"></script>
     <!--<< effect-slicer.Js >>-->
-    <script src="assets/js/effect-slicer.js"></script>
+    <script src="./assets/js/effect-slicer.js"></script>
     <!--<< imagesloaded.pkgd.min.Js >>-->
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="./assets/js/imagesloaded.pkgd.min.js"></script>
     <!--<< jquery.magnific-popup.min.Js >>-->
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.min.js"></script>
     <!--<< jquery.odometer.min.Js >>-->
-    <script src="assets/js/jquery.odometer.min.js"></script>
+    <script src="./assets/js/jquery.odometer.min.js"></script>
     <!--<< jquery-appear.Js >>-->
-    <script src="assets/js/jquery-appear.js"></script>
+    <script src="./assets/js/jquery-appear.js"></script>
     <!--<< swiper-bundle.min.Js >>-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
     <!--<< jquery.nice-select.min.Js >>-->
-    <script src="assets/js/nice-select.js"></script>
+    <script src="./assets/js/nice-select.js"></script>
     <!--<< wow.Js >>-->
-    <script src="assets/js/wow.js"></script>
+    <script src="./assets/js/wow.js"></script>
     <!--<< ajax-form.Js >>-->
-    <script src="assets/js/ajax-form.js"></script>
+    <script src="./assets/js/ajax-form.js"></script>
     <!--<< main.Js >>-->
-    <script src="assets/js/main.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 
-</html>ript src="assets/js/main.js"></script>
+</html>ript src="./assets/js/main.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var page = window.location.pathname.split("/").pop();
+    if(page === "service.html" || page === "services-2.html" || page === "service-details.html") {
+        document.querySelectorAll(".services2-nav-item").forEach(function(el) {
+            el.style.display = "inline-block";
+        });
+    }
+});
+</script>
 </body>
 
 </html>

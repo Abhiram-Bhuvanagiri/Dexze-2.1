@@ -14364,4 +14364,270 @@ only screen and (min-width: 576px) and (max-width: 767px),
     transform: translateY(-100%);
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.css.map *//* ==========================================================================
+   Premium About Section
+   ========================================================================== */
+
+.premium-about-section {
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.premium-about-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* 3-Column Layout */
+.premium-about-col-left {
+    width: 28%;
+}
+
+.premium-about-col-center {
+    width: 18%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+}
+
+.premium-about-col-right {
+    width: 54%;
+}
+
+/* Capability Card */
+.capability-card {
+    background: #ffffff;
+    border-radius: 28px;
+    padding: 40px;
+    width: 100%;
+    max-width: 440px;
+    min-width: 380px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.05), 0 4px 12px rgba(0, 0, 0, 0.03);
+    transition: transform 400ms cubic-bezier(0.25, 1, 0.5, 1), box-shadow 400ms cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.capability-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.08), 0 8px 24px rgba(0, 0, 0, 0.04);
+}
+
+.capability-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+}
+
+.capability-row:first-child {
+    padding-top: 0;
+}
+
+.capability-row:last-child {
+    padding-bottom: 0;
+}
+
+.cap-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #111111;
+}
+
+.cap-metric {
+    font-size: 18px;
+    font-weight: 500;
+    color: #555555;
+}
+
+.capability-divider {
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.08);
+    width: 100%;
+}
+
+/* Orb */
+.premium-orb-container {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate3d(0,0,0);
+}
+
+.premium-orb {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 35%, #ffffff 0%, #e6e6e6 40%, #cccccc 80%, #b3b3b3 100%);
+    box-shadow: inset -10px -10px 30px rgba(0,0,0,0.1), inset 10px 10px 30px rgba(255,255,255,0.8), 0 15px 35px rgba(0,0,0,0.15);
+    opacity: 0;
+    transform: scale(0.82) translateY(60px) rotate(-8deg);
+    will-change: transform, opacity;
+}
+
+.premium-orb-shadow {
+    position: absolute;
+    bottom: -40px;
+    width: 140px;
+    height: 20px;
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 70%);
+    border-radius: 50%;
+    opacity: 0; 
+    will-change: transform, opacity, filter;
+}
+
+/* Orb Idle Animation Classes */
+.premium-orb.is-idle {
+    animation: floatOrb 14s ease-in-out infinite, rotateOrb 35s linear infinite;
+    transform: none; /* override GSAP */
+    opacity: 1;
+}
+
+.premium-orb-shadow.is-idle {
+    animation: floatShadow 14s ease-in-out infinite;
+    opacity: 1; /* override GSAP */
+}
+
+@keyframes floatOrb {
+    0% { transform: translateY(0px) scale(1); }
+    25% { transform: translateY(-16px) scale(1.015); }
+    50% { transform: translateY(-6px) scale(1.03); }
+    75% { transform: translateY(-20px) scale(1.018); }
+    100% { transform: translateY(0px) scale(1); }
+}
+
+@keyframes rotateOrb {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(-3deg); }
+    75% { transform: rotate(4deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@keyframes floatShadow {
+    0% { transform: scale(1); opacity: 0.8; filter: blur(4px); }
+    25% { transform: scale(0.85); opacity: 0.5; filter: blur(6px); }
+    50% { transform: scale(0.95); opacity: 0.7; filter: blur(5px); }
+    75% { transform: scale(0.8); opacity: 0.4; filter: blur(7px); }
+    100% { transform: scale(1); opacity: 0.8; filter: blur(4px); }
+}
+
+/* Editorial Typography */
+.editorial-typography-wrapper {
+    max-width: 650px;
+    margin-left: auto;
+}
+
+.editorial-subtitle {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #666;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.editorial-headline {
+    font-size: clamp(74px, 6vw, 96px);
+    font-weight: 800;
+    line-height: 0.9;
+    letter-spacing: -0.04em;
+    color: #000;
+    margin: 0;
+}
+
+.editorial-paragraph {
+    font-size: 24px;
+    line-height: 1.5;
+    color: #444;
+    max-width: 520px;
+    margin-top: 72px;
+    margin-bottom: 0;
+}
+
+/* Responsiveness */
+@media (max-width: 1200px) {
+    .capability-card {
+        min-width: 340px;
+    }
+}
+
+@media (max-width: 991px) {
+    .premium-about-col-left {
+        width: 50%;
+        margin-bottom: 60px;
+    }
+    
+    .premium-about-col-center {
+        width: 50%;
+        margin-bottom: 60px;
+    }
+    
+    .premium-about-col-right {
+        width: 100%;
+    }
+    
+    .editorial-typography-wrapper {
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    .premium-orb-container, .premium-orb {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .premium-orb-shadow {
+        width: 110px;
+        bottom: -30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .premium-about-row {
+        flex-direction: column;
+    }
+    
+    .premium-about-col-left {
+        width: 100%;
+        order: 1;
+        margin-bottom: 50px;
+    }
+    
+    .premium-about-col-right {
+        width: 100%;
+        order: 2;
+        margin-bottom: 60px;
+    }
+    
+    .premium-about-col-center {
+        width: 100%;
+        order: 3;
+        margin-bottom: 0;
+    }
+
+    .editorial-headline {
+        font-size: 52px;
+    }
+
+    .editorial-paragraph {
+        margin-top: 40px;
+        font-size: 20px;
+    }
+
+    .premium-orb-container, .premium-orb {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .premium-orb-shadow {
+        width: 80px;
+        bottom: -20px;
+    }
+}
+

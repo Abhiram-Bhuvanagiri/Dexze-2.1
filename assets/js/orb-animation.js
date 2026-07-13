@@ -99,16 +99,23 @@ const PremiumOrb = () => {
   const orbControls = useAnimation();
   const shadowControls = useAnimation();
 
+  // Start spin immediately so it syncs with logo and doesn't wait for scroll trigger
+  useEffect(() => {
+    orbControls.start({
+      backgroundPositionX: ["0%", "200%"],
+      transition: { duration: 9, ease: "linear", repeat: Infinity, repeatType: "loop" }
+    });
+  }, [orbControls]);
+
   useEffect(() => {
     if (isEntranceComplete) {
+      // Start floating only after GSAP finishes entrance
       orbControls.start({
         y: [0, -16, -6, -20, 0].map(val => isMobile ? val * 0.5 : val),
-        backgroundPositionX: ["0%", "200%"],
         scale: [1, 1.015, 1.03, 1.018, 1],
         transition: {
           y: { duration: 14, ease: "easeInOut", repeat: Infinity, repeatType: "mirror" },
-          scale: { duration: 14, ease: "easeInOut", repeat: Infinity, repeatType: "mirror" },
-          backgroundPositionX: { duration: 9, ease: "linear", repeat: Infinity, repeatType: "loop" }
+          scale: { duration: 14, ease: "easeInOut", repeat: Infinity, repeatType: "mirror" }
         }
       });
 

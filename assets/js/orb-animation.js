@@ -35,17 +35,17 @@ const PremiumOrb = () => {
   useEffect(() => {
     const gsap = window.gsap;
     const ScrollTrigger = window.ScrollTrigger;
-    
+
     if (!gsap || !ScrollTrigger) return;
-    
+
     gsap.registerPlugin(ScrollTrigger);
 
     // Initial hidden state
-    gsap.set([orbRef.current, shadowRef.current], { 
+    gsap.set([orbRef.current, shadowRef.current], {
       autoAlpha: 0,
-      scale: 0.82, 
-      y: 60, 
-      rotationZ: -8 
+      scale: 0.82,
+      y: 60,
+      rotationZ: -8
     });
 
     const st = ScrollTrigger.create({
@@ -129,10 +129,10 @@ const PremiumOrb = () => {
 
   return (
     <div ref={containerRef} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', minHeight: '300px', position: 'relative' }}>
-      
+
       {/* Parallax Wrapper */}
       <div ref={parallaxRef} style={{ position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-        
+
         {/* The 3D Scene Root */}
         <motion.div
           ref={orbRef}
@@ -160,11 +160,11 @@ const PremiumOrb = () => {
               backgroundColor: '#ffffff',
               backgroundImage: 'repeating-linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.02) 20%, rgba(0,0,0,0) 40%)',
               backgroundSize: '200% 100%',
-              transform: 'translateZ(0px)', 
+              transform: 'translateZ(0px)',
               willChange: 'background-position',
               zIndex: 1
             }}
-            animate={orbControls} 
+            animate={orbControls}
           />
 
           {/* Layer 2: Spherical Lighting Overlay */}
@@ -177,7 +177,7 @@ const PremiumOrb = () => {
               height: '100%',
               borderRadius: '50%',
               boxShadow: 'inset -20px -20px 40px rgba(0,0,0,0.08), inset 10px 10px 20px rgba(255,255,255,0.9), inset 0 0 10px rgba(0,0,0,0.02)',
-              transform: 'translateZ(1px)', 
+              transform: 'translateZ(1px)',
               pointerEvents: 'none',
               zIndex: 2 // Renders strictly behind the floating logo satellite
             }}
@@ -198,81 +198,104 @@ const PremiumOrb = () => {
               zIndex: 3 // Renders ON TOP of the sphere's lighting
             }}
             animate={{ rotateY: [0, -360] }}
-            transition={{ duration: 12, ease: "linear", repeat: Infinity }} // Slightly slower to read cards
+            transition={{ duration: 9, ease: "linear", repeat: Infinity }}
           >
             {[
               { type: 'logo', angle: 0 },
+              { type: 'text', text: "BUILT FOR WHAT'S NEXT!", angle: 180 }
+              /*
+              // People cards hidden for now, kept for future use:
               { type: 'card', name: 'Dinesh Kumar M', role: 'Founder & CEO', angle: 90, imgSrc: './assets/img/team/dinesh.png' },
               { type: 'card', name: 'Vardhan T', role: 'Full stack developer', angle: 180, imgSrc: './assets/img/team/vardhan.png' },
               { type: 'card', name: 'Abhiram B', role: 'Frontend developer', angle: 270 }
-            ].map((item, idx) => (
-              <div
-                key={idx}
-                style={{
-                  position: 'absolute',
-                  width: item.type === 'logo' ? '260px' : '180px',
-                  height: item.type === 'logo' ? '130px' : '260px', // Vertical card height
-                  transform: `rotateY(${item.angle}deg) translateZ(${orbSize / 2 + 50}px)`, 
-                  backfaceVisibility: 'hidden',
-                  WebkitBackfaceVisibility: 'hidden',
-                  display: 'flex',
-                  justifyContent: 'center',
-                  alignItems: 'center',
-                  ...(item.type === 'card' ? {
-                    backgroundColor: '#ffffff',
-                    borderRadius: '16px',
-                    boxShadow: '0 10px 30px rgba(0,0,0,0.15), inset 0 0 0 1px rgba(255,255,255,0.6)',
-                    overflow: 'hidden', // Clips the image to rounded corners
-                    flexDirection: 'column'
-                  } : {})
-                }}
-              >
-                {item.type === 'logo' ? (
-                  <img 
-                    src="./assets/img/logo/logo.png" 
-                    alt="Dexze" 
-                    style={{ 
-                      maxWidth: '100%', 
-                      maxHeight: '100%', 
-                      objectFit: 'contain',
-                      filter: 'drop-shadow(10px 15px 15px rgba(0,0,0,0.3))'
-                    }} 
-                  />
-                ) : (
-                  <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column' }}>
-                    {/* Top 75%: Photo */}
-                    <div style={{ 
-                      height: '75%', 
-                      width: '100%', 
-                      backgroundColor: '#f4f4f4', 
-                      display: 'flex', 
-                      justifyContent: 'center', 
-                      alignItems: 'center',
-                      backgroundImage: item.imgSrc ? `url("${item.imgSrc}")` : 'url("https://via.placeholder.com/180x195/e0e0e0/999999?text=Photo")',
-                      backgroundSize: 'cover',
-                      backgroundPosition: 'center'
-                    }} />
-                    
-                    {/* Bottom 25%: White Details Section */}
-                    <div style={{ 
-                      height: '25%', 
-                      width: '100%', 
-                      backgroundColor: '#ffffff', 
-                      display: 'flex', 
-                      flexDirection: 'column', 
-                      justifyContent: 'center', 
-                      alignItems: 'center',
-                      borderTop: '1px solid #eaeaea',
-                      padding: '0 10px',
-                      textAlign: 'center'
+              */
+            ].map((item, idx) => {
+              if (item.type === 'card') return null; // Safe guard if uncommented improperly
+
+              const isLogo = item.type === 'logo';
+
+              return (
+                <motion.div
+                  key={idx}
+                  style={{
+                    position: 'absolute',
+                    width: item.type === 'logo' ? (isMobile ? '180px' : '260px') : item.type === 'text' ? (isMobile ? '240px' : '320px') : '20px',
+                    height: item.type === 'logo' ? (isMobile ? '90px' : '130px') : item.type === 'card' ? '260px' : '50px',
+                    transform: `rotateY(${item.angle}deg) translateZ(${orbSize / 2 + (isMobile ? 30 : 50)}px)`,
+                    backfaceVisibility: 'hidden',
+                    WebkitBackfaceVisibility: 'hidden',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    ...(item.type === 'card' ? {
+                      backgroundColor: '#ffffff',
+                      borderRadius: '16px',
+                      boxShadow: '0 10px 30px rgba(0,0,0,0.15), inset 0 0 0 1px rgba(255,255,255,0.6)',
+                      overflow: 'hidden', // Clips the image to rounded corners
+                      flexDirection: 'column'
+                    } : {})
+                  }}
+                >
+                  {item.type === 'logo' ? (
+                    <img
+                      src="./assets/img/logo/logo.png"
+                      alt="Dexze"
+                      style={{
+                        maxWidth: '100%',
+                        maxHeight: '100%',
+                        objectFit: 'contain',
+                        filter: 'drop-shadow(10px 15px 15px rgba(0,0,0,0.3))'
+                      }}
+                    />
+                  ) : item.type === 'text' ? (
+                    <div style={{
+                      fontWeight: '900',
+                      fontSize: isMobile ? '24px' : '34px',
+                      color: '#000000',
+                      letterSpacing: '-1.5px',
+                      textTransform: 'uppercase',
+                      textAlign: 'center',
+                      whiteSpace: 'nowrap',
+                      fontFamily: 'var(--td-ff-heading, inherit)'
                     }}>
-                      <div style={{ fontWeight: '800', fontSize: '15px', color: '#111', lineHeight: '1.2' }}>{item.name}</div>
-                      <div style={{ fontWeight: '600', fontSize: '11px', color: '#666', marginTop: '2px', textTransform: 'uppercase', letterSpacing: '0.5px' }}>{item.role}</div>
+                      {item.text}
                     </div>
-                  </div>
-                )}
-              </div>
-            ))}
+                  ) : (
+                    <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column' }}>
+                      {/* Top 75%: Photo */}
+                      <div style={{
+                        height: '75%',
+                        width: '100%',
+                        backgroundColor: '#f4f4f4',
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        backgroundImage: item.imgSrc ? `url("${item.imgSrc}")` : 'url("https://via.placeholder.com/180x195/e0e0e0/999999?text=Photo")',
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center'
+                      }} />
+
+                      {/* Bottom 25%: White Details Section */}
+                      <div style={{
+                        height: '25%',
+                        width: '100%',
+                        backgroundColor: '#ffffff',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        borderTop: '1px solid #eaeaea',
+                        padding: '0 10px',
+                        textAlign: 'center'
+                      }}>
+                        <div style={{ fontWeight: '800', fontSize: '15px', color: '#111', lineHeight: '1.2' }}>{item.name}</div>
+                        <div style={{ fontWeight: '600', fontSize: '11px', color: '#666', marginTop: '2px', textTransform: 'uppercase', letterSpacing: '0.5px' }}>{item.role}</div>
+                      </div>
+                    </div>
+                  )}
+                </motion.div>
+              )
+            })}
           </motion.div>
         </motion.div>
 
@@ -291,7 +314,7 @@ const PremiumOrb = () => {
             willChange: 'transform, opacity, filter'
           }}
         />
-        
+
       </div>
     </div>
   );

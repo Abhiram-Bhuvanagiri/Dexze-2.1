@@ -7,19 +7,6 @@
 
 .td-about {
     &-left{
-        & span{
-            font-weight: 600;
-            font-size: 18px;
-            color: var(--td-common-black);
-            margin-bottom: 320px;
-            display: inline-block;
-            @media #{$lg} {
-                margin-bottom: 120px;
-            }
-            @media #{$md,$sm,$xs} {
-                margin-bottom: 40px;
-            }
-        }
         &-thumb{
             @media #{$lg,$md,$sm,$xs} {
                 margin-left: 0;

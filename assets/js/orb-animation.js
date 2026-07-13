@@ -148,7 +148,7 @@ const PremiumOrb = () => {
             // No overflow: hidden, allowing the logo to orbit outside like a satellite
           }}
         >
-          {/* Layer 1: Opaque Sphere Base (Z=0) */}
+          {/* Layer 1: Perfect Isometric Crystal Facets (Z=0) */}
           <motion.div
             style={{
               position: 'absolute',
@@ -157,9 +157,26 @@ const PremiumOrb = () => {
               width: '100%',
               height: '100%',
               borderRadius: '50%',
-              backgroundColor: '#ffffff',
-              backgroundImage: 'repeating-linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.02) 20%, rgba(0,0,0,0) 40%)',
-              backgroundSize: '200% 100%',
+              backgroundColor: '#f8f9fa', // Solid white base
+              backgroundImage: `url("data:image/svg+xml;charset=UTF-8,${encodeURIComponent(
+                (() => {
+                  let svg = '<svg xmlns="http://www.w3.org/2000/svg" width="800" height="415.692" viewBox="0 0 800 415.692"><defs><linearGradient id="c1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#ffffff"/><stop offset="100%" stop-color="#dce0e5"/></linearGradient><linearGradient id="c2" x1="20%" y1="0%" x2="80%" y2="100%"><stop offset="0%" stop-color="#e2e6eb"/><stop offset="48%" stop-color="#c8ced5"/><stop offset="50%" stop-color="#ffffff"/><stop offset="52%" stop-color="#d0d6de"/><stop offset="100%" stop-color="#e8ecf1"/></linearGradient><linearGradient id="c3" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="#c1c8d1"/><stop offset="100%" stop-color="#f0f3f7"/></linearGradient><linearGradient id="c4" x1="50%" y1="0%" x2="50%" y2="100%"><stop offset="0%" stop-color="#ffffff"/><stop offset="70%" stop-color="#f2f5f9"/><stop offset="100%" stop-color="#e0e4e9"/></linearGradient><linearGradient id="c5" x1="100%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#e6eaf0"/><stop offset="40%" stop-color="#d4d9e0"/><stop offset="45%" stop-color="#ffffff"/><stop offset="100%" stop-color="#b9c1cb"/></linearGradient><linearGradient id="c6" x1="0%" y1="50%" x2="100%" y2="50%"><stop offset="0%" stop-color="#f8fafc"/><stop offset="100%" stop-color="#d8dde3"/></linearGradient></defs><g stroke="rgba(255,255,255,0.9)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">';
+                  const h = 69.282;
+                  for (let r = 0; r < 6; r++) {
+                    for (let c = -1; c < 11; c++) {
+                      const x = c * 80 + (r % 2 === 1 ? 40 : 0);
+                      const y = r * h;
+                      const cWrap = (c + 10) % 10;
+                      const fillUp = (r * 5 + cWrap * 7) % 6 + 1;
+                      const fillDn = (r * 11 + cWrap * 13 + 3) % 6 + 1;
+                      svg += '<polygon points="' + x + ',' + y + ' ' + (x+80) + ',' + y + ' ' + (x+40) + ',' + (y+h) + '" fill="url(#c' + fillUp + ')"/>';
+                      svg += '<polygon points="' + (x+40) + ',' + (y+h) + ' ' + (x+120) + ',' + (y+h) + ' ' + (x+80) + ',' + y + '" fill="url(#c' + fillDn + ')"/>';
+                    }
+                  }
+                  return svg + '</g></svg>';
+                })()
+              )}")`,
+              backgroundSize: '200% auto',
               transform: 'translateZ(0px)',
               willChange: 'background-position',
               zIndex: 1
@@ -167,7 +184,7 @@ const PremiumOrb = () => {
             animate={orbControls}
           />
 
-          {/* Layer 2: Spherical Lighting Overlay */}
+          {/* Layer 2: Deep Optical Crystal Volume & Studio Lighting */}
           <div
             style={{
               position: 'absolute',
@@ -176,7 +193,18 @@ const PremiumOrb = () => {
               width: '100%',
               height: '100%',
               borderRadius: '50%',
-              boxShadow: 'inset -20px -20px 40px rgba(0,0,0,0.08), inset 10px 10px 20px rgba(255,255,255,0.9), inset 0 0 10px rgba(0,0,0,0.02)',
+              // Premium Studio Lighting & Thick Glass Optical Depth
+              boxShadow: `
+                inset 0 0 60px rgba(180, 190, 205, 0.2),
+                inset 15px 15px 40px rgba(255, 255, 255, 0.95),
+                inset -20px -20px 50px rgba(200, 210, 220, 0.4),
+                inset 0 0 4px 2px rgba(255, 255, 255, 0.6)
+              `,
+              // Simulating center depth and edge refraction (solid white base remains opaque)
+              backgroundImage: `
+                radial-gradient(circle at 35% 35%, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 40%),
+                radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0) 40%, rgba(225, 230, 240, 0.3) 80%, rgba(255, 255, 255, 0.8) 100%)
+              `,
               transform: 'translateZ(1px)',
               pointerEvents: 'none',
               zIndex: 2 // Renders strictly behind the floating logo satellite

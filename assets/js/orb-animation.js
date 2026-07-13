@@ -108,7 +108,7 @@ const PremiumOrb = () => {
         transition: {
           y: { duration: 14, ease: "easeInOut", repeat: Infinity, repeatType: "mirror" },
           scale: { duration: 14, ease: "easeInOut", repeat: Infinity, repeatType: "mirror" },
-          backgroundPositionX: { duration: 20, ease: "linear", repeat: Infinity, repeatType: "loop" }
+          backgroundPositionX: { duration: 9, ease: "linear", repeat: Infinity, repeatType: "loop" }
         }
       });
 
@@ -148,7 +148,7 @@ const PremiumOrb = () => {
             // No overflow: hidden, allowing the logo to orbit outside like a satellite
           }}
         >
-          {/* Layer 1: Perfect Isometric Crystal Facets (Z=0) */}
+          {/* SINGLE SOLID CRYSTAL OBJECT */}
           <motion.div
             style={{
               position: 'absolute',
@@ -157,10 +157,10 @@ const PremiumOrb = () => {
               width: '100%',
               height: '100%',
               borderRadius: '50%',
-              backgroundColor: '#f8f9fa', // Solid white base
+              backgroundColor: '#e2e8f0', // Deep crystal base
               backgroundImage: `url("data:image/svg+xml;charset=UTF-8,${encodeURIComponent(
                 (() => {
-                  let svg = '<svg xmlns="http://www.w3.org/2000/svg" width="800" height="415.692" viewBox="0 0 800 415.692"><defs><linearGradient id="c1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#ffffff"/><stop offset="100%" stop-color="#dce0e5"/></linearGradient><linearGradient id="c2" x1="20%" y1="0%" x2="80%" y2="100%"><stop offset="0%" stop-color="#e2e6eb"/><stop offset="48%" stop-color="#c8ced5"/><stop offset="50%" stop-color="#ffffff"/><stop offset="52%" stop-color="#d0d6de"/><stop offset="100%" stop-color="#e8ecf1"/></linearGradient><linearGradient id="c3" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="#c1c8d1"/><stop offset="100%" stop-color="#f0f3f7"/></linearGradient><linearGradient id="c4" x1="50%" y1="0%" x2="50%" y2="100%"><stop offset="0%" stop-color="#ffffff"/><stop offset="70%" stop-color="#f2f5f9"/><stop offset="100%" stop-color="#e0e4e9"/></linearGradient><linearGradient id="c5" x1="100%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#e6eaf0"/><stop offset="40%" stop-color="#d4d9e0"/><stop offset="45%" stop-color="#ffffff"/><stop offset="100%" stop-color="#b9c1cb"/></linearGradient><linearGradient id="c6" x1="0%" y1="50%" x2="100%" y2="50%"><stop offset="0%" stop-color="#f8fafc"/><stop offset="100%" stop-color="#d8dde3"/></linearGradient></defs><g stroke="rgba(255,255,255,0.9)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">';
+                  let svg = '<svg xmlns="http://www.w3.org/2000/svg" width="800" height="415.692" viewBox="0 0 800 415.692"><defs><linearGradient id="c1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#ffffff"/><stop offset="100%" stop-color="#e2e8f0"/></linearGradient><linearGradient id="c2" x1="20%" y1="0%" x2="80%" y2="100%"><stop offset="0%" stop-color="#f1f5f9"/><stop offset="48%" stop-color="#cbd5e1"/><stop offset="50%" stop-color="#ffffff"/><stop offset="52%" stop-color="#94a3b8"/><stop offset="100%" stop-color="#e2e8f0"/></linearGradient><linearGradient id="c3" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="#94a3b8"/><stop offset="40%" stop-color="#cbd5e1"/><stop offset="100%" stop-color="#f8fafc"/></linearGradient><linearGradient id="c4" x1="50%" y1="0%" x2="50%" y2="100%"><stop offset="0%" stop-color="#ffffff"/><stop offset="40%" stop-color="#f8fafc"/><stop offset="100%" stop-color="#cbd5e1"/></linearGradient><linearGradient id="c5" x1="100%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#f8fafc"/><stop offset="40%" stop-color="#e2e8f0"/><stop offset="45%" stop-color="#ffffff"/><stop offset="55%" stop-color="#94a3b8"/><stop offset="100%" stop-color="#cbd5e1"/></linearGradient><linearGradient id="c6" x1="0%" y1="50%" x2="100%" y2="50%"><stop offset="0%" stop-color="#f1f5f9"/><stop offset="50%" stop-color="#cbd5e1"/><stop offset="100%" stop-color="#e2e8f0"/></linearGradient></defs><g stroke="rgba(0,0,0,0.06)" stroke-width="1.5" stroke-linejoin="bevel">';
                   const h = 69.282;
                   for (let r = 0; r < 6; r++) {
                     for (let c = -1; c < 11; c++) {
@@ -177,38 +177,17 @@ const PremiumOrb = () => {
                 })()
               )}")`,
               backgroundSize: '200% auto',
+              // Native physical volume bonded directly inside the single element
+              boxShadow: `
+                inset 15px 15px 40px rgba(255, 255, 255, 0.9),
+                inset -20px -20px 40px rgba(0, 0, 0, 0.15),
+                inset 0 0 20px rgba(0, 0, 0, 0.05)
+              `,
               transform: 'translateZ(0px)',
               willChange: 'background-position',
               zIndex: 1
             }}
             animate={orbControls}
-          />
-
-          {/* Layer 2: Deep Optical Crystal Volume & Studio Lighting */}
-          <div
-            style={{
-              position: 'absolute',
-              top: 0,
-              left: 0,
-              width: '100%',
-              height: '100%',
-              borderRadius: '50%',
-              // Premium Studio Lighting & Thick Glass Optical Depth
-              boxShadow: `
-                inset 0 0 60px rgba(180, 190, 205, 0.2),
-                inset 15px 15px 40px rgba(255, 255, 255, 0.95),
-                inset -20px -20px 50px rgba(200, 210, 220, 0.4),
-                inset 0 0 4px 2px rgba(255, 255, 255, 0.6)
-              `,
-              // Simulating center depth and edge refraction (solid white base remains opaque)
-              backgroundImage: `
-                radial-gradient(circle at 35% 35%, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 40%),
-                radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0) 40%, rgba(225, 230, 240, 0.3) 80%, rgba(255, 255, 255, 0.8) 100%)
-              `,
-              transform: 'translateZ(1px)',
-              pointerEvents: 'none',
-              zIndex: 2 // Renders strictly behind the floating logo satellite
-            }}
           />
 
           {/* Layer 3: Logo and Cards Satellite Wrapper */}
@@ -336,7 +315,7 @@ const PremiumOrb = () => {
             width: `${orbSize * 0.75}px`,
             height: '14px',
             borderRadius: '50%',
-            background: 'rgba(0, 0, 0, 0.12)',
+            background: 'rgba(0, 0, 0, 0.25)',
             filter: 'blur(8px)',
             visibility: 'hidden', // Hidden until GSAP takes over
             willChange: 'transform, opacity, filter'
